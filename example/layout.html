@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <script src="https://alinw.alipayobjects.com/??seajs/seajs/2.2.0/sea.js,seajs/seajs-combo/1.0.0/seajs-combo.js,seajs/seajs-text/1.0.2/seajs-text.js,seajs/seajs-style/1.0.2/seajs-style.js,seajs/seajs-log/1.0.0/seajs-log.js,gallery/json/1.0.3/json.js"></script>
+  <link rel="stylesheet" href="//alinw.alicdn.com/??platform/common/s/1.1/global/global.css,alinw/kuma/3.0.3/kuma.css?t=201503231941">
+  <style type="text/css">
+        /*下面是一些美化用和自定义用*/
+        .layout-card .container {
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          color: white;
+          font-size: 14px;
+        }
+        .layout-card .grid-3 {
+          width: 326px;
+          overflow: hidden;
+          background: #aa0000;
+        }
+        .layout-card .grid-9 {
+          width: 654px;
+          overflow: hidden;
+          background: #00aa00;
+        }
+        .layout-card .grid-12 {
+          width: 1180px;
+          overflow: hidden;
+          background: #0000aa;
+        }
+        .layout-card-2 .container {
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          color: white;
+          font-size: 14px;
+          overflow: hidden;
+        }
+        .layout-card-2 .float-1 {
+          width: 326px;
+          background: #aaaa00;
+        }
+        .layout-card-2 .float-2 {
+          width: 326px;
+          margin: 0 0 0 11px;
+          background: #00aaaa;
+        }
+        .layout-card-2 .float-3 {
+          width: 326px;
+          margin: 0 0 0 11px;
+          background: #aa00aa;
+        }
+        .layout-card-2 .grid-12 {
+          width: 1000px;
+          overflow: hidden;
+          background: #0000cc;
+        }
+        .layout-card-3 .container {
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          color: white;
+          font-size: 14px;
+          overflow: hidden;
+        }
+        .layout-card-3 .item-1 {
+          width: 100%;
+          background: #0000aa;
+        }
+        .layout-card-3 .item-2 {
+          background: #00aaaa;
+          width: 326px;
+          margin: 0 -326px 0 0;
+        }
+        .layout-card-3 .item-3 {
+          background: #aa00aa;
+          padding: 0 0 0 326px;
+        }
+        .layout-card-4 .container {
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          color: white;
+          font-size: 14px;
+          overflow: hidden;
+        }
+        .layout-card-4 .item-1 {
+          width: 100%;
+          background: #0000aa;
+        }
+        .layout-card-4 .item-2 {
+          background: #00aaaa;
+          padding: 0 326px 0 0;
+        }
+        .layout-card-4 .item-3 {
+          background: #aa00aa;
+          width: 326px;
+          margin: 0 0 0 -326px;
+        }
+        .layout-card-5 .container {
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          color: white;
+          font-size: 14px;
+          overflow: hidden;
+        }
+        .layout-card-5 .item-1 {
+          width: 100%;
+          background: #0000aa;
+        }
+        .layout-card-5 .item-2 {
+          background: #00aaaa;
+          padding: 0 326px 0 200px;
+        }
+        .layout-card-5 .item-3 {
+          background: #aa00aa;
+          margin: 0 0 0 -100%;
+          width: 200px;
+        }
+        .layout-card-5 .item-4 {
+          background: #aaaaaa;
+          margin: 0 0 0 -326px;
+          width: 326px;
+        }
+  </style>>
+</head>
+<body>
+  <div class="layout-card fn-clear kuma-layout-2c kuma-layout-1180">
+      <div class="grid-12 container">我是1000px的全条幅</div>
+      <div class="grid-9 container layout-2c-left-fixed">我是左侧</div>
+      <div class="grid-3 container layout-2c-right-fixed">我是右侧</div>
+  </div>
+  <br>
+  <div class="layout-card-2 fn-clear kuma-layout-3c kuma-layout-1000">
+      <div class="grid-12 container">我是1000px的全条幅</div>
+      <div class="container float-1 layout-3c-fixed">我是左</div>
+      <div class="container float-2 layout-3c-fixed">我是中</div>
+      <div class="container float-3 layout-3c-fixed">我是右</div>
+  </div>
+  <br>
+  <div class="layout-card-3 fn-clear kuma-layout-2c">
+      <div class="container item-1">我是全宽，我自适应</div>
+      <div class="container item-3 layout-2c-right-lf">我自适应，我在右侧</div>
+      <div class="container item-2 layout-2c-left-lf">我是定宽，我在左侧</div>
+  </div>
+  <br>
+  <div class="layout-card-4 fn-clear kuma-layout-2c">
+      <div class="container item-1">我是全宽，我自适应</div>
+      <div class="container item-2 layout-2c-left-rf">我自适应，我在左侧</div>
+      <div class="container item-3 layout-2c-right-rf">我是定宽，我在右侧</div>
+  </div> 
+  <br>
+  <div class="layout-card-5 fn-clear kuma-layout-3c">
+      <div class="container item-1">我是全宽，我自适应</div>
+      <div class="container item-2 layout-3c-mid">我自适应，我在中间</div>
+      <div class="container item-3 layout-3c-left">我是定宽，我在左侧</div>
+      <div class="container item-4 layout-3c-right">我是定宽，我在右侧</div>
+  </div>  
+    
+</body>
+</html>

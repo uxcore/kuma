@@ -1,0 +1,77 @@
+/* alinw.select 样式模块 */
+.kuma-select {
+	display:inline-block;
+	background: @select-bg;
+	color: @select-color;
+	a{ 
+		color: @select-color;
+		&:hover{ 
+			text-decoration: none;
+		}
+	}
+}
+.kuma-select-trigger{
+	color: @select-color;
+	 &:hover{
+		text-decoration: none;
+	}
+}
+.kuma-select-content {
+	overflow: auto;
+	height: 100%;
+	max-height: 210px;
+	border: 1px solid @select-border;
+	box-shadow: 0 1px 6px -1px @select-boxshadow-color;
+}
+.kuma-select-item {
+	height: 30px;
+	padding-left: 10px;
+	cursor: pointer;
+	overflow: hidden;
+	white-space: nowrap;
+	line-height: 30px;
+	&:hover{
+		background: @select-item-bg;
+	}
+}
+.kuma-select-item-hover {
+	background: @select-item-bg;
+}
+.kuma-select-item-disabled,
+.kuma-select-item-disabled a {
+	cursor: not-allowed;
+	color: @select-disabled-color;
+}
+.kuma-select-item-disabled:hover,
+.kuma-select-item-disabled a:hover {
+	background: @select-disabled-bg;
+}
+.kuma-select-trigger {
+	position: relative;
+	display: inline-block;
+	border: 1px solid @select-trigger-border;
+	height: 28px;
+	line-height: 28px;
+	text-indent: 10px;
+	&:hover{ 
+		border: 1px solid @select-trigger-hover-border;
+	}
+
+	i { 
+		position: absolute;
+		top: 0px;
+		right: 7px;
+		text-indent: 0;
+		line-height: 28px;
+		font-size: 16px;
+		cursor: pointer;
+	}
+}
+.kuma-select .kuma-select-trigger {
+	display: block;
+}
+.kuma-select-disabled,
+.kuma-select .kuma-select-disabled {
+	color: #aaa;
+	cursor: not-allowed;
+}

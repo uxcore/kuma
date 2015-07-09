@@ -1,0 +1,82 @@
+//### 常用文字显示类型
+
+
+//一级标题14号字加粗
+.font14-title-bold(@color: @color-black-darker) {
+	font-size: 14px;
+	font-weight: bold;
+	color: @color;
+}
+
+//二级标题
+.font12-title-bold(@color: @color-black-dark) {
+	font-size: 12px;
+	font-weight: bold;
+	color: @color;
+}
+
+//普通信息文字
+.font12-title(@color: @color-black-dark) {
+	font-size: 12px;
+	color: @color;
+}
+
+//普通信息强调文字
+.font12-title-highlight(@color: @color-orange-dark) {
+	font-size: 12px;
+	color: @color;
+}
+
+//普通信息文字
+.font12-title-comment(@color: @color-black-light) {
+	font-size: 12px;
+	color: @color;
+}
+
+//链接文字
+.font-link(@color: @color-blue-dark, @size: @font-size-small) {
+	text-decoration: none;
+	font-size: @size;
+	color: @color;
+}
+.font-link-hover(@color: @color-orange-dark, @size: @font-size-small) {
+	text-decoration: underline;
+	font-size: @size;
+	color: @color;
+}
+
+//常用按钮状态--主按钮
+.button-main(@bg: @color-blue-dark, @borderColor: #0776df, @textColor: white) {
+	color: @textColor;
+	border: 1px solid @borderColor;
+	border-radius: @border-radius-small;
+	background-color: @bg;
+}
+.button-main-hover(@bg: #43a4ff, @borderColor: #0f89fb, @textColor: white) {
+	color: @textColor;
+	border: 1px solid @borderColor;
+	border-radius: @border-radius-small;
+	background-color: @bg;
+}
+
+//常用按钮状态--二级按钮
+.button-sub(@bg: @color-gray-light, @borderColor: @color-gray-darker, @textColor: @color-black-dark) {
+	color: @textColor;
+	border: 1px solid @borderColor;
+	border-radius: @border-radius-small;
+	background-color: @bg;
+}
+.button-sub-hover(@bg: @color-orange-light, @borderColor: #f80, @textColor: white) {
+	color: @textColor;
+	border: 1px solid @borderColor;
+	background-color: @bg;
+}
+
+//常用按钮状态--不可用按钮
+.button-disabled(@bg: @color-gray-darker, @borderColor: @color-black-lighter, @textColor: @color-black-light) {
+	color: @textColor;
+	border: 1px solid @borderColor;
+	border-radius: @border-radius-small;
+	background-color: @bg;
+}
+
