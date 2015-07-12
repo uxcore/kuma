@@ -1,3 +1,7 @@
+# kuma4.0 
+
+Kuma4.0 开始，为uxcore 服务,完全适应border-box模型
+
 # kuma3.0 
 
 从Kuma3.0 开始，使用less，grunt，构建类bootstrap的kuma css 套件，
