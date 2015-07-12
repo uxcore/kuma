@@ -2,6 +2,11 @@
 
 ---
 
+## 4.0.0
+
+`NEW` kuma since 4.0.0, serice for uxcore
+`CHANGED` add multiple columns form
+
 ## 3.0.4
 
 `CHANGED` TAB切换样式改成基础+组合高亮模式，对应 tab.less  
