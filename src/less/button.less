@@ -18,13 +18,13 @@ form.kuma-button * {
     border-radius: @border-radius-small;
     padding: @btn-default-padding;
     *zoom: 1;
-    *overflow: visible; /* for a ie6/7 bug http://blog.csdn.net/jyy_12/article/details/6636099 */    
+    *overflow: visible; /* for a ie6/7 bug http://blog.csdn.net/jyy_12/article/details/6636099 */
     background-image: none; /* for old alice button style conflict */
-    &:hover{ 
+    &:hover{
     	text-decoration: none;
-    	background-image: none; /* for old alice button style conflict */ 
+    	background-image: none; /* for old alice button style conflict */
     }
-    &:active{ 
+    &:active{
     	position: relative;
 	    top: 1px;
 	    box-shadow: @btn-box-shadow;
@@ -44,26 +44,19 @@ button.kuma-button-text {
 
 .kuma-button-group {
     font-size: 0; /* fix inline-block with white-space */
+    .kuma-group-left {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .kuma-group-right {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    .kuma-group-middle {
+        border-radius: 0;
+    }
 }
 
-.kuma-button-group .kuma-button-lwhite,
-.kuma-button-group .kuma-button-mwhite,
-.kuma-button-group .kuma-button-lblue,
-.kuma-button-group .kuma-button-mblue,
-.kuma-button-group .kuma-button-ldisable,
-.kuma-button-group .kuma-button-mdisable,
-.kuma-button-group .kuma-button-lorange,
-.kuma-button-group .kuma-button-morange {
-    margin: @btn-large-margin;
-}
-
-.kuma-button-group .kuma-button-swhite,
-.kuma-button-group .kuma-button-sblue,
-.kuma-button-group .kuma-button-sorange,
-.kuma-button-group .kuma-button-sdisable
-{
-    margin: @btn-small-margin;
-}
 
 /* import url("./kuma-button-blue.css") */
 .kuma-button-lblue,
@@ -73,7 +66,7 @@ button.kuma-button-text {
     border: 1px solid @btn-primary-border;
     background-color: @btn-primary-bg;
     color: @btn-primary-color;
-    &:hover{ 
+    &:hover{
     	background-color: @btn-primary-hover-bg;
     	border-color: @btn-primary-hover-border;
     }
@@ -132,7 +125,7 @@ a.kuma-button-sblue {
     border:1px solid @btn-default-border;
     background-color: @btn-default-bg;
     color: @btn-default-color;
-    &:hover{ 
+    &:hover{
     	background-color: @btn-default-hover-bg;
 	    border-color: @btn-default-hover-border;
 	    color: @btn-default-hover-color;
@@ -190,7 +183,7 @@ a.kuma-button-swhite {
     border: 1px solid @btn-ali-border;
     background-color: @btn-ali-bg;
     color: @btn-ali-color;
-    &:hover{ 
+    &:hover{
     	background-color: @btn-ali-hover-bg;
     	border-color: @btn-ali-hover-border;
     }
@@ -402,6 +395,3 @@ button.kuma-button-sdisable:hover {
         }
     }
 }
-
-
-
