@@ -1,16 +1,13 @@
 {
-  "family": "alinw",
   "name": "kuma",
-  "version": "3.0.4",
-  "description": "alinw style",
-  "homepage": "",
+  "version": "1.0.0",
+  "description": "style for uxcore based on kuma",
   "author": "shane.wuq",
   "maintainers": [
     "shane.wuq",
-    "hanchao.shc",
     "hanyu",
     "zhouquan.yezq",
-    "muwen.lb"
+    "macisi"
   ],
   "repository": {
     "type": "git",
@@ -19,10 +16,12 @@
   "bugs": {
     "url": "https://github.com/uxcore/kuma/issues"
   },
+  "main": "dist/kuma.css",
   "keywords": [
-    "alinw",
+    "uxcore",
     "kuma",
-    "style"],
+    "style"
+  ],
   "licenses": "MIT",
   "devDependencies": {
     "grunt": "~0.4.5",
