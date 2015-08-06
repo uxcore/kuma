@@ -310,11 +310,14 @@ samp {
 }
 
 // Set Box Sizing to Border Box
-.fn-border-box {
-  .box-sizing(border-box);
-  * {
-    .box-sizing(inherit);
-  }
+// .fn-border-box {
+//   .box-sizing(border-box);
+//   * {
+//     .box-sizing(inherit);
+//   }
+// }
+*, *:after, *:before {
+    .box-sizing(border-box);
 }
 
 .fn-content-box {
