@@ -99,41 +99,39 @@
 /* add kuma-form-row */
 
 .kuma-form-row {
-    min-width: 100%;
-    float: left;
-    clear: both;
-}
-.kuma-form-item{
-    display: table;
-    float:left;
-    padding: 6px 0px;
-    width:100%;
- }
- .kuma-form-row .kuma-form-item.one-half{
-    width:50%;
-    clear: none;
- }
- .kuma-form-row .kuma-form-item.one-third{
-    width:33.33% !important;
-    clear: none;
- }
+    overflow: hidden;
+    @formlabelWidth: 100px;
 
-.kuma-form-field {
-    font-size: 12px;
-    color: @input-color-explain;
-    width:100%;
-    padding:0px 12px;
-}
+    .kuma-form-item {
+        float:left;
+        &.one-half {
+           width: 50%;
+        }
+        &.one-third {
+           width: 33.33% !important;
+        }
+     }
 
-.kuma-form-field .kuma-form-tips{
-    line-height: 30px;
-    color: #efefef;
-}
-.kuma-form-field .kuma-form-errormsg{
-    line-height: 30px;
-    color: red;
-}
+     .kuma-label {
+       float: left;
+       width: @formlabelWidth;
+     }
 
+    .kuma-form-field {
+      padding:0px 12px;
+      margin-left: @formlabelWidth;
+      color: @input-color-explain;
+
+      .kuma-form-tips {
+          line-height: 30px;
+          color: #efefef;
+      }
+      .kuma-form-errormsg {
+          line-height: 30px;
+          color: red;
+      }
+    }
+}
 
 .kuma-form-other {
     margin-left: 2px;
