@@ -48,6 +48,11 @@
 
 .kuma-row {
   .make-row();
+  &:after, &:before {
+    display: table;
+    content: " ";
+    clear: both;
+  }
 }
 
 
