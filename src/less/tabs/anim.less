@@ -1,4 +1,4 @@
-.@{prefixClass} {
+.@{tabClass} {
 
   &-slide-horizontal-backward-enter {
     display: block !important;
@@ -8,7 +8,7 @@
 
   &-slide-horizontal-backward-enter&-slide-horizontal-backward-enter-active {
     transform: translateX(0);
-    transition: transform @effect-duration @easing-in-out;
+    transition: transform @tab-effect-duration @tab-easing-in-out;
   }
 
   &-slide-horizontal-backward-leave {
@@ -23,7 +23,7 @@
 
   &-slide-horizontal-backward-leave&-slide-horizontal-backward-leave-active {
     transform: translateX(100%);
-    transition: transform @effect-duration @easing-in-out;
+    transition: transform @tab-effect-duration @tab-easing-in-out;
   }
 
   &-slide-horizontal-forward-enter {
@@ -33,7 +33,7 @@
 
   &-slide-horizontal-forward-enter&-slide-horizontal-forward-enter-active {
     transform: translateX(0);
-    transition: transform @effect-duration @easing-in-out;
+    transition: transform @tab-effect-duration @tab-easing-in-out;
   }
 
   &-slide-horizontal-forward-leave {
@@ -48,7 +48,7 @@
 
   &-slide-horizontal-forward-leave&-slide-horizontal-forward-leave-active {
     transform: translateX(-100%);
-    transition: transform @effect-duration @easing-in-out;
+    transition: transform @tab-effect-duration @tab-easing-in-out;
   }
 
   /*slide*/
@@ -61,7 +61,7 @@
 
   &-slide-vertical-backward-enter&-slide-vertical-backward-enter-active {
     transform: translateY(0);
-    transition: transform @effect-duration @easing-in-out;
+    transition: transform @tab-effect-duration @tab-easing-in-out;
   }
 
   &-slide-vertical-backward-leave {
@@ -76,7 +76,7 @@
 
   &-slide-vertical-backward-leave&-slide-vertical-backward-leave-active {
     transform: translateY(100%);
-    transition: transform @effect-duration @easing-in-out;
+    transition: transform @tab-effect-duration @tab-easing-in-out;
   }
 
   &-slide-vertical-forward-enter {
@@ -86,7 +86,7 @@
 
   &-slide-vertical-forward-enter&-slide-vertical-forward-enter-active {
     transform: translateY(0);
-    transition: transform @effect-duration @easing-in-out;
+    transition: transform @tab-effect-duration @tab-easing-in-out;
   }
 
   &-slide-vertical-forward-leave {
@@ -101,7 +101,7 @@
 
   &-slide-vertical-forward-leave&-slide-vertical-forward-leave-active {
     transform: translateY(-100%);
-    transition: transform @effect-duration @easing-in-out;
+    transition: transform @tab-effect-duration @tab-easing-in-out;
   }
 
 }

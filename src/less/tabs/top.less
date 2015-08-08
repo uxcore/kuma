@@ -1,4 +1,4 @@
-.@{prefixClass} {
+.@{tabClass} {
   &-top {
     border-bottom: 2px solid #f3f3f3;
   }
@@ -26,7 +26,7 @@
   }
 
   &-top &-nav {
-    transition: left 0.5s @easing-in-out;
+    transition: left 0.5s @tab-easing-in-out;
   }
 
   &-top &-tab-next {
@@ -58,12 +58,12 @@
     left:0;
 
     &-transition-forward {
-      transition: right 0.3s @easing-in-out,
-      left 0.3s @easing-in-out 0.3s * 0.3;
+      transition: right 0.3s @tab-easing-in-out,
+      left 0.3s @tab-easing-in-out 0.3s * 0.3;
     }
     &-transition-backward {
-      transition: right 0.3s @easing-in-out 0.3s * 0.3,
-      left 0.3s @easing-in-out;
+      transition: right 0.3s @tab-easing-in-out 0.3s * 0.3,
+      left 0.3s @tab-easing-in-out;
     }
   }
 
