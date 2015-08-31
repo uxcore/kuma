@@ -7,7 +7,8 @@
     "shane.wuq",
     "hanyu",
     "zhouquan.yezq",
-    "macisi"
+    "macisi",
+    "eternalsky"
   ],
   "repository": {
     "type": "git",
@@ -17,6 +18,10 @@
     "url": "https://github.com/uxcore/kuma/issues"
   },
   "main": "dist/uxcore-kuma.css",
+  "files": [
+    "dist",
+    "src"
+  ],
   "keywords": [
     "uxcore",
     "kuma",

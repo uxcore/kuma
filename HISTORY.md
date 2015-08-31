@@ -6,5 +6,5 @@
 
 ## 1.0.0
 
-`NEW` kuma since 4.0.0, serice for uxcore
+`NEW` kuma since 4.0.0, sevice for uxcore
 `CHANGED` add multiple columns form
