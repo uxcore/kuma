@@ -1,99 +1,77 @@
 //基于variables->form.less
-.kuma-input {
-    padding: 5px 10px;
-    height: 28px;
-    line-height: 28px;
-    border: 1px solid @input-border;
-    color: @input-color;
-    font-size: @font-size-small;
-    width:100%;
-}
 
-.kuma-input:hover,
-.kuma-textarea:hover,
-.kuma-input-hover {
-    border: 1px @input-border solid;
-}
+.kuma-form {
+    zoom: 1;
+    &:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+    .kuma-input {
+        padding: 5px 10px;
+        height: 28px;
+        line-height: 28px;
+        border: 1px solid @input-border;
+        color: @input-color;
+        font-size: @font-size-small;
+        width:100%;
+    }
 
-.kuma-input:focus,
-.kuma-textarea:focus,
-.kuma-input-focus {
-    border: 1px @input-border-focus solid;
-    color: @input-color;
-    outline: none;
-}
+    .kuma-input:hover,
+    .kuma-textarea:hover,
+    .kuma-input-hover {
+        border: 1px @input-border solid;
+    }
 
-.kuma-textarea {
-    line-height: 25px;
-    border: 1px @input-border solid;
-    padding: 5px 10px;
-    overflow: auto;
-    font-family: Arial;
-    font-size: @font-size-small;
-    color: @input-color;
-    width:100%;
-}
+    .kuma-input:focus,
+    .kuma-textarea:focus,
+    .kuma-input-focus {
+        border: 1px @input-border-focus solid;
+        color: @input-color;
+        outline: none;
+    }
 
-.kuma-input[disabled],
-.kuma-textarea[disabled] {
-    border: 1px solid @input-border;
-    background: @input-bg-disabled;
-}
+    .kuma-textarea {
+        line-height: 20px;
+        border: 1px @input-border solid;
+        padding: 5px 10px;
+        overflow: auto;
+        font-family: Arial;
+        font-size: @font-size-small;
+        color: @input-color;
+        width:100%;
+    }
 
-.kuma-input:disabled,
-.kuma-textarea:disabled {
-    border: 1px solid @input-border;
-    background: @input-bg-disabled;
-}
+    .kuma-input[disabled],
+    .kuma-textarea[disabled] {
+        border: 1px solid @input-border;
+        background: @input-bg-disabled;
+    }
 
-.placeholder {
-    color: @input-color-placeholder;
-}
+    .kuma-input:disabled,
+    .kuma-textarea:disabled {
+        border: 1px solid @input-border;
+        background: @input-bg-disabled;
+    }
 
-.kuma-input-checkcode {
-    width: 100px;
-    height: 24px;
-    line-height: 28px;
-    margin: 0;
-    padding: 2px 5px;
-}
 
-.kuma-form-item-hover .kuma-input,
-.kuma-form-item-hover .kuma-textarea {
-    border:1px @input-border solid;
-}
-
-.kuma-form-item-focus .kuma-input,
-.kuma-form-item-focus .kuma-textarea {
-    border: 1px #07f solid;
-    box-shadow: 0 0 3px #8cddff;
-}
-
-/* import url('./label.css') */
-.kuma-label {
-    width: 100px;
-    margin-left: 0px;
-    padding-top: 5px;
-    padding-right:0px;
-    text-align: right;
-    color: @label-color;
-    display:table-cell;
-    vertical-align:baseline;
-    vertical-align:-webkit-baseline-middle;
-}
-
-.kuma-label  i{
-    color:Red;
-}
-
-/* import url('/kuma-form.css') */
-.kuma-form,
-.kuma-form * {
-    list-style: none;
-}
-
-.kuma-form legend {
-    display: none;
+    .kuma-label {
+        width: 100px;
+        margin-left: 0px;
+        padding-top: 5px;
+        padding-right:0px;
+        text-align: right;
+        color: @label-color;
+        display:table-cell;
+        vertical-align: baseline;
+        vertical-align: -webkit-baseline-middle;
+        i {
+           color: Red; 
+        }
+    }
 }
 
 .kuma-form-row-title{
@@ -104,127 +82,86 @@
     margin: 20px 0px;
     clear:both;
 }
+
 .kuma-form-row {
     min-width: 100%;
     float: left;
     clear: both;
-}
-.kuma-form-item{
-    display: table;
-    float:left;
-    padding: 6px 0px;
-    width:100%;
- }
- .kuma-form-row .kuma-form-item.one-half{
-    width:50%;
-    clear: none;
- }
- .kuma-form-row .kuma-form-item.one-third{
-    width:33.33% !important;
-    clear: none;
- }
-
-.kuma-form-field {
-    font-size: 12px;
-    color: @input-color-explain;
-    width:100%;
-    padding:5px 12px;
-}
-
-.kuma-form-field .kuma-form-tips{
-    line-height: 30px;
-    color: #efefef;
-}
-
-.kuma-form-tips .kuma-icon{
-    color:#48c5ff;
-    margin-right:4px;
-}
-.kuma-form-field .kuma-form-errormsg{
-    line-height: 30px;
-    color: red;
-}
-
-.kuma-form-field .kuma-radio-group > span{
-    padding: 0px 20px 0px 4px;
-}
-
-
-.kuma-form-other {
-    margin-left: 2px;
-    color: @color-black-light;
-}
-
-.kuma-form-text {
-    display: inline-block;
-    margin-top: 6px;
-    *display: inline;
-    *zoom: 1;
-    color: @input-color;
-}
-
-.kuma-form-item {
-    padding: 0 5px 15px 0px;
-    *zoom: 1;
-    &:after{ 
-        clear: both;
-        content: '.';
-        display: block;
-        height: 0;
-        visibility: hidden;
-    }
-    select{ 
-        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAWCAYAAADwza0nAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODBFQkMyNkZDRUJFMTFFNEIzQzZGOUUwMjFDMTZDRkQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODBFQkMyNzBDRUJFMTFFNEIzQzZGOUUwMjFDMTZDRkQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4MEVCQzI2RENFQkUxMUU0QjNDNkY5RTAyMUMxNkNGRCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4MEVCQzI2RUNFQkUxMUU0QjNDNkY5RTAyMUMxNkNGRCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PkYdGT4AAADNSURBVHjaYuzp6WHAASqgdAc2SRYcmvyAuAWImYD4OhBvRFfAhEWTORAvB2JmIGYE4mVQMbwaVYB4MxBzIYlxQcVUcGkUBeLtUBodYMgx4TMVn2uYoH5Zjs0f+PwP0jgZGorEApDayaDoyIJikgATA5lgpGicBsT/ScTTQBpzgXgTCZaB1OaCNP4F4kggPkmEppNQtX9hfvwGxL5AfAePpjtQNd/QA+c1EHtCaXSAIceEz1R8rmHC449/0BCMxuZ/FjwhVw1lb8CmACDAABlpNwXghNgSAAAAAElFTkSuQmCC");
-        background-position: center right -15px;
-        background-repeat: no-repeat;
-        background-size: 7px 11px;
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
-        border-bottom-color: #c2c2c2;
-        border-top-color: #d6d6d6;
-        height: 30px;
-        width:100%;
-    }
-    input{
-        margin-right: 2px;
-        vertical-align: middle;
-    }
-    .kuma-input {
-        color: @input-color;
-        vertical-align: middle;
-        *vertical-align: -5px;
+    .kuma-form-field {
+        display: table;
+        float: left;
+        width: 100%;
+        padding: 0 5px 15px 0px;
+        *zoom: 1;
+        &:after { 
+            clear: both;
+            content: '.';
+            display: block;
+            height: 0;
+            visibility: hidden;
+        }
+        select { 
+            background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAWCAYAAADwza0nAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODBFQkMyNkZDRUJFMTFFNEIzQzZGOUUwMjFDMTZDRkQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODBFQkMyNzBDRUJFMTFFNEIzQzZGOUUwMjFDMTZDRkQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4MEVCQzI2RENFQkUxMUU0QjNDNkY5RTAyMUMxNkNGRCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4MEVCQzI2RUNFQkUxMUU0QjNDNkY5RTAyMUMxNkNGRCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PkYdGT4AAADNSURBVHjaYuzp6WHAASqgdAc2SRYcmvyAuAWImYD4OhBvRFfAhEWTORAvB2JmIGYE4mVQMbwaVYB4MxBzIYlxQcVUcGkUBeLtUBodYMgx4TMVn2uYoH5Zjs0f+PwP0jgZGorEApDayaDoyIJikgATA5lgpGicBsT/ScTTQBpzgXgTCZaB1OaCNP4F4kggPkmEppNQtX9hfvwGxL5AfAePpjtQNd/QA+c1EHtCaXSAIceEz1R8rmHC449/0BCMxuZ/FjwhVw1lb8CmACDAABlpNwXghNgSAAAAAElFTkSuQmCC");
+            background-position: center right -15px;
+            background-repeat: no-repeat;
+            background-size: 7px 11px;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+            border-bottom-color: #c2c2c2;
+            border-top-color: #d6d6d6;
+            height: 30px;
+            width:100%;
+        }
+        input {
+            margin-right: 2px;
+            vertical-align: middle;
+        }
+        .kuma-input {
+            color: @input-color;
+            vertical-align: middle;
+            *vertical-align: -5px;
+        }
+        .kuma-select {
+            margin: 0 20px 0 0;
+        }
+        .kuma-form-field-content {
+            font-size: 12px;
+            color: @input-color-explain;
+            width: 100%;
+            padding: 5px 12px;
+            .kuma-form-tips {
+                line-height: 30px;
+                color: #efefef;
+                .kuma-icon {
+                    color: #48c5ff;
+                    margin-right: 4px;
+                }
+            }
+            .kuma-form-errormsg {
+                line-height: 30px;
+                color: red;
+            }
+            .kuma-radio-group {
+                > span {
+                    padding: 0px 20px 0px 4px;
+                }
+            }
+        }
     }
 }
 
-.kuma-form-item-error .kuma-input,
-.kuma-form-item-error .kuma-textarea {
-    border: 1px @input-error-border solid;
-    color: @input-error-color;
-}
+.kuma-form-edit-mode {
+    .kuma-form-row {
+        .kuma-form-field {
+            .kuma-label {
+                padding-top: 11px;
+            }
+            &.kuma-checkbox-group-form-field,
+            &.kuma-radio-group-form-field {
+                .kuma-form-field-content {
+                    padding-top: 11px;
+                }
+            }
 
-.kuma-form-item-error .kuma-input-reset {
-    border: 1px #9c9c9c solid;
-    color: #000;
-}
-
-.kuma-form-explain{ 
-    .kuma-tiptext {
-        display: inline-block;
-        padding-top: 5px;
-    }
-    .kuma-tiptext-error {
-        color: #e94e49;
+        }
     }
 }
-
-.kuma-form-large{ 
-    .kuma-input {
-        font-size: 14px;
-        height: 18px;
-        line-height: 18px;
-        padding: 11px 10px;
-    }
-    .kuma-label {
-        padding-top: 12px;
-    }
-}
-
