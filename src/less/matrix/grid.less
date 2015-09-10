@@ -1,7 +1,11 @@
+@import "./mask.less";
+@import "./actionbar.less";
+
 .kuma-grid {
   display: table;
   border:0px solid #ebebeb;
   border-collapse: collapse;
+  position: relative;
 }
 .kuma-grid-header {
   position: relative;
@@ -13,6 +17,7 @@
 
 .kuma-grid-body {
   border:1px solid #ebebeb;
+  position:relative;
 }
 
 .kuma-grid-row {
@@ -73,6 +78,16 @@
   position: absolute;
   right: 12px;
   top: 0px;
+  cursor:pointer;
+}
+
+.kuma-grid-subrow {
+
+}
+
+.kuma-grid-tree-icon{
+  margin-right:8px;
+  cursor:pointer;
 }
 
 .kuma-grid-colmnpicker > li:hover{
@@ -86,4 +101,52 @@
 
 .kuma-grid .kuma-pagination {
   display: inline-block;
+}
+
+
+
+.kuma-grid-h-sort{
+   position:relative;
+}
+
+.kuma-grid-h-sort i{
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-width: 6px;
+    border-style: solid;
+    position: absolute;
+ }
+ 
+ i.sort-up {
+ 
+    border-color: #f2f2f2 #f2f2f2 #aab2be;
+    bottom: 6px;
+    left: 2px;
+}
+
+i.sort-up-active {
+ 
+    border-color: #f2f2f2 #f2f2f2 #f50;
+    bottom: 6px;
+    left: 2px;
+}
+
+i.sort-down {
+    border-color: #aab2be #f2f2f2 #f2f2f2;
+    bottom: -9px;
+    left: 2px;
+}
+
+
+i.sort-down-active {
+    border-color: #f50 #f2f2f2 #f2f2f2;
+    bottom: -9px;
+    left: 2px;
+}
+
+.action-container .action{
+  cursor: pointer;
+  margin:0px 4px;
+  display:inline-block;
 }
