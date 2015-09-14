@@ -1,3 +1,11 @@
+/**
+ * Select2 Component Style for uxcore
+ * @author 
+ *
+ * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+
 @selectPrefixCls: kuma-select;
 
 //mixin
@@ -24,6 +32,12 @@
   > ul > li > a {
     padding: 0;
     background-color: #fff;
+  }
+
+  &-combobox {
+    .@{selectPrefixCls}-arrow {
+        display: none;
+    }
   }
 
   // arrow
@@ -88,7 +102,7 @@
       text-overflow: ellipsis;
       padding-left: 10px;
       padding-right: 20px;
-      line-height: 28px;
+      line-height: 26px;
     }
 
     .@{selectPrefixCls}-selection__clear {
@@ -115,6 +129,7 @@
       background: transparent;
       outline: 0;
       width: 100%;
+      line-height: 20px
     }
     > i {
       float: right;

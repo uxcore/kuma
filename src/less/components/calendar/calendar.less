@@ -1,4 +1,4 @@
-.@{prefixClass} {
+.@{calendar-prefix-class} {
   position: relative;
   outline: none;
   font-family: Arial, "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans-serif;
@@ -45,12 +45,12 @@
       }
     }
 
-    .@{prefixClass}-prev-month-btn {
+    .@{calendar-prefix-class}-prev-month-btn {
       position: absolute;
       left: 25px;
     }
 
-    .@{prefixClass}-next-month-btn {
+    .@{calendar-prefix-class}-next-month-btn {
       position: absolute;
       right: 25px;
     }
@@ -111,14 +111,14 @@
     padding: 6px 0;
     width: 33px;
     text-align: center;
-    .@{prefixClass}-column-header-inner {
+    .@{calendar-prefix-class}-column-header-inner {
       display: block;
       font-weight: normal;
     }
   }
 
   &-week-number-header {
-    .@{prefixClass}-column-header-inner {
+    .@{calendar-prefix-class}-column-header-inner {
       display: none;
     }
   }
@@ -203,6 +203,13 @@
     &:hover {
       cursor: pointer;
       color: #23c0fa;
+    }
+
+    &-disabled {
+      color: #bbb;
+      &:hover {
+        color: #bbb;
+      }
     }
   }
 
