@@ -2,6 +2,10 @@
 
 ---
 
+## 1.0.7
+`CHANGED` update calendar style to rc-calendar 3.6.1
+`NEW` merge form & grid & transfer style
+
 ## 1.0.6
 `FIXED` fix bug not publishing dist/uxcore-kuma.css 
 
