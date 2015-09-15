@@ -1,0 +1,188 @@
+@tooltipPrefixCls: kuma-popover;
+
+.@{tooltipPrefixCls} {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  z-index: 1070;
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.4;
+
+  &-hidden {
+    display: none;
+  }
+
+  &-placement {
+    &-left {
+      margin-left: -3px;
+      padding: 0 5px;
+
+      & > .@{tooltipPrefixCls}-arrow {
+        top: 50%;
+        right: 0;
+        margin-top: -5px;
+        border-width: 5px 0 5px 5px;
+        border-left-color: #d9d9d9;
+        &:after {
+            content: " ";
+            right: 3px;
+            border-right-width: 0;
+            border-left-color: #fff;
+            bottom: -3px
+        }
+      }
+    }
+
+    &-top {
+      margin-top: -3px;
+      padding: 5px 0;
+
+      & > .@{tooltipPrefixCls}-arrow {
+        bottom: 0;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px 5px 0;
+        border-top-color: #d9d9d9;
+        &:after {
+            content: " ";
+            bottom: 3px;
+            left: -3px;
+            border-bottom-width: 0;
+            border-top-color: #fff;
+        }
+      }
+    }
+
+    &-bottom {
+      margin-top: 3px;
+      padding: 5px 0;
+
+      & > .@{tooltipPrefixCls}-arrow {
+        top: 0;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 0 5px 5px;
+        border-bottom-color: #d9d9d9;
+        &:after {
+            content: " ";
+            top: 3px;
+            left: -3px;
+            border-top-width: 0;
+            border-bottom-color: #fff;
+        }
+      }
+
+    }
+
+    &-right {
+      margin-left: 3px;
+      padding: 0 5px;
+
+      & > .@{tooltipPrefixCls}-arrow {
+        top: 50%;
+        left: 0;
+        margin-top: -5px;
+        border-width: 5px 5px 5px 0;
+        border-right-color: #d9d9d9;
+        &:after {
+            content: " ";
+            left: 3px;
+            bottom: -3px;
+            border-left-width: 0;
+            border-right-color: #fff;
+        }
+      }
+    }
+  }
+
+  &-arrow,
+  &-arrow:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+  }
+
+  &-inner {
+    padding: 3px 0;
+    min-width: 177px;
+    max-width: 276px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 1px solid #d9d9d9;
+    box-shadow: 0 0 4px rgba(0,0,0,0.17);   
+    .@{tooltipPrefixCls}-title {
+        padding: 0 16px;
+        line-height: 32px;
+        height: 32px;
+        color: #666;
+        border-bottom: 1px solid #e9e9e9;
+    }
+    .@{tooltipPrefixCls}-content {
+        padding: 8px 16px;
+        color: #666;
+    }
+  }
+
+  .effect() {
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+  }
+
+  &&-zoom-enter, &&-zoom-leave {
+    display: block;
+  }
+
+  &-zoom-enter,&-zoom-appear {
+    opacity: 0;
+    .effect();
+    animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    animation-play-state: paused;
+  }
+
+  &-zoom-leave {
+    .effect();
+    animation-timing-function: cubic-bezier(0.6, -0.3, 0.74, 0.05);
+    animation-play-state: paused;
+  }
+
+  &-zoom-enter&-zoom-enter-active, &-zoom-appear&-zoom-appear-active {
+    animation-name: rcToolTipZoomIn;
+    animation-play-state: running;
+  }
+
+  &-zoom-leave&-zoom-leave-active {
+    animation-name: rcToolTipZoomOut;
+    animation-play-state: running;
+  }
+
+  @keyframes rcToolTipZoomIn {
+    0% {
+      opacity: 0;
+      transform-origin: 50% 50%;
+      transform: scale(0, 0);
+    }
+    100% {
+      opacity: 1;
+      transform-origin: 50% 50%;
+      transform: scale(1, 1);
+    }
+  }
+  @keyframes rcToolTipZoomOut {
+    0% {
+      opacity: 1;
+      transform-origin: 50% 50%;
+      transform: scale(1, 1);
+    }
+    100% {
+      opacity: 0;
+      transform-origin: 50% 50%;
+      transform: scale(0, 0);
+    }
+  }
+}
