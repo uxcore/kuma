@@ -1,3 +1,10 @@
+/**
+ * Tooltip Component Style for uxcore
+ * @author
+ *
+ * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
 @tooltipPrefixCls: kuma-tooltip;
 
 .@{tooltipPrefixCls} {
@@ -6,7 +13,6 @@
   top: -9999px;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
   line-height: 1.4;
@@ -20,12 +26,19 @@
       margin-left: -3px;
       padding: 0 5px;
 
-      & > .rc-tree-arrow {
+      & > .@{tooltipPrefixCls}-arrow {
         top: 50%;
         right: 0;
         margin-top: -5px;
         border-width: 5px 0 5px 5px;
-        border-left-color: #000000;
+        border-left-color: #b1b1b1;
+        &:before {
+            margin-top: -5px;
+            border-width: 5px 0 5px 5px;
+            left: -6px;
+            top: 0;
+            border-left-color: #fff;
+        }
       }
     }
 
@@ -38,7 +51,14 @@
         left: 50%;
         margin-left: -5px;
         border-width: 5px 5px 0;
-        border-top-color: #000000;
+        border-top-color: #b1b1b1;
+        &:before {
+            margin-left: -5px;
+            border-width: 5px 5px 0;
+            left: 0;
+            top: -6px;
+            border-top-color: #fff;
+        }
       }
     }
 
@@ -51,7 +71,14 @@
         left: 50%;
         margin-left: -5px;
         border-width: 0 5px 5px;
-        border-bottom-color: #000000;
+        border-bottom-color: #b1b1b1;
+        &:before {
+            margin-left: -5px;
+            border-width: 0 5px 5px;
+            left: 0;
+            top: 1px;
+            border-bottom-color: #fff;
+        }
       }
 
     }
@@ -65,7 +92,14 @@
         left: 0;
         margin-top: -5px;
         border-width: 5px 5px 5px 0;
-        border-right-color: #000000;
+        border-right-color: #b1b1b1;
+        &:before {
+            margin-top: -4px;
+            border-width: 5px 5px 5px 0;
+            left: 1px;
+            top: -1px;
+            border-right-color: #fff;
+        }
       }
     }
   }
@@ -76,15 +110,24 @@
     height: 0;
     border-color: transparent;
     border-style: solid;
+    &:before {
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 0;
+        border-color: transparent;
+        border-style: solid;
+    }
   }
 
   &-inner {
     padding: 3px 8px;
-    color: #ffffff;
+    color: #333;
     text-align: center;
     text-decoration: none;
-    background-color: #000000;
-    border-radius: 4px;
+    background-color: #fff;
+    border-radius: 2px;
+    border: 1px solid #b1b1b1;
   }
 
   .effect() {

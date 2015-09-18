@@ -1,14 +1,12 @@
 .@{calendar-prefix-class} {
   position: relative;
   outline: none;
-  font-family: Arial, "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans-serif;
   width: 253px;
   border: 1px solid #ccc;
   list-style: none;
   font-size: 12px;
   text-align: left;
   background-color: #fff;
-  border-radius: 3px;
   box-shadow: 0 1px 5px #ccc;
   background-clip: padding-box;
   border: 1px solid #ccc;
@@ -41,7 +39,7 @@
 
       &:hover {
         cursor: pointer;
-        color: #23c0fa;
+        background-color: #f2f2f2;
       }
     }
 
@@ -66,7 +64,7 @@
 
     &:hover {
       cursor: pointer;
-      color: #23c0fa;
+      background-color: #f2f2f2;
     }
   }
 
@@ -87,7 +85,7 @@
   }
 
   &-calendar-body {
-    padding: 9px 10px 10px;
+    padding: 2px;
   }
 
   table {
@@ -131,7 +129,6 @@
     display: block;
     margin: 0 auto;
     color: #666;
-    border-radius: 4px 4px;
     width: 26px;
     height: 26px;
     padding: 0;
@@ -140,44 +137,33 @@
     text-align: center;
 
     &:hover {
-      background: #ebfaff;
+      background: #f2f2f2;
       cursor: pointer;
     }
   }
 
   &-selected-day &-date {
-    background: #3fc7fa;
+    background: @color-blue-dark;
     color: #fff;
 
     &:hover {
-      background: #3fc7fa;
+      background: @color-blue-dark;
     }
   }
 
   &-today &-date {
-    border: 1px solid #3fc7fa;
+    border: 1px solid @color-blue-dark;
   }
 
   &-disabled-cell &-date {
     cursor: not-allowed;
     color: #bcbcbc;
     background: #f3f3f3;
-    border-radius: 0;
     width: auto;
 
     &:hover {
       background: #f3f3f3;
     }
-  }
-
-  &-disabled-cell-first-of-row &-date {
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-  }
-
-  &-disabled-cell-last-of-row &-date {
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
   }
 
   &-last-month-cell &-date, &-next-month-btn-day &-date {
@@ -186,7 +172,7 @@
 
   &-footer {
     border-top: 1px solid #ccc;
-    padding: 10px 0;
+    padding: 2px 0;
     text-align: center;
   }
 
@@ -202,7 +188,7 @@
 
     &:hover {
       cursor: pointer;
-      color: #23c0fa;
+      background-color: #f2f2f2;
     }
 
     &-disabled {
