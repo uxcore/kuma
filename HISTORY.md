@@ -4,6 +4,7 @@
 
 ## 1.0.8
 `NEW` add kuma-popover
+`CHANGED` style normalization
 
 ## 1.0.7
 `CHANGED` update calendar style to rc-calendar 3.6.1
