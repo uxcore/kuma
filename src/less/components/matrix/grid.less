@@ -21,10 +21,14 @@
   background-color: #f5f5f5;
   font-weight: 600;
   white-space: nowrap;
+  display: inline-block;
+  border-left: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
+
 }
 
 .kuma-grid-content {
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .kuma-grid-content-scroller {
@@ -36,8 +40,16 @@
 }
 
 .kuma-grid-body {
-  border:1px solid #ebebeb;
+  border: 1px solid #ebebeb;
   position:relative;
+  display: inline-block;
+  min-width: 100%;
+}
+
+.kuma-gird-body-emptyword{
+   text-align: center;
+   vertical-align: middle;
+   line-height:100px;
 }
 
 .kuma-grid-row {
@@ -107,9 +119,12 @@
 }
 
 .kuma-column-picker-container {
+  position: absolute;
+  right: 0;
   display: inline-block;
   cursor: pointer;
   margin-right: 20px;
+  font-weight: normal;
 }
 
 .kuma-grid-subrow {
