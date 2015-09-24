@@ -7,9 +7,9 @@
  */
 
 
-@popoverPrefixCls: kuma-hovercard;
+@hovercardPrefixCls: kuma-hovercard;
 
-.@{popoverPrefixCls} {
+.@{hovercardPrefixCls} {
  position: absolute;
  left: -9999px;
  top: -9999px;
@@ -29,7 +29,7 @@
    margin-left: -3px;
    padding: 0 5px;
 
-   & > .@{popoverPrefixCls}-arrow {
+   & > .@{hovercardPrefixCls}-arrow {
     top: 50%;
     right: 0;
     margin-top: -5px;
@@ -49,7 +49,7 @@
    margin-top: -3px;
    padding: 5px 0;
 
-   & > .@{popoverPrefixCls}-arrow {
+   & > .@{hovercardPrefixCls}-arrow {
     bottom: 0;
     left: 50%;
     margin-left: -5px;
@@ -69,7 +69,7 @@
    margin-top: 3px;
    padding: 5px 0;
 
-   & > .@{popoverPrefixCls}-arrow {
+   & > .@{hovercardPrefixCls}-arrow {
     top: 0;
     left: 50%;
     margin-left: -5px;
@@ -90,7 +90,7 @@
    margin-left: 3px;
    padding: 0 5px;
 
-   & > .@{popoverPrefixCls}-arrow {
+   & > .@{hovercardPrefixCls}-arrow {
     top: 50%;
     left: 0;
     margin-top: -5px;
@@ -184,7 +184,7 @@
  }
 }
 
-.@{popoverPrefixCls}-container {
+.@{hovercardPrefixCls}-container {
     width: 255px;
     border: 1px solid #bbbbbb;
     float: left;
@@ -212,11 +212,11 @@
         overflow: hidden;
     }
 
-    .@{popoverPrefixCls}-info {
+    .@{hovercardPrefixCls}-info {
         padding: 6px 0 6px 6px;
         position: relative;
 
-        .@{popoverPrefixCls}-avatar {
+        .@{hovercardPrefixCls}-avatar {
             float: left;
 
             a{
@@ -231,18 +231,18 @@
             }
         }
 
-        .@{popoverPrefixCls}-content {
+        .@{hovercardPrefixCls}-content {
             padding-left: 68px;
             width: 180px;
 
-            .@{popoverPrefixCls}-name{
+            .@{hovercardPrefixCls}-name{
                 font-size: 14px;
                 display: inline-block;
                 max-width: 180px;
             }
         }
 
-        .@{popoverPrefixCls}-content li {
+        .@{hovercardPrefixCls}-content li {
             line-height: 21px;
             height: 21px;
             width: 180px;
@@ -255,7 +255,7 @@
             }
         }
 
-        .@{popoverPrefixCls}-conn{
+        .@{hovercardPrefixCls}-conn{
             position: absolute;
             top: 6px;
             right: 6px;
@@ -270,7 +270,7 @@
                 background: url(https://aliwork.alicdn.com/tps/i4/TB1Q1l1FVXXXXX1XpXXtF3DLXXX-148-349.png);
             }
 
-            .@{popoverPrefixCls}-followed{
+            .@{hovercardPrefixCls}-followed{
                 background-position: 114px 97px;
 
                 &:hover{
@@ -278,7 +278,7 @@
                 }
             }
 
-            .@{popoverPrefixCls}-friends{
+            .@{hovercardPrefixCls}-friends{
                 background-position: 114px 64px;
 
                 &:hover{
@@ -286,7 +286,7 @@
                 }
             }
 
-            .@{popoverPrefixCls}-stranger{
+            .@{hovercardPrefixCls}-stranger{
                 background-position: 114px 132px;
 
                 &:hover{
@@ -294,14 +294,14 @@
                 }
             }
 
-            .@{popoverPrefixCls}-connecting{
+            .@{hovercardPrefixCls}-connecting{
                 background: url(https://aliwork.alicdn.com/tps/i1/TB16alZFVXXXXcYXFXXJIc..VXX-14-14.gif);
                 background-position: 0 0;
             }
         }
     }
 
-    .@{popoverPrefixCls}-tools {
+    .@{hovercardPrefixCls}-tools {
         background-color: #f1f1f1;
         color: #666666;
         float: left;
@@ -328,7 +328,7 @@
             }
         }
 
-        .@{popoverPrefixCls}-at {
+        .@{hovercardPrefixCls}-at {
             width: 50px;
             background-position: 124px 293px;
 
@@ -337,8 +337,8 @@
             }
         }
 
-        .@{popoverPrefixCls}-phone {
-            &.@{popoverPrefixCls}-phoneoff{
+        .@{hovercardPrefixCls}-phone {
+            &.@{hovercardPrefixCls}-phoneoff{
                 background-position: 124px 263px;
 
                 &:hover {
@@ -346,7 +346,7 @@
                 }
             }
 
-            &.@{popoverPrefixCls}-phoneon {
+            &.@{hovercardPrefixCls}-phoneon {
                 background-position: 125px 37px;
 
                 &:hover {
@@ -356,7 +356,7 @@
         }
 
 
-        .@{popoverPrefixCls}-ww {
+        .@{hovercardPrefixCls}-ww {
             background-position: 124px 230px;
 
             &:hover {
@@ -364,7 +364,7 @@
             }
         }
 
-        .@{popoverPrefixCls}-email {
+        .@{hovercardPrefixCls}-email {
             background-position: 124px 199px;
             width: 65px;
 
@@ -374,7 +374,7 @@
         }
     }
 
-    .@{popoverPrefixCls}-error{
+    .@{hovercardPrefixCls}-error{
         height: 60px;
         line-height: 60px;
         font-size: 14px;
