@@ -1,12 +1,163 @@
 @tabClass: kuma-tabs;
 
-@tab-easing-in-out: cubic-bezier(0.35, 0, 0.25, 1);
+@tab-height: 30px;
+@tab-padding: 10px;
+@tab-title-padding: 20px;
+@tab-item-height: 29px;
+@tab-item-fix-height: 27px;
+@tab-font-size: 14px;
+@tab-title-font-size: 16px;
 
-@tab-effect-duration: .3s;
+@tab-height-lg: 40px;
+@tab-padding-lg: 20px;
+@tab-title-padding-lg: 30px;
+@tab-item-height-lg: 39px;
+@tab-item-fix-height-lg: 37px;
+@tab-font-size-lg: 16px;
+@tab-title-font-size-lg: 18px;
 
-@import "tabs/common";
-@import "tabs/anim";
-@import "tabs/left";
-@import "tabs/right";
-@import "tabs/bottom";
-@import "tabs/top";
+@tab-font-size-sm: 12px;
+@tab-title-font-size-sm: 14px;
+
+.@{tabClass} {
+    outline: 0 none;
+    * {
+        box-sizing: content-box;
+    }
+
+    .@{tabClass}-nav-container {
+        height: @tab-height;
+        border-bottom: solid 1px @tab-border-color;
+        font-size: @tab-font-size;
+    }
+
+    .@{tabClass}-nav {
+        overflow: hidden;
+        zoom: 1;
+    }
+
+    .@{tabClass}-tab {
+        float: left;
+        height: @tab-item-height;
+        border: solid 1px transparent;
+        cursor: pointer;
+
+        a {
+            display: inline-block;
+            height: @tab-item-height;
+            padding: 0 @tab-padding;
+            line-height: @tab-item-height;
+            text-align: center;
+            color: @tab-color;
+            text-decoration: none;
+
+            &:hover {
+                color: @tab-hover-color;
+            }
+        }
+
+        &.@{tabClass}-tab-active {
+            a {
+                margin-bottom: -1px;
+                border-bottom: solid 1px @tab-active-bg-color;
+                background-color: @tab-active-bg-color;
+                color: @tab-hover-color;
+            }
+        }
+
+        &.@{tabClass}-tab-disabled {
+            a {
+                color: #aaa;
+            }
+        }
+    }
+
+    &.@{tabClass}-brick,
+    &.@{tabClass}-topline {
+        .@{tabClass}-tab {
+            border-color: @tab-border-color;
+            background-color: @tab-bg-color;
+            border-left-width: 0;
+
+            &:first-child {
+                border-left-width: 1px;
+            }
+        }
+    }
+
+    &.@{tabClass}-line {
+        .@{tabClass}-tab-active {
+            border-color: @tab-border-color;
+            border-width: 1px;
+        }
+    }
+
+    &.@{tabClass}-topline {
+        .@{tabClass}-tab-active {
+
+            a {
+                height: @tab-item-height;
+                border-top: solid 2px @tab-hover-color;
+                margin-top: -1px;
+                line-height: @tab-item-fix-height;
+            }
+        }
+    }
+
+    &.@{tabClass}-underline {
+        .@{tabClass}-tab-active {
+            a {
+                height: @tab-item-fix-height;
+                border-bottom: solid 2px @tab-hover-color;
+            }
+        }
+    }
+
+    &.@{tabClass}-sm {
+        font-size: @tab-font-size-sm;
+    }
+
+    &.@{tabClass}-lg {
+
+        .@{tabClass}-nav-container {
+            height: @tab-height-lg;
+            font-size: @tab-font-size-lg;
+        }
+
+        .@{tabClass}-nav {
+
+            .@{tabClass}-tab {
+                height: @tab-item-height-lg;
+
+                a {
+                    height: @tab-item-height-lg;
+                    padding: 0 @tab-padding-lg;
+                    line-height: @tab-item-height-lg;
+                }
+            }
+        }
+
+        &.@{tabClass}-topline {
+            .@{tabClass}-tab-active {
+                a {
+                    height: @tab-item-height-lg;
+                    line-height: @tab-item-fix-height-lg;
+                }
+            }
+        }
+
+        &.@{tabClass}-underline {
+            .@{tabClass}-tab-active {
+                a {
+                    height: @tab-item-fix-height-lg;
+                }
+            }
+        }
+    }
+
+    .@{tabClass}-content {
+        .@{tabClass}-tabpane-hidden {
+            display: none;
+        }
+    }
+}
