@@ -34,40 +34,40 @@
     .@{tabClass}-nav {
         overflow: hidden;
         zoom: 1;
+    }
 
-        .@{tabClass}-tab {
-            float: left;
+    .@{tabClass}-tab {
+        float: left;
+        height: @tab-item-height;
+        border: solid 1px transparent;
+        cursor: pointer;
+
+        a {
+            display: inline-block;
             height: @tab-item-height;
-            border: solid 1px transparent;
-            cursor: pointer;
+            padding: 0 @tab-padding;
+            line-height: @tab-item-height;
+            text-align: center;
+            color: @tab-color;
+            text-decoration: none;
 
+            &:hover {
+                color: @tab-hover-color;
+            }
+        }
+
+        &.@{tabClass}-tab-active {
             a {
-                display: inline-block;
-                height: @tab-item-height;
-                padding: 0 @tab-padding;
-                line-height: @tab-item-height;
-                text-align: center;
-                color: @tab-color;
-                text-decoration: none;
-
-                &:hover {
-                    color: @tab-hover-color;
-                }
+                margin-bottom: -1px;
+                border-bottom: solid 1px @tab-active-bg-color;
+                background-color: @tab-active-bg-color;
+                color: @tab-hover-color;
             }
+        }
 
-            &.@{tabClass}-tab-active {
-                a {
-                    margin-bottom: -1px;
-                    border-bottom: solid 1px @tab-active-bg-color;
-                    background-color: @tab-active-bg-color;
-                    color: @tab-hover-color;
-                }
-            }
-
-            &.@{tabClass}-tab-disabled {
-                a {
-                    color: #aaa;
-                }
+        &.@{tabClass}-tab-disabled {
+            a {
+                color: #aaa;
             }
         }
     }
