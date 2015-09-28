@@ -1,0 +1,342 @@
+@uploader-prefix-class: kuma-upload;
+
+@import "uploader/icon";
+@import "uploader/progress";
+
+@-webkit-keyframes kuxglow {
+    0% {
+        background:rgba(225, 229, 232, 0.2);
+    }
+    50% {
+        background:rgba(252, 110, 81, 0.2);
+    }
+    100% {
+        background:rgba(225, 229, 232, 0.2);
+    }
+}
+
+.@{uploader-prefix-class}er {
+    min-width: 200px;
+}
+
+.@{uploader-prefix-class}-filelist {
+    width: 100%;
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    >.inner {
+        overflow: hidden;
+    }
+}
+
+.@{uploader-prefix-class}-picker {
+    display: inline-block;
+    position: relative;
+    line-height: normal;
+
+    .@{uploader-prefix-class}-button {
+        display: inline-block;
+        background: white;
+        outline: none;
+        border: 1px solid #eee;
+        padding: 5px 10px;
+        border-radius: 15px;
+        -webkit-transition: border-color 0.1s, color 0.1s;
+        transition: border-color 0.1s, color 0.1s;
+    }
+    .@{uploader-prefix-class}-button > * {
+        vertical-align: middle;
+    }
+    &:hover, &.over {
+        .@{uploader-prefix-class}-button {
+            border-color: #57c5f7;
+            color: #57c5f7;
+        }
+    }
+}
+
+.@{uploader-prefix-class}-droparea {
+    min-height: 200px;
+    min-width: 200px;
+    position: relative;
+    border-radius: 5px;
+
+    .@{uploader-prefix-class}-responser {
+        position: absolute;
+        top:0;right:0;left:0;bottom:0;
+        border: 1px dashed #D9D9D9;
+        z-index: 1;
+        border-radius: 5px;
+    }
+    &.blink .@{uploader-prefix-class}-responser {
+        border:3px dashed #fc6e51;
+        background: #e1e5e8;
+        -webkit-animation: kuxglow .7s infinite;
+        animation: kuxglow .7s infinite;
+    }
+    &.enter .@{uploader-prefix-class}-responser {
+        display: block;
+        border:3px solid #fc6e51;
+        background: none;
+        -webkit-animation: none;
+        animation: none;
+    }
+
+    .@{uploader-prefix-class}-picker {
+        display: block;
+        text-align: center;
+        opacity: 0.6;
+        -webkit-transition: opacity 0.2s;
+        transition: opacity 0.2s;
+        .icon-add {
+            position: absolute;
+            display: inline-block;
+            left:50%;
+            top:50%;
+            margin-top: -40px;
+            margin-left: -40px;
+            width: 80px;
+            height: 80px;
+            font-size: 80px;
+            color: #D9D9D9;
+        }
+        &:hover, &.over {
+            opacity: 1;
+        }
+    }
+    >.@{uploader-prefix-class}-picker {
+        position: absolute;
+        z-index: 2;
+        top:0;right:0;left:0;bottom:0;
+    }
+    .@{uploader-prefix-class}-filelist .@{uploader-prefix-class}-picker {
+        float: left;
+        margin: 5px;
+        width: 80px;
+        height: 80px;
+        background: #ebeff2;
+        .icon-add {
+            margin-top: -20px;
+            margin-left: -20px;
+            width: 40px;
+            height: 40px;
+            font-size: 40px;
+        }
+    }
+
+    .@{uploader-prefix-class}-filelist {
+        height: 100%;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.@{uploader-prefix-class}-fileitem {
+    position: relative;
+    overflow: hidden;
+    font-family: monospace;
+    line-height: normal;
+
+    .filename {
+        color: #707070;
+        font-size: 14px;
+    }
+
+    .@{uploader-prefix-class}-status, .@{uploader-prefix-class}-action {
+        display: inline-block;
+        text-align: center;
+        border-radius: 50%;
+        text-decoration: none;
+        color: #ccc;
+        vertical-align: middle;
+        .@{uploader-prefix-class}-icon {
+            font-size: 18px;
+        }
+    }
+    .@{uploader-prefix-class}-status {
+        &.status-success {
+            color: #8ad256;
+        }
+        &.status-error {
+            color: #fcac79;
+            &:hover {
+                color: #fc482d;
+            }
+        }
+    }
+    .@{uploader-prefix-class}-action {
+        &.action-remove {
+            cursor: pointer;
+            &:hover {
+                color: #fc6e51;
+            }
+        }
+        &.action-retry {
+            cursor: pointer;
+            color: #444;
+            &:hover {
+                color: #42a1eb;
+            }
+        }
+        &.action-upload {
+            cursor: pointer;
+            color: #444;
+            &:hover {
+                color: #42a1eb;
+            }
+        }
+    }
+}
+
+
+.@{uploader-prefix-class}-filelist {
+    &.minimode .@{uploader-prefix-class}-fileitem {
+        border: 1px solid #ededed;
+        border-radius: 30px;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        height: 28px;
+        width: 355px;
+        .field-info, .field-status {
+            position: absolute;
+            line-height: 28px;
+            z-index: 2;
+            font-size: 0;
+        }
+        .field-info {
+            .@{uploader-prefix-class}-fileicon {
+                margin: 0 5px;
+            }
+            .filename {
+                vertical-align: middle;
+                white-space: nowrap;
+            }
+            .filesize {
+                color: #adadad;
+                font-size: 14px;
+                vertical-align: middle;
+                margin: 0 2px;
+            }
+            left:8px;
+        }
+
+        .field-status {
+            .@{uploader-prefix-class}-status, .@{uploader-prefix-class}-action {
+                margin: 0 1px;
+            }
+            right:8px;
+        }
+
+        .@{uploader-prefix-class}-progressbar {
+            opacity: 0.3;
+            border-radius: 30px;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        &.status-error {
+            .@{uploader-prefix-class}-progressbar {
+                display: none;
+            }
+        }
+    }
+
+    &.iconmode .@{uploader-prefix-class}-fileitem {
+        margin: 5px;
+        width: 80px;
+        height: 112px;
+        float:left;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+        .action-remove {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+        .status-error,.status-success {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+        }
+
+        .filepreview {
+            position: relative;
+            height: 80px;
+            width: 80px;
+            background: #ebeff2;
+            text-align: center;
+            .previewer {
+                height: 80px;
+                width: 80px;
+                img {
+                    max-height: 100%;
+                    max-width: 100%;
+                    vertical-align: middle;
+                }
+                &:before {
+                    display: inline-block;
+                    content: '';
+                    height: 100%;
+                    width: 0;
+                    overflow: hidden;
+                    vertical-align: middle;
+                }
+                .@{uploader-prefix-class}-fileicon {
+                    font-size: 60px;
+                }
+            }
+            .@{uploader-prefix-class}-action {
+                position: absolute;
+                top:50%;
+                left:50%;
+                height: 30px;
+                width: 30px;
+                .@{uploader-prefix-class}-icon {
+                    line-height: 30px;
+                    font-size: 28px;
+                    color:#42a1eb;
+                }
+                margin-left: -15px;
+                margin-top: -15px;
+                opacity: 0.6;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+            .@{uploader-prefix-class}-progressbar, .@{uploader-prefix-class}-progresspin  {
+                z-index: 1;
+                position: absolute;
+                left:50%;top:50%;
+            }
+
+            .@{uploader-prefix-class}-progresspin {
+                margin-left: -10px;
+                margin-top: -10px;
+            }
+            .@{uploader-prefix-class}-progressbar {
+                left:0;
+                height: 20px;
+                bottom: auto;
+                margin-top: -10px;
+            }
+        }
+
+        .filename {
+            margin-top: 2px;
+            font-size: 12px;
+            word-wrap: break-word;
+            text-align: center;
+            line-height: 1.2em;
+            height: 2.4em;
+            overflow: hidden;
+            padding: 0 1px;
+        }
+    }
+}
