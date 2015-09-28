@@ -1,0 +1,83 @@
+@buttonPrefix: kuma-button;
+.@{buttonPrefix} {
+
+    // background
+    @primary-color: #f90;
+    @secondary-color: #f2f2f2;
+    @disabled-color: #ccc;
+    @primary-hover: #f80;
+    @secondary-hover: #f90;
+    @disabled-hover: #ccc;
+
+    // border
+    @primary-border-color: #f80;
+    @secondary-border-color: #ccc;
+    @disabled-border-color: #b6b6b6;
+    @primary-border-hover: #f60;
+    @secondary-border-hover: #f80;
+    @disabled-border-hover: #b6bb66;
+
+    // text
+    @primary-text-color: #fff;
+    @secondary-text-color: #666;
+    @disabled-text-color: #999;
+    @primary-text-hover: #fff;
+    @secondary-text-hover: #fff;
+    @disabled-text-hover: #999;
+
+    display: inline-block;
+    padding: 0 15px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    border-radius: 2px;
+    border: 0 none;
+    cursor: pointer;
+
+    &-primary {
+        background-color: @primary-color;
+        border: 1px solid @primary-border-color;
+        color: @primary-text-color;
+        &:hover {
+            background-color: @primary-hover;
+            border: 1px solid @primary-border-hover;
+            color: @primary-text-hover;
+        }
+    }
+    &-secondary {
+        background-color: @secondary-color;
+        border: 1px solid @secondary-border-color;
+        color: @secondary-text-color;
+        &:hover {
+            background-color: @secondary-hover;
+            border: 1px solid @secondary-border-hover;
+            color: @secondary-text-hover;
+        }
+    }
+    &-disabled {
+        background-color: @disabled-color;
+        border: 1px solid @disabled-border-color;
+        color: @disabled-text-color;
+        &:hover {
+            background-color: @disabled-hover;
+            border: 1px solid @disabled-border-hover;
+            color: @disabled-text-hover;
+        }
+
+        cursor: not-allowed;
+    }
+
+    &-lg {
+        padding: 0 20px;
+        height: 36px;
+        line-height: 36px;
+        font-size: 16px;
+    }
+    &-sm {
+        padding: 0 10px;
+        height: 22px;
+        font-size: 12px;
+        line-height: 22px;
+    }
+}
