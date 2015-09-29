@@ -28,14 +28,14 @@
     display: inline-block;
     padding: 0 15px;
     height: 30px;
-    line-height: 30px;
+    line-height: 28px;
     font-weight: 400;
     font-size: 14px;
     border-radius: 2px;
     border: 0 none;
     cursor: pointer;
 
-    &-primary {
+    .default-button() {
         background-color: @primary-color;
         border: 1px solid @primary-border-color;
         color: @primary-text-color;
@@ -44,6 +44,11 @@
             border: 1px solid @primary-border-hover;
             color: @primary-text-hover;
         }
+    }
+    .default-button;
+
+    &-primary {
+        .default-button;
     }
     &-secondary {
         background-color: @secondary-color;
@@ -71,13 +76,13 @@
     &-lg {
         padding: 0 20px;
         height: 36px;
-        line-height: 36px;
+        line-height: 34px;
         font-size: 16px;
     }
     &-sm {
         padding: 0 10px;
         height: 22px;
         font-size: 12px;
-        line-height: 22px;
+        line-height: 20px;
     }
 }

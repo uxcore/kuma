@@ -1,313 +1,313 @@
-//====**** 基于 variables->button
-// various buttons
-form.kuma-button * {
-    margin:0;
-    padding:0;
-}
-
-.kuma-button {
-    display: inline-block;
-    *display: inline;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    cursor: pointer;
-    font-size: @font-size-base;
-    font-family: inherit; /* Correct font family not being inherited in all browsers for <button> <input> */
-    font-weight: @btn-font-weight-bold;
-    border-radius: @border-radius-small;
-    padding: @btn-default-padding;
-    *zoom: 1;
-    *overflow: visible; /* for a ie6/7 bug http://blog.csdn.net/jyy_12/article/details/6636099 */
-    background-image: none; /* for old alice button style conflict */
-    &:hover{
-    	text-decoration: none;
-    	background-image: none; /* for old alice button style conflict */
-    }
-    &:active{
-    	position: relative;
-	    top: 1px;
-	    box-shadow: @btn-box-shadow;
-    }
-    .kuma-button-text {
-	    background: none;
-	    padding: 0;
-	    height: auto;
-	    line-height: auto;
-	}
-}
-
-input.kuma-button-text,
-button.kuma-button-text {
-    *vertical-align: top; /* for a ie7 bug */
-}
-
-.kuma-button-group {
-    font-size: 0; /* fix inline-block with white-space */
-    .kuma-group-left {
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-    }
-    .kuma-group-right {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-    }
-    .kuma-group-middle {
-        border-radius: 0;
-    }
-}
-
-
-/* import url("./kuma-button-blue.css") */
-.kuma-button-lblue,
-.kuma-button-mblue,
-.kuma-button-sblue {
-    border: none;
-    border: 1px solid @btn-primary-border;
-    background-color: @btn-primary-bg;
-    color: @btn-primary-color;
-    &:hover{
-    	background-color: @btn-primary-hover-bg;
-    	border-color: @btn-primary-hover-border;
-    }
-}
-
-a.kuma-button-lblue,
-a.kuma-button-mblue,
-a.kuma-button-sblue,
-a.kuma-button-lblue:active,
-a.kuma-button-mblue:active,
-a.kuma-button-sblue:active,
-a.kuma-button-lblue:hover,
-a.kuma-button-mblue:hover,
-a.kuma-button-sblue:hover {
-    color: @btn-primary-color;
-}
-
-.kuma-button-lblue {
-    line-height: @btn-large-lh;
-    height: @btn-large-lh;
-}
-
-.kuma-button-mblue {
-    padding: @btn-medium-padding;
-    height: @btn-medium-lh;
-    line-height: @btn-medium-lh;
-}
-
-.kuma-button-sblue {
-    padding: @btn-small-padding;
-    height: @btn-small-lh;
-    line-height: @btn-small-lh;
-    font-size: @font-size-small;
-    font-weight: @btn-font-weight-s;
-}
-
-a.kuma-button-lblue {
-    line-height: @btn-link-large-lh;
-    height: @btn-link-large-lh;
-}
-
-a.kuma-button-mblue {
-    line-height: @btn-link-medium-lh;
-    height: @btn-link-medium-lh;
-}
-
-a.kuma-button-sblue {
-    line-height: @btn-link-small-lh;
-    height: @btn-link-small-lh;
-}
-
-/* import url("./kuma-button-white.css") */
-.kuma-button-lwhite,
-.kuma-button-mwhite,
-.kuma-button-swhite {
-    border:1px solid @btn-default-border;
-    background-color: @btn-default-bg;
-    color: @btn-default-color;
-    &:hover{
-    	background-color: @btn-default-hover-bg;
-	    border-color: @btn-default-hover-border;
-	    color: @btn-default-hover-color;
-    }
-}
-
-a.kuma-button-lwhite,
-a.kuma-button-mwhite,
-a.kuma-button-swhite,
-a.kuma-button-lwhite:active,
-a.kuma-button-mwhite:active,
-a.kuma-button-swhite:active {
-    color: @btn-default-color;
-}
-
-.kuma-button-lwhite {
-    line-height: @btn-large-lh;
-    height: @btn-large-lh;
-}
-
-.kuma-button-mwhite {
-    padding: @btn-medium-padding;
-    height: @btn-medium-lh;
-    line-height: @btn-medium-lh;
-}
-
-.kuma-button-swhite {
-    line-height: @btn-small-lh;
-    height: @btn-small-lh;
-    padding: @btn-small-padding;
-    font-size: @font-size-small;
-    font-weight: @btn-font-weight-s;
-}
-
-a.kuma-button-lwhite {
-    line-height: @btn-link-large-lh;
-    height: @btn-link-large-lh;
-}
-
-a.kuma-button-mwhite {
-    line-height: @btn-link-medium-lh;
-    height: @btn-link-medium-lh;
-}
-
-a.kuma-button-swhite {
-    line-height: @btn-link-small-lh;
-    height: @btn-link-small-lh;
-}
-
-/* import url("./kuma-button-orange.css") */
-.kuma-button-lorange,
-.kuma-button-morange,
-.kuma-button-sorange {
-    border: none;
-    border: 1px solid @btn-ali-border;
-    background-color: @btn-ali-bg;
-    color: @btn-ali-color;
-    &:hover{
-    	background-color: @btn-ali-hover-bg;
-    	border-color: @btn-ali-hover-border;
-    }
-}
-
-a.kuma-button-lorange,
-a.kuma-button-morange,
-a.kuma-button-sorange,
-a.kuma-button-lorange:active,
-a.kuma-button-morange:active,
-a.kuma-button-sorange:active,
-a.kuma-button-lorange:hover,
-a.kuma-button-morange:hover,
-a.kuma-button-sorange:hover {
-    color: @btn-ali-color;
-}
-
-.kuma-button-lorange {
-    line-height: @btn-large-lh;
-    height: @btn-large-lh;
-}
-
-.kuma-button-morange {
-    padding: @btn-medium-padding;
-    height: @btn-medium-lh;
-    line-height: @btn-medium-lh;
-}
-
-.kuma-button-sorange {
-    padding: @btn-small-padding;
-    height: @btn-small-lh;
-    line-height: @btn-small-lh;
-    font-size: @font-size-small;
-    font-weight: @btn-font-weight-s;
-}
-
-a.kuma-button-lorange {
-    line-height: @btn-link-large-lh;
-    height: @btn-link-large-lh;
-}
-
-a.kuma-button-morange {
-    line-height: @btn-link-medium-lh;
-    height: @btn-link-medium-lh;
-}
-
-a.kuma-button-sorange {
-    line-height: @btn-link-small-lh;
-    height: @btn-link-small-lh;
-}
-
-/* import url("./kuma-button-disable.css") */
-.kuma-button-ldisable,
-.kuma-button-mdisable,
-.kuma-button-sdisable,
-
-a.kuma-button-ldisable,
-a.kuma-button-mdisable,
-a.kuma-button-sdisable,
-a.kuma-button-ldisable:active,
-a.kuma-button-mdisable:active,
-a.kuma-button-sdisable:active,
-a.kuma-button-ldisable:hover,
-a.kuma-button-mdisable:hover,
-a.kuma-button-sdisable:hover,
-
-input.kuma-button-ldisable,
-input.kuma-button-mdisable,
-input.kuma-button-sdisable,
-input.kuma-button-ldisable:active,
-input.kuma-button-mdisable:active,
-input.kuma-button-sdisable:active,
-input.kuma-button-ldisable:hover,
-input.kuma-button-mdisable:hover,
-input.kuma-button-sdisable:hover,
-
-button.kuma-button-ldisable,
-button.kuma-button-mdisable,
-button.kuma-button-sdisable,
-button.kuma-button-ldisable:active,
-button.kuma-button-mdisable:active,
-button.kuma-button-sdisable:active,
-button.kuma-button-ldisable:hover,
-button.kuma-button-mdisable:hover,
-button.kuma-button-sdisable:hover {
-    color: @btn-disabled-color;
-    border: none;
-    background-color: @btn-disabled-bg;
-    border: 1px solid @btn-disabled-border;
-    cursor: default;
-}
-
-.kuma-button-ldisable {
-    line-height: @btn-large-lh;
-    height: @btn-large-lh;
-}
-
-.kuma-button-mdisable {
-    padding: @btn-medium-padding;
-    height: @btn-medium-lh;
-    line-height: @btn-medium-lh;
-}
-
-.kuma-button-sdisable {
-    padding: @btn-small-padding;
-    height: @btn-small-lh;
-    line-height: @btn-small-lh;
-    font-size: @font-size-small;
-    font-weight: @btn-font-weight-s;
-}
-
-.kuma-button-ldisable,
-.kuma-button-mdisable,
-.kuma-button-sdisable {
-    cursor: default!important;
-}
-
-.kuma-button-ldisable:active,
-.kuma-button-mdisable:active,
-.kuma-button-sdisable:active {
-    position: static;
-    top: 0;
-    box-shadow: none;
-}
+// //====**** 基于 variables->button
+// // various buttons
+// form.kuma-button * {
+//     margin:0;
+//     padding:0;
+// }
+//
+// .kuma-button {
+//     display: inline-block;
+//     *display: inline;
+//     text-align: center;
+//     text-decoration: none;
+//     vertical-align: middle;
+//     cursor: pointer;
+//     font-size: @font-size-base;
+//     font-family: inherit; /* Correct font family not being inherited in all browsers for <button> <input> */
+//     font-weight: @btn-font-weight-bold;
+//     border-radius: @border-radius-small;
+//     padding: @btn-default-padding;
+//     *zoom: 1;
+//     *overflow: visible; /* for a ie6/7 bug http://blog.csdn.net/jyy_12/article/details/6636099 */
+//     background-image: none; /* for old alice button style conflict */
+//     &:hover{
+//     	text-decoration: none;
+//     	background-image: none; /* for old alice button style conflict */
+//     }
+//     &:active{
+//     	position: relative;
+// 	    top: 1px;
+// 	    box-shadow: @btn-box-shadow;
+//     }
+//     .kuma-button-text {
+// 	    background: none;
+// 	    padding: 0;
+// 	    height: auto;
+// 	    line-height: auto;
+// 	}
+// }
+//
+// input.kuma-button-text,
+// button.kuma-button-text {
+//     *vertical-align: top; /* for a ie7 bug */
+// }
+//
+// .kuma-button-group {
+//     font-size: 0; /* fix inline-block with white-space */
+//     .kuma-group-left {
+//         border-top-right-radius: 0;
+//         border-bottom-right-radius: 0;
+//     }
+//     .kuma-group-right {
+//         border-top-left-radius: 0;
+//         border-bottom-left-radius: 0;
+//     }
+//     .kuma-group-middle {
+//         border-radius: 0;
+//     }
+// }
+//
+//
+// /* import url("./kuma-button-blue.css") */
+// .kuma-button-lblue,
+// .kuma-button-mblue,
+// .kuma-button-sblue {
+//     border: none;
+//     border: 1px solid @btn-primary-border;
+//     background-color: @btn-primary-bg;
+//     color: @btn-primary-color;
+//     &:hover{
+//     	background-color: @btn-primary-hover-bg;
+//     	border-color: @btn-primary-hover-border;
+//     }
+// }
+//
+// a.kuma-button-lblue,
+// a.kuma-button-mblue,
+// a.kuma-button-sblue,
+// a.kuma-button-lblue:active,
+// a.kuma-button-mblue:active,
+// a.kuma-button-sblue:active,
+// a.kuma-button-lblue:hover,
+// a.kuma-button-mblue:hover,
+// a.kuma-button-sblue:hover {
+//     color: @btn-primary-color;
+// }
+//
+// .kuma-button-lblue {
+//     line-height: @btn-large-lh;
+//     height: @btn-large-lh;
+// }
+//
+// .kuma-button-mblue {
+//     padding: @btn-medium-padding;
+//     height: @btn-medium-lh;
+//     line-height: @btn-medium-lh;
+// }
+//
+// .kuma-button-sblue {
+//     padding: @btn-small-padding;
+//     height: @btn-small-lh;
+//     line-height: @btn-small-lh;
+//     font-size: @font-size-small;
+//     font-weight: @btn-font-weight-s;
+// }
+//
+// a.kuma-button-lblue {
+//     line-height: @btn-link-large-lh;
+//     height: @btn-link-large-lh;
+// }
+//
+// a.kuma-button-mblue {
+//     line-height: @btn-link-medium-lh;
+//     height: @btn-link-medium-lh;
+// }
+//
+// a.kuma-button-sblue {
+//     line-height: @btn-link-small-lh;
+//     height: @btn-link-small-lh;
+// }
+//
+// /* import url("./kuma-button-white.css") */
+// .kuma-button-lwhite,
+// .kuma-button-mwhite,
+// .kuma-button-swhite {
+//     border:1px solid @btn-default-border;
+//     background-color: @btn-default-bg;
+//     color: @btn-default-color;
+//     &:hover{
+//     	background-color: @btn-default-hover-bg;
+// 	    border-color: @btn-default-hover-border;
+// 	    color: @btn-default-hover-color;
+//     }
+// }
+//
+// a.kuma-button-lwhite,
+// a.kuma-button-mwhite,
+// a.kuma-button-swhite,
+// a.kuma-button-lwhite:active,
+// a.kuma-button-mwhite:active,
+// a.kuma-button-swhite:active {
+//     color: @btn-default-color;
+// }
+//
+// .kuma-button-lwhite {
+//     line-height: @btn-large-lh;
+//     height: @btn-large-lh;
+// }
+//
+// .kuma-button-mwhite {
+//     padding: @btn-medium-padding;
+//     height: @btn-medium-lh;
+//     line-height: @btn-medium-lh;
+// }
+//
+// .kuma-button-swhite {
+//     line-height: @btn-small-lh;
+//     height: @btn-small-lh;
+//     padding: @btn-small-padding;
+//     font-size: @font-size-small;
+//     font-weight: @btn-font-weight-s;
+// }
+//
+// a.kuma-button-lwhite {
+//     line-height: @btn-link-large-lh;
+//     height: @btn-link-large-lh;
+// }
+//
+// a.kuma-button-mwhite {
+//     line-height: @btn-link-medium-lh;
+//     height: @btn-link-medium-lh;
+// }
+//
+// a.kuma-button-swhite {
+//     line-height: @btn-link-small-lh;
+//     height: @btn-link-small-lh;
+// }
+//
+// /* import url("./kuma-button-orange.css") */
+// .kuma-button-lorange,
+// .kuma-button-morange,
+// .kuma-button-sorange {
+//     border: none;
+//     border: 1px solid @btn-ali-border;
+//     background-color: @btn-ali-bg;
+//     color: @btn-ali-color;
+//     &:hover{
+//     	background-color: @btn-ali-hover-bg;
+//     	border-color: @btn-ali-hover-border;
+//     }
+// }
+//
+// a.kuma-button-lorange,
+// a.kuma-button-morange,
+// a.kuma-button-sorange,
+// a.kuma-button-lorange:active,
+// a.kuma-button-morange:active,
+// a.kuma-button-sorange:active,
+// a.kuma-button-lorange:hover,
+// a.kuma-button-morange:hover,
+// a.kuma-button-sorange:hover {
+//     color: @btn-ali-color;
+// }
+//
+// .kuma-button-lorange {
+//     line-height: @btn-large-lh;
+//     height: @btn-large-lh;
+// }
+//
+// .kuma-button-morange {
+//     padding: @btn-medium-padding;
+//     height: @btn-medium-lh;
+//     line-height: @btn-medium-lh;
+// }
+//
+// .kuma-button-sorange {
+//     padding: @btn-small-padding;
+//     height: @btn-small-lh;
+//     line-height: @btn-small-lh;
+//     font-size: @font-size-small;
+//     font-weight: @btn-font-weight-s;
+// }
+//
+// a.kuma-button-lorange {
+//     line-height: @btn-link-large-lh;
+//     height: @btn-link-large-lh;
+// }
+//
+// a.kuma-button-morange {
+//     line-height: @btn-link-medium-lh;
+//     height: @btn-link-medium-lh;
+// }
+//
+// a.kuma-button-sorange {
+//     line-height: @btn-link-small-lh;
+//     height: @btn-link-small-lh;
+// }
+//
+// /* import url("./kuma-button-disable.css") */
+// .kuma-button-ldisable,
+// .kuma-button-mdisable,
+// .kuma-button-sdisable,
+//
+// a.kuma-button-ldisable,
+// a.kuma-button-mdisable,
+// a.kuma-button-sdisable,
+// a.kuma-button-ldisable:active,
+// a.kuma-button-mdisable:active,
+// a.kuma-button-sdisable:active,
+// a.kuma-button-ldisable:hover,
+// a.kuma-button-mdisable:hover,
+// a.kuma-button-sdisable:hover,
+//
+// input.kuma-button-ldisable,
+// input.kuma-button-mdisable,
+// input.kuma-button-sdisable,
+// input.kuma-button-ldisable:active,
+// input.kuma-button-mdisable:active,
+// input.kuma-button-sdisable:active,
+// input.kuma-button-ldisable:hover,
+// input.kuma-button-mdisable:hover,
+// input.kuma-button-sdisable:hover,
+//
+// button.kuma-button-ldisable,
+// button.kuma-button-mdisable,
+// button.kuma-button-sdisable,
+// button.kuma-button-ldisable:active,
+// button.kuma-button-mdisable:active,
+// button.kuma-button-sdisable:active,
+// button.kuma-button-ldisable:hover,
+// button.kuma-button-mdisable:hover,
+// button.kuma-button-sdisable:hover {
+//     color: @btn-disabled-color;
+//     border: none;
+//     background-color: @btn-disabled-bg;
+//     border: 1px solid @btn-disabled-border;
+//     cursor: default;
+// }
+//
+// .kuma-button-ldisable {
+//     line-height: @btn-large-lh;
+//     height: @btn-large-lh;
+// }
+//
+// .kuma-button-mdisable {
+//     padding: @btn-medium-padding;
+//     height: @btn-medium-lh;
+//     line-height: @btn-medium-lh;
+// }
+//
+// .kuma-button-sdisable {
+//     padding: @btn-small-padding;
+//     height: @btn-small-lh;
+//     line-height: @btn-small-lh;
+//     font-size: @font-size-small;
+//     font-weight: @btn-font-weight-s;
+// }
+//
+// .kuma-button-ldisable,
+// .kuma-button-mdisable,
+// .kuma-button-sdisable {
+//     cursor: default!important;
+// }
+//
+// .kuma-button-ldisable:active,
+// .kuma-button-mdisable:active,
+// .kuma-button-sdisable:active {
+//     position: static;
+//     top: 0;
+//     box-shadow: none;
+// }
 
 //===+++ Segment Button
 .kuma-segment-button {
