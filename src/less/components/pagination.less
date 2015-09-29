@@ -171,7 +171,7 @@
   }
 
   &-simple {
-    .kuma-pagination-prev, .kuma-pagination-next {
+    .@{paginationPrefix}-prev, .@{paginationPrefix}-next {
       border: none;
       height: 24px;
       line-height: 24px;
@@ -179,11 +179,11 @@
       font-size: 18px;
     }
 
-    .kuma-pagination-simple-pager {
+    .@{paginationPrefix}-simple-pager {
       float: left;
       margin-right: 8px;
 
-      .kuma-pagination-slash {
+      .@{paginationPrefix}-slash {
         margin: 0 10px;
       }
 
@@ -231,6 +231,17 @@
 
                     &:hover {
                         border-color: @color-blue-dark;
+                    }
+                }
+            }
+            .@{paginationPrefix}-options-size-changer {
+                .kuma-select-selection {
+                    height: 18px;
+                    .kuma-select-selection__rendered {
+                        line-height: 18px;
+                    }
+                    .kuma-select-arrow {
+                        height: 18px;
                     }
                 }
             }
