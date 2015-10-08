@@ -1,0 +1,202 @@
+/*步骤条框架*/
+.kuma-steps {
+    margin: 0 auto;
+    width: 680px;
+    height: 65px;
+    /*步骤条内容*/
+    &-bd {
+        width: 100%;
+        height: 40px;
+        border-bottom: 2px solid #ccc;
+    }
+
+    /*双状态条单元项*/
+    .double-s {
+        padding: 0 20px;
+        .ds-col {
+            position: relative;
+            float: left;
+            width: 128px;
+            height: 40px;
+            line-height: 50px;
+            border-bottom: 2px solid #fff;
+            .s-item {
+                height: 40px;
+                border-bottom: 2px solid #ccc;
+                &.done {
+                    border-bottom: 2px solid #88C438;
+                    strong {
+                        font-weight: bold;
+                    }
+                }
+                i {
+                    position: relative;
+                    left: 0;
+                    top: 14px;
+                    font-size: 20px;
+                    color: #88C438;
+                    border: 2px solid #fff;
+                    border-radius: 20px;
+                    background: white;
+                }
+                strong {
+                    display: inline-block;
+                    margin-left: 10px;
+                    vertical-align: middle;
+                    font-weight: normal;
+                    color: #999;
+                }
+            }
+            .desc {
+                position: absolute;
+                left: -20px;
+                bottom: -45px;
+                margin: 0;
+                padding: 0;
+                line-height: 35px;
+                text-align: center;
+                color: #999;
+            }
+        }
+    }
+    .ds-dash .ds-col .s-item {
+        border-bottom: 2px dashed #88C438;
+    }
+
+    /*>>>>>>>>>++++++++++ 三状态步骤导航 */
+    .steps-status {
+        margin-top: 20px;
+        height: 45px;
+        .status-start, .various-s {
+            display: inline;
+            float: left;
+            margin: 0;
+            padding: 0;
+            .vs-col {
+                position: relative;
+                float: left;
+                height: 51px;
+                .status-line {
+                    position: relative;
+                    width: 140px;
+                    border-top: 2px solid #7ac735;
+                    s {
+                        position: absolute;
+                        top: -9px;
+                        left: 0;
+                        display: inline-block;
+                        width: 10px;
+                        height: 10px;
+                        border: 3px solid #fff;
+                        border-radius: 30px;
+                        background-color: #7ac735;
+                    }
+                }
+                &.last {
+                    .status-line {
+                        width: 50px;
+                    }
+                }
+                &.cur {
+                    .status-line {
+                        border-color: #ccc;
+                        s {
+                            background-color: #ff9c27;
+                        }
+                    }
+                    .desc {
+                        color: #f60;
+                    }
+                }
+                &.wait {
+                    .status-line {
+                        border-color: #ccc;
+                        s {
+                            background-color: #ccc;
+                        }
+                    }
+                    .desc {
+                        color: #999;
+                    }
+                }
+                .desc {
+                    position: absolute;
+                    left: -40px;
+                    top: 10px;
+                    margin: 0;
+                    padding: 0;
+                    width: 100px;
+                    line-height: 35px;
+                    text-align: center;
+                    color: #666;
+                }
+            }
+        }
+        .status-start {
+            width: 32px;
+            border-top: 2px solid #7ac735
+        }
+    }
+}
+
+//垂直状态条
+.kuma-steps-vertical {
+    .vs-row {
+        .vs-row-hd {
+            line-height: 2;
+            margin-left: 10px;
+            padding-left: 10px;
+            position: relative;
+            .circle {
+                position: absolute;
+                left: -10px;
+                top: 13px;
+                font-family: simsun;
+                font-size: 20px;
+                line-height: 0;
+            }
+        }
+        .vs-row-bd {
+            margin-left: 9px;
+            padding-left: 10px;
+            min-height: 20px;
+        }
+
+        &.done {
+            .vs-row-hd{
+                .circle{
+                    color:#999;
+                }
+            }
+            .vs-row-bd {
+                border-left: 1px solid #999;
+            }
+        }
+        &.cur {
+            .vs-row-hd{
+                .circle{
+                    color:#f90;
+                }
+            }
+            .vs-row-bd {
+                border-left: 1px solid #f90;
+            }
+            .desc {
+                color: #f90;
+            }
+        }
+        &.wait {
+            .vs-row-hd{
+                .circle{
+                    color:#ccc;
+                }
+            }
+            .vs-row-bd {
+                border-left: 1px dotted #ccc;
+            }
+            .desc {
+                color:#ccc;
+            }
+        }
+    }
+}

@@ -2,24 +2,13 @@
 // Scaffolding
 // --------------------------------------------------
 
-// Reset the box-sizing
-//
-// Heads up! This reset may cause conflicts with some third-party widgets.
-// For recommendations on resolving such conflicts, see
-// http://getbootstrap.com/getting-started/#third-box-sizing
-//* {
-//  .box-sizing(border-box);
-//}
-//*:before,
-//*:after {
-//  .box-sizing(border-box);
-//}
-
 // Body reset
-
 html {
   font-size: 10px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: #333;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 body {
@@ -29,17 +18,6 @@ body {
   color: @text-color;
   background-color: @body-bg;
 }
-
-// Reset fonts for relevant elements
-/*input,
-button,
-select,
-textarea {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-}*/
-
 // Links
 
 a {
@@ -57,46 +35,10 @@ a {
   }
 }
 
-// Only display content to screen readers
-//
-// See: http://a11yproject.com/posts/how-to-hide-content/
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-
-// Use in conjunction with .sr-only to only display content when it's focused.
-// Useful for "Skip to main content" links; see http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1
-// Credit: HTML5 Boilerplate
-
-.sr-only-focusable {
-  &:active,
-  &:focus {
-    position: static;
-    width: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    clip: auto;
-  }
-}
-
 /* from kuma-base.css */
 /* kuma.base 样式模块 */
 
 /* 添加让用户可以自定义字体 */
-html {
-  color: #333;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
 
 /* 内外边距通常让各个浏览器样式的表现位置不同 */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -236,12 +178,6 @@ samp {
   display: none;
 }
 
-/* 设置内联, 减少浮动带来的bug */
-.fn-left,
-.fn-right {
-  display: inline;
-}
-
 .fn-left {
   float: left;
 }
@@ -255,33 +191,6 @@ samp {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-/* 简单的渐变 */
-.fn-linear {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#f1f1f1));
-  background: -moz-linear-gradient(top, #fcfcfc, #f1f1f1);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f1f1f1');
-  background: -o-linear-gradient(top, #fcfcfc, #f1f1f1);
-  background: -ms-linear-gradient(top, #fcfcfc, #f1f1f1);
-  background: linear-gradient(to bottom, #fcfcfc, #f1f1f1);
-}
-
-/* 浅色的渐变 */
-.fn-linear-light {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#f9f9f9));
-  background: -moz-linear-gradient(top, #fcfcfc, #f9f9f9);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f9f9f9');
-  background: -o-linear-gradient(top, #fcfcfc, #f9f9f9);
-  background: -ms-linear-gradient(top, #fcfcfc, #f9f9f9);
-  background: linear-gradient(to bottom, #fcfcfc, #f9f9f9);
-}
-
-/* 人民币符号 */
-.fn-rmb {
-  font-family: arial;
-  font-style: normal;
-  padding-right: 4px;
 }
 
 /* chrome 下字体过小的问题 */
@@ -299,23 +208,7 @@ samp {
   color: #999;
 }
 
-// Rounded corners
-.fn-img-rounded {
-  border-radius: @border-radius-large;
-}
-
-// Perfect circle
-.fn-img-circle {
-  border-radius: 50%; // set radius in percents
-}
-
 // Set Box Sizing to Border Box
-// .fn-border-box {
-//   .box-sizing(border-box);
-//   * {
-//     .box-sizing(inherit);
-//   }
-// }
 *, *:after, *:before {
     .box-sizing(border-box);
 }

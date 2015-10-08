@@ -1,0 +1,228 @@
+//+++++=====*** 基于 variables->tip.less
+/* tiptext 样式模块 */
+@tiptextPrefix: kuma-tiptext;
+.@{tiptextPrefix} {
+    position: relative;
+    *zoom: 1;
+    color: @tip-color;
+
+    &-follow {
+        padding-left: 21px;
+    }
+
+    .kuma-button {
+        font-size: 1.2em;
+        line-height: 1.2em;
+        text-shadow: 0 1px 0 #fff;
+        margin-right: 2px;
+    }
+
+    &-icon {
+        display: inline-block;
+    }
+
+    &-container {
+        padding: 8px 12px;
+        position: relative;
+        *zoom: 1;
+    }
+
+    //普通信息提示
+    &-message {
+        .@{tiptextPrefix}-icon {
+            color: @tip-msg-icon-color;
+        }
+    }
+
+    &-container-message {
+        border: 1px solid @tip-msg-box-border;
+        background: @tip-msg-box-bg;
+        .@{tiptextPrefix}-arrow {
+            em {
+                color: @tip-msg-arrow-border;
+            }
+
+            span {
+                color: @tip-msg-arrow-bg;
+            }
+        }
+    }
+
+    //成功提示
+    &-success {
+        .@{tiptextPrefix}-icon {
+            color: @tip-success-icon-color;
+        }
+    }
+
+    &-container-success {
+        background: @tip-success-box-bg;
+        border: 1px solid @tip-success-box-border;
+        .@{tiptextPrefix}-arrow {
+            em {
+                color: @tip-success-arrow-border;
+            }
+            span {
+                color: @tip-success-arrow-bg;
+            }
+
+        }
+    }
+
+    //错误提示
+    &-error {
+        .@{tiptextPrefix}-icon {
+            color: @tip-error-icon-color;
+        }
+    }
+
+    &-container-error {
+        background: @tip-error-box-bg;
+        border: 1px solid @tip-error-box-border;
+        .@{tiptextPrefix}-arrow {
+            em {
+                color: @tip-error-arrow-border;
+            }
+            span {
+                color: @tip-error-arrow-bg;
+            }
+        }
+    }
+
+    //警告提示
+    &-warning {
+        .@{tiptextPrefix}-icon {
+            color: @tip-warning-icon-color;
+        }
+    }
+
+    &-container-warning {
+        background: @tip-warning-box-bg;
+        border: 1px solid @tip-warning-box-border;
+        .@{tiptextPrefix}-arrow {
+            em {
+                color: @tip-warning-arrow-border;
+            }
+            span {
+                color: @tip-warning-arrow-bg;
+            }
+        }
+    }
+
+    //疑问提示
+    &-question {
+        .@{tiptextPrefix}-icon {
+            color: @tip-question-icon-color;
+        }
+    }
+
+    &-container-question {
+        border: 1px solid @tip-question-box-border;
+        background: @tip-question-box-bg;
+        .@{tiptextPrefix}-arrow {
+            em {
+                color: @tip-question-arrow-border;
+            }
+            span {
+                color: @tip-question-arrow-bg;
+            }
+        }
+    }
+
+    //阻止提示
+    &-stop {
+        .@{tiptextPrefix}-icon {
+            color: @tip-stop-icon-color;
+        }
+    }
+
+    &-container-stop {
+        background: @tip-stop-box-bg;
+        border: 1px solid @tip-stop-box-border;
+        .@{tiptextPrefix}-arrow {
+            em {
+                color: @tip-stop-arrow-border;
+            }
+            span {
+                color: @tip-stop-arrow-bg;
+            }
+        }
+    }
+
+    //等待提示
+    &-wait {
+        .@{tiptextPrefix}-icon {
+            color: @tip-wait-icon-color;
+        }
+    }
+
+    &-container-wait {
+        border: 1px solid @tip-wait-box-border;
+        background: @tip-wait-box-bg;
+        .@{tiptextPrefix}-arrow {
+            em {
+                color: @tip-wait-arrow-border;
+            }
+            span {
+                color: @tip-wait-arrow-bg;
+            }
+        }
+    }
+
+    &-arrowup,
+    &-arrowleft,
+    &-arrowright,
+    &-arrowdown {
+        height: 10px;
+        width: 16px;
+        &, em, span {
+            position: absolute;
+            font: normal 14px/1 SimSun;
+        }
+    }
+
+    //向上箭头
+    &-arrowup {
+        left: 32px;
+        top: -7px;
+        em {
+            top: -1px;
+        }
+    }
+
+    //向左箭头
+    &-arrowleft {
+        left: -6px;
+        top: 10px;
+        em {
+            left: -1px;
+        }
+    }
+
+    //向右箭头
+    &-arrowright {
+        right: -10px;
+        top: 10px;
+        em {
+            right: 1px;
+        }
+    }
+
+    //向下箭头
+    &-arrowdown {
+        left: 32px;
+        bottom: -3px;
+        em {
+            top: 1px;
+        }
+    }
+
+    //提示层关闭
+    &-close {
+        position: absolute;
+        right: 10px;
+        top: 8px;
+        color: @tip-close-color;
+        cursor: pointer;
+    }
+}

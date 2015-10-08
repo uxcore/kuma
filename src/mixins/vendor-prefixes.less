@@ -1,0 +1,78 @@
+// Vendor Prefixes
+
+// - Animations
+// - Backface visibility
+// - Box sizing
+// - User select
+
+// Animations
+.animation(@animation) {
+    animation: @animation;
+}
+.animation-name(@name) {
+    animation-name: @name;
+}
+.animation-duration(@duration) {
+    animation-duration: @duration;
+}
+.animation-timing-function(@timing-function) {
+    animation-timing-function: @timing-function;
+}
+.animation-delay(@delay) {
+    animation-delay: @delay;
+}
+.animation-iteration-count(@iteration-count) {
+    animation-iteration-count: @iteration-count;
+}
+.animation-direction(@direction) {
+    animation-direction: @direction;
+}
+.animation-fill-mode(@fill-mode) {
+    animation-fill-mode: @fill-mode;
+}
+
+
+// Backface visibility
+// Prevent browsers from flickering when using CSS 3D transforms.
+// Default value is `visible`, but can be changed to `hidden`
+
+.backface-visibility(@visibility){
+    backface-visibility: @visibility;
+}
+
+
+// Box sizing
+.box-sizing(@boxmodel) {
+    box-sizing: @boxmodel;
+}
+
+
+
+// Transitions
+
+.transition(@transition) {
+    transition: @transition;
+}
+.transition-property(@transition-property) {
+    transition-property: @transition-property;
+}
+.transition-delay(@transition-delay) {
+    transition-delay: @transition-delay;
+}
+.transition-duration(@transition-duration) {
+    transition-duration: @transition-duration;
+}
+.transition-timing-function(@timing-function) {
+    transition-timing-function: @timing-function;
+}
+.transition-transform(@transition) {
+    transition: transform @transition;
+}
+
+
+// User select
+// For selecting text on the page
+
+.user-select(@select) {
+    user-select: @select;
+}
