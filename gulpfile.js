@@ -5,6 +5,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var minifyCss = require('gulp-minify-css');
 //plugin
 var LessPluginAutoPrefix = require('less-plugin-autoprefix');
+var LessPluginInlineUrls = require('less-plugin-inline-urls');
 var autoprefix = new LessPluginAutoPrefix({
 	browsers: ['last 2 versions', 'not ie < 8']
 });
@@ -13,7 +14,7 @@ gulp.task('less', function(){
 	return gulp.src('./src/kuma.less')
 		.pipe(sourcemaps.init())
 		.pipe(less({
-			plugins: [autoprefix]
+			plugins: [autoprefix, LessPluginInlineUrls]
 		}))
 		.pipe(sourcemaps.write('./'))
 		.pipe(gulp.dest('./dist'));
