@@ -1,5 +1,5 @@
 require('./demo/style.less');
-require('./src/kuma-webpack.less');
+require('./src/kuma.less');
 var axios = require('axios');
 
 var marked = require('marked');
