@@ -3,7 +3,7 @@
   top: 0;
   bottom: 0;
   right: 0;
-  background: #ffffff;
+  background: @white;
   z-index: 10;
   position: absolute;
   outline: none;
@@ -15,23 +15,26 @@
 
 .@{calendar-prefix-class}-year-panel-header {
   padding: 0 10px;
-  height: 34px;
-  line-height: 34px;
+  height: 30px;
   position: relative;
   text-align: center;
   user-select: none;
   -webkit-user-select: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid @gray-dark;
 
   > a {
-    font-weight: bold;
     display: inline-block;
-    text-align: center;
     width: 30px;
+    text-align: center;
+    line-height: 29px;
+    font-size: 18px;
+    font-family: Arial;
+    color: @black;
 
     &:hover {
       cursor: pointer;
-      background-color: #f2f2f2;
+      text-decoration: none;
+      color: @link-hover-color;
     }
   }
 }
@@ -47,7 +50,8 @@
 }
 
 .@{calendar-prefix-class}-year-panel .@{calendar-prefix-class}-year-panel-decade-select {
-  width: 180px;
+  width: 120px;
+  font-size: 12px;
 }
 
 .@{calendar-prefix-class}-year-panel-decade-select-arrow {
@@ -59,15 +63,9 @@
   right: 0;
 }
 
-.@{calendar-prefix-class}-year-panel-body {
-  padding: 2px;
-}
-
 .@{calendar-prefix-class}-year-panel-table {
   table-layout: fixed;
-  width: 100%;
-  height: 219px;
-  border-collapse: separate;
+  height: 205px;
 }
 
 .@{calendar-prefix-class}-year-panel-cell {
@@ -76,12 +74,9 @@
 
 .@{calendar-prefix-class}-year-panel-year {
   display: block;
-  width: 46px;
   margin: 0 auto;
   color: #666;
-  height: 36px;
   padding: 0;
-  background: transparent;
   line-height: 36px;
   text-align: center;
 
@@ -93,28 +88,18 @@
 
 .@{calendar-prefix-class}-year-panel-selected-cell .@{calendar-prefix-class}-year-panel-year {
   background: @blue-dark;
-  color: #fff;
+  color: @white;
 
   &:hover {
     background: @blue-dark;
-    color: #fff;
+    color: @white;
   }
 }
 
 .@{calendar-prefix-class}-year-panel-last-decade-cell, .@{calendar-prefix-class}-year-panel-next-decade-cell {
-  .@{calendar-prefix-class}-year-panel-year{
-    user-select: none;
-    -webkit-user-select: none;
-  }
   .@{calendar-prefix-class}-year-panel-year:before {
-    content: "\e651";
-    font-family: "iconfont" !important;
-  }
-}
-
-.@{calendar-prefix-class}-year-panel-last-decade-cell {
-  .@{calendar-prefix-class}-year-panel-year {
-    transform: rotate(180deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+    content: "\e645";
+    font-family: kuma!important;
+    font-size: 14px;
   }
 }

@@ -1,16 +1,21 @@
 .@{calendar-prefix-class} {
   position: relative;
   outline: none;
-  width: 253px;
-  border: 1px solid #ccc;
+  width: 212px;
   list-style: none;
   font-size: 12px;
   text-align: left;
-  background-color: #fff;
-  box-shadow: 0 1px 5px #ccc;
+  background-color: @white;
+  box-shadow: 0 1px 5px @gray-dark;
   background-clip: padding-box;
-  border: 1px solid #ccc;
+  border: 1px solid @gray-dark;
   line-height: 1.5;
+
+  a {
+      &:hover {
+          text-decoration: none;
+      }
+  }
 
   &-week-number {
     width: 286px;
@@ -22,24 +27,26 @@
 
   &-header {
     padding: 0 10px;
-    height: 34px;
-    line-height: 30px;
+    height: 30px;
     text-align: center;
     user-select: none;
     -webkit-user-select: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid @gray-dark;
 
     > a {
-      font-weight: bold;
       display: inline-block;
       padding: 0px 5px;
-      line-height: 34px;
-      text-align: center;
       width: 30px;
+      line-height: 29px;
+      text-align: center;
+      font-size: 18px;
+      font-family: Arial;
+      color: @black;
 
       &:hover {
         cursor: pointer;
-        background-color: #f2f2f2;
+        text-decoration: none;
+        color: @link-hover-color;
       }
     }
 
@@ -58,13 +65,13 @@
     display: inline-block;
     font-size: 12px;
     font-weight: bold;
-    color: #666;
-    padding: 0 8px;
-    line-height: 34px;
+    color: @black;
+    padding: 0 5px;
+    line-height: 30px;
 
     &:hover {
       cursor: pointer;
-      background-color: #f2f2f2;
+      color: @link-hover-color;
     }
   }
 
@@ -85,18 +92,15 @@
   }
 
   &-calendar-body {
-    padding: 2px;
+    padding: 0;
   }
 
   table {
-    border-collapse: collapse;
-    max-width: 100%;
-    background-color: transparent;
     width: 100%;
-  }
-
-  table, td, th, td {
-    border: none;
+    th, td {
+        width: 30px;
+        height: 26px;
+    }
   }
 
   &-calendar-table {
@@ -105,9 +109,7 @@
   }
 
   &-column-header {
-    line-height: 18px;
-    padding: 6px 0;
-    width: 33px;
+    border-bottom: 1px solid @gray-dark;
     text-align: center;
     .@{calendar-prefix-class}-column-header-inner {
       display: block;
@@ -121,18 +123,9 @@
     }
   }
 
-  &-cell {
-    padding: 1px 0;
-  }
-
   &-date {
     display: block;
-    margin: 0 auto;
-    color: #666;
-    width: 26px;
-    height: 26px;
-    padding: 0;
-    background: transparent;
+    color: @black;
     line-height: 26px;
     text-align: center;
 
@@ -144,7 +137,7 @@
 
   &-selected-day &-date {
     background: @blue-dark;
-    color: #fff;
+    color: @white;
 
     &:hover {
       background: @blue-dark;
@@ -157,9 +150,8 @@
 
   &-disabled-cell &-date {
     cursor: not-allowed;
-    color: #bcbcbc;
-    background: #f3f3f3;
-    width: auto;
+    color: @black-light;
+    background: @gray-dark;
 
     &:hover {
       background: #f3f3f3;
@@ -171,8 +163,7 @@
   }
 
   &-footer {
-    border-top: 1px solid #ccc;
-    padding: 2px 0;
+    border-top: 1px solid @gray-dark;
     text-align: center;
   }
 
@@ -184,11 +175,11 @@
     display: inline-block;
     padding: 4px 5px;
     text-align: center;
-    color: #f46830;
+    color: @black;
 
     &:hover {
       cursor: pointer;
-      background-color: #f2f2f2;
+      color: @link-hover-color;
     }
 
     &-disabled {
