@@ -172,20 +172,21 @@
 
   &-simple {
     .@{paginationPrefix}-prev, .@{paginationPrefix}-next {
-      border: none;
-      height: 24px;
-      line-height: 24px;
-      margin: 0;
-      font-size: 18px;
+        font-size: 10px;
+        min-width: 18px;
+        height: 18px;
+        line-height: 18px;
+    }
+
+    .@{paginationPrefix}-current {
+        color: #ff6600;
     }
 
     .@{paginationPrefix}-simple-pager {
       float: left;
       margin-right: 8px;
-
-      .@{paginationPrefix}-slash {
-        margin: 0 10px;
-      }
+      line-height: 18px;
+      font-weight: bold;
 
       input {
         margin: 0 8px;
@@ -242,9 +243,21 @@
                     }
                     .kuma-select-arrow {
                         height: 18px;
+                        margin-top: -5px;
                     }
                 }
             }
+
         }
     }
+}
+
+.@{paginationPrefix}-options-size-changer,
+.@{paginationPrefix}-options-size-changer-dropdown {
+  font-size: 12px;
+}
+.@{paginationPrefix}-options-size-changer-dropdown {
+  .kuma-select-dropdown-menu-item {
+    padding: 7px 16px 7px 11px; 
+  }
 }
