@@ -1,0 +1,255 @@
+.@{calendar-prefix-class}-time-panel, .@{calendar-prefix-class}-month-panel,
+.@{calendar-prefix-class}-year-panel,
+.@{calendar-prefix-class}-decade-panel {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: @white;
+    z-index: 10;
+    position: absolute;
+    outline: none;
+
+	&-hidden {
+		display: none;
+    }
+
+    &-header {
+		padding: 0 10px;
+		height: 30px;
+		line-height: 29px;
+		position: relative;
+		text-align: center;
+		user-select: none;
+		-webkit-user-select: none;
+		border-bottom: 1px solid @gray-dark;
+
+		> a {
+			display: inline-block;
+			width: 30px;
+			text-align: center;
+			font-size: 18px;
+			font-family: Arial;
+			color: @black;
+
+			&:hover {
+				cursor: pointer;
+				text-decoration: none;
+				color: @link-hover-color;
+			}
+		}
+    }
+
+	&-table {
+		height: 210px;
+    }
+
+	&-cell {
+    	text-align: center;
+	}
+}
+
+.@{calendar-prefix-class}-time-panel {
+    &-title {
+		width: 120px;
+		font-weight: bold;
+		display: inline-block;
+		text-align: center;
+    }
+
+    &-time {
+		line-height: 26px;
+		display: block;
+		width: 20px;
+		margin: 0 auto;
+		color: @black;
+
+		&:hover {
+			background: #f2f2f2;
+			cursor: pointer;
+		}
+    }
+
+    &-selected-cell &-time {
+		background: @blue-dark;
+		color: @white;
+
+		&:hover {
+			background: @blue-dark;
+			color: @white;
+		}
+    }
+}
+
+.@{calendar-prefix-class}-month-panel {
+    &-prev-year-btn, &-next-year-btn {
+		position: absolute;
+		top: 0;
+    }
+
+    &-prev-year-btn {
+		user-select: none;
+		left: 0;
+    }
+
+    & &-year-select {
+		width: 120px;
+		font-size: 12px;
+    }
+
+    &-year-select-arrow {
+		display: none;
+    }
+
+    &-next-year-btn {
+		user-select: none;
+		right: 0;
+    }
+
+	&-cell &-month {
+		display: block;
+		margin: 0 auto;
+		color: #666;
+		height: 36px;
+		padding: 0;
+		background: transparent;
+		line-height: 36px;
+		text-align: center;
+
+		&:hover {
+			background: #f2f2f2;
+			cursor: pointer;
+		}
+	}
+
+	&-disabled &-month {
+		color: #bfbfbf;
+
+		&:hover {
+			background: white;
+			cursor: not-allowed;
+		}
+    }
+
+    &-selected-cell &-month {
+		background: @blue-dark;
+		color: #fff;
+
+		&:hover {
+			background: @blue-dark;
+			color: #fff;
+		}
+    }
+}
+
+.@{calendar-prefix-class}-year-panel {
+    &-prev-decade-btn, &-next-decade-btn {
+      position: absolute;
+      top: 0;
+    }
+
+    &-prev-decade-btn {
+      user-select: none;
+      left: 0;
+    }
+
+    & &-decade-select {
+      width: 120px;
+      font-size: 12px;
+    }
+
+    &-decade-select-arrow {
+      display: none;
+    }
+
+    &-next-decade-btn {
+      user-select: none;
+      right: 0;
+    }
+
+    &-year {
+      display: block;
+      margin: 0 auto;
+      color: #666;
+      padding: 0;
+      line-height: 36px;
+      text-align: center;
+
+      &:hover {
+        background: #f2f2f2;
+        cursor: pointer;
+      }
+    }
+
+    &-selected-cell &-year {
+      background: @blue-dark;
+      color: @white;
+
+      &:hover {
+        background: @blue-dark;
+        color: @white;
+      }
+    }
+
+    &-last-decade-cell, &-next-decade-cell {
+      .@{calendar-prefix-class}-year-panel-year:before {
+        content: "\e645";
+        font-family: kuma!important;
+        font-size: 14px;
+      }
+    }
+}
+
+.@{calendar-prefix-class}-decade-panel {
+    &-prev-century-btn, &-next-century-btn {
+      position: absolute;
+      top: 0;
+    }
+
+    &-prev-century-btn {
+      user-select: none;
+      left: 0;
+    }
+
+    &-next-century-btn {
+      user-select: none;
+      right: 0;
+    }
+
+	&-century {
+		line-height: 29px;
+		font-size: 12px;
+	}
+
+    &-decade {
+      display: block;
+      margin: 0 auto;
+      color: #666;
+      padding: 0;
+      line-height: 36px;
+      text-align: center;
+
+      &:hover {
+        background: #f2f2f2;
+        cursor: pointer;
+      }
+    }
+
+    &-selected-cell &-decade {
+      background: @blue-dark;
+      color: @white;
+
+      &:hover {
+        background: @blue-dark;
+        color: @white;
+      }
+    }
+
+    &-last-century-cell, &-next-century-cell {
+      .@{calendar-prefix-class}-decade-panel-decade:before {
+          content: "\e645";
+          font-family: kuma!important;
+          font-size: 14px;
+      }
+    }
+}
