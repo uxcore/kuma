@@ -5,17 +5,16 @@
   display: inline-block;
   margin: 0 0;
   padding: 4px 10px;
-  border: 1px solid #d9d9d9;
-  background-color: #ffffff;
-  color: #666;
+  border: 1px solid @calendar-border;
+  color: @calendar-text;
   line-height: 1.5;
   box-sizing: border-box;
 
   &:hover {
-    border-color: @blue-dark;
+    border-color: @calendar-selected-color;
   }
 
   &:focus {
-    border-color: @blue-dark;
+    border-color: @calendar-selected-color;
   }
 }

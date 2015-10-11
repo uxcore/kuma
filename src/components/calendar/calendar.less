@@ -5,10 +5,10 @@
   list-style: none;
   font-size: 12px;
   text-align: left;
-  background-color: @white;
-  box-shadow: 0 1px 5px @gray-dark;
+  background-color: @calendar-background;
+  box-shadow: 0 1px 5px @calendar-border;
   background-clip: padding-box;
-  border: 1px solid @gray-dark;
+  border: 1px solid @calendar-border;
   line-height: 1.5;
 
   a {
@@ -31,7 +31,7 @@
     text-align: center;
     user-select: none;
     -webkit-user-select: none;
-    border-bottom: 1px solid @gray-dark;
+    border-bottom: 1px solid @calendar-border;
 
     > a {
       display: inline-block;
@@ -41,7 +41,7 @@
       text-align: center;
       font-size: 18px;
       font-family: Arial;
-      color: @black;
+      color: @calendar-text;
 
       &:hover {
         cursor: pointer;
@@ -65,7 +65,7 @@
     display: inline-block;
     font-size: 12px;
     font-weight: bold;
-    color: @black;
+    color: @calendar-text;
     padding: 0 5px;
     line-height: 30px;
 
@@ -104,13 +104,8 @@
     }
   }
 
-  &-calendar-table {
-    border-spacing: 0;
-    margin-bottom: 0;
-  }
-
   &-column-header {
-    border-bottom: 1px solid @gray-dark;
+    border-bottom: 1px solid @calendar-border;
     text-align: center;
     .@{calendar-prefix-class}-column-header-inner {
       display: block;
@@ -126,45 +121,46 @@
 
   &-date {
     display: block;
-    color: @black;
+    color: @calendar-text;
     line-height: 26px;
     text-align: center;
 
     &:hover {
-      background: #f2f2f2;
+      background: @calendar-hover-bg;
       cursor: pointer;
     }
   }
 
   &-selected-day &-date {
-    background: @blue-dark;
-    color: @white;
+    background: @calendar-selected-color;
+    color: @calendar-selected-text;
 
     &:hover {
-      background: @blue-dark;
+      background: @calendar-selected-color;
     }
   }
 
   &-today &-date {
-    border: 1px solid @blue-dark;
+    background: @calendar-hover-bg;
+    border: 1px solid @calendar-hover-bg;
   }
 
   &-disabled-cell &-date {
     cursor: not-allowed;
     color: @black-light;
-    background: @gray-dark;
+    background: @calendar-disabled-bg;
 
     &:hover {
-      background: #f3f3f3;
+      background: @calendar-hover-bg;
     }
   }
 
   &-last-month-cell &-date, &-next-month-btn-day &-date {
-    color: #bbb;
+    color: @calendar-disabled-color;
   }
 
   &-footer {
-    border-top: 1px solid @gray-dark;
+    border-top: 1px solid @calendar-border;
     text-align: center;
   }
 
@@ -176,7 +172,7 @@
     display: inline-block;
     padding: 4px 5px;
     text-align: center;
-    color: @black;
+    color: @calendar-text;
 
     &:hover {
       cursor: pointer;
@@ -184,9 +180,9 @@
     }
 
     &-disabled {
-      color: #bbb;
+      color: @calendar-disabled-color;
       &:hover {
-        color: #bbb;
+        color: @calendar-disabled-color;
       }
     }
   }
