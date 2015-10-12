@@ -3,6 +3,7 @@ var rename = require('gulp-rename');
 var less = require('gulp-less');
 var sourcemaps = require('gulp-sourcemaps');
 var minifyCss = require('gulp-minify-css');
+var clean = require('gulp-clean');
 //plugin
 var LessPluginAutoPrefix = require('less-plugin-autoprefix');
 var LessPluginInlineUrls = require('less-plugin-inline-urls');
@@ -10,8 +11,8 @@ var autoprefix = new LessPluginAutoPrefix({
 	browsers: ['last 2 versions', 'not ie < 8']
 });
 
-gulp.task('less', function(){
-	return gulp.src('./src/kuma.less')
+gulp.task('less', ['clean'], function(){
+	return gulp.src(['./src/kuma.less', './src/theme/*.less'])
 		.pipe(sourcemaps.init())
 		.pipe(less({
 			plugins: [autoprefix, LessPluginInlineUrls]
@@ -21,7 +22,7 @@ gulp.task('less', function(){
 });
 
 gulp.task('minify', ['less'], function(){
-	return gulp.src('./dist/kuma.css')
+	return gulp.src('./dist/*.css')
 		.pipe(sourcemaps.init())
 		.pipe(minifyCss())
 		.pipe(rename({
@@ -29,6 +30,13 @@ gulp.task('minify', ['less'], function(){
 		}))
 		.pipe(sourcemaps.write('./'))
 		.pipe(gulp.dest('./dist'));
+});
+
+gulp.task('clean', function(){
+	return gulp.src('./dist/*.css')
+		.pipe(clean({
+			read: false
+		}));
 });
 
 gulp.task('default', ['less', 'minify']);
