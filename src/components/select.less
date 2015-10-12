@@ -57,13 +57,13 @@
      background-color: @input-bg;
      border: 1px solid @input-border;
      &:hover {
-         border-color: @blue-dark;
+         border-color: @brand-primary;
      }
    }
 
    &-disabled {
      color: @gray-dark;
-     cursor: not-allowed;
+     cursor: @cursor-disabled;
      pointer-events: none;
    }
 
@@ -266,7 +266,7 @@
        }
      }
      .@{selectPrefixCls}-selection {
-         border-color: @blue-dark;
+         border-color: @brand-primary;
      }
    }
 
@@ -357,13 +357,13 @@
 
        &-disabled {
          color: @gray-dark;
-         cursor: not-allowed;
+         cursor: @cursor-disabled;
          pointer-events: none;
 
          &:hover {
            color: @gray-dark;
            background-color: #fff;
-           cursor: not-allowed;
+           cursor: @cursor-disabled;
          }
        }
 

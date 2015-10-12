@@ -45,7 +45,7 @@
             color: @btn-disabled-text-hover;
         }
 
-        cursor: not-allowed;
+        cursor: @cursor-disabled;
     }
 
     &-lg {
@@ -90,14 +90,14 @@
 
         &.first{
             border-left: 1px solid @btn-segment-border;
-            border-top-left-radius: @border-radius-medium;
-            border-bottom-left-radius: @border-radius-medium;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
         }
 
         &.last{
             border-right: 1px solid @btn-segment-border;
-            border-top-right-radius: @border-radius-medium;
-            border-bottom-right-radius: @border-radius-medium;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
         }
     }
 }
