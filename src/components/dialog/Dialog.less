@@ -7,11 +7,6 @@
   top: -9999px;
   z-index: 1000;
 
-  &-wrap * {
-    box-sizing: border-box;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  }
-
   &-wrap-hidden > & {
     display: none;
   }
@@ -27,8 +22,8 @@
 
   &-content {
     position: relative;
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: @white;
+    border: 1px solid @gray-dark;
     box-shadow: 0 1px 8px #ced1d2;
     outline: 0;
   }

@@ -22,34 +22,34 @@
     text-align: center;
     list-style: none;
     float: left;
-    border: 1px solid #d9d9d9;
-    background-color: #fff;
+    border: 1px solid @pagination-item-border;
+    background-color: @pagination-item-bg;
     margin-right: 8px;
 
     a {
       text-decoration: none;
-      color: #666;
+      color: @pagination-item-text;
     }
 
 
     &:hover {
-      border-color: @blue-dark;
+      border-color: @brand-primary;
       a {
-        color: @blue-dark;
+        color: @brand-primary;
       }
     }
 
     &-active {
-      background-color: @blue-dark;
-      border-color: @blue-dark;
+      background-color: @brand-primary;
+      border-color: @brand-primary;
 
       a {
-        color: #fff;
+        color: @pagination-item-active-text;
       }
 
       &:hover {
         a {
-          color: #fff;
+          color: @pagination-item-active-text;
         }
       }
     }
@@ -67,7 +67,7 @@
 
     &:hover {
       &:after {
-        color: @blue-dark;
+        color: @brand-primary;
       }
     }
 
@@ -94,7 +94,7 @@
   }
   &-prev, &-next, &-jump-prev, &-jump-next {
     cursor: pointer;
-    color: #666;
+    color: @pagination-item-text;
     font-size: 10px;
     list-style: none;
     min-width: 28px;
@@ -123,10 +123,10 @@
   }
 
   &-prev, &-next {
-    border: 1px solid #d9d9d9;
+    border: 1px solid @pagination-item-border;
     font-size: 18px;
     a {
-      color: #666;
+      color: @pagination-item-text;
       &:after {
         margin-top: -1px;
       }
@@ -136,7 +136,7 @@
   &-disabled {
     cursor: not-allowed;
     a {
-      color: #ccc;
+      color: @pagination-item-disabled-text;
     }
   }
 
@@ -156,15 +156,15 @@
 
       input {
         margin: 0 8px;
-        background-color: #fff;
-        border: 1px solid #d9d9d9;
+        background-color: @white;
+        border: 1px solid @pagination-item-border;
         outline: none;
         width: 50px;
         height: 28px;
         text-align: center;
 
         &:hover {
-          border-color: @blue-dark;
+          border-color: @brand-primary;
         }
       }
     }
@@ -189,15 +189,15 @@
 
       input {
         margin: 0 8px;
-        background-color: #fff;
-        border: 1px solid #d9d9d9;
+        background-color: @white;
+        border: 1px solid @pagination-item-border;
         outline: none;
         width: 30px;
         min-height: 20px;
         text-align: center;
 
         &:hover {
-          border-color: @blue-dark;
+          border-color: @brand-primary;
         }
       }
 
@@ -230,7 +230,7 @@
                     height: 18px;
 
                     &:hover {
-                        border-color: @blue-dark;
+                        border-color: @brand-primary;
                     }
                 }
             }

@@ -21,12 +21,12 @@
    margin: 0;
    position: relative;
    vertical-align: middle;
-   color: #666;
+   color: @black;
    font-size: @font-size-base;
 
    > ul > li > a {
      padding: 0;
-     background-color: #fff;
+     background-color: @input-bg;
    }
 
    // arrow
@@ -54,22 +54,22 @@
      box-sizing: border-box;
      display: block;
 
-     background-color: #fff;
-     border: 1px solid #d9d9d9;
+     background-color: @input-bg;
+     border: 1px solid @input-border;
      &:hover {
          border-color: @blue-dark;
      }
    }
 
    &-disabled {
-     color: #ccc;
+     color: @gray-dark;
      cursor: not-allowed;
      pointer-events: none;
    }
 
    &-disabled &-selection {
      &:hover, &:active {
-       border-color: #d9d9d9;
+       border-color: @input-border;
      }
    }
 
@@ -97,7 +97,7 @@
      }
 
      .@{selectPrefixCls}-selection__placeholder {
-       color: #ccc;
+       color: @input-color-placeholder;
      }
    }
 
@@ -150,10 +150,10 @@
    }
 
    &-disabled &-selection__choice__remove {
-     color: #ccc;
+     color: @gray-dark;
      cursor: default;
      &:hover {
-       color: #ccc;
+       color: @gray-dark;
      }
    }
 
@@ -166,7 +166,7 @@
      position: absolute;
      top: 0;
      left: 3px;
-     color: #aaa;
+     color: @input-color-placeholder;
    }
 
    &-search--inline {
@@ -307,7 +307,7 @@
    }
 
    background-color: white;
-   border: 1px solid #d9d9d9;
+   border: 1px solid @input-border;
    box-sizing: border-box;
    z-index: 1070;
    left: -9999px;
@@ -356,12 +356,12 @@
        }
 
        &-disabled {
-         color: #ccc;
+         color: @gray-dark;
          cursor: not-allowed;
          pointer-events: none;
 
          &:hover {
-           color: #ccc;
+           color: @gray-dark;
            background-color: #fff;
            cursor: not-allowed;
          }
@@ -397,7 +397,7 @@
        padding: 4px 7px;
        width: 100%;
        box-sizing: border-box;
-       border: 1px solid #d9d9d9;
+       border: 1px solid @input-border;
        outline: none;
      }
      &.@{selectPrefixCls}-search--hide {

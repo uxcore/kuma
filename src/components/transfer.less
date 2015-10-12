@@ -15,7 +15,7 @@
             padding: 5px 10px;
             border: 1px solid #d7d7d7;
             border-radius: 2px;
-            background-color: #fff;
+            background-color: @white;
             overflow-x: hidden;
             overflow-y: auto;
             a {
@@ -25,17 +25,17 @@
                 padding: 0 10px;
                 overflow: hidden;
                 line-height: 30px;
-                color: #999;
+                color: @transfer-item-color;
                 &:hover,
                 &:focus {
                     outline: none;
-                    background-color: #f7f7f7;
+                    background-color: @transfer-item-hover-bg;
                     text-decoration: none;
                 }
                 &.selected {
                     position: relative;
-                    background-color: #f90;
-                    color: #fff;
+                    background-color: @transfer-item-selected-bg;
+                    color: @transfer-item-selected-color;
                     &:before {
                         content: "\e601";
                         display: block;
@@ -64,14 +64,14 @@
                 display: inline-block;
                 width: 30px;
                 height: 30px;
-                border: 1px solid #d3d3d3;
-                background-color: #fff;
+                border: 1px solid @transfer-button-border;
+                background-color: @transfer-button-bg;
                 margin-bottom: 15px;
                 &.enable {
-                    background-color: #f90;
-                    border-color: transparent #f80;
+                    background-color: @transfer-button-enable-bg;
+                    border-color: transparent @transfer-button-enable-border;
                     &:before {
-                        border-color: transparent #fff;
+                        border-color: transparent @white;
                     }
                 }
                 &:before {
@@ -84,7 +84,7 @@
                     height: 0;
                     border-style: solid;
                     border-width: 6px 0 6px 10px;
-                    border-color: transparent #999;
+                    border-color: transparent @transfer-button-arrow;
                 }
                 &:first-child:before {
                     left: 10px;
