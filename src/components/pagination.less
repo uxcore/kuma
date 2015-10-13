@@ -1,0 +1,263 @@
+@paginationPrefix: kuma-pagination;
+
+.@{paginationPrefix} {
+  font-size: 12px;
+  font-family: 'Arial';
+  user-select: none;
+
+  &:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+  }
+
+  &-item {
+    cursor: pointer;
+    min-width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    list-style: none;
+    float: left;
+    border: 1px solid @pagination-item-border;
+    background-color: @pagination-item-bg;
+    margin-right: 8px;
+
+    a {
+      text-decoration: none;
+      color: @pagination-item-text;
+    }
+
+
+    &:hover {
+      border-color: @brand-primary;
+      a {
+        color: @brand-primary;
+      }
+    }
+
+    &-active {
+      background-color: @brand-primary;
+      border-color: @brand-primary;
+
+      a {
+        color: @pagination-item-active-text;
+      }
+
+      &:hover {
+        a {
+          color: @pagination-item-active-text;
+        }
+      }
+    }
+  }
+
+  &-jump-prev, &-jump-next {
+    &:after {
+      content: "•••";
+      display: block;
+      letter-spacing: 2px;
+      color: #ccc;
+      font-size: 12px;
+      margin-top: 1px;
+    }
+
+    &:hover {
+      &:after {
+        color: @brand-primary;
+      }
+    }
+
+  }
+
+  &-jump-prev {
+    &:hover {
+      &:after {
+        content: "«";
+      }
+    }
+  }
+
+  &-jump-next {
+    &:hover {
+      &:after {
+        content: "»";
+      }
+    }
+  }
+
+  &-prev, &-jump-prev, &-jump-next {
+    margin-right: 8px;
+  }
+  &-prev, &-next, &-jump-prev, &-jump-next {
+    cursor: pointer;
+    color: @pagination-item-text;
+    font-size: 10px;
+    list-style: none;
+    min-width: 28px;
+    height: 28px;
+    line-height: 28px;
+    float: left;
+    text-align: center;
+  }
+
+  &-prev {
+    a {
+      &:after {
+        content: "‹";
+        display: block;
+      }
+    }
+  }
+
+  &-next {
+    a {
+      &:after {
+        content: "›";
+        display: block;
+      }
+    }
+  }
+
+  &-prev, &-next {
+    border: 1px solid @pagination-item-border;
+    font-size: 18px;
+    a {
+      color: @pagination-item-text;
+      &:after {
+        margin-top: -1px;
+      }
+    }
+  }
+
+  &-disabled {
+    cursor: @cursor-disabled;
+    a {
+      color: @pagination-item-disabled-text;
+    }
+  }
+
+  &-options {
+    float: left;
+    margin-left: 15px;
+    &-size-changer {
+      float: left;
+      width: 80px;
+    }
+
+    &-quick-jumper {
+      float: left;
+      margin-left: 16px;
+      height: 28px;
+      line-height: 28px;
+
+      input {
+        margin: 0 8px;
+        background-color: @white;
+        border: 1px solid @pagination-item-border;
+        outline: none;
+        width: 50px;
+        height: 28px;
+        text-align: center;
+
+        &:hover {
+          border-color: @brand-primary;
+        }
+      }
+    }
+  }
+
+  &-simple {
+    .@{paginationPrefix}-prev, .@{paginationPrefix}-next {
+        font-size: 10px;
+        min-width: 18px;
+        height: 18px;
+        line-height: 18px;
+    }
+
+    .@{paginationPrefix}-current {
+        color: #ff6600;
+    }
+
+    .@{paginationPrefix}-simple-pager {
+      float: left;
+      margin-right: 8px;
+      line-height: 18px;
+      font-weight: bold;
+
+      input {
+        margin: 0 8px;
+        background-color: @white;
+        border: 1px solid @pagination-item-border;
+        outline: none;
+        width: 30px;
+        min-height: 20px;
+        text-align: center;
+
+        &:hover {
+          border-color: @brand-primary;
+        }
+      }
+
+    }
+  }
+
+    &.mini {
+        .@{paginationPrefix}-prev, .@{paginationPrefix}-next, .@{paginationPrefix}-jump-prev, .@{paginationPrefix}-jump-next {
+            font-size: 10px;
+            min-width: 18px;
+            height: 18px;
+            line-height: 18px;
+        }
+
+        .@{paginationPrefix}-item {
+            margin-right: 6px;
+            min-width: 18px;
+            height: 18px;
+            line-height: 18px;
+        }
+
+        .@{paginationPrefix}-options {
+            .@{paginationPrefix}-options-quick-jumper {
+                margin-left: 8px;
+                height: 18px;
+                line-height: 18px;
+
+                input {
+                    width: 36px;
+                    height: 18px;
+
+                    &:hover {
+                        border-color: @brand-primary;
+                    }
+                }
+            }
+            .@{paginationPrefix}-options-size-changer {
+                .kuma-select-selection {
+                    height: 18px;
+                    .kuma-select-selection__rendered {
+                        line-height: 18px;
+                    }
+                    .kuma-select-arrow {
+                        height: 18px;
+                        margin-top: -5px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.@{paginationPrefix}-options-size-changer,
+.@{paginationPrefix}-options-size-changer-dropdown {
+  font-size: 12px;
+}
+.@{paginationPrefix}-options-size-changer-dropdown {
+  .kuma-select-dropdown-menu-item {
+    padding: 7px 16px 7px 11px; 
+  }
+}

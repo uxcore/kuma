@@ -1,0 +1,193 @@
+.@{calendar-prefix-class} {
+  position: relative;
+  outline: none;
+  width: 212px;
+  list-style: none;
+  font-size: 12px;
+  text-align: left;
+  background-color: @calendar-background;
+  box-shadow: 0 1px 5px @calendar-border;
+  background-clip: padding-box;
+  border: 1px solid @calendar-border;
+  line-height: 1.5;
+
+  a {
+      &:hover {
+          text-decoration: none;
+      }
+  }
+
+  &-week-number {
+    width: 286px;
+
+    &-cell {
+      text-align: center;
+    }
+  }
+
+  &-header {
+    padding: 0 10px;
+    height: 30px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    border-bottom: 1px solid @calendar-border;
+
+    > a {
+      display: inline-block;
+      padding: 0px 5px;
+      width: 30px;
+      line-height: 29px;
+      text-align: center;
+      font-size: 18px;
+      font-family: Arial;
+      color: @calendar-text;
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: none;
+        color: @link-hover-color;
+      }
+    }
+
+    .@{calendar-prefix-class}-prev-month-btn {
+      position: absolute;
+      left: 25px;
+    }
+
+    .@{calendar-prefix-class}-next-month-btn {
+      position: absolute;
+      right: 25px;
+    }
+  }
+
+  &-year-select, &-month-select {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    color: @calendar-text;
+    padding: 0 5px;
+    line-height: 30px;
+
+    &:hover {
+      cursor: pointer;
+      color: @link-hover-color;
+    }
+  }
+
+  &-prev-month-btn,
+  &-next-month-btn,
+  &-prev-year-btn,
+  &-next-year-btn {
+    position: absolute;
+    top: 0;
+  }
+
+  &-next-year-btn {
+    right: 0;
+  }
+
+  &-prev-year-btn {
+    left: 0;
+  }
+
+  &-calendar-body {
+    padding: 0;
+  }
+
+  table {
+    table-layout: fixed;
+    width: 100%;
+    th, td {
+        max-width: 30px;
+        height: 26px;
+    }
+  }
+
+  &-column-header {
+    border-bottom: 1px solid @calendar-border;
+    text-align: center;
+    .@{calendar-prefix-class}-column-header-inner {
+      display: block;
+      font-weight: normal;
+    }
+  }
+
+  &-week-number-header {
+    .@{calendar-prefix-class}-column-header-inner {
+      display: none;
+    }
+  }
+
+  &-date {
+    display: block;
+    color: @calendar-text;
+    line-height: 26px;
+    text-align: center;
+
+    &:hover {
+      background: @calendar-hover-bg;
+      cursor: pointer;
+    }
+  }
+
+  &-selected-day &-date {
+    background: @calendar-selected-color;
+    color: @calendar-selected-text;
+
+    &:hover {
+      background: @calendar-selected-color;
+    }
+  }
+
+  &-today &-date {
+    background: @calendar-hover-bg;
+    border: 1px solid @calendar-hover-bg;
+  }
+
+  &-disabled-cell &-date {
+    cursor: @cursor-disabled;
+    color: @black-light;
+    background: @calendar-disabled-bg;
+
+    &:hover {
+      background: @calendar-hover-bg;
+    }
+  }
+
+  &-last-month-cell &-date, &-next-month-btn-day &-date {
+    color: @calendar-disabled-color;
+  }
+
+  &-footer {
+    border-top: 1px solid @calendar-border;
+    text-align: center;
+  }
+
+  &-footer-btn {
+    margin-top: 2px;
+  }
+
+  &-today-btn, &-clear-btn, &-ok-btn {
+    display: inline-block;
+    padding: 4px 5px;
+    text-align: center;
+    color: @calendar-text;
+
+    &:hover {
+      cursor: pointer;
+      color: @link-hover-color;
+    }
+
+    &-disabled {
+      color: @calendar-disabled-color;
+      &:hover {
+        color: @calendar-disabled-color;
+      }
+    }
+  }
+
+  &-today-btn {
+    padding-left: 10px;
+  }
+}

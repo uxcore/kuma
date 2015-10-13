@@ -1,0 +1,23 @@
+.@{calendar-prefix-class}-picker {
+    > input {
+        position: relative;
+        display: inline-block;
+        vertical-align: baseline;
+        cursor: pointer;
+
+        &[disabled] {
+            cursor: @cursor-disabled;
+        }
+    }
+
+    > .kuma-icon {
+        position: absolute;
+        right: 8px;
+        top: 1px;
+    }
+    &-open {
+        > input {
+            border-color: @input-border-focus!important;
+        }
+    }
+}

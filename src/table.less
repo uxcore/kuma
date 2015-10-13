@@ -1,0 +1,218 @@
+.icon-fold,
+.icon-unfold {
+	background-image: url('https://aliwork.alicdn.com/tps/i4/TB1jhvPGVXXXXXOaXXXfq78_VXX-120-23.png');
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	font-size: 0;
+	line-height: 0
+}
+.icon-fold {
+	background-position: 0 0
+}
+.icon-unfold {
+	background-position: 0 -12px
+}
+.kuma-table {
+	font: 12px/1.5 tahoma, arial, "Hiragino Sans GB", ~"\5b8b\4f53";
+	border-collapse: collapse;
+	border-bottom: 1px solid #ebebeb;
+	width: 100%;
+	color: #666;
+	text-align: left;
+	margin-bottom: 5px;
+	th{
+		background-color: #f2f2f2;
+		padding: 12px;
+		border-bottom: 1px solid #ebebeb;
+		.sort{
+			display: inline-block;
+			background-image: url("https://aliwork.alicdn.com/tps/i3/TB1fiP0GVXXXXbIXXXXftv.FpXX-7-12.png");
+			height: 12px;
+			width: 7px;
+			position: relative;
+			top: 2px;
+			cursor: pointer;
+			left: 5px;
+			&.asc{
+				background-image: url("https://aliwork.alicdn.com/tps/i2/TB1LybWGVXXXXbvXpXXftv.FpXX-7-12.png");
+			}
+			&.desc{
+				background-image: url("https://aliwork.alicdn.com/tps/i1/TB1.ZL1GVXXXXahXXXXftv.FpXX-7-12.png");
+			}
+		}
+	}
+	td{
+		padding: 12px;
+		border-bottom: 1px solid #ebebeb;
+	}
+	tbody th {
+		background: transparent;
+		font-weight: 700;
+	}
+	.kuma-table-itemt-block {
+		display: block;
+	}
+	.sub-tr {
+		background-color: #fbfbfb;
+		&.with-table{
+			.with-icon,.be-select{
+				border: 0 none;
+			}
+			td{
+				border-bottom: 1px dashed #ebebeb;
+				padding-top: 6px;
+				padding-bottom: 6px;
+			}
+		}
+	}
+	.be-select {
+		vertical-align: top;
+		width: 14px;
+	}
+	.with-icon {
+		width: 11px;
+		font-size: 0;
+		i{
+			cursor: pointer;
+			vertical-align: top;
+		}
+	}
+	a {
+		color: #288df0;
+		text-decoration: none;
+	}
+}
+.kuma-table .be-select+th,
+.kuma-table .be-select+td,
+.kuma-table .with-icon+th,
+.kuma-table .with-icon+td,
+.kuma-table .with-icon+.be-select {
+	padding-left: 8px
+}
+.kuma-table-container{
+	.kuma-table-more,.kuma-table-less{
+		color: #999;
+		cursor: pointer;
+		text-align: center;
+		margin-top: 10px;
+		i{
+			background-image: url('https://aliwork.alicdn.com/tps/i4/TB1jhvPGVXXXXXOaXXXfq78_VXX-120-23.png');
+			background-repeat: no-repeat;
+			display: inline-block;
+			*display: inline;
+			*zoom: 1;
+			width: 10px;
+			height: 15px;
+			vertical-align: bottom;
+		}
+	}
+	.kuma-table-more i{
+		background-position: -97px 0;
+	}
+	.kuma-table-less i {
+		background-position: -107px 0;
+	}
+	.kuma-table-remak {
+		color: #999;
+		padding-left: 16px;
+	}
+	.kuma-pagination {
+		text-align: right;
+	}
+}
+.kuma-table-condensed>thead>tr>th,
+.kuma-table-condensed>tbody>tr>th,
+.kuma-table-condensed>tfoot>tr>th,
+.kuma-table-condensed>thead>tr>td,
+.kuma-table-condensed>tbody>tr>td,
+.kuma-table-condensed>tfoot>tr>td {
+	padding: 5px 0 5px 5px
+}
+.kuma-table-hover tr:hover,
+.kuma-table-striped tr:nth-child(even) {
+	background-color: #fbfbfb
+}
+.kuma-table-bordered,
+.kuma-table-bordered tr,
+.kuma-table-bordered th,
+.kuma-table-bordered td {
+	border: 1px solid #ebebeb;
+	outline: none
+}
+.kuma-table-inbox {
+	border: none;
+	outline: none;
+	th,td{
+		border-top: 1px solid #ebebeb;
+	}
+}
+.kuma-table-action {
+	zoom: 1;
+	margin-bottom: 10px;
+	&:after{
+		visibility: hidden;
+		display: block;
+		font-size: 0;
+		content: " ";
+		clear: both;
+		height: 0;
+	}
+	.kuma-table-fold,.kuma-table-unfold{
+		display: inline-block;
+		width: 21px;
+		height: 22px;
+		border: 0 none;
+		border: 1px solid #ccc;
+		background-color: #f5f5f5;
+		background-image: url('https://aliwork.alicdn.com/tps/i4/TB1jhvPGVXXXXXOaXXXfq78_VXX-120-23.png');
+		background-repeat: no-repeat;
+		cursor: pointer;
+		vertical-align: middle;
+	}
+	.kuma-table-fold {
+		border-right: 0 none;
+		background-position: -54px 0;
+		&.active{
+			border-color: #0776df;
+			background-color: #248aee;
+			background-position: -11px 0;
+		}
+	}
+	.kuma-table-unfold {
+		border-left: 0 none;
+		background-position: -32px 0;
+		margin-right: 10px;
+		&.active{
+			border-color: #0776df;
+			background-color: #248aee;
+			background-position: -76px 0;
+		}
+	}
+	.kuma-button-group {
+		float: left;
+		margin-top: 6px;
+	}
+	.kuma-button-swhite {
+		line-height: 22px;
+	}
+	.kuma-table-action-search {
+		float: right;
+		position: relative;
+		input{
+			padding-right: 25px;
+			width: 150px;
+		}
+		.search-icon {
+			display: inline-block;
+			width: 13px;
+			height: 13px;
+			position: absolute;
+			right: 8px;
+			top: 10px;
+			background: url("https://aliwork.alicdn.com/tps/i1/TB1NVnRGVXXXXXRXVXXmpvM.VXX-13-13.png");
+			cursor: pointer;
+		}
+	}
+}

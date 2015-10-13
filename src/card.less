@@ -1,0 +1,60 @@
+//====**** 基于 variables -> panel.less
+//+++ 卡片面板样式
+.kuma-card {
+    min-height: 44px;
+    margin-bottom: 15px;
+    background-color: @card-body-bg;
+    border: 1px solid @card-border-color;
+
+    .card-titlebar {
+        height: 40px;
+        line-height: 40px;
+        background-color: @card-title-bg;
+        border-bottom: 1px solid @card-title-border-color;
+
+        .title {
+            display: inline-block;
+            height: 40px;
+            line-height: 40px;
+            float: left;
+            color: @card-title-color;
+            font-size: 16px;
+            padding-left: 20px;
+        }
+
+        .actions {
+            display: inline-block;
+            margin-right: 20px;
+            float: right;
+
+            .prev, .next {
+                border: 1px solid @card-extra-button-border-color;
+                cursor: pointer;
+                font-size: 14px;
+
+                &:hover {
+                    color: @card-extra-button-hover-color;
+                    border-color: @card-extra-button-hover-border-color;
+                }
+            }
+
+            .disabled {
+                color: @card-extra-button-disable-color;
+                &:hover {
+                    border: 1px solid @card-extra-button-disable-border-color;
+                    color: @card-extra-button-disable-color;
+                    cursor: default;
+                }
+            }
+
+            a:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .card-content {
+        margin: 15px 20px;
+        overflow: hidden;
+    }
+}
