@@ -12,7 +12,7 @@ var autoprefix = new LessPluginAutoPrefix({
 });
 
 gulp.task('less', ['clean'], function(){
-	return gulp.src(['./src/kuma.less', './src/theme/*.less'])
+	return gulp.src(['./src/kuma.less', './src/kuma-compatible.less', './src/theme/*.less'])
 		.pipe(sourcemaps.init())
 		.pipe(less({
 			plugins: [autoprefix, LessPluginInlineUrls]
