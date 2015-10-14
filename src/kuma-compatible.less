@@ -1,6 +1,12 @@
 @import "variables.less";
 
 .uxcore {
+    box-sizing: border-box;
+    * {
+        box-sizing: inherit;
+    }
+}
+.uxcore {
     @import "component.less";
     @import "form.less";
 }
