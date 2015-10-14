@@ -2,6 +2,11 @@
 
 ---
 
+## 1.1.0
+`CHNAGED` 打包改成gulp
+`CHANGED` 整理抽取变量，更好的换肤效果
+`CHANGED` 去掉src下得less目录，子目录全部提升一层
+
 ## 1.0.8
 
 `NEW` add kuma-popover
@@ -16,7 +21,7 @@
 
 ## 1.0.6
 
-`FIXED` fix bug not publishing dist/uxcore-kuma.css 
+`FIXED` fix bug not publishing dist/uxcore-kuma.css
 
 ## 1.0.5
 
