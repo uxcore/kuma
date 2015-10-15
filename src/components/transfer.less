@@ -1,21 +1,39 @@
 /* alinw.transfer style module */
 
-.kuma-transfer-container {
+.kuma-uxtransfer-container {
     font-size: 12px;
     th {
         line-height: 30px;
+        > .title {
+            float: left;
+        }
+        > .searchBar {
+            float: right;
+            position: relative;
+            .kuma-icon {
+                position: absolute;
+                right: 8px;
+                color: #ccc;
+                top: 2px;
+                cursor:pointer;
+            }
+            .kuma-input {
+                border-radius: 2px;
+                width: 200px;
+            }
+        }
     }
     td {
         padding: 0;
         vertical-align: top;
 
-        .kuma-transfer-block {
+        .kuma-uxtransfer-block {
             width: 300px;
             height: 300px;
             padding: 5px 10px;
             border: 1px solid #d7d7d7;
             border-radius: 2px;
-            background-color: @white;
+            background-color: #fff;
             overflow-x: hidden;
             overflow-y: auto;
             a {
@@ -25,17 +43,17 @@
                 padding: 0 10px;
                 overflow: hidden;
                 line-height: 30px;
-                color: @transfer-item-color;
+                color: #999;
                 &:hover,
                 &:focus {
                     outline: none;
-                    background-color: @transfer-item-hover-bg;
+                    background-color: #f7f7f7;
                     text-decoration: none;
                 }
                 &.selected {
                     position: relative;
-                    background-color: @transfer-item-selected-bg;
-                    color: @transfer-item-selected-color;
+                    background-color: #f90;
+                    color: #fff;
                     &:before {
                         content: "\e601";
                         display: block;
@@ -52,8 +70,7 @@
                 }
             }
         }
-
-        &.kuma-transfer-buttons {
+        &.kuma-uxtransfer-buttons {
             width: 90px;
             text-align: center;
             vertical-align: middle;
@@ -64,14 +81,14 @@
                 display: inline-block;
                 width: 30px;
                 height: 30px;
-                border: 1px solid @transfer-button-border;
-                background-color: @transfer-button-bg;
+                border: 1px solid #d3d3d3;
+                background-color: #fff;
                 margin-bottom: 15px;
                 &.enable {
-                    background-color: @transfer-button-enable-bg;
-                    border-color: transparent @transfer-button-enable-border;
+                    background-color: #f90;
+                    border-color: transparent #f80;
                     &:before {
-                        border-color: transparent @white;
+                        border-color: transparent #fff;
                     }
                 }
                 &:before {
@@ -84,7 +101,7 @@
                     height: 0;
                     border-style: solid;
                     border-width: 6px 0 6px 10px;
-                    border-color: transparent @transfer-button-arrow;
+                    border-color: transparent #999;
                 }
                 &:first-child:before {
                     left: 10px;
@@ -94,3 +111,17 @@
         }
     }
 }
+
+.uxTransfer.disabled {
+    .kuma-uxtransfer-buttons {
+        > a {
+            background: #ccc;
+        }
+    }
+    .kuma-uxtransfer-block {
+        a.selected {
+            background: #ccc;
+        }
+    }
+}
+
