@@ -28,7 +28,6 @@ gulp.task('minify', ['less'], function(){
 		.pipe(rename({
 			suffix: '.min'
 		}))
-		.pipe(sourcemaps.write('./'))
 		.pipe(gulp.dest('./dist'));
 });
 
