@@ -1,0 +1,145 @@
+@step-prefix-cls: kuma-step;
+
+.@{step-prefix-cls} {
+    &-item {
+        position: relative;
+        display: inline-block;
+        min-height: 40px;
+        vertical-align: top;
+        &-last {
+
+        }
+    }
+    &-tail {
+        position: absolute;
+        left: 0;
+        top: @step-normal-icon-size / 2 + 7;
+        padding: 0 6px 0 @step-normal-icon-size + 4;
+        width: 100%;
+        > i {
+            display: block;
+            width: 100%;
+            height: 0;
+            border-bottom: 2px solid #ccc;
+        }
+    }
+    &-head {
+        position: absolute;
+        left: 0;
+        top: 8px;
+        &-inner {
+
+        }
+        .@{step-prefix-cls}-icon {
+            display: inline-block;
+            width: @step-normal-icon-size;
+            height: @step-normal-icon-size;
+            border-radius: @step-normal-icon-size / 2;
+            border: 1px solid @step-primary-color;
+            text-align: center;
+            line-height: @step-normal-icon-size - 2;
+            font-size: 14px;
+        }
+    }
+    &-main {
+        color: @step-text-color;
+        .@{step-prefix-cls}-title {
+            margin-left: 30px;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+        .@{step-prefix-cls}-description {
+            margin-top: 16px;
+            text-indent: -10px;
+        }
+    }
+    &-status-finish {
+        .@{step-prefix-cls}-icon {
+            background-color: @step-primary-color;
+            color: #fff;
+            &:after {
+                font-family: 'kuma'!important;
+                content: '\e611';
+            }
+        }
+        &.@{step-prefix-cls}-item {
+            .@{step-prefix-cls}-tail {
+                i {
+                    border-color: @step-primary-color;
+                }
+            }
+        }
+    }
+    &-status-process {
+        .@{step-prefix-cls}-icon {
+            background-color: @step-primary-color;
+            color: #fff;
+        }
+    }
+    &-status-wait {
+        .@{step-prefix-cls}-icon {
+            background-color: #fff;
+            border-color: #ccc;
+            color: #ccc;
+        }
+    }
+
+    &-vertical {
+        .@{step-prefix-cls}-head {
+            top: 0;
+        }
+        .@{step-prefix-cls}-item {
+            display: block;
+        }
+        .@{step-prefix-cls}-tail {
+            left: @step-normal-icon-size / 2;
+            top: 0;
+            padding: @step-normal-icon-size + 2 0 2px 0;
+            width: 0;
+            height: 100%;
+            i {
+                width: 0;
+                height: 100%;
+                border-bottom: 0 none;
+                border-left: 2px solid #ccc;
+            }
+        }
+        .@{step-prefix-cls}-main {
+            padding: 2px 0 0 30px;
+            .@{step-prefix-cls}-title {
+                margin-left: 0;
+            }
+            .@{step-prefix-cls}-description {
+                margin-top: 4px;
+                text-indent: 0;
+            }
+        }
+    }
+
+    &-small {
+        .@{step-prefix-cls}-head {
+            .@{step-prefix-cls}-icon {
+                font-size: 12px;
+            }
+        }
+        .@{step-prefix-cls}-tail {
+            top: @step-min-icon-size / 2 + 7;
+            padding: 0 6px 0 @step-min-icon-size + 4;
+        }
+        &.@{step-prefix-cls}-vertical {
+            .@{step-prefix-cls}-tail {
+                left: @step-min-icon-size / 2 - 1;
+                top: 0;
+                padding: @step-min-icon-size + 2 0 2px 0;
+            }
+        }
+        .@{step-prefix-cls}-head {
+            .@{step-prefix-cls}-icon {
+                width: @step-min-icon-size;
+                height: @step-min-icon-size;
+                border-radius: @step-min-icon-size / 2;
+                line-height: @step-min-icon-size - 2;
+            }
+        }
+    }
+}
