@@ -32,7 +32,7 @@ gulp.task('minify', ['less'], function(){
 });
 
 gulp.task('clean', function(){
-	return gulp.src('./dist/*.css')
+	return gulp.src('./dist/*')
 		.pipe(clean({
 			read: false
 		}));
