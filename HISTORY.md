@@ -2,6 +2,12 @@
 
 ---
 
+## 1.1.1
+`NEW` 增加老kuma的兼容版本，compatible为后缀
+`NEW` 增加 progress, menu, collapse, steps 的样式
+`FIXED` 修复theme样式中svg引用路径问题
+
+
 ## 1.1.0
 `CHNAGED` 打包改成gulp
 `CHANGED` 整理抽取变量，更好的换肤效果
