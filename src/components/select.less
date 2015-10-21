@@ -67,7 +67,7 @@
      pointer-events: none;
    }
 
-   &-disabled &-selection {
+   &-disabled .@{selectPrefixCls}-selection {
      &:hover, &:active {
        border-color: @input-border;
      }
@@ -149,7 +149,7 @@
      }
    }
 
-   &-disabled &-selection__choice__remove {
+   &-disabled .@{selectPrefixCls}-selection__choice__remove {
      color: @gray-dark;
      cursor: default;
      &:hover {

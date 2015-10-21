@@ -131,7 +131,7 @@
     }
   }
 
-  &-selected-day &-date {
+  &-selected-day .@{calendar-prefix-class}-date {
     background: @calendar-selected-color;
     color: @calendar-selected-text;
 
@@ -140,12 +140,12 @@
     }
   }
 
-  &-today &-date {
+  &-today .@{calendar-prefix-class}-date {
     background: @calendar-hover-bg;
     border: 1px solid @calendar-hover-bg;
   }
 
-  &-disabled-cell &-date {
+  &-disabled-cell .@{calendar-prefix-class}-date {
     cursor: @cursor-disabled;
     color: @black-light;
     background: @calendar-disabled-bg;
@@ -155,7 +155,7 @@
     }
   }
 
-  &-last-month-cell &-date, &-next-month-btn-day &-date {
+  &-last-month-cell .@{calendar-prefix-class}-date, &-next-month-btn-day .@{calendar-prefix-class}-date {
     color: @calendar-disabled-color;
   }
 
