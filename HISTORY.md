@@ -2,6 +2,10 @@
 
 ---
 
+## 1.1.2
+
+`FIXED` 修复兼容包的一些问题 #3 #4
+
 ## 1.1.1
 `NEW` 增加老kuma的兼容版本，compatible为后缀
 `NEW` 增加 progress, menu, collapse, steps 的样式
