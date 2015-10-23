@@ -244,6 +244,8 @@
         margin: 5px;
         width: 80px;
         height: 112px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
         box-sizing: border-box;
 
         .action-remove {
@@ -345,11 +347,13 @@
         .field-info {
             .@{uploader-prefix-class}-fileicon {
                 margin: 0 5px;
+                font-size: 16px;
             }
             .kuma-icon-caution {
                 vertical-align: middle;
                 margin: 0 5px;
                 color: #ff6330;
+                font-size: 14px;
             }
             .kuma-loading {
                 display: inline-block;
@@ -360,6 +364,7 @@
                 margin: 0 5px;
             }
             .filename {
+                font-size: 12px;
                 vertical-align: middle;
                 white-space: nowrap;
             }
@@ -368,7 +373,7 @@
         .field-status {
             margin-left: 10px;
             .@{uploader-prefix-class}-status {
-                font-size: 14px;
+                font-size: 12px;
                 &.status-progress {
                     color:#f60;
                 }
@@ -377,7 +382,7 @@
                 }
             }
             .@{uploader-prefix-class}-action {
-                font-size: 14px;
+                font-size: 12px;
                 margin: 0 5px;
                 color:#288df0;
                 cursor: pointer;
