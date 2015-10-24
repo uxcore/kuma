@@ -72,8 +72,14 @@
     }
     &-status-process {
         .@{step-prefix-cls}-icon {
-            background-color: @step-primary-color;
+            background-color: @step-current-color;
+            border-color: @step-current-color;
             color: #fff;
+        }
+        .@{step-prefix-cls}-tail {
+            > i {
+                border-color: @step-current-color;
+            }
         }
     }
     &-status-wait {
@@ -139,6 +145,32 @@
                 height: @step-min-icon-size;
                 border-radius: @step-min-icon-size / 2;
                 line-height: @step-min-icon-size - 2;
+            }
+        }
+    }
+
+    &-noicon {
+        &.@{step-prefix-cls}-vertical {
+            .@{step-prefix-cls}-head {
+                top: 5px;
+                left: 8px;
+            }
+        }
+        .@{step-prefix-cls}-head {
+            top: 12px;
+            left: 6px;
+            .@{step-prefix-cls}-icon {
+                width: 10px;
+                height: 10px;
+                border-radius: 5px;
+                &:after {
+                    content: '';
+                }
+            }
+        }
+        .@{step-prefix-cls}-status-wait {
+            .@{step-prefix-cls}-icon {
+                background-color: #ccc;
             }
         }
     }
