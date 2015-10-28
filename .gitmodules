@@ -1,0 +1,100 @@
+[submodule "src/components/uxcore-tabs"]
+	path = src/components/uxcore-tabs
+	url = git@github.com:uxcore/uxcore-tabs.git
+	branch = master
+[submodule "src/components/uxcore-multi-select"]
+	path = src/components/uxcore-multi-select
+	url = git@github.com:uxcore/uxcore-tabs.git
+	branch = master
+[submodule "src/components/uxcore-crumb"]
+	path = src/components/uxcore-crumb
+	url = git@github.com:uxcore/uxcore-crumb.git
+	branch = master
+[submodule "src/components/uxcore-dropdown"]
+	path = src/components/uxcore-dropdown
+	url = git@github.com:uxcore/uxcore-dropdown.git
+	branch = master
+[submodule "src/components/uxcore-table"]
+	path = src/components/uxcore-table
+	url = git@github.com:uxcore/uxcore-table.git
+	branch = master
+[submodule "src/components/uxcore-grid"]
+	path = src/components/uxcore-grid
+	url = git@github.com:uxcore/uxcore-grid.git
+	branch = master
+[submodule "src/components/uxcore-calendar"]
+	path = src/components/uxcore-calendar
+	url = git@github.com:uxcore/uxcore-calendar.git
+	branch = master
+[submodule "src/components/uxcore-form"]
+	path = src/components/uxcore-form
+	url = git@github.com:uxcore/uxcore-form.git
+	branch = master
+[submodule "src/components/uxcore-layout"]
+	path = src/components/uxcore-layout
+	url = git@github.com:uxcore/uxcore-layout.git
+	branch = master
+[submodule "src/components/uxcore-pagination"]
+	path = src/components/uxcore-pagination
+	url = git@github.com:uxcore/uxcore-pagination.git
+	branch = master
+[submodule "src/components/uxcore-mention"]
+	path = src/components/uxcore-mention
+	url = git@github.com:uxcore/uxcore-mention.git
+	branch = master
+[submodule "src/components/uxcore-checkbox-group"]
+	path = src/components/uxcore-checkbox-group
+	url = git@github.com:uxcore/uxcore-checkbox-group.git
+	branch = master
+[submodule "src/components/uxcore-steps"]
+	path = src/components/uxcore-steps
+	url = git@github.com:uxcore/uxcore-steps.git
+	branch = master
+[submodule "src/components/uxcore-tree"]
+	path = src/components/uxcore-tree
+	url = git@github.com:uxcore/uxcore-tree.git
+	branch = master
+[submodule "src/components/uxcore-uploader"]
+	path = src/components/uxcore-uploader
+	url = git@github.com:uxcore/uxcore-uploader.git
+	branch = master
+[submodule "src/components/uxcore-collapse"]
+	path = src/components/uxcore-collapse
+	url = git@github.com:uxcore/uxcore-collapse.git
+	branch = master
+[submodule "src/components/uxcore-progress"]
+	path = src/components/uxcore-progress
+	url = git@github.com:uxcore/uxcore-progress.git
+	branch = master
+[submodule "src/components/uxcore-menu"]
+	path = src/components/uxcore-menu
+	url = git@github.com:uxcore/uxcore-menu.git
+	branch = master
+[submodule "src/components/uxcore-dialog"]
+	path = src/components/uxcore-dialog
+	url = git@github.com:uxcore/uxcore-dialog.git
+	branch = master
+[submodule "src/components/uxcore-tooltip"]
+	path = src/components/uxcore-tooltip
+	url = git@github.com:uxcore/uxcore-tooltip.git
+	branch = master
+[submodule "src/components/uxcore-select2"]
+	path = src/components/uxcore-select2
+	url = git@github.com:uxcore/uxcore-select2.git
+	branch = master
+[submodule "src/components/uxcore-button"]
+	path = src/components/uxcore-button
+	url = git@github.com:uxcore/uxcore-button.git
+	branch = master
+[submodule "src/components/uxcore-popover"]
+	path = src/components/uxcore-popover
+	url = git@github.com:uxcore/uxcore-popover.git
+	branch = master
+[submodule "src/components/uxcore-transfer"]
+	path = src/components/uxcore-transfer
+	url = git@github.com:uxcore/uxcore-transfer.git
+	branch = master
+[submodule "src/components/uxcore-radiogroup"]
+	path = src/components/uxcore-radiogroup
+	url = git@github.com:uxcore/uxcore-radiogroup.git
+	branch = master
