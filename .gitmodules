@@ -2,10 +2,6 @@
 	path = src/components/uxcore-tabs
 	url = git@github.com:uxcore/uxcore-tabs.git
 	branch = master
-[submodule "src/components/uxcore-multi-select"]
-	path = src/components/uxcore-multi-select
-	url = git@github.com:uxcore/uxcore-tabs.git
-	branch = master
 [submodule "src/components/uxcore-crumb"]
 	path = src/components/uxcore-crumb
 	url = git@github.com:uxcore/uxcore-crumb.git
@@ -97,4 +93,8 @@
 [submodule "src/components/uxcore-radiogroup"]
 	path = src/components/uxcore-radiogroup
 	url = git@github.com:uxcore/uxcore-radiogroup.git
+	branch = master
+[submodule "src/components/uxcore-multi-select"]
+	path = src/components/uxcore-multi-select
+	url = git@github.com:uxcore/uxcore-multi-select.git
 	branch = master
