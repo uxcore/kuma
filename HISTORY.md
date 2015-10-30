@@ -1,6 +1,8 @@
 # History
 
 ---
+## 1.2.0
+`CHANGED` component内模块改成submodule方式引入
 
 ## 1.1.3
 
