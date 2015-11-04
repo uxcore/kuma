@@ -98,3 +98,6 @@
 	path = src/components/uxcore-multi-select
 	url = git@github.com:uxcore/uxcore-multi-select.git
 	branch = master
+[submodule "src/components/uxcore-totop"]
+	path = src/components/uxcore-totop
+	url = git@github.com:uxcore/uxcore-totop.git

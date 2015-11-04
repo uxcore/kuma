@@ -30,6 +30,7 @@ kuma for uxcore
 - components/uxcore-multi-select/src/MultiSelect.less
 - components/uxcore-crumb/src/Crumb.less
 - components/uxcore-grid/src/Grid.less
+- components/uxcore-totop/src/Totop.less
 - hovercard.less
 - employee.less
 
