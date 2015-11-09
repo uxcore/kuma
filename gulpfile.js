@@ -4,7 +4,7 @@ var less = require('gulp-less');
 var sourcemaps = require('gulp-sourcemaps');
 var minifyCss = require('gulp-minify-css');
 var clean = require('gulp-clean');
-var inject = require('gulp-inject-string');
+// var inject = require('gulp-inject-string');
 //plugin
 var LessPluginAutoPrefix = require('less-plugin-autoprefix');
 var LessPluginInlineUrls = require('less-plugin-inline-urls');
@@ -25,7 +25,7 @@ gulp.task('build-kuma', ['clean'], function(){
 });
 gulp.task('build-theme', ['clean'], function(){
 	return gulp.src(['./src/theme/*.less'])
-		.pipe(inject.after('variables.less";', '\n@svg-path: "../svg";\n'))
+		// .pipe(inject.after('variables.less";', '\n@svg-path: "../svg";\n'))
 		.pipe(sourcemaps.init())
 		.pipe(less({
 			plugins: [autoprefix, LessPluginInlineUrls]
