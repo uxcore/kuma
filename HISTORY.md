@@ -3,6 +3,12 @@ History
 
 ---
 
+1.2.2
+-----
+
+`FIXED` some style issue
+
+
 1.2.1
 -----
 
