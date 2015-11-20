@@ -101,3 +101,7 @@
 [submodule "src/components/uxcore-totop"]
 	path = src/components/uxcore-totop
 	url = git@github.com:uxcore/uxcore-totop.git
+[submodule "src/components/uxcore-alert"]
+	path = src/components/uxcore-alert
+	url = git@github.com:uxcore/uxcore-alert.git
+	branch = master

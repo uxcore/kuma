@@ -31,6 +31,7 @@ kuma for uxcore
 - components/uxcore-crumb/src/Crumb.less
 - components/uxcore-grid/src/Grid.less
 - components/uxcore-totop/src/Totop.less
+- components/uxcore-alert/src/Alert.less
 - hovercard.less
 - employee.less
 
