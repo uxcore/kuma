@@ -1,5 +1,15 @@
 @import "../variables.less";
 
+@font-face {
+  font-family: 'iconfont';
+  src: url('//at.alicdn.com/t/font_1448246690_795479.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/font_1448246690_795479.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/font_1448246690_795479.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/font_1448246690_795479.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/font_1448246690_795479.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+
 @svg-path: "../svg";
 
 @gray-dark: #ddd;
@@ -44,7 +54,8 @@
 
 @checkbox-theme: payroll;
 
-@arrow-down-content        : '\e642';
-@arrow-up-content 		   : '\e641';
+@arrow-font-family         : 'iconfont';
+@arrow-down-content        : '\e600';
+@arrow-up-content 		   : '\e603';
 
 @import "../base.less";
