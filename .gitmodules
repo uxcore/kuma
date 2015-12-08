@@ -105,3 +105,6 @@
 	path = src/components/uxcore-alert
 	url = git@github.com:uxcore/uxcore-alert.git
 	branch = master
+[submodule "src/components/uxcore-message"]
+	path = src/components/uxcore-message
+	url = git@github.com:uxcore/uxcore-message.git
