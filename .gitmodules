@@ -108,3 +108,7 @@
 [submodule "src/components/uxcore-message"]
 	path = src/components/uxcore-message
 	url = git@github.com:uxcore/uxcore-message.git
+[submodule "src/components/uxcore-pickable"]
+	path = src/components/uxcore-pickable
+	url = git@github.com:uxcore/uxcore-pickable.git
+	branch = master
