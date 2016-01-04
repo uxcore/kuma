@@ -53,5 +53,7 @@ git submodule add -b master git@github.com:uxcore/uxcore-xxx.git src/components/
 
 ### 批量update components
 ```sh
-git submodule foreach git pull
+git submodule foreach git checkout master; git submodule foreach git merge origin/master
 ```
+
+[why](http://stackoverflow.com/questions/14961116/recursively-git-pull-for-all-of-the-git-submodules-simply)
