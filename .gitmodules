@@ -112,3 +112,6 @@
 	path = src/components/uxcore-pickable
 	url = git@github.com:uxcore/uxcore-pickable.git
 	branch = master
+[submodule "src/kuma-base"]
+	path = src/kuma-base
+	url = git@github.com:uxcore/kuma-base.git

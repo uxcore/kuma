@@ -12,7 +12,7 @@ var autoprefix = new LessPluginAutoPrefix({
 	browsers: ['last 2 versions', 'not ie < 8']
 });
 
-gulp.task('build', ['build-kuma', 'build-theme']);
+gulp.task('build', ['build-base', 'build-kuma', 'build-theme']);
 
 gulp.task('build-kuma', ['clean'], function(){
 	return gulp.src(['./src/kuma.less', './src/kuma-compatible.less'])
@@ -26,6 +26,16 @@ gulp.task('build-kuma', ['clean'], function(){
 gulp.task('build-theme', ['clean'], function(){
 	return gulp.src(['./src/theme/*.less'])
 		// .pipe(inject.after('variables.less";', '\n@svg-path: "../svg";\n'))
+		.pipe(sourcemaps.init())
+		.pipe(less({
+			plugins: [autoprefix, LessPluginInlineUrls]
+		}))
+		.pipe(sourcemaps.write('./'))
+		.pipe(gulp.dest('./dist'));
+});
+
+gulp.task('build-base', ['clean'], function(){
+	return gulp.src(['./src/kuma-base.less'])
 		.pipe(sourcemaps.init())
 		.pipe(less({
 			plugins: [autoprefix, LessPluginInlineUrls]

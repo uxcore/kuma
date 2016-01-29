@@ -1,14 +1,9 @@
-@import "../src/variables.less";
-
-#variables {
-	
-}
+@import "../src/kuma-base/variable.less";
 
 #main {
 	display: flex;
 }
 .category-block {
-	@border-color: #ddd;
 	margin-bottom: 12px;
 	padding: 5px;
 	.category-name {
@@ -22,12 +17,12 @@
 	> pre {
 		margin-bottom: 8px;
 		padding: 8px;
-		border: 1px solid @border-color;
+		border: 1px solid @border-normal;
 	}
 	.demo-block {
 		position: relative;
 		padding: 24px 8px 8px;
-		border: 1px solid @border-color;
+		border: 1px solid @border-normal;
 		&:before {
 			content: 'demo';
 			position: absolute;
@@ -35,7 +30,7 @@
 			top: -1px;
 			padding: 0 2px;
 			background-color: #efefef;
-			border: 1px solid @border-color;
+			border: 1px solid @border-normal;
 		}
 	}
 }

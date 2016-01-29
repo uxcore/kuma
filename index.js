@@ -1,4 +1,5 @@
 require('./demo/style.less');
+require('./src/kuma-base.less');
 require('./src/kuma.less');
 var axios = require('axios');
 
