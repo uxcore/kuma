@@ -2,8 +2,9 @@ var gulp = require('gulp');
 var rename = require('gulp-rename');
 var less = require('gulp-less');
 var sourcemaps = require('gulp-sourcemaps');
-var minifyCss = require('gulp-minify-css');
+// var minifyCss = require('gulp-minify-css');
 var clean = require('gulp-clean');
+var cleancss = require('gulp-cleancss');
 // var inject = require('gulp-inject-string');
 //plugin
 var LessPluginAutoPrefix = require('less-plugin-autoprefix');
@@ -11,47 +12,40 @@ var LessPluginInlineUrls = require('less-plugin-inline-urls');
 var autoprefix = new LessPluginAutoPrefix({
 	browsers: ['last 2 versions', 'not ie < 8']
 });
+var cleancssOption = {
+    advanced: false,
+    aggressiveMerging: false,
+    sourceMap: true,
+    compatibility: 'ie8',
+    debug: true
+};
 
 gulp.task('build', ['build-base', 'build-kuma', 'build-theme']);
 
-gulp.task('build-kuma', ['clean'], function(){
-	return gulp.src(['./src/kuma.less', './src/kuma-compatible.less'])
-		.pipe(sourcemaps.init())
+function _lessBuildProcess(source){
+    return gulp.src(source)
+		// .pipe(sourcemaps.init())
 		.pipe(less({
 			plugins: [autoprefix, LessPluginInlineUrls]
 		}))
-		.pipe(sourcemaps.write('./'))
+        .pipe(gulp.dest('./dist'))
+        .pipe(cleancss(cleancssOption))
+        .pipe(rename({
+			suffix: '.min'
+		}))
+		// .pipe(sourcemaps.write('./'))
 		.pipe(gulp.dest('./dist'));
+}
+
+gulp.task('build-kuma', ['clean'], function(){
+	return _lessBuildProcess(['./src/kuma.less', './src/kuma-compatible.less']);
 });
 gulp.task('build-theme', ['clean'], function(){
-	return gulp.src(['./src/theme/*.less'])
-		// .pipe(inject.after('variables.less";', '\n@svg-path: "../svg";\n'))
-		.pipe(sourcemaps.init())
-		.pipe(less({
-			plugins: [autoprefix, LessPluginInlineUrls]
-		}))
-		.pipe(sourcemaps.write('./'))
-		.pipe(gulp.dest('./dist'));
+	return _lessBuildProcess(['./src/theme/*.less']);
 });
 
 gulp.task('build-base', ['clean'], function(){
-	return gulp.src(['./src/kuma-base.less'])
-		.pipe(sourcemaps.init())
-		.pipe(less({
-			plugins: [autoprefix, LessPluginInlineUrls]
-		}))
-		.pipe(sourcemaps.write('./'))
-		.pipe(gulp.dest('./dist'));
-});
-
-gulp.task('minify', ['build'], function(){
-	return gulp.src('./dist/*.css')
-		.pipe(sourcemaps.init())
-		.pipe(minifyCss())
-		.pipe(rename({
-			suffix: '.min'
-		}))
-		.pipe(gulp.dest('./dist'));
+	return _lessBuildProcess(['./src/kuma-base.less']);
 });
 
 gulp.task('clean', function(){
@@ -61,4 +55,4 @@ gulp.task('clean', function(){
 		}));
 });
 
-gulp.task('default', ['build', 'minify']);
+gulp.task('default', ['build']);
