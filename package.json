@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/uxcore/kuma/issues"
   },
-  "main": "dist/uxcore-kuma.css",
+  "main": "dist/kuma.css",
   "files": [
     "dist",
     "src"
