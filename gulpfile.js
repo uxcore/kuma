@@ -5,6 +5,7 @@ var sourcemaps = require('gulp-sourcemaps');
 // var minifyCss = require('gulp-minify-css');
 var clean = require('gulp-clean');
 var cleancss = require('gulp-cleancss');
+var concat = require('gulp-concat');
 // var inject = require('gulp-inject-string');
 //plugin
 var LessPluginAutoPrefix = require('less-plugin-autoprefix');
@@ -20,7 +21,7 @@ var cleancssOption = {
     debug: true
 };
 
-gulp.task('build', ['build-base', 'build-kuma', 'build-theme']);
+gulp.task('build', ['build-base', 'build-kuma', 'build-theme', 'build-kuma-new']);
 
 function _lessBuildProcess(source){
     return gulp.src(source)
@@ -28,24 +29,27 @@ function _lessBuildProcess(source){
 		.pipe(less({
 			plugins: [autoprefix, LessPluginInlineUrls]
 		}))
-        .pipe(gulp.dest('./dist'))
-        .pipe(cleancss(cleancssOption))
-        .pipe(rename({
-			suffix: '.min'
-		}))
+        .pipe(gulp.dest('./dist'));
 		// .pipe(sourcemaps.write('./'))
-		.pipe(gulp.dest('./dist'));
 }
 
-gulp.task('build-kuma', ['clean'], function(){
-	return _lessBuildProcess(['./src/kuma.less', './src/kuma-compatible.less']);
-});
-gulp.task('build-theme', ['clean'], function(){
-	return _lessBuildProcess(['./src/theme/*.less']);
+gulp.task('build-source', ['clean'], function(){
+    return _lessBuildProcess(
+        ['./src/source/**/*.less']
+    );
 });
 
-gulp.task('build-base', ['clean'], function(){
-	return _lessBuildProcess(['./src/kuma-base.less']);
+gulp.task('build-concat', ['build-source'], function(){
+    ['blue', 'orange'].forEach(function(theme){
+        gulp.src(['./dist/' + theme + '/old.css', './dist/' + theme + '/kuma.css'])
+            .pipe(concat(theme + '.css'))
+            .pipe(gulp.dest('./dist'))
+            .pipe(cleancss(cleancssOption))
+            .pipe(rename({
+                suffix: '.min'
+            }))
+		    .pipe(gulp.dest('./dist'));
+    });
 });
 
 gulp.task('clean', function(){
@@ -55,4 +59,4 @@ gulp.task('clean', function(){
 		}));
 });
 
-gulp.task('default', ['build']);
+gulp.task('default', ['build-concat']);
