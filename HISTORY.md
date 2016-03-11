@@ -5,6 +5,11 @@ History
 -----
 `NEW` new ux
 
+1.2.6
+-----
+
+add single select clear
+
 1.2.2
 -----
 
