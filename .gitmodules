@@ -25,7 +25,7 @@
 [submodule "src/components/uxcore-form"]
 	path = src/components/uxcore-form
 	url = git@github.com:uxcore/uxcore-form.git
-	branch = master
+	branch = feature/style
 [submodule "src/components/uxcore-layout"]
 	path = src/components/uxcore-layout
 	url = git@github.com:uxcore/uxcore-layout.git

@@ -473,6 +473,10 @@ a:hover {
  * author: vincent.bian
  * date  : 2016-01-22
 */
+a.kuma-button {
+  display: inline-block;
+  text-decoration: none;
+}
 .kuma-button {
   padding: 0 10px;
   height: 32px;
@@ -1862,16 +1866,16 @@ a:hover {
   background-color: #fff4f2;
 }
 a {
-  color: #45a8e6;
+  color: #3B8FD9;
 }
 a:visited {
   color: #73461d;
 }
 a:hover {
-  color: #f2faff;
+  color: #1A78B8;
 }
 a:active {
-  color: #f2faff;
+  color: #1A78B8;
 }
 a:disabled {
   color: #ccc;
@@ -2670,7 +2674,7 @@ a:disabled {
 .kuma-calendar-header > a:hover {
   cursor: pointer;
   text-decoration: none;
-  color: #f2faff;
+  color: #1A78B8;
 }
 .kuma-calendar-header .kuma-calendar-prev-month-btn {
   position: absolute;
@@ -2692,7 +2696,7 @@ a:disabled {
 .kuma-calendar-year-select:hover,
 .kuma-calendar-month-select:hover {
   cursor: pointer;
-  color: #f2faff;
+  color: #1A78B8;
 }
 .kuma-calendar-prev-month-btn,
 .kuma-calendar-next-month-btn,
@@ -2792,7 +2796,7 @@ a:disabled {
 .kuma-calendar-clear-btn:hover,
 .kuma-calendar-ok-btn:hover {
   cursor: pointer;
-  color: #f2faff;
+  color: #1A78B8;
 }
 .kuma-calendar-today-btn-disabled,
 .kuma-calendar-clear-btn-disabled,
@@ -2879,7 +2883,7 @@ a:disabled {
 .kuma-calendar-decade-panel-header > a:hover {
   cursor: pointer;
   text-decoration: none;
-  color: #f2faff;
+  color: #1A78B8;
 }
 .kuma-calendar-time-panel-table,
 .kuma-calendar-month-panel-table,
@@ -3579,7 +3583,6 @@ a:disabled {
   margin: 0;
   position: relative;
   vertical-align: middle;
-  color: #666;
   font-size: 12px;
 }
 .kuma-select2 ul,
@@ -3590,13 +3593,12 @@ a:disabled {
 }
 .kuma-select2 > ul > li > a {
   padding: 0;
-  background-color: #fff;
 }
 .kuma-select2-arrow {
   position: absolute;
   top: 0;
   right: 8px;
-  line-height: 28px;
+  line-height: 34px;
   font-family: 'kuma';
   color: #999;
 }
@@ -3613,30 +3615,29 @@ a:disabled {
        user-select: none;
   -webkit-user-select: none;
   display: block;
-  background-color: #fff;
-  border-radius: 0;
-  border: 1px solid #333;
+  border-radius: 0px;
+  border: 1px solid #dbdbdb;
 }
 .kuma-select2-selection:hover {
-  border-color: #2599f2;
+  border-color: #ccc;
 }
 .kuma-select2-selection:active {
-  border-color: #2599f2;
+  border-color: #ccc;
 }
 .kuma-select2-disabled {
-  color: #333;
+  color: #ccc;
   cursor: not-allowed;
   pointer-events: none;
 }
 .kuma-select2-disabled .kuma-select2-selection {
-  background-color: #999;
+  background-color: #f7f7f7;
 }
 .kuma-select2-disabled .kuma-select2-selection:hover,
 .kuma-select2-disabled .kuma-select2-selection:active {
-  border-color: #333;
+  border-color: #e8e8e8;
 }
 .kuma-select2-selection--single {
-  height: 28px;
+  height: 34px;
   cursor: pointer;
 }
 .kuma-select2-selection--single .kuma-select2-selection__rendered {
@@ -3646,26 +3647,26 @@ a:disabled {
   text-overflow: ellipsis;
   padding-left: 10px;
   padding-right: 20px;
-  line-height: 26px;
+  line-height: 32px;
 }
 .kuma-select2-selection--single .kuma-select2-selection__clear {
   font-weight: bold;
   position: absolute;
-  top: 4px;
+  top: 6px;
   right: 20px;
 }
 .kuma-select2-selection--single .kuma-select2-selection__clear:after {
   content: '×';
 }
 .kuma-select2-selection--single .kuma-select2-selection__placeholder {
-  color: #333;
+  color: #ccc;
 }
 .kuma-select2-disabled .kuma-select2-selection__choice__remove {
-  color: #333;
+  color: #ccc;
   cursor: default;
 }
 .kuma-select2-disabled .kuma-select2-selection__choice__remove:hover {
-  color: #333;
+  color: #ccc;
 }
 .kuma-select2-search__field__wrap {
   display: inline-block;
@@ -3675,7 +3676,7 @@ a:disabled {
   position: absolute;
   top: 0;
   left: 3px;
-  color: #333;
+  color: #ccc;
 }
 .kuma-select2-search--inline {
   float: left;
@@ -3695,7 +3696,7 @@ a:disabled {
   float: right;
 }
 .kuma-select2-selection--multiple {
-  min-height: 28px;
+  min-height: 34px;
   cursor: text;
 }
 .kuma-select2-selection--multiple .kuma-select2-search--inline {
@@ -3705,7 +3706,7 @@ a:disabled {
   width: 0.75em;
 }
 .kuma-select2-selection--multiple .kuma-select2-search__field__placeholder {
-  top: 6px;
+  top: 8px;
   left: 10px;
 }
 .kuma-select2-selection--multiple .kuma-select2-selection__rendered {
@@ -3721,15 +3722,15 @@ a:disabled {
   margin-right: 10px;
 }
 .kuma-select2-selection--multiple > ul > li {
-  margin-top: 3px;
-  height: 20px;
-  line-height: 20px;
+  margin-top: 5px;
+  height: 22px;
+  line-height: 22px;
 }
 .kuma-select2-selection--multiple .kuma-select2-selection__choice {
   background-color: #f3f3f3;
   cursor: default;
   float: left;
-  padding: 0 20px 0 8px;
+  padding: 0 8px 0 8px;
   margin-right: 4px;
   max-width: 99%;
   position: relative;
@@ -3751,7 +3752,7 @@ a:disabled {
 }
 .kuma-select2-dropdown {
   background-color: white;
-  border: 1px solid #333;
+  border: 1px solid #dbdbdb;
   box-sizing: border-box;
   z-index: 1070;
   left: -9999px;
@@ -3835,7 +3836,7 @@ a:disabled {
   width: 100%;
   box-sizing: border-box;
   border: 1px solid #d9d9d9;
-  border-radius: 0;
+  border-radius: 0px;
   outline: none;
 }
 .kuma-select2-dropdown-search.kuma-select2-search--hide {
@@ -3845,7 +3846,7 @@ a:disabled {
   content: '\e613';
 }
 .kuma-select2-open .kuma-select2-selection {
-  border-color: #2599f2;
+  border-color: #ccc;
 }
 /**
  * Grid Component Style for uxcore
@@ -5350,70 +5351,6 @@ a.kuma-button-swhite {
 }
 .kuma-collapse > .kuma-collapse-item-active > .kuma-collapse-header .arrow:before {
   content: "\e614";
-}
-.kuma-label {
-  float: none;
-  width: 100px;
-  margin-left: 0px;
-  padding-top: 5px;
-  padding-right: 0px;
-  text-align: right;
-  color: #666;
-  display: table-cell;
-  vertical-align: baseline;
-  vertical-align: -webkit-baseline-middle;
-}
-.kuma-label .required {
-  color: Red;
-  font-family: Simsun;
-}
-.kuma-label .label-content {
-  line-height: 14px;
-}
-.kuma-input {
-  padding: 5px 10px;
-  height: 30px;
-  line-height: 18px;
-}
-.kuma-textarea {
-  line-height: 20px;
-  padding: 7px 10px;
-  overflow: auto;
-  font-family: Arial;
-  resize: vertical;
-}
-.kuma-input,
-.kuma-textarea {
-  width: 100%;
-  border: 1px solid #333;
-  font-size: 12px;
-  color: #666;
-  border-radius: 0;
-}
-.kuma-input[disabled],
-.kuma-textarea[disabled],
-.kuma-input:disabled,
-.kuma-textarea:disabled {
-  border: 1px solid #333;
-  background: #999;
-}
-.kuma-input:hover,
-.kuma-textarea:hover {
-  border: 1px #333 solid;
-}
-.kuma-input:focus,
-.kuma-textarea:focus {
-  border: 1px #2599f2 solid;
-  color: #666;
-  outline: none;
-}
-.kuma-input-hover {
-  border: 1px #333 solid;
-}
-.kuma-input-focus {
-  border: 1px #2599f2 solid;
-  color: #666;
-  outline: none;
 }
 .kuma-uxform {
   zoom: 1;
@@ -7004,7 +6941,7 @@ a.kuma-button-swhite {
   bottom: 0;
   right: -15px;
   border: 15px solid transparent;
-  border-bottom-color: #45a8e6;
+  border-bottom-color: #3B8FD9;
   color: #fff;
 }
 .kuma-pickable .kuma-pickable-item .kuma-icon.badge:before {
@@ -7024,20 +6961,20 @@ a.kuma-button-swhite {
   color: #666;
 }
 .kuma-pickable .kuma-pickable-item:hover {
-  border-color: #f2faff;
+  border-color: #1A78B8;
 }
 .kuma-pickable .kuma-pickable-item.checked {
-  border-color: #45a8e6;
+  border-color: #3B8FD9;
 }
 .kuma-pickable .kuma-pickable-clear {
   cursor: pointer;
   float: left;
   padding: 5px;
   margin-left: 10px;
-  color: #45a8e6;
+  color: #3B8FD9;
 }
 .kuma-pickable .kuma-pickable-clear:hover {
-  color: #f2faff;
+  color: #1A78B8;
 }
 .kuma-pickable.kuma-pickable-removeable .kuma-pickable-item {
   background-color: #f2f2f2;

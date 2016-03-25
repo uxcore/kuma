@@ -50,6 +50,12 @@ gulp.task('dev-html', function(cb) {
 })
 
 gulp.task('server', ['watch'], function() {
+    gulp.src(['./demo/index.less'])
+        .pipe(less({
+            plugins: [autoprefix, LessPluginInlineUrls]
+        }))
+        .pipe(gulp.dest('./demo'));
+        
     connect.server({
         root: './',
         https: true,

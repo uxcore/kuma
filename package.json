@@ -11,7 +11,6 @@
     "eternalsky"
   ],
   "scripts": {
-    "dev": "webpack-dev-server --hot --inline --port 9090"
   },
   "repository": {
     "type": "git",
@@ -58,7 +57,6 @@
     "spawn-sync": "~1.0.15",
     "style-loader": "~0.13.0",
     "url-loader": "~0.5.6",
-    "webpack": "~1.12.2",
-    "webpack-dev-server": "~1.14.1"
+    "webpack": "~1.12.2"
   }
 }
