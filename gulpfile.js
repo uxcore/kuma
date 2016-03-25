@@ -10,6 +10,8 @@ var concat = require('gulp-concat');
 //plugin
 var LessPluginAutoPrefix = require('less-plugin-autoprefix');
 var LessPluginInlineUrls = require('less-plugin-inline-urls');
+var connect = require('gulp-connect');
+var spawn = require('cross-spawn');
 var autoprefix = new LessPluginAutoPrefix({
 	browsers: ['last 2 versions', 'not ie < 8']
 });
@@ -32,6 +34,33 @@ function _lessBuildProcess(source){
         .pipe(gulp.dest('./dist'));
 		// .pipe(sourcemaps.write('./'))
 }
+
+gulp.task('dev-less', function(cb) {
+    gulp.src(['./demo/index.less'])
+        .pipe(less({
+            plugins: [autoprefix, LessPluginInlineUrls]
+        }))
+        .pipe(gulp.dest('./demo'))
+        .pipe(connect.reload());
+});
+
+gulp.task('dev-html', function(cb) {
+    gulp.src(['./demo/index.html'])
+        .pipe(connect.reload());
+})
+
+gulp.task('server', ['watch'], function() {
+    connect.server({
+        root: './',
+        https: true,
+        port: 8001,
+        livereload: true
+    });
+});
+
+gulp.task('watch', function() {
+    gulp.watch(['./src/**/*.less', './demo/**/*.less'], ['dev-less'])
+})
 
 gulp.task('build-source', ['clean'], function(){
     return _lessBuildProcess(
@@ -58,5 +87,14 @@ gulp.task('clean', function(){
 			read: false
 		}));
 });
+
+gulp.task('supdate', function() {
+    spawn.sync('git', ['submodule', 'foreach', '-q', 'branch="$(git config -f $toplevel/.gitmodules submodule.$name.branch)"; git pull origin $branch'], {stdio: 'inherit'});
+})
+
+gulp.task('scheckout', function() {
+    spawn.sync('git', ['submodule', 'foreach', '-q', 'branch="$(git config -f $toplevel/.gitmodules submodule.$name.branch)"; git checkout $branch'], {stdio: 'inherit'});
+})
+
 
 gulp.task('default', ['build-concat']);

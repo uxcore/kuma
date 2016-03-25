@@ -1,7 +1,7 @@
 [submodule "src/components/uxcore-tabs"]
 	path = src/components/uxcore-tabs
 	url = git@github.com:uxcore/uxcore-tabs.git
-	branch = master
+	branch = feature/style
 [submodule "src/components/uxcore-crumb"]
 	path = src/components/uxcore-crumb
 	url = git@github.com:uxcore/uxcore-crumb.git
@@ -45,7 +45,7 @@
 [submodule "src/components/uxcore-steps"]
 	path = src/components/uxcore-steps
 	url = git@github.com:uxcore/uxcore-steps.git
-	branch = master
+	branch = feature/style
 [submodule "src/components/uxcore-tree"]
 	path = src/components/uxcore-tree
 	url = git@github.com:uxcore/uxcore-tree.git
@@ -69,19 +69,19 @@
 [submodule "src/components/uxcore-dialog"]
 	path = src/components/uxcore-dialog
 	url = git@github.com:uxcore/uxcore-dialog.git
-	branch = master
+	branch = feature/style
 [submodule "src/components/uxcore-tooltip"]
 	path = src/components/uxcore-tooltip
 	url = git@github.com:uxcore/uxcore-tooltip.git
-	branch = master
+	branch = feature/style
 [submodule "src/components/uxcore-select2"]
 	path = src/components/uxcore-select2
 	url = git@github.com:uxcore/uxcore-select2.git
-	branch = master
+	branch = feature/style
 [submodule "src/components/uxcore-button"]
 	path = src/components/uxcore-button
 	url = git@github.com:uxcore/uxcore-button.git
-	branch = master
+	branch = feature/style
 [submodule "src/components/uxcore-popover"]
 	path = src/components/uxcore-popover
 	url = git@github.com:uxcore/uxcore-popover.git
@@ -101,6 +101,7 @@
 [submodule "src/components/uxcore-totop"]
 	path = src/components/uxcore-totop
 	url = git@github.com:uxcore/uxcore-totop.git
+	branch = master
 [submodule "src/components/uxcore-alert"]
 	path = src/components/uxcore-alert
 	url = git@github.com:uxcore/uxcore-alert.git
@@ -108,6 +109,7 @@
 [submodule "src/components/uxcore-message"]
 	path = src/components/uxcore-message
 	url = git@github.com:uxcore/uxcore-message.git
+	branch = master
 [submodule "src/components/uxcore-pickable"]
 	path = src/components/uxcore-pickable
 	url = git@github.com:uxcore/uxcore-pickable.git
@@ -115,6 +117,8 @@
 [submodule "src/components/uxcore-carousel"]
 	path = src/components/uxcore-carousel
 	url = git@github.com:uxcore/uxcore-carousel.git
+	branch = master
 [submodule "src/kuma-base"]
 	path = src/kuma-base
 	url = git@github.com:uxcore/kuma-base.git
+	branch = master

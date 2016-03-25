@@ -34,6 +34,7 @@
   "devDependencies": {
     "autoprefixer-loader": "~3.2.0",
     "axios": "~0.9.1",
+    "cross-spawn": "~2.1.5",
     "css-loader": "~0.23.1",
     "extract-text-webpack-plugin": "~1.0.1",
     "file-loader": "~0.8.4",
@@ -41,6 +42,7 @@
     "gulp-clean": "~0.3.1",
     "gulp-cleancss": "^0.2.2",
     "gulp-concat": "~2.6.0",
+    "gulp-connect": "~3.2.1",
     "gulp-inject-string": "1.1.0",
     "gulp-less": "~3.0.3",
     "gulp-rename": "~1.2.2",
@@ -53,6 +55,7 @@
     "markdown": "~0.5.0",
     "marked": "~0.3.5",
     "object-assign": "~4.0.1",
+    "spawn-sync": "~1.0.15",
     "style-loader": "~0.13.0",
     "url-loader": "~0.5.6",
     "webpack": "~1.12.2",
