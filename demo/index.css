@@ -1865,6 +1865,25 @@ a.kuma-button {
   border: 1px #F04631 solid;
   background-color: #fff4f2;
 }
+.kuma-label {
+  float: none;
+  width: 100px;
+  margin-left: 0px;
+  padding-top: 5px;
+  padding-right: 0px;
+  text-align: right;
+  color: #333;
+  display: table-cell;
+  vertical-align: baseline;
+  vertical-align: -webkit-baseline-middle;
+}
+.kuma-label .required {
+  color: Red;
+  font-family: Simsun;
+}
+.kuma-label .label-content {
+  line-height: 14px;
+}
 a {
   color: #3B8FD9;
 }
@@ -2191,8 +2210,8 @@ a:disabled {
   line-height: 26px;
 }
 .kuma-textarea {
-  line-height: 20px;
-  padding: 5px 10px;
+  line-height: 18px;
+  padding: 9px 10px;
   overflow: auto;
   resize: vertical;
 }
