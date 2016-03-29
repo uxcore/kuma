@@ -3,6 +3,11 @@ History
 
 ---
 
+1.2.10
+-----
+
+fix popover arrow
+
 1.2.6
 -----
 
