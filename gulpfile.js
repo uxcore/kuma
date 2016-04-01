@@ -78,6 +78,7 @@ gulp.task('build-transport', ['build-source'], function() {
         gulp.src(['./dist/' + theme + '/kuma.css'])
             .pipe(concat(theme + '.css'))
             .pipe(gulp.dest('./dist'))
+            .pipe(cleancss(cleancssOption))
             .pipe(rename({
                 suffix: '.min'
             }))
@@ -89,6 +90,7 @@ gulp.task('build-transport', ['build-source'], function() {
                 prefix: theme + '-'
             }))
             .pipe(gulp.dest('./dist'))
+            .pipe(cleancss(cleancssOption))
             .pipe(rename({
                 suffix: '.min'
             }))
