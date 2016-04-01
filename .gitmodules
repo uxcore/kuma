@@ -5,7 +5,7 @@
 [submodule "src/components/uxcore-crumb"]
 	path = src/components/uxcore-crumb
 	url = git@github.com:uxcore/uxcore-crumb.git
-	branch = master
+	branch = feature/style
 [submodule "src/components/uxcore-dropdown"]
 	path = src/components/uxcore-dropdown
 	url = git@github.com:uxcore/uxcore-dropdown.git
@@ -33,7 +33,7 @@
 [submodule "src/components/uxcore-pagination"]
 	path = src/components/uxcore-pagination
 	url = git@github.com:uxcore/uxcore-pagination.git
-	branch = master
+	branch = feature/style
 [submodule "src/components/uxcore-mention"]
 	path = src/components/uxcore-mention
 	url = git@github.com:uxcore/uxcore-mention.git
@@ -61,11 +61,11 @@
 [submodule "src/components/uxcore-progress"]
 	path = src/components/uxcore-progress
 	url = git@github.com:uxcore/uxcore-progress.git
-	branch = master
+	branch = feature/style
 [submodule "src/components/uxcore-menu"]
 	path = src/components/uxcore-menu
 	url = git@github.com:uxcore/uxcore-menu.git
-	branch = master
+	branch = feature/style
 [submodule "src/components/uxcore-dialog"]
 	path = src/components/uxcore-dialog
 	url = git@github.com:uxcore/uxcore-dialog.git
@@ -85,7 +85,7 @@
 [submodule "src/components/uxcore-popover"]
 	path = src/components/uxcore-popover
 	url = git@github.com:uxcore/uxcore-popover.git
-	branch = master
+	branch = feature/style
 [submodule "src/components/uxcore-transfer"]
 	path = src/components/uxcore-transfer
 	url = git@github.com:uxcore/uxcore-transfer.git
@@ -105,7 +105,7 @@
 [submodule "src/components/uxcore-alert"]
 	path = src/components/uxcore-alert
 	url = git@github.com:uxcore/uxcore-alert.git
-	branch = master
+	branch = feature/style
 [submodule "src/components/uxcore-message"]
 	path = src/components/uxcore-message
 	url = git@github.com:uxcore/uxcore-message.git
