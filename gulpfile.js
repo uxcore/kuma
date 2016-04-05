@@ -112,7 +112,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('supdate', function() {
-    spawn.sync('git', ['submodule', 'foreach', '-q', 'branch="$(git config -f $toplevel/.gitmodules submodule.$name.branch)"; git pull origin $branch'], {
+    spawn.sync('git', ['submodule', 'foreach', '-q', 'branch="$(git config -f $toplevel/.gitmodules submodule.$name.branch)"; git pull origin $branch; git checkout $branch'], {
         stdio: 'inherit'
     });
 })

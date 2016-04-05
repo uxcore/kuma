@@ -13,7 +13,7 @@
 [submodule "src/components/uxcore-table"]
 	path = src/components/uxcore-table
 	url = git@github.com:uxcore/uxcore-table.git
-	branch = master
+	branch = feature/style
 [submodule "src/components/uxcore-grid"]
 	path = src/components/uxcore-grid
 	url = git@github.com:uxcore/uxcore-grid.git
@@ -21,7 +21,7 @@
 [submodule "src/components/uxcore-calendar"]
 	path = src/components/uxcore-calendar
 	url = git@github.com:uxcore/uxcore-calendar.git
-	branch = master
+	branch = feature/style
 [submodule "src/components/uxcore-form"]
 	path = src/components/uxcore-form
 	url = git@github.com:uxcore/uxcore-form.git
