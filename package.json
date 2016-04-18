@@ -1,10 +1,6 @@
 {
   "name": "uxcore-kuma",
-<<<<<<< HEAD
-  "version": "1.2.10",
-=======
   "version": "2.0.8",
->>>>>>> 2/change
   "description": "style for uxcore based on kuma",
   "author": "shane.wuq",
   "maintainers": [
