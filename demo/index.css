@@ -1,0 +1,7372 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+/**
+ * Remove default margin.
+ */
+body,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+}
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none;
+}
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0;
+}
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto;
+}
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible;
+}
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none;
+}
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal;
+}
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */
+}
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+  border: 0 none;
+}
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto;
+}
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold;
+}
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  background-color: #fff;
+  font: 12px/1.5 tahoma, arial, 'PingFang SC', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', 'Microsoft YaHei', \5b8b\4f53, sans-serif;
+  color: #333;
+}
+ol li,
+ul li,
+dl li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+:focus {
+  outline: none !important;
+}
+.fn-clear {
+  zoom: 1;
+}
+.fn-clear:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.fn-hide {
+  display: none;
+}
+.fn-show {
+  display: block;
+}
+.fn-left {
+  float: left;
+}
+.fn-right {
+  float: right;
+}
+.fn-text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.fn-linear {
+  background: linear-gradient(#fcfcfc, #f1f1f1);
+}
+/* 浅色的渐变 */
+.fn-linear-light {
+  background: linear-gradient(#fcfcfc, #f9f9f9);
+}
+/* 人民币符号 */
+.fn-rmb {
+  font-family: arial;
+  font-style: normal;
+  padding-right: 4px;
+}
+.fn-webkit-adjust {
+  -webkit-text-size-adjust: none;
+}
+.fn-highlight {
+  color: #f60;
+}
+.fn-comment {
+  color: #ccc;
+}
+.fn-border-box {
+  box-sizing: border-box;
+}
+.fn-border-box * {
+  box-sizing: inherit;
+}
+.fn-content-box {
+  box-sizing: content-box;
+}
+.fn-content-box * {
+  box-sizing: inherit;
+}
+/*
+ * name  : BUTTON
+ * author: vincent.bian
+ * date  : 2016-01-22
+*/
+a.kuma-button {
+  display: inline-block;
+  text-decoration: none;
+}
+.kuma-button {
+  padding: 0 10px;
+  height: 32px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 30px;
+  box-sizing: border-box;
+}
+.kuma-button-primary {
+  background-color: #2599f2;
+  border-color: #2599f2;
+  color: #fff;
+}
+.kuma-button-primary:hover {
+  background-color: #47a9f4;
+  border-color: #47a9f4;
+  color: #fff;
+}
+.kuma-button-primary:active {
+  background-color: #1b94f1;
+  border-color: #1b94f1;
+  color: #fff;
+}
+.kuma-button-outline {
+  background-color: #ffffff;
+  border-color: #2599f2;
+  color: #2599f2;
+}
+.kuma-button-outline:hover {
+  background-color: #eff8fe;
+  border-color: #47a9f4;
+  color: #2599f2;
+}
+.kuma-button-outline:active {
+  background-color: #e6f3fd;
+  border-color: #1b94f1;
+  color: #2599f2;
+}
+.kuma-button-secondary {
+  background-color: #f5f5f5;
+  border-color: #dbdbdb;
+  color: #666;
+}
+.kuma-button-secondary:hover {
+  background-color: #ffffff;
+  color: #666;
+}
+.kuma-button-secondary:active {
+  background-color: #f0f0f0;
+  color: #666;
+}
+.kuma-button-disabled {
+  background-color: #e8e8e8;
+  border-color: #dbdbdb;
+  color: #ccc;
+  cursor: not-allowed;
+}
+.kuma-button-disabled:hover,
+.kuma-button-disabled:active {
+  color: #ccc;
+}
+.kuma-button-lg {
+  height: 36px;
+  line-height: 34px;
+}
+.kuma-button-sm {
+  height: 26px;
+  line-height: 24px;
+}
+.kuma-button-group {
+  display: inline-block;
+}
+.kuma-button-group .kuma-button {
+  float: left;
+}
+.kuma-button-group .kuma-button + .kuma-button {
+  margin-left: -1px;
+}
+.kuma-button-group .kuma-button:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.kuma-button-group .kuma-button:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.kuma-container-1000 {
+  margin: 0 auto;
+  width: 1000px;
+}
+.kuma-container-1180 {
+  margin: 0 auto;
+  width: 1180px;
+}
+.kuma-container-full {
+  width: 100%;
+}
+.kuma-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width: 768px) {
+  .kuma-container {
+    width: 740px;
+  }
+}
+@media (min-width: 992px) {
+  .kuma-container {
+    width: 1000px;
+  }
+}
+@media (min-width: 1200px) {
+  .kuma-container {
+    width: 1180px;
+  }
+}
+.kuma-container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.kuma-row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.kuma-row:after,
+.kuma-row:before {
+  display: table;
+  content: " ";
+  clear: both;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12, .col-xs-13, .col-sm-13, .col-md-13, .col-lg-13, .col-xs-14, .col-sm-14, .col-md-14, .col-lg-14, .col-xs-15, .col-sm-15, .col-md-15, .col-lg-15, .col-xs-16, .col-sm-16, .col-md-16, .col-lg-16, .col-xs-17, .col-sm-17, .col-md-17, .col-lg-17, .col-xs-18, .col-sm-18, .col-md-18, .col-lg-18, .col-xs-19, .col-sm-19, .col-md-19, .col-lg-19, .col-xs-20, .col-sm-20, .col-md-20, .col-lg-20, .col-xs-21, .col-sm-21, .col-md-21, .col-lg-21, .col-xs-22, .col-sm-22, .col-md-22, .col-lg-22, .col-xs-23, .col-sm-23, .col-md-23, .col-lg-23, .col-xs-24, .col-sm-24, .col-md-24, .col-lg-24 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-13, .col-xs-14, .col-xs-15, .col-xs-16, .col-xs-17, .col-xs-18, .col-xs-19, .col-xs-20, .col-xs-21, .col-xs-22, .col-xs-23, .col-xs-24 {
+  float: left;
+}
+.col-xs-24 {
+  width: 100%;
+}
+.col-xs-23 {
+  width: 95.83333333%;
+}
+.col-xs-22 {
+  width: 91.66666667%;
+}
+.col-xs-21 {
+  width: 87.5%;
+}
+.col-xs-20 {
+  width: 83.33333333%;
+}
+.col-xs-19 {
+  width: 79.16666667%;
+}
+.col-xs-18 {
+  width: 75%;
+}
+.col-xs-17 {
+  width: 70.83333333%;
+}
+.col-xs-16 {
+  width: 66.66666667%;
+}
+.col-xs-15 {
+  width: 62.5%;
+}
+.col-xs-14 {
+  width: 58.33333333%;
+}
+.col-xs-13 {
+  width: 54.16666667%;
+}
+.col-xs-12 {
+  width: 50%;
+}
+.col-xs-11 {
+  width: 45.83333333%;
+}
+.col-xs-10 {
+  width: 41.66666667%;
+}
+.col-xs-9 {
+  width: 37.5%;
+}
+.col-xs-8 {
+  width: 33.33333333%;
+}
+.col-xs-7 {
+  width: 29.16666667%;
+}
+.col-xs-6 {
+  width: 25%;
+}
+.col-xs-5 {
+  width: 20.83333333%;
+}
+.col-xs-4 {
+  width: 16.66666667%;
+}
+.col-xs-3 {
+  width: 12.5%;
+}
+.col-xs-2 {
+  width: 8.33333333%;
+}
+.col-xs-1 {
+  width: 4.16666667%;
+}
+.col-xs-pull-24 {
+  right: 100%;
+}
+.col-xs-pull-23 {
+  right: 95.83333333%;
+}
+.col-xs-pull-22 {
+  right: 91.66666667%;
+}
+.col-xs-pull-21 {
+  right: 87.5%;
+}
+.col-xs-pull-20 {
+  right: 83.33333333%;
+}
+.col-xs-pull-19 {
+  right: 79.16666667%;
+}
+.col-xs-pull-18 {
+  right: 75%;
+}
+.col-xs-pull-17 {
+  right: 70.83333333%;
+}
+.col-xs-pull-16 {
+  right: 66.66666667%;
+}
+.col-xs-pull-15 {
+  right: 62.5%;
+}
+.col-xs-pull-14 {
+  right: 58.33333333%;
+}
+.col-xs-pull-13 {
+  right: 54.16666667%;
+}
+.col-xs-pull-12 {
+  right: 50%;
+}
+.col-xs-pull-11 {
+  right: 45.83333333%;
+}
+.col-xs-pull-10 {
+  right: 41.66666667%;
+}
+.col-xs-pull-9 {
+  right: 37.5%;
+}
+.col-xs-pull-8 {
+  right: 33.33333333%;
+}
+.col-xs-pull-7 {
+  right: 29.16666667%;
+}
+.col-xs-pull-6 {
+  right: 25%;
+}
+.col-xs-pull-5 {
+  right: 20.83333333%;
+}
+.col-xs-pull-4 {
+  right: 16.66666667%;
+}
+.col-xs-pull-3 {
+  right: 12.5%;
+}
+.col-xs-pull-2 {
+  right: 8.33333333%;
+}
+.col-xs-pull-1 {
+  right: 4.16666667%;
+}
+.col-xs-pull-0 {
+  right: auto;
+}
+.col-xs-push-24 {
+  left: 100%;
+}
+.col-xs-push-23 {
+  left: 95.83333333%;
+}
+.col-xs-push-22 {
+  left: 91.66666667%;
+}
+.col-xs-push-21 {
+  left: 87.5%;
+}
+.col-xs-push-20 {
+  left: 83.33333333%;
+}
+.col-xs-push-19 {
+  left: 79.16666667%;
+}
+.col-xs-push-18 {
+  left: 75%;
+}
+.col-xs-push-17 {
+  left: 70.83333333%;
+}
+.col-xs-push-16 {
+  left: 66.66666667%;
+}
+.col-xs-push-15 {
+  left: 62.5%;
+}
+.col-xs-push-14 {
+  left: 58.33333333%;
+}
+.col-xs-push-13 {
+  left: 54.16666667%;
+}
+.col-xs-push-12 {
+  left: 50%;
+}
+.col-xs-push-11 {
+  left: 45.83333333%;
+}
+.col-xs-push-10 {
+  left: 41.66666667%;
+}
+.col-xs-push-9 {
+  left: 37.5%;
+}
+.col-xs-push-8 {
+  left: 33.33333333%;
+}
+.col-xs-push-7 {
+  left: 29.16666667%;
+}
+.col-xs-push-6 {
+  left: 25%;
+}
+.col-xs-push-5 {
+  left: 20.83333333%;
+}
+.col-xs-push-4 {
+  left: 16.66666667%;
+}
+.col-xs-push-3 {
+  left: 12.5%;
+}
+.col-xs-push-2 {
+  left: 8.33333333%;
+}
+.col-xs-push-1 {
+  left: 4.16666667%;
+}
+.col-xs-push-0 {
+  left: auto;
+}
+.col-xs-offset-24 {
+  margin-left: 100%;
+}
+.col-xs-offset-23 {
+  margin-left: 95.83333333%;
+}
+.col-xs-offset-22 {
+  margin-left: 91.66666667%;
+}
+.col-xs-offset-21 {
+  margin-left: 87.5%;
+}
+.col-xs-offset-20 {
+  margin-left: 83.33333333%;
+}
+.col-xs-offset-19 {
+  margin-left: 79.16666667%;
+}
+.col-xs-offset-18 {
+  margin-left: 75%;
+}
+.col-xs-offset-17 {
+  margin-left: 70.83333333%;
+}
+.col-xs-offset-16 {
+  margin-left: 66.66666667%;
+}
+.col-xs-offset-15 {
+  margin-left: 62.5%;
+}
+.col-xs-offset-14 {
+  margin-left: 58.33333333%;
+}
+.col-xs-offset-13 {
+  margin-left: 54.16666667%;
+}
+.col-xs-offset-12 {
+  margin-left: 50%;
+}
+.col-xs-offset-11 {
+  margin-left: 45.83333333%;
+}
+.col-xs-offset-10 {
+  margin-left: 41.66666667%;
+}
+.col-xs-offset-9 {
+  margin-left: 37.5%;
+}
+.col-xs-offset-8 {
+  margin-left: 33.33333333%;
+}
+.col-xs-offset-7 {
+  margin-left: 29.16666667%;
+}
+.col-xs-offset-6 {
+  margin-left: 25%;
+}
+.col-xs-offset-5 {
+  margin-left: 20.83333333%;
+}
+.col-xs-offset-4 {
+  margin-left: 16.66666667%;
+}
+.col-xs-offset-3 {
+  margin-left: 12.5%;
+}
+.col-xs-offset-2 {
+  margin-left: 8.33333333%;
+}
+.col-xs-offset-1 {
+  margin-left: 4.16666667%;
+}
+.col-xs-offset-0 {
+  margin-left: 0%;
+}
+@media (min-width: 768px) {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-13, .col-sm-14, .col-sm-15, .col-sm-16, .col-sm-17, .col-sm-18, .col-sm-19, .col-sm-20, .col-sm-21, .col-sm-22, .col-sm-23, .col-sm-24 {
+    float: left;
+  }
+  .col-sm-24 {
+    width: 100%;
+  }
+  .col-sm-23 {
+    width: 95.83333333%;
+  }
+  .col-sm-22 {
+    width: 91.66666667%;
+  }
+  .col-sm-21 {
+    width: 87.5%;
+  }
+  .col-sm-20 {
+    width: 83.33333333%;
+  }
+  .col-sm-19 {
+    width: 79.16666667%;
+  }
+  .col-sm-18 {
+    width: 75%;
+  }
+  .col-sm-17 {
+    width: 70.83333333%;
+  }
+  .col-sm-16 {
+    width: 66.66666667%;
+  }
+  .col-sm-15 {
+    width: 62.5%;
+  }
+  .col-sm-14 {
+    width: 58.33333333%;
+  }
+  .col-sm-13 {
+    width: 54.16666667%;
+  }
+  .col-sm-12 {
+    width: 50%;
+  }
+  .col-sm-11 {
+    width: 45.83333333%;
+  }
+  .col-sm-10 {
+    width: 41.66666667%;
+  }
+  .col-sm-9 {
+    width: 37.5%;
+  }
+  .col-sm-8 {
+    width: 33.33333333%;
+  }
+  .col-sm-7 {
+    width: 29.16666667%;
+  }
+  .col-sm-6 {
+    width: 25%;
+  }
+  .col-sm-5 {
+    width: 20.83333333%;
+  }
+  .col-sm-4 {
+    width: 16.66666667%;
+  }
+  .col-sm-3 {
+    width: 12.5%;
+  }
+  .col-sm-2 {
+    width: 8.33333333%;
+  }
+  .col-sm-1 {
+    width: 4.16666667%;
+  }
+  .col-sm-pull-24 {
+    right: 100%;
+  }
+  .col-sm-pull-23 {
+    right: 95.83333333%;
+  }
+  .col-sm-pull-22 {
+    right: 91.66666667%;
+  }
+  .col-sm-pull-21 {
+    right: 87.5%;
+  }
+  .col-sm-pull-20 {
+    right: 83.33333333%;
+  }
+  .col-sm-pull-19 {
+    right: 79.16666667%;
+  }
+  .col-sm-pull-18 {
+    right: 75%;
+  }
+  .col-sm-pull-17 {
+    right: 70.83333333%;
+  }
+  .col-sm-pull-16 {
+    right: 66.66666667%;
+  }
+  .col-sm-pull-15 {
+    right: 62.5%;
+  }
+  .col-sm-pull-14 {
+    right: 58.33333333%;
+  }
+  .col-sm-pull-13 {
+    right: 54.16666667%;
+  }
+  .col-sm-pull-12 {
+    right: 50%;
+  }
+  .col-sm-pull-11 {
+    right: 45.83333333%;
+  }
+  .col-sm-pull-10 {
+    right: 41.66666667%;
+  }
+  .col-sm-pull-9 {
+    right: 37.5%;
+  }
+  .col-sm-pull-8 {
+    right: 33.33333333%;
+  }
+  .col-sm-pull-7 {
+    right: 29.16666667%;
+  }
+  .col-sm-pull-6 {
+    right: 25%;
+  }
+  .col-sm-pull-5 {
+    right: 20.83333333%;
+  }
+  .col-sm-pull-4 {
+    right: 16.66666667%;
+  }
+  .col-sm-pull-3 {
+    right: 12.5%;
+  }
+  .col-sm-pull-2 {
+    right: 8.33333333%;
+  }
+  .col-sm-pull-1 {
+    right: 4.16666667%;
+  }
+  .col-sm-pull-0 {
+    right: auto;
+  }
+  .col-sm-push-24 {
+    left: 100%;
+  }
+  .col-sm-push-23 {
+    left: 95.83333333%;
+  }
+  .col-sm-push-22 {
+    left: 91.66666667%;
+  }
+  .col-sm-push-21 {
+    left: 87.5%;
+  }
+  .col-sm-push-20 {
+    left: 83.33333333%;
+  }
+  .col-sm-push-19 {
+    left: 79.16666667%;
+  }
+  .col-sm-push-18 {
+    left: 75%;
+  }
+  .col-sm-push-17 {
+    left: 70.83333333%;
+  }
+  .col-sm-push-16 {
+    left: 66.66666667%;
+  }
+  .col-sm-push-15 {
+    left: 62.5%;
+  }
+  .col-sm-push-14 {
+    left: 58.33333333%;
+  }
+  .col-sm-push-13 {
+    left: 54.16666667%;
+  }
+  .col-sm-push-12 {
+    left: 50%;
+  }
+  .col-sm-push-11 {
+    left: 45.83333333%;
+  }
+  .col-sm-push-10 {
+    left: 41.66666667%;
+  }
+  .col-sm-push-9 {
+    left: 37.5%;
+  }
+  .col-sm-push-8 {
+    left: 33.33333333%;
+  }
+  .col-sm-push-7 {
+    left: 29.16666667%;
+  }
+  .col-sm-push-6 {
+    left: 25%;
+  }
+  .col-sm-push-5 {
+    left: 20.83333333%;
+  }
+  .col-sm-push-4 {
+    left: 16.66666667%;
+  }
+  .col-sm-push-3 {
+    left: 12.5%;
+  }
+  .col-sm-push-2 {
+    left: 8.33333333%;
+  }
+  .col-sm-push-1 {
+    left: 4.16666667%;
+  }
+  .col-sm-push-0 {
+    left: auto;
+  }
+  .col-sm-offset-24 {
+    margin-left: 100%;
+  }
+  .col-sm-offset-23 {
+    margin-left: 95.83333333%;
+  }
+  .col-sm-offset-22 {
+    margin-left: 91.66666667%;
+  }
+  .col-sm-offset-21 {
+    margin-left: 87.5%;
+  }
+  .col-sm-offset-20 {
+    margin-left: 83.33333333%;
+  }
+  .col-sm-offset-19 {
+    margin-left: 79.16666667%;
+  }
+  .col-sm-offset-18 {
+    margin-left: 75%;
+  }
+  .col-sm-offset-17 {
+    margin-left: 70.83333333%;
+  }
+  .col-sm-offset-16 {
+    margin-left: 66.66666667%;
+  }
+  .col-sm-offset-15 {
+    margin-left: 62.5%;
+  }
+  .col-sm-offset-14 {
+    margin-left: 58.33333333%;
+  }
+  .col-sm-offset-13 {
+    margin-left: 54.16666667%;
+  }
+  .col-sm-offset-12 {
+    margin-left: 50%;
+  }
+  .col-sm-offset-11 {
+    margin-left: 45.83333333%;
+  }
+  .col-sm-offset-10 {
+    margin-left: 41.66666667%;
+  }
+  .col-sm-offset-9 {
+    margin-left: 37.5%;
+  }
+  .col-sm-offset-8 {
+    margin-left: 33.33333333%;
+  }
+  .col-sm-offset-7 {
+    margin-left: 29.16666667%;
+  }
+  .col-sm-offset-6 {
+    margin-left: 25%;
+  }
+  .col-sm-offset-5 {
+    margin-left: 20.83333333%;
+  }
+  .col-sm-offset-4 {
+    margin-left: 16.66666667%;
+  }
+  .col-sm-offset-3 {
+    margin-left: 12.5%;
+  }
+  .col-sm-offset-2 {
+    margin-left: 8.33333333%;
+  }
+  .col-sm-offset-1 {
+    margin-left: 4.16666667%;
+  }
+  .col-sm-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md-13, .col-md-14, .col-md-15, .col-md-16, .col-md-17, .col-md-18, .col-md-19, .col-md-20, .col-md-21, .col-md-22, .col-md-23, .col-md-24 {
+    float: left;
+  }
+  .col-md-24 {
+    width: 100%;
+  }
+  .col-md-23 {
+    width: 95.83333333%;
+  }
+  .col-md-22 {
+    width: 91.66666667%;
+  }
+  .col-md-21 {
+    width: 87.5%;
+  }
+  .col-md-20 {
+    width: 83.33333333%;
+  }
+  .col-md-19 {
+    width: 79.16666667%;
+  }
+  .col-md-18 {
+    width: 75%;
+  }
+  .col-md-17 {
+    width: 70.83333333%;
+  }
+  .col-md-16 {
+    width: 66.66666667%;
+  }
+  .col-md-15 {
+    width: 62.5%;
+  }
+  .col-md-14 {
+    width: 58.33333333%;
+  }
+  .col-md-13 {
+    width: 54.16666667%;
+  }
+  .col-md-12 {
+    width: 50%;
+  }
+  .col-md-11 {
+    width: 45.83333333%;
+  }
+  .col-md-10 {
+    width: 41.66666667%;
+  }
+  .col-md-9 {
+    width: 37.5%;
+  }
+  .col-md-8 {
+    width: 33.33333333%;
+  }
+  .col-md-7 {
+    width: 29.16666667%;
+  }
+  .col-md-6 {
+    width: 25%;
+  }
+  .col-md-5 {
+    width: 20.83333333%;
+  }
+  .col-md-4 {
+    width: 16.66666667%;
+  }
+  .col-md-3 {
+    width: 12.5%;
+  }
+  .col-md-2 {
+    width: 8.33333333%;
+  }
+  .col-md-1 {
+    width: 4.16666667%;
+  }
+  .col-md-pull-24 {
+    right: 100%;
+  }
+  .col-md-pull-23 {
+    right: 95.83333333%;
+  }
+  .col-md-pull-22 {
+    right: 91.66666667%;
+  }
+  .col-md-pull-21 {
+    right: 87.5%;
+  }
+  .col-md-pull-20 {
+    right: 83.33333333%;
+  }
+  .col-md-pull-19 {
+    right: 79.16666667%;
+  }
+  .col-md-pull-18 {
+    right: 75%;
+  }
+  .col-md-pull-17 {
+    right: 70.83333333%;
+  }
+  .col-md-pull-16 {
+    right: 66.66666667%;
+  }
+  .col-md-pull-15 {
+    right: 62.5%;
+  }
+  .col-md-pull-14 {
+    right: 58.33333333%;
+  }
+  .col-md-pull-13 {
+    right: 54.16666667%;
+  }
+  .col-md-pull-12 {
+    right: 50%;
+  }
+  .col-md-pull-11 {
+    right: 45.83333333%;
+  }
+  .col-md-pull-10 {
+    right: 41.66666667%;
+  }
+  .col-md-pull-9 {
+    right: 37.5%;
+  }
+  .col-md-pull-8 {
+    right: 33.33333333%;
+  }
+  .col-md-pull-7 {
+    right: 29.16666667%;
+  }
+  .col-md-pull-6 {
+    right: 25%;
+  }
+  .col-md-pull-5 {
+    right: 20.83333333%;
+  }
+  .col-md-pull-4 {
+    right: 16.66666667%;
+  }
+  .col-md-pull-3 {
+    right: 12.5%;
+  }
+  .col-md-pull-2 {
+    right: 8.33333333%;
+  }
+  .col-md-pull-1 {
+    right: 4.16666667%;
+  }
+  .col-md-pull-0 {
+    right: auto;
+  }
+  .col-md-push-24 {
+    left: 100%;
+  }
+  .col-md-push-23 {
+    left: 95.83333333%;
+  }
+  .col-md-push-22 {
+    left: 91.66666667%;
+  }
+  .col-md-push-21 {
+    left: 87.5%;
+  }
+  .col-md-push-20 {
+    left: 83.33333333%;
+  }
+  .col-md-push-19 {
+    left: 79.16666667%;
+  }
+  .col-md-push-18 {
+    left: 75%;
+  }
+  .col-md-push-17 {
+    left: 70.83333333%;
+  }
+  .col-md-push-16 {
+    left: 66.66666667%;
+  }
+  .col-md-push-15 {
+    left: 62.5%;
+  }
+  .col-md-push-14 {
+    left: 58.33333333%;
+  }
+  .col-md-push-13 {
+    left: 54.16666667%;
+  }
+  .col-md-push-12 {
+    left: 50%;
+  }
+  .col-md-push-11 {
+    left: 45.83333333%;
+  }
+  .col-md-push-10 {
+    left: 41.66666667%;
+  }
+  .col-md-push-9 {
+    left: 37.5%;
+  }
+  .col-md-push-8 {
+    left: 33.33333333%;
+  }
+  .col-md-push-7 {
+    left: 29.16666667%;
+  }
+  .col-md-push-6 {
+    left: 25%;
+  }
+  .col-md-push-5 {
+    left: 20.83333333%;
+  }
+  .col-md-push-4 {
+    left: 16.66666667%;
+  }
+  .col-md-push-3 {
+    left: 12.5%;
+  }
+  .col-md-push-2 {
+    left: 8.33333333%;
+  }
+  .col-md-push-1 {
+    left: 4.16666667%;
+  }
+  .col-md-push-0 {
+    left: auto;
+  }
+  .col-md-offset-24 {
+    margin-left: 100%;
+  }
+  .col-md-offset-23 {
+    margin-left: 95.83333333%;
+  }
+  .col-md-offset-22 {
+    margin-left: 91.66666667%;
+  }
+  .col-md-offset-21 {
+    margin-left: 87.5%;
+  }
+  .col-md-offset-20 {
+    margin-left: 83.33333333%;
+  }
+  .col-md-offset-19 {
+    margin-left: 79.16666667%;
+  }
+  .col-md-offset-18 {
+    margin-left: 75%;
+  }
+  .col-md-offset-17 {
+    margin-left: 70.83333333%;
+  }
+  .col-md-offset-16 {
+    margin-left: 66.66666667%;
+  }
+  .col-md-offset-15 {
+    margin-left: 62.5%;
+  }
+  .col-md-offset-14 {
+    margin-left: 58.33333333%;
+  }
+  .col-md-offset-13 {
+    margin-left: 54.16666667%;
+  }
+  .col-md-offset-12 {
+    margin-left: 50%;
+  }
+  .col-md-offset-11 {
+    margin-left: 45.83333333%;
+  }
+  .col-md-offset-10 {
+    margin-left: 41.66666667%;
+  }
+  .col-md-offset-9 {
+    margin-left: 37.5%;
+  }
+  .col-md-offset-8 {
+    margin-left: 33.33333333%;
+  }
+  .col-md-offset-7 {
+    margin-left: 29.16666667%;
+  }
+  .col-md-offset-6 {
+    margin-left: 25%;
+  }
+  .col-md-offset-5 {
+    margin-left: 20.83333333%;
+  }
+  .col-md-offset-4 {
+    margin-left: 16.66666667%;
+  }
+  .col-md-offset-3 {
+    margin-left: 12.5%;
+  }
+  .col-md-offset-2 {
+    margin-left: 8.33333333%;
+  }
+  .col-md-offset-1 {
+    margin-left: 4.16666667%;
+  }
+  .col-md-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-13, .col-lg-14, .col-lg-15, .col-lg-16, .col-lg-17, .col-lg-18, .col-lg-19, .col-lg-20, .col-lg-21, .col-lg-22, .col-lg-23, .col-lg-24 {
+    float: left;
+  }
+  .col-lg-24 {
+    width: 100%;
+  }
+  .col-lg-23 {
+    width: 95.83333333%;
+  }
+  .col-lg-22 {
+    width: 91.66666667%;
+  }
+  .col-lg-21 {
+    width: 87.5%;
+  }
+  .col-lg-20 {
+    width: 83.33333333%;
+  }
+  .col-lg-19 {
+    width: 79.16666667%;
+  }
+  .col-lg-18 {
+    width: 75%;
+  }
+  .col-lg-17 {
+    width: 70.83333333%;
+  }
+  .col-lg-16 {
+    width: 66.66666667%;
+  }
+  .col-lg-15 {
+    width: 62.5%;
+  }
+  .col-lg-14 {
+    width: 58.33333333%;
+  }
+  .col-lg-13 {
+    width: 54.16666667%;
+  }
+  .col-lg-12 {
+    width: 50%;
+  }
+  .col-lg-11 {
+    width: 45.83333333%;
+  }
+  .col-lg-10 {
+    width: 41.66666667%;
+  }
+  .col-lg-9 {
+    width: 37.5%;
+  }
+  .col-lg-8 {
+    width: 33.33333333%;
+  }
+  .col-lg-7 {
+    width: 29.16666667%;
+  }
+  .col-lg-6 {
+    width: 25%;
+  }
+  .col-lg-5 {
+    width: 20.83333333%;
+  }
+  .col-lg-4 {
+    width: 16.66666667%;
+  }
+  .col-lg-3 {
+    width: 12.5%;
+  }
+  .col-lg-2 {
+    width: 8.33333333%;
+  }
+  .col-lg-1 {
+    width: 4.16666667%;
+  }
+  .col-lg-pull-24 {
+    right: 100%;
+  }
+  .col-lg-pull-23 {
+    right: 95.83333333%;
+  }
+  .col-lg-pull-22 {
+    right: 91.66666667%;
+  }
+  .col-lg-pull-21 {
+    right: 87.5%;
+  }
+  .col-lg-pull-20 {
+    right: 83.33333333%;
+  }
+  .col-lg-pull-19 {
+    right: 79.16666667%;
+  }
+  .col-lg-pull-18 {
+    right: 75%;
+  }
+  .col-lg-pull-17 {
+    right: 70.83333333%;
+  }
+  .col-lg-pull-16 {
+    right: 66.66666667%;
+  }
+  .col-lg-pull-15 {
+    right: 62.5%;
+  }
+  .col-lg-pull-14 {
+    right: 58.33333333%;
+  }
+  .col-lg-pull-13 {
+    right: 54.16666667%;
+  }
+  .col-lg-pull-12 {
+    right: 50%;
+  }
+  .col-lg-pull-11 {
+    right: 45.83333333%;
+  }
+  .col-lg-pull-10 {
+    right: 41.66666667%;
+  }
+  .col-lg-pull-9 {
+    right: 37.5%;
+  }
+  .col-lg-pull-8 {
+    right: 33.33333333%;
+  }
+  .col-lg-pull-7 {
+    right: 29.16666667%;
+  }
+  .col-lg-pull-6 {
+    right: 25%;
+  }
+  .col-lg-pull-5 {
+    right: 20.83333333%;
+  }
+  .col-lg-pull-4 {
+    right: 16.66666667%;
+  }
+  .col-lg-pull-3 {
+    right: 12.5%;
+  }
+  .col-lg-pull-2 {
+    right: 8.33333333%;
+  }
+  .col-lg-pull-1 {
+    right: 4.16666667%;
+  }
+  .col-lg-pull-0 {
+    right: auto;
+  }
+  .col-lg-push-24 {
+    left: 100%;
+  }
+  .col-lg-push-23 {
+    left: 95.83333333%;
+  }
+  .col-lg-push-22 {
+    left: 91.66666667%;
+  }
+  .col-lg-push-21 {
+    left: 87.5%;
+  }
+  .col-lg-push-20 {
+    left: 83.33333333%;
+  }
+  .col-lg-push-19 {
+    left: 79.16666667%;
+  }
+  .col-lg-push-18 {
+    left: 75%;
+  }
+  .col-lg-push-17 {
+    left: 70.83333333%;
+  }
+  .col-lg-push-16 {
+    left: 66.66666667%;
+  }
+  .col-lg-push-15 {
+    left: 62.5%;
+  }
+  .col-lg-push-14 {
+    left: 58.33333333%;
+  }
+  .col-lg-push-13 {
+    left: 54.16666667%;
+  }
+  .col-lg-push-12 {
+    left: 50%;
+  }
+  .col-lg-push-11 {
+    left: 45.83333333%;
+  }
+  .col-lg-push-10 {
+    left: 41.66666667%;
+  }
+  .col-lg-push-9 {
+    left: 37.5%;
+  }
+  .col-lg-push-8 {
+    left: 33.33333333%;
+  }
+  .col-lg-push-7 {
+    left: 29.16666667%;
+  }
+  .col-lg-push-6 {
+    left: 25%;
+  }
+  .col-lg-push-5 {
+    left: 20.83333333%;
+  }
+  .col-lg-push-4 {
+    left: 16.66666667%;
+  }
+  .col-lg-push-3 {
+    left: 12.5%;
+  }
+  .col-lg-push-2 {
+    left: 8.33333333%;
+  }
+  .col-lg-push-1 {
+    left: 4.16666667%;
+  }
+  .col-lg-push-0 {
+    left: auto;
+  }
+  .col-lg-offset-24 {
+    margin-left: 100%;
+  }
+  .col-lg-offset-23 {
+    margin-left: 95.83333333%;
+  }
+  .col-lg-offset-22 {
+    margin-left: 91.66666667%;
+  }
+  .col-lg-offset-21 {
+    margin-left: 87.5%;
+  }
+  .col-lg-offset-20 {
+    margin-left: 83.33333333%;
+  }
+  .col-lg-offset-19 {
+    margin-left: 79.16666667%;
+  }
+  .col-lg-offset-18 {
+    margin-left: 75%;
+  }
+  .col-lg-offset-17 {
+    margin-left: 70.83333333%;
+  }
+  .col-lg-offset-16 {
+    margin-left: 66.66666667%;
+  }
+  .col-lg-offset-15 {
+    margin-left: 62.5%;
+  }
+  .col-lg-offset-14 {
+    margin-left: 58.33333333%;
+  }
+  .col-lg-offset-13 {
+    margin-left: 54.16666667%;
+  }
+  .col-lg-offset-12 {
+    margin-left: 50%;
+  }
+  .col-lg-offset-11 {
+    margin-left: 45.83333333%;
+  }
+  .col-lg-offset-10 {
+    margin-left: 41.66666667%;
+  }
+  .col-lg-offset-9 {
+    margin-left: 37.5%;
+  }
+  .col-lg-offset-8 {
+    margin-left: 33.33333333%;
+  }
+  .col-lg-offset-7 {
+    margin-left: 29.16666667%;
+  }
+  .col-lg-offset-6 {
+    margin-left: 25%;
+  }
+  .col-lg-offset-5 {
+    margin-left: 20.83333333%;
+  }
+  .col-lg-offset-4 {
+    margin-left: 16.66666667%;
+  }
+  .col-lg-offset-3 {
+    margin-left: 12.5%;
+  }
+  .col-lg-offset-2 {
+    margin-left: 8.33333333%;
+  }
+  .col-lg-offset-1 {
+    margin-left: 4.16666667%;
+  }
+  .col-lg-offset-0 {
+    margin-left: 0%;
+  }
+}
+.kuma-input,
+.kuma-textarea {
+  width: 100%;
+  border: 1px solid #dbdbdb;
+  font-size: 12px;
+  color: #333;
+}
+.kuma-input[disabled],
+.kuma-textarea[disabled],
+.kuma-input:disabled,
+.kuma-textarea:disabled {
+  border: 1px solid #e8e8e8;
+  background: #f7f7f7;
+}
+.kuma-input:hover,
+.kuma-textarea:hover {
+  border: 1px #ccc solid;
+}
+.kuma-input:focus,
+.kuma-textarea:focus {
+  border: 1px #ccc solid;
+  color: #333;
+  outline: none;
+}
+.kuma-input.kuma-input-hover,
+.kuma-textarea.kuma-input-hover {
+  border: 1px #ccc solid;
+}
+.kuma-input.kuma-input-focus,
+.kuma-textarea.kuma-input-focus {
+  border: 1px #ccc solid;
+  color: #333;
+  outline: none;
+}
+.kuma-textarea.kuma-textarea-error,
+.kuma-input.kuma-input-error {
+  color: #F04631;
+  border: 1px #F04631 solid;
+  background-color: #fff4f2;
+}
+.kuma-label {
+  float: none;
+  width: 100px;
+  margin-left: 0px;
+  padding-top: 5px;
+  padding-right: 0px;
+  text-align: right;
+  color: #333;
+  display: table-cell;
+  vertical-align: baseline;
+  vertical-align: -webkit-baseline-middle;
+}
+.kuma-label .required {
+  color: Red;
+  font-family: Simsun;
+}
+.kuma-label .label-content {
+  line-height: 14px;
+}
+a {
+  color: #3B8FD9;
+}
+a:visited {
+  color: #73461d;
+}
+a:hover {
+  color: #1A78B8;
+}
+a:active {
+  color: #1A78B8;
+}
+a:disabled {
+  color: #ccc;
+}
+.kuma-checkbox + s {
+  display: none;
+}
+:root .kuma-checkbox {
+  display: none;
+}
+:root .kuma-checkbox + s {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+.kuma-checkbox[type="radio"] + s,
+.kuma-checkbox.radio-primary[type="radio"] + s {
+  width: 14px;
+  height: 14px;
+  background-image: url("svg/orange/radio-normal.svg");
+}
+.kuma-checkbox[type="radio"]:checked + s {
+  background-image: url("svg/orange/radio-checked.svg");
+}
+.kuma-checkbox[type="radio"]:disabled + s {
+  background-image: url("svg/orange/radio-disabled.svg");
+}
+.kuma-checkbox[type="radio"]:checked:disabled + s {
+  background-image: url("svg/orange/radio-checked-disabled.svg");
+}
+.kuma-checkbox.radio-primary[type="radio"] + s {
+  background-image: url("svg/default/radio-normal.svg");
+}
+.kuma-checkbox.radio-primary[type="radio"]:checked + s {
+  background-image: url("svg/default/radio-checked.svg");
+}
+.kuma-checkbox.radio-primary[type="radio"]:disabled + s {
+  background-image: url("svg/default/radio-disabled.svg");
+}
+.kuma-checkbox.radio-primary[type="radio"]:checked:disabled + s {
+  background-image: url("svg/default/radio-checked-disabled.svg");
+}
+.kuma-checkbox[type="checkbox"] + s,
+.kuma-checkbox.checkbox-primary[type="checkbox"] + s {
+  width: 14px;
+  height: 14px;
+  background-image: url("svg/orange/checkbox-normal.svg");
+}
+.kuma-checkbox[type="checkbox"]:checked + s {
+  background-image: url("svg/orange/checkbox-checked.svg");
+}
+.kuma-checkbox[type="checkbox"]:disabled + s {
+  background-image: url("svg/orange/checkbox-disabled.svg");
+}
+.kuma-checkbox[type="checkbox"]:checked:disabled + s {
+  background-image: url("svg/orange/checkbox-checked-disabled.svg");
+}
+.kuma-checkbox.checkbox-primary[type="checkbox"] + s {
+  background-image: url("svg/default/checkbox-normal.svg");
+}
+.kuma-checkbox.checkbox-primary[type="checkbox"]:checked + s {
+  background-image: url("svg/default/checkbox-checked.svg");
+}
+.kuma-checkbox.checkbox-primary[type="checkbox"]:disabled + s {
+  background-image: url("svg/default/checkbox-disabled.svg");
+}
+.kuma-checkbox.checkbox-primary[type="checkbox"]:checked:disabled + s {
+  background-image: url("svg/default/checkbox-checked-disabled.svg");
+}
+.icon-fold,
+.icon-unfold {
+  background-image: url('https://aliwork.alicdn.com/tps/i4/TB1jhvPGVXXXXXOaXXXfq78_VXX-120-23.png');
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  font-size: 0;
+  line-height: 0;
+}
+.icon-fold {
+  background-position: 0 0;
+}
+.icon-unfold {
+  background-position: 0 -12px;
+}
+.kuma-table {
+  font: 12px/1.5 tahoma, arial, "Hiragino Sans GB", \5b8b\4f53;
+  border-collapse: collapse;
+  border-bottom: 1px solid #ebebeb;
+  width: 100%;
+  color: #666;
+  text-align: left;
+  margin-bottom: 5px;
+}
+.kuma-table th {
+  background-color: #f2f2f2;
+  padding: 12px;
+  border-bottom: 1px solid #ebebeb;
+}
+.kuma-table th .sort {
+  display: inline-block;
+  background-image: url("https://aliwork.alicdn.com/tps/i3/TB1fiP0GVXXXXbIXXXXftv.FpXX-7-12.png");
+  height: 12px;
+  width: 7px;
+  position: relative;
+  top: 2px;
+  cursor: pointer;
+  left: 5px;
+}
+.kuma-table th .sort.asc {
+  background-image: url("https://aliwork.alicdn.com/tps/i2/TB1LybWGVXXXXbvXpXXftv.FpXX-7-12.png");
+}
+.kuma-table th .sort.desc {
+  background-image: url("https://aliwork.alicdn.com/tps/i1/TB1.ZL1GVXXXXahXXXXftv.FpXX-7-12.png");
+}
+.kuma-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ebebeb;
+}
+.kuma-table tbody th {
+  background: transparent;
+  font-weight: 700;
+}
+.kuma-table .kuma-table-itemt-block {
+  display: block;
+}
+.kuma-table .sub-tr {
+  background-color: #fbfbfb;
+}
+.kuma-table .sub-tr.with-table .with-icon,
+.kuma-table .sub-tr.with-table .be-select {
+  border: 0 none;
+}
+.kuma-table .sub-tr.with-table td {
+  border-bottom: 1px dashed #ebebeb;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.kuma-table .be-select {
+  vertical-align: top;
+  width: 14px;
+}
+.kuma-table .with-icon {
+  width: 11px;
+  font-size: 0;
+}
+.kuma-table .with-icon i {
+  cursor: pointer;
+  vertical-align: top;
+}
+.kuma-table a {
+  color: #288df0;
+  text-decoration: none;
+}
+.kuma-table .be-select + th,
+.kuma-table .be-select + td,
+.kuma-table .with-icon + th,
+.kuma-table .with-icon + td,
+.kuma-table .with-icon + .be-select {
+  padding-left: 8px;
+}
+.kuma-table-container .kuma-table-more,
+.kuma-table-container .kuma-table-less {
+  color: #999;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 10px;
+}
+.kuma-table-container .kuma-table-more i,
+.kuma-table-container .kuma-table-less i {
+  background-image: url('https://aliwork.alicdn.com/tps/i4/TB1jhvPGVXXXXXOaXXXfq78_VXX-120-23.png');
+  background-repeat: no-repeat;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 10px;
+  height: 15px;
+  vertical-align: bottom;
+}
+.kuma-table-container .kuma-table-more i {
+  background-position: -97px 0;
+}
+.kuma-table-container .kuma-table-less i {
+  background-position: -107px 0;
+}
+.kuma-table-container .kuma-table-remak {
+  color: #999;
+  padding-left: 16px;
+}
+.kuma-table-container .kuma-pagination {
+  text-align: right;
+}
+.kuma-table-condensed > thead > tr > th,
+.kuma-table-condensed > tbody > tr > th,
+.kuma-table-condensed > tfoot > tr > th,
+.kuma-table-condensed > thead > tr > td,
+.kuma-table-condensed > tbody > tr > td,
+.kuma-table-condensed > tfoot > tr > td {
+  padding: 5px 0 5px 5px;
+}
+.kuma-table-hover tr:hover,
+.kuma-table-striped tr:nth-child(even) {
+  background-color: #fbfbfb;
+}
+.kuma-table-bordered,
+.kuma-table-bordered tr,
+.kuma-table-bordered th,
+.kuma-table-bordered td {
+  border: 1px solid #ebebeb;
+  outline: none;
+}
+.kuma-table-inbox {
+  border: none;
+  outline: none;
+}
+.kuma-table-inbox th,
+.kuma-table-inbox td {
+  border-top: 1px solid #ebebeb;
+}
+.kuma-table-action {
+  zoom: 1;
+  margin-bottom: 10px;
+}
+.kuma-table-action:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.kuma-table-action .kuma-table-fold,
+.kuma-table-action .kuma-table-unfold {
+  display: inline-block;
+  width: 21px;
+  height: 22px;
+  border: 0 none;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  background-image: url('https://aliwork.alicdn.com/tps/i4/TB1jhvPGVXXXXXOaXXXfq78_VXX-120-23.png');
+  background-repeat: no-repeat;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.kuma-table-action .kuma-table-fold {
+  border-right: 0 none;
+  background-position: -54px 0;
+}
+.kuma-table-action .kuma-table-fold.active {
+  border-color: #0776df;
+  background-color: #248aee;
+  background-position: -11px 0;
+}
+.kuma-table-action .kuma-table-unfold {
+  border-left: 0 none;
+  background-position: -32px 0;
+  margin-right: 10px;
+}
+.kuma-table-action .kuma-table-unfold.active {
+  border-color: #0776df;
+  background-color: #248aee;
+  background-position: -76px 0;
+}
+.kuma-table-action .kuma-button-group {
+  float: left;
+  margin-top: 6px;
+}
+.kuma-table-action .kuma-button-swhite {
+  line-height: 22px;
+}
+.kuma-table-action .kuma-table-action-search {
+  float: right;
+  position: relative;
+}
+.kuma-table-action .kuma-table-action-search input {
+  padding-right: 25px;
+  width: 150px;
+}
+.kuma-table-action .kuma-table-action-search .search-icon {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  right: 8px;
+  top: 10px;
+  background: url("https://aliwork.alicdn.com/tps/i1/TB1NVnRGVXXXXXRXVXXmpvM.VXX-13-13.png");
+  cursor: pointer;
+}
+/* kuma.loading 样式模块 */
+/*small*/
+.kuma-loading-s {
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-image: url('data:image/gif;base64,R0lGODlhDAAMAPfIAOnp6f7+/vz8/P39/efn5+jo6Ovr6+zs7O3t7e/v7/j4+OTk5OH6///+/ezr6/T4+/Hy8uz6//3+/vLw8OH////9/O///+bl5f/49PT09fX3+vT5/Pz+//rTu/nRuPymbvX3+P3///+tdv+JRvH09+fz+/Xi1f+odujr7+f6/+Xo6/Ls5vSkduXq7//VvvLx7+rr6+jp6eXk5OzHruTt9f/v5+js7/O5kvvDnub8///y6/KiaP6bZ/5mBv9yKPnu5v+WbeTn6/L//+rp6fx1I/bs5OXl5P92SPT6/e/v8POiaf/+/v7+//Df1PvXwOnr6+Ly+/bZxvW4jv9dAv9WAPG0kO/w8v9vJfP4/OP2+/9pHOn0/ej1+e/3/fHi2P9FAPmxgPi3jvjv6fHz8/X5/PP//+Px+u3r6vH1+PX7/v339PLw8fX5+/1eCf2OR+f///rHpfT///Lx8Of4/+X6/uvr7OL6//fdy/Xg0fvYwfbp3u/s6+3EqOv7/+ft8O3r7OTt9P+caPaXWPqUTv9pO/Xz8P+QW/eRSP2RRvf///D9//1iDP9eDvf4+Onz/OL4/v/Ttvb5/P1mC/Lx8ffXwef+//T6/vb19f9EAPb3+OL///307vH2+efg2v5xEv9NAP/dzefm5vb6/Ons7vyWVfjFo/a+l+nl4vancfv7/On7/+rx9fPs5vD19+zy9faqd/94P+T+/+vSufX///+JU/D3/P/Yyufl5P/8+vb5+ub1+v7///9YFfLy8fp6K/D8/+bm5vf39+rq6vT09PHx8fLy8vX19eXl5f///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh/wtYTVAgRGF0YVhNUDw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo0MDIxQkZGNUVFMjYxMUUzQkYzN0ZGQzRENzlGRDZEMyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo0MDIxQkZGNkVFMjYxMUUzQkYzN0ZGQzRENzlGRDZEMyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQwMjFCRkYzRUUyNjExRTNCRjM3RkZDNEQ3OUZENkQzIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjQwMjFCRkY0RUUyNjExRTNCRjM3RkZDNEQ3OUZENkQzIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkECQAAyAAsAAAAAAwADAAACGEAkQkcSJDgMGAAECAQdmHWwGDAjBFEQiEPsgDHhhVE5uGLi2IENiLDwAIPgGIikVmYIwylSAjCiAFIWYDYgGPBNgY7NgDZsGMSBxrLOLAYMAMJEhggEHSgAGIHDhATMDAgACH5BAUAAMgALAAAAAAMAAwAAAhgAJEJHEiQ4DBgABAgEAYs2MBgwIwRNHZMAbIAx4YVRKYhCJNiBDYK1GUCQDGRyBBpEXZSJKlBxACgdDRmwDGHBXOpkIBs2DGJAylqFFgMmIEECQwQADpQALEDB4gJGBgQACH5BAkAAMgALAgAAwAEAAgAAAgjAJEZWxAAGbICxAySgGHwxRtkNYhQQnZnESgyDAohC7XBYEAAIfkEBQAAyAAsAAAAAAwADAAACDMAkQkcSLCgwYMIExpbECAhsgLEHBYT5nACxYR+IiL8wUACQhFtihxMwoVPIIQOWnEYGBAAIfkECQAAyAAsBAAGAAgABgAACCQAkQkcWGygwQIGBUY6NmBgAxAthiGrEwHMlE4PBqqSAkvNwIAAIfkEBQAAyAAsAAAAAAwADAAACDUAkQkcSLCgwYMIEypcyJBgMWEKCxBLGOzYAIFG4hA0dmwYQTuoRuxZRcBYwVRuPJ1BI2BgQAAh+QQFAADIACwBAAYABwAGAAAIIQAnIBtI0AZBgmYaHUQmRAmQhYYOpbCSwMBAAV0cHCAWEAAh+QQJAADIACwAAAUABgAHAAAIIgCHIBs4cIsigshYVcFFEBKmDgQrwHmUBqGFWwYSICR2ICAAIfkEBQAAyAAsAAAAAAwADAAACC8AkQkcSLCgwYMIEw78lUPhjTAKeV1RGOWUwhCARCkcdsyYwmLADCRIKIDYAYMBAQAh+QQJAADIACwAAAEABAAIAAAIIwCRIXtwAZkYCmxsSdKDrFQPDMgqrRA4ipNAYgAEDjgWDFlAACH5BAkAAMgALAAAAAAMAAwAAAgzAJEJHEhwYIMTsmL9KSjQCRUeDAXu0oQjosBedCwKBLBGIzJhkzwSA+BxwLFgHlOqVBkQACH5BAkAAMgALAAAAAAMAAwAAAhjAJEJ3HTEVAQIAQQqtDTj06s+T4AFUxiMxiUdCo0dU4AswDEsCjMuCFCMQMiQBYgBKHZSYTFhwli2RPZS5UxkKQccm3gy2LEByIYdMxZS4zCXwAwkSGCAANGQAogdOEBMgMKAACH5BAkAAMgALAAAAAAMAAwAAAhjAJEJHFDLi48PAQQqHAasRBNGgrJkUhgMmDGFFcrIUIAswLFhChUaWxCgGIGQIQsQA1AMpcJiwoS1dIkM5kqayFQOOBbMZbBjA5ANO3ZR5MeXwAwkSGCAQFGFAogdOEBMgMKAACH5BAUAAMgALAAAAAAMAAwAAAhgAJEJHEiQ4DBgABC4iuGL1sBgwIwNXEJoRyJkAY4NK4gsA5QAxQhwFIiCGIBiI5HJESYM5chiwkymLEBswLFgHIMdG4Bs2DGJA41pHFgMmIEECQwQADpQALEDB4gJGBgQADs=');
+}
+/*middle*/
+.kuma-loading {
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-image: url('data:image/gif;base64,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');
+}
+/*large*/
+.kuma-loading-l {
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-image: url('data:image/gif;base64,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');
+}
+.kuma-input {
+  padding: 5px 10px;
+  height: 36px;
+  line-height: 26px;
+}
+.kuma-textarea {
+  line-height: 18px;
+  padding: 9px 10px;
+  overflow: auto;
+  resize: vertical;
+}
+/**
+ * Hovercard Component Style for uxcore
+ * @author jinghong
+ *
+ * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.kuma-hovercard {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  z-index: 1070;
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.4;
+}
+.kuma-hovercard-hidden {
+  display: none;
+}
+.kuma-hovercard-placement-left {
+  margin-left: -3px;
+  padding: 0 5px;
+}
+.kuma-hovercard-placement-left > .kuma-hovercard-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #d9d9d9;
+}
+.kuma-hovercard-placement-left > .kuma-hovercard-arrow:after {
+  content: " ";
+  right: 3px;
+  border-right-width: 0;
+  border-left-color: #fff;
+  bottom: -3px;
+}
+.kuma-hovercard-placement-top {
+  margin-top: -3px;
+  padding: 5px 0;
+}
+.kuma-hovercard-placement-top > .kuma-hovercard-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #d9d9d9;
+}
+.kuma-hovercard-placement-top > .kuma-hovercard-arrow:after {
+  content: " ";
+  bottom: 3px;
+  left: -3px;
+  border-bottom-width: 0;
+  border-top-color: #fff;
+}
+.kuma-hovercard-placement-bottom {
+  margin-top: 3px;
+  padding: 5px 0;
+}
+.kuma-hovercard-placement-bottom > .kuma-hovercard-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #d9d9d9;
+}
+.kuma-hovercard-placement-bottom > .kuma-hovercard-arrow:after {
+  content: " ";
+  top: 3px;
+  left: -3px;
+  border-top-width: 0;
+  border-bottom-color: #fff;
+}
+.kuma-hovercard-placement-right {
+  margin-left: 3px;
+  padding: 0 5px;
+}
+.kuma-hovercard-placement-right > .kuma-hovercard-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #d9d9d9;
+}
+.kuma-hovercard-placement-right > .kuma-hovercard-arrow:after {
+  content: " ";
+  left: 3px;
+  bottom: -3px;
+  border-left-width: 0;
+  border-right-color: #fff;
+}
+.kuma-hovercard-arrow,
+.kuma-hovercard-arrow:after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.kuma-hovercard-inner {
+  min-width: 177px;
+  max-width: 276px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ffffff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.17);
+  overflow: hidden;
+}
+.kuma-hovercard.kuma-hovercard-zoom-enter,
+.kuma-hovercard.kuma-hovercard-zoom-leave {
+  display: block;
+}
+.kuma-hovercard-zoom-enter,
+.kuma-hovercard-zoom-appear {
+  opacity: 0;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+          animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.kuma-hovercard-zoom-leave {
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: cubic-bezier(0.6, -0.3, 0.74, 0.05);
+          animation-timing-function: cubic-bezier(0.6, -0.3, 0.74, 0.05);
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.kuma-hovercard-zoom-enter.kuma-hovercard-zoom-enter-active,
+.kuma-hovercard-zoom-appear.kuma-hovercard-zoom-appear-active {
+  -webkit-animation-name: rcToolTipZoomIn;
+          animation-name: rcToolTipZoomIn;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+.kuma-hovercard-zoom-leave.kuma-hovercard-zoom-leave-active {
+  -webkit-animation-name: rcToolTipZoomOut;
+          animation-name: rcToolTipZoomOut;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+@-webkit-keyframes rcToolTipZoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+@keyframes rcToolTipZoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes rcToolTipZoomOut {
+  0% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+  }
+}
+@keyframes rcToolTipZoomOut {
+  0% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+  }
+}
+.kuma-hovercard-container {
+  width: 255px;
+  border: 1px solid #bbbbbb;
+  float: left;
+  box-shadow: 0px 1px 2px 0px #EDEDED;
+  background-color: #FFF;
+  font-size: 12px;
+}
+.kuma-hovercard-container ul,
+.kuma-hovercard-container li {
+  padding: 0px;
+  margin: 0px;
+}
+.kuma-hovercard-container a {
+  text-decoration: none;
+  color: #288df0;
+}
+.kuma-hovercard-container a img {
+  border: 0;
+}
+.kuma-hovercard-container .g-csscut-more {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.kuma-hovercard-container .kuma-hovercard-info {
+  padding: 6px 0 6px 6px;
+  position: relative;
+}
+.kuma-hovercard-container .kuma-hovercard-info .kuma-hovercard-avatar {
+  float: left;
+}
+.kuma-hovercard-container .kuma-hovercard-info .kuma-hovercard-avatar a {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+.kuma-hovercard-container .kuma-hovercard-info .kuma-hovercard-avatar a img {
+  max-width: 60px;
+  max-height: 60px;
+}
+.kuma-hovercard-container .kuma-hovercard-info .kuma-hovercard-content {
+  padding-left: 68px;
+  width: 180px;
+}
+.kuma-hovercard-container .kuma-hovercard-info .kuma-hovercard-content .kuma-hovercard-name {
+  font-size: 14px;
+  display: inline-block;
+  max-width: 180px;
+}
+.kuma-hovercard-container .kuma-hovercard-info .kuma-hovercard-content li {
+  line-height: 21px;
+  height: 21px;
+  width: 180px;
+  margin-top: 0;
+  list-style: none;
+  text-align: left;
+}
+.kuma-hovercard-container .kuma-hovercard-info .kuma-hovercard-content li.singledetail {
+  line-height: 40px;
+  height: 40px;
+}
+.kuma-hovercard-container .kuma-hovercard-info .kuma-hovercard-conn {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+.kuma-hovercard-container .kuma-hovercard-info .kuma-hovercard-conn span {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: url(https://aliwork.alicdn.com/tps/i4/TB1Q1l1FVXXXXX1XpXXtF3DLXXX-148-349.png);
+}
+.kuma-hovercard-container .kuma-hovercard-info .kuma-hovercard-conn .kuma-hovercard-followed {
+  background-position: 114px 97px;
+}
+.kuma-hovercard-container .kuma-hovercard-info .kuma-hovercard-conn .kuma-hovercard-followed:hover {
+  background-position: 58px 97px;
+}
+.kuma-hovercard-container .kuma-hovercard-info .kuma-hovercard-conn .kuma-hovercard-friends {
+  background-position: 114px 64px;
+}
+.kuma-hovercard-container .kuma-hovercard-info .kuma-hovercard-conn .kuma-hovercard-friends:hover {
+  background-position: 58px 64px;
+}
+.kuma-hovercard-container .kuma-hovercard-info .kuma-hovercard-conn .kuma-hovercard-stranger {
+  background-position: 114px 132px;
+}
+.kuma-hovercard-container .kuma-hovercard-info .kuma-hovercard-conn .kuma-hovercard-stranger:hover {
+  background-position: 58px 132px;
+}
+.kuma-hovercard-container .kuma-hovercard-info .kuma-hovercard-conn .kuma-hovercard-connecting {
+  background: url(https://aliwork.alicdn.com/tps/i1/TB16alZFVXXXXcYXFXXJIc..VXX-14-14.gif);
+  background-position: 0 0;
+}
+.kuma-hovercard-container .kuma-hovercard-tools {
+  background-color: #f1f1f1;
+  color: #666666;
+  float: left;
+  width: 100%;
+  height: 25px;
+}
+.kuma-hovercard-container .kuma-hovercard-tools li {
+  display: inline-block;
+  float: left;
+  background: url(https://aliwork.alicdn.com/tps/i4/TB1Q1l1FVXXXXX1XpXXtF3DLXXX-148-349.png);
+  width: 69px;
+  height: 25px;
+  line-height: 25px;
+  cursor: pointer;
+}
+.kuma-hovercard-container .kuma-hovercard-tools li span {
+  margin-left: 27px;
+  line-height: 27px;
+}
+.kuma-hovercard-container .kuma-hovercard-tools li:hover {
+  background-color: #4098F7;
+  color: #fff;
+}
+.kuma-hovercard-container .kuma-hovercard-tools .kuma-hovercard-at {
+  width: 50px;
+  background-position: 124px 293px;
+}
+.kuma-hovercard-container .kuma-hovercard-tools .kuma-hovercard-at:hover {
+  background-position: 70px 293px;
+}
+.kuma-hovercard-container .kuma-hovercard-tools .kuma-hovercard-phone.kuma-hovercard-phoneoff {
+  background-position: 124px 263px;
+}
+.kuma-hovercard-container .kuma-hovercard-tools .kuma-hovercard-phone.kuma-hovercard-phoneoff:hover {
+  background-position: 70px 263px;
+}
+.kuma-hovercard-container .kuma-hovercard-tools .kuma-hovercard-phone.kuma-hovercard-phoneon {
+  background-position: 125px 37px;
+}
+.kuma-hovercard-container .kuma-hovercard-tools .kuma-hovercard-phone.kuma-hovercard-phoneon:hover {
+  background-position: 71px 37px;
+}
+.kuma-hovercard-container .kuma-hovercard-tools .kuma-hovercard-ww {
+  background-position: 124px 230px;
+}
+.kuma-hovercard-container .kuma-hovercard-tools .kuma-hovercard-ww:hover {
+  background-position: 70px 230px;
+}
+.kuma-hovercard-container .kuma-hovercard-tools .kuma-hovercard-email {
+  background-position: 124px 199px;
+  width: 65px;
+}
+.kuma-hovercard-container .kuma-hovercard-tools .kuma-hovercard-email:hover {
+  background-position: 70px 199px;
+}
+.kuma-hovercard-container .kuma-hovercard-error {
+  height: 60px;
+  line-height: 60px;
+  font-size: 14px;
+  text-align: center;
+  color: #666666;
+}
+/**
+ * EmployeeSearch Component Style for uxcore
+ * @author eternalsky
+ *
+ * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.kuma-employee-search {
+  width: 330px;
+}
+.kuma-employee-search-dropdown .option-img {
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
+  border-radius: 4px;
+}
+.kuma-employee-search-dropdown .option-content {
+  vertical-align: middle;
+}
+/**
+ * Calendar Component Style for uxcore
+ * @author
+ *
+ * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.kuma-calendar-hidden {
+  display: none;
+}
+.kuma-calendar-picker .kuma-calendar,
+.kuma-calendar-picker-container .kuma-calendar {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  z-index: 1000;
+}
+.kuma-calendar-picker {
+  position: relative;
+}
+.kuma-calendar-picker > input {
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+  cursor: pointer;
+}
+.kuma-calendar-picker > input[disabled] {
+  cursor: not-allowed;
+}
+.kuma-calendar-picker > input::-ms-clear {
+  display: none;
+}
+.kuma-calendar-picker > .kuma-icon {
+  position: absolute;
+  right: 8px;
+  top: 1px;
+}
+.kuma-calendar-picker-open > input {
+  border-color: #2599f2 !important;
+}
+.kuma-calendar {
+  position: relative;
+  outline: none;
+  width: 212px;
+  list-style: none;
+  font-size: 12px;
+  text-align: left;
+  background-color: #fff;
+  box-shadow: 0 1px 5px #333;
+  background-clip: padding-box;
+  border: 1px solid #333;
+  line-height: 1.5;
+}
+.kuma-calendar a:hover {
+  text-decoration: none;
+}
+.kuma-calendar-week-number {
+  width: 286px;
+}
+.kuma-calendar-week-number-cell {
+  text-align: center;
+}
+.kuma-calendar-header {
+  padding: 0 10px;
+  height: 30px;
+  text-align: center;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  border-bottom: 1px solid #333;
+}
+.kuma-calendar-header > a {
+  display: inline-block;
+  padding: 0px 5px;
+  width: 30px;
+  line-height: 29px;
+  text-align: center;
+  font-size: 18px;
+  font-family: Arial;
+  color: #666;
+}
+.kuma-calendar-header > a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #1A78B8;
+}
+.kuma-calendar-header .kuma-calendar-prev-month-btn {
+  position: absolute;
+  left: 25px;
+}
+.kuma-calendar-header .kuma-calendar-next-month-btn {
+  position: absolute;
+  right: 25px;
+}
+.kuma-calendar-year-select,
+.kuma-calendar-month-select {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  color: #666;
+  padding: 0 5px;
+  line-height: 30px;
+}
+.kuma-calendar-year-select:hover,
+.kuma-calendar-month-select:hover {
+  cursor: pointer;
+  color: #1A78B8;
+}
+.kuma-calendar-prev-month-btn,
+.kuma-calendar-next-month-btn,
+.kuma-calendar-prev-year-btn,
+.kuma-calendar-next-year-btn {
+  position: absolute;
+  top: 0;
+}
+.kuma-calendar-next-year-btn {
+  right: 0;
+}
+.kuma-calendar-prev-year-btn {
+  left: 0;
+}
+.kuma-calendar-calendar-body {
+  padding: 0;
+}
+.kuma-calendar table {
+  table-layout: fixed;
+  width: 100%;
+}
+.kuma-calendar table th,
+.kuma-calendar table td {
+  max-width: 30px;
+  height: 26px;
+}
+.kuma-calendar-column-header {
+  border-bottom: 1px solid #333;
+  text-align: center;
+}
+.kuma-calendar-column-header .kuma-calendar-column-header-inner {
+  display: block;
+  font-weight: normal;
+}
+.kuma-calendar-today .kuma-calendar-date {
+  background: white;
+  border: none;
+  color: #666;
+}
+.kuma-calendar-week-number-header .kuma-calendar-column-header-inner {
+  display: none;
+}
+.kuma-calendar-cell:nth-last-child(1) .kuma-calendar-date,
+.kuma-calendar-cell:nth-last-child(2) .kuma-calendar-date {
+  color: #df663e;
+}
+.kuma-calendar-cell:nth-last-child(1).kuma-calendar-selected-day .kuma-calendar-date,
+.kuma-calendar-cell:nth-last-child(2).kuma-calendar-selected-day .kuma-calendar-date {
+  color: #fff;
+}
+.kuma-calendar-date {
+  display: block;
+  color: #666;
+  line-height: 26px;
+  text-align: center;
+}
+.kuma-calendar-date:hover {
+  background: #999;
+  cursor: pointer;
+}
+.kuma-calendar-selected-day .kuma-calendar-date {
+  background: #2599f2;
+  color: #fff;
+}
+.kuma-calendar-selected-day .kuma-calendar-date:hover {
+  background: #2599f2;
+  color: #fff;
+}
+.kuma-calendar-disabled-cell .kuma-calendar-date {
+  cursor: not-allowed;
+  color: #999 !important;
+  background: #999;
+}
+.kuma-calendar-disabled-cell .kuma-calendar-date:hover {
+  background: #999;
+}
+.kuma-calendar-last-month-cell .kuma-calendar-date,
+.kuma-calendar-next-month-btn-day .kuma-calendar-date {
+  color: #bbb !important;
+}
+.kuma-calendar-footer {
+  border-top: 1px solid #333;
+  text-align: center;
+}
+.kuma-calendar-footer-btn {
+  margin-top: 2px;
+}
+.kuma-calendar-today-btn,
+.kuma-calendar-clear-btn,
+.kuma-calendar-ok-btn {
+  display: inline-block;
+  padding: 4px 5px;
+  text-align: center;
+  color: #666;
+}
+.kuma-calendar-today-btn:hover,
+.kuma-calendar-clear-btn:hover,
+.kuma-calendar-ok-btn:hover {
+  cursor: pointer;
+  color: #1A78B8;
+}
+.kuma-calendar-today-btn-disabled,
+.kuma-calendar-clear-btn-disabled,
+.kuma-calendar-ok-btn-disabled {
+  color: #bbb;
+}
+.kuma-calendar-today-btn-disabled:hover,
+.kuma-calendar-clear-btn-disabled:hover,
+.kuma-calendar-ok-btn-disabled:hover {
+  color: #bbb;
+}
+.kuma-calendar-today-btn {
+  padding-left: 10px;
+}
+.kuma-calendar-year-panel {
+  position: relative!important;
+}
+.kuma-calendar-time-input {
+  height: 24px;
+  width: 40px;
+  position: relative;
+  display: inline-block;
+  margin: 0 0 2px;
+  padding: 4px 10px;
+  border: 1px solid #333;
+  color: #666;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+.kuma-calendar-time-input:hover {
+  border-color: #2599f2;
+}
+.kuma-calendar-time-input:focus {
+  border-color: #2599f2;
+}
+.kuma-calendar-time-panel,
+.kuma-calendar-month-panel,
+.kuma-calendar-year-panel,
+.kuma-calendar-decade-panel {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  z-index: 10;
+  position: absolute;
+  outline: none;
+}
+.kuma-calendar-time-panel-hidden,
+.kuma-calendar-month-panel-hidden,
+.kuma-calendar-year-panel-hidden,
+.kuma-calendar-decade-panel-hidden {
+  display: none;
+}
+.kuma-calendar-time-panel-header,
+.kuma-calendar-month-panel-header,
+.kuma-calendar-year-panel-header,
+.kuma-calendar-decade-panel-header {
+  padding: 0 10px;
+  height: 30px;
+  line-height: 29px;
+  position: relative;
+  text-align: center;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  border-bottom: 1px solid #333;
+}
+.kuma-calendar-time-panel-header > a,
+.kuma-calendar-month-panel-header > a,
+.kuma-calendar-year-panel-header > a,
+.kuma-calendar-decade-panel-header > a {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  font-size: 18px;
+  font-family: Arial;
+  color: #666;
+}
+.kuma-calendar-time-panel-header > a:hover,
+.kuma-calendar-month-panel-header > a:hover,
+.kuma-calendar-year-panel-header > a:hover,
+.kuma-calendar-decade-panel-header > a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #1A78B8;
+}
+.kuma-calendar-time-panel-table,
+.kuma-calendar-month-panel-table,
+.kuma-calendar-year-panel-table,
+.kuma-calendar-decade-panel-table {
+  height: 210px;
+}
+.kuma-calendar-time-panel-cell,
+.kuma-calendar-month-panel-cell,
+.kuma-calendar-year-panel-cell,
+.kuma-calendar-decade-panel-cell {
+  text-align: center;
+}
+.kuma-calendar-time-panel-title {
+  width: 120px;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+}
+.kuma-calendar-time-panel-time {
+  line-height: 26px;
+  display: block;
+  width: 20px;
+  margin: 0 auto;
+  color: #666;
+}
+.kuma-calendar-time-panel-time:hover {
+  background: #999;
+  cursor: pointer;
+}
+.kuma-calendar-time-panel-selected-cell .kuma-calendar-time {
+  background: #2599f2;
+  color: #fff;
+}
+.kuma-calendar-time-panel-selected-cell .kuma-calendar-time:hover {
+  background: #2599f2;
+  color: #fff;
+}
+.kuma-calendar-month-panel-prev-year-btn,
+.kuma-calendar-month-panel-next-year-btn {
+  position: absolute;
+  top: 0;
+}
+.kuma-calendar-month-panel-prev-year-btn {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  left: 0;
+}
+.kuma-calendar-month-panel .kuma-calendar-year-select {
+  width: 120px;
+  font-size: 12px;
+}
+.kuma-calendar-month-panel-year-select-arrow {
+  display: none;
+}
+.kuma-calendar-month-panel-next-year-btn {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  right: 0;
+}
+.kuma-calendar-month-panel-cell .kuma-calendar-month-panel-month {
+  display: block;
+  margin: 0 auto;
+  color: #666;
+  height: 36px;
+  padding: 0;
+  background: transparent;
+  line-height: 36px;
+  text-align: center;
+}
+.kuma-calendar-month-panel-cell .kuma-calendar-month-panel-month:hover {
+  background: #999;
+  cursor: pointer;
+}
+.kuma-calendar-month-panel-disabled .kuma-calendar-month-panel-month {
+  color: #bbb;
+}
+.kuma-calendar-month-panel-disabled .kuma-calendar-month-panel-month:hover {
+  background: #fff;
+  cursor: not-allowed;
+}
+.kuma-calendar-month-panel-selected-cell .kuma-calendar-month-panel-month {
+  background: #2599f2;
+  color: #fff;
+}
+.kuma-calendar-month-panel-selected-cell .kuma-calendar-month-panel-month:hover {
+  background: #2599f2;
+  color: #fff;
+}
+.kuma-calendar-year-panel-prev-decade-btn,
+.kuma-calendar-year-panel-next-decade-btn {
+  position: absolute;
+  top: 0;
+}
+.kuma-calendar-year-panel-prev-decade-btn {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  left: 0;
+}
+.kuma-calendar-year-panel .kuma-calendar-year-panel-decade-select {
+  width: 120px;
+  font-size: 12px;
+}
+.kuma-calendar-year-panel-decade-select-arrow {
+  display: none;
+}
+.kuma-calendar-year-panel-next-decade-btn {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  right: 0;
+}
+.kuma-calendar-year-panel-year {
+  display: block;
+  margin: 0 auto;
+  color: #666;
+  padding: 0;
+  line-height: 36px;
+  text-align: center;
+}
+.kuma-calendar-year-panel-year:hover {
+  background: #999;
+  cursor: pointer;
+}
+.kuma-calendar-year-panel-selected-cell .kuma-calendar-year-panel-year {
+  background: #2599f2;
+  color: #fff;
+}
+.kuma-calendar-year-panel-selected-cell .kuma-calendar-year-panel-year:hover {
+  background: #2599f2;
+  color: #fff;
+}
+.kuma-calendar-year-panel-last-decade-cell .kuma-calendar-year-panel-year:before,
+.kuma-calendar-year-panel-next-decade-cell .kuma-calendar-year-panel-year:before {
+  content: "\e645";
+  font-family: kuma!important;
+  font-size: 14px;
+}
+.kuma-calendar-decade-panel-prev-century-btn,
+.kuma-calendar-decade-panel-next-century-btn {
+  position: absolute;
+  top: 0;
+}
+.kuma-calendar-decade-panel-prev-century-btn {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  left: 0;
+}
+.kuma-calendar-decade-panel-next-century-btn {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  right: 0;
+}
+.kuma-calendar-decade-panel-century {
+  line-height: 29px;
+  font-size: 12px;
+}
+.kuma-calendar-decade-panel-decade {
+  display: block;
+  margin: 0 auto;
+  color: #666;
+  padding: 0;
+  line-height: 36px;
+  text-align: center;
+}
+.kuma-calendar-decade-panel-decade:hover {
+  background: #999;
+  cursor: pointer;
+}
+.kuma-calendar-decade-panel-selected-cell .kuma-calendar-decade-panel-decade {
+  background: #2599f2;
+  color: #fff;
+}
+.kuma-calendar-decade-panel-selected-cell .kuma-calendar-decade-panel-decade:hover {
+  background: #2599f2;
+  color: #fff;
+}
+.kuma-calendar-decade-panel-last-century-cell .kuma-calendar-decade-panel-decade:before,
+.kuma-calendar-decade-panel-next-century-cell .kuma-calendar-decade-panel-decade:before {
+  content: "\e645";
+  font-family: kuma!important;
+  font-size: 14px;
+}
+/**
+ * Dialog Component Style for uxcore
+ * @author
+ *
+ * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.kuma-dlg {
+  outline: none;
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  z-index: 1000;
+}
+.kuma-dlg-hidden,
+.kuma-dlg-wrap-hidden > .kuma-dlg {
+  display: none;
+}
+.kuma-dlg-title {
+  margin: 0;
+  font-size: 14px;
+  line-height: 40px;
+  color: #fff;
+  text-indent: 20px;
+}
+.kuma-dlg-content {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+  outline: 0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.kuma-dlg-close {
+  position: absolute;
+  right: 16px;
+  top: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+}
+.kuma-dlg-close:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.kuma-dlg-close-x {
+  font-family: kuma!important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: .2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.kuma-dlg-close-x:after {
+  content: '';
+}
+.kuma-dlg.kuma-dlg-noheader .kuma-dlg-close {
+  right: 10px;
+  top: 6px;
+  color: #ccc;
+}
+.kuma-dlg-header {
+  height: 40px;
+  background-color: #2599f2;
+}
+.kuma-dlg-body {
+  padding: 15px 20px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.kuma-dlg-footer {
+  padding: 12px 0;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+.kuma-dlg-footer button + button {
+  margin-left: 8px;
+  margin-bottom: 0;
+}
+.kuma-dlg-wrap-hidden > .kuma-dlg-mask {
+  display: none;
+}
+.kuma-dlg-mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  z-index: 1000;
+  filter: alpha(opacity=30);
+}
+.kuma-dlg-mask-hidden {
+  display: none;
+}
+.kuma-dlg-wrap-hidden > .kuma-dlg-mask.kuma-dlg-fade-enter,
+.kuma-dlg-wrap-hidden > .kuma-dlg-mask.kuma-dlg-fade-leave {
+  display: block;
+}
+.kuma-dlg-confirm .kuma-dlg-body {
+  padding: 0;
+}
+.kuma-dlg-confirm .kuma-dlg-body .kuma-confirm-body {
+  padding: 20px;
+}
+.kuma-dlg-confirm .kuma-dlg-body .kuma-confirm-body > .kuma-icon {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 24px;
+}
+.kuma-dlg-confirm .kuma-dlg-body .kuma-confirm-body > .kuma-icon.kuma-icon-caution {
+  color: #f5a12a;
+}
+.kuma-dlg-confirm .kuma-dlg-body .kuma-confirm-body > .kuma-icon.kuma-icon-information {
+  color: #45a8e6;
+}
+.kuma-dlg-confirm .kuma-dlg-body .kuma-confirm-body > .kuma-icon.kuma-icon-success {
+  color: #66bd5c;
+}
+.kuma-dlg-confirm .kuma-dlg-body .kuma-confirm-body > .kuma-icon.kuma-icon-error {
+  color: #F04631;
+}
+.kuma-dlg-confirm .kuma-dlg-body .kuma-confirm-title {
+  margin-left: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #333;
+}
+.kuma-dlg-confirm .kuma-dlg-body .kuma-confirm-content {
+  margin-left: 36px;
+  font-size: 12px;
+  color: #666;
+}
+.kuma-dlg-confirm .kuma-dlg-body .kuma-confirm-action {
+  padding: 12px 0;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+.kuma-dlg-confirm .kuma-dlg-body .kuma-confirm-action button + button {
+  margin-left: 8px;
+  margin-bottom: 0;
+}
+/**
+ * Tooltip Component Style for uxcore
+ * @author
+ *
+ * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.kuma-tooltip {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  z-index: 1070;
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.4;
+}
+.kuma-tooltip-hidden {
+  display: none;
+}
+.kuma-tooltip-placement-left {
+  margin-left: -3px;
+  padding: 0 5px;
+}
+.kuma-tooltip-placement-left .kuma-tooltip-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #e8e8e8;
+}
+.kuma-tooltip-placement-left .kuma-tooltip-arrow:before {
+  margin-top: -5px;
+  border-width: 5px 0 5px 5px;
+  left: -6px;
+  top: 0;
+  border-left-color: #fff;
+}
+.kuma-tooltip-placement-top {
+  margin-top: -3px;
+  padding: 5px 0;
+}
+.kuma-tooltip-placement-top .kuma-tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #e8e8e8;
+}
+.kuma-tooltip-placement-top .kuma-tooltip-arrow:before {
+  margin-left: -5px;
+  border-width: 5px 5px 0;
+  left: 0;
+  top: -6px;
+  border-top-color: #fff;
+}
+.kuma-tooltip-placement-bottom {
+  margin-top: 3px;
+  padding: 5px 0;
+}
+.kuma-tooltip-placement-bottom .kuma-tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #e8e8e8;
+}
+.kuma-tooltip-placement-bottom .kuma-tooltip-arrow:before {
+  margin-left: -5px;
+  border-width: 0 5px 5px;
+  left: 0;
+  top: 1px;
+  border-bottom-color: #fff;
+}
+.kuma-tooltip-placement-right {
+  margin-left: 3px;
+  padding: 0 5px;
+}
+.kuma-tooltip-placement-right .kuma-tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #e8e8e8;
+}
+.kuma-tooltip-placement-right .kuma-tooltip-arrow:before {
+  margin-top: -4px;
+  border-width: 5px 5px 5px 0;
+  left: 1px;
+  top: -1px;
+  border-right-color: #fff;
+}
+.kuma-tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.kuma-tooltip-arrow:before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.kuma-tooltip-content {
+  box-shadow: 0 0 5px -1px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  border: 1px solid #ededed;
+}
+.kuma-tooltip-inner {
+  padding: 14px 18px;
+  color: #666;
+  text-align: center;
+  text-decoration: none;
+  background-color: #fff;
+}
+/**
+ * Pagination Component Style for uxcore
+ * @author
+ *
+ * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.kuma-page {
+  font-size: 12px;
+  font-family: 'Arial';
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.kuma-page:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+.kuma-page-total {
+  font-size: 10px;
+  min-width: 28px;
+  height: 28px;
+  line-height: 28px;
+  float: left;
+  margin-left: 20px;
+}
+.kuma-page-item {
+  cursor: pointer;
+  min-width: 28px;
+  height: 28px;
+  line-height: 26px;
+  text-align: center;
+  list-style: none;
+  float: left;
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+  margin-right: 8px;
+}
+.kuma-page-item a {
+  text-decoration: none;
+  color: #666;
+}
+.kuma-page-item:hover {
+  border-color: #2599f2;
+}
+.kuma-page-item:hover a {
+  color: #2599f2;
+}
+.kuma-page-item-active {
+  background-color: #2599f2;
+  border-color: #2599f2;
+}
+.kuma-page-item-active a {
+  color: #fff;
+}
+.kuma-page-item-active:hover a {
+  color: #fff;
+}
+.kuma-page-jump-prev:after,
+.kuma-page-jump-next:after {
+  content: "•••";
+  display: block;
+  letter-spacing: 2px;
+  color: #ccc;
+  font-size: 12px;
+  margin-top: 1px;
+}
+.kuma-page-jump-prev:hover:after,
+.kuma-page-jump-next:hover:after {
+  color: #2599f2;
+}
+.kuma-page-jump-prev:hover:after {
+  content: "«";
+}
+.kuma-page-jump-next:hover:after {
+  content: "»";
+}
+.kuma-page-prev,
+.kuma-page-jump-prev,
+.kuma-page-jump-next {
+  margin-right: 8px;
+}
+.kuma-page-prev,
+.kuma-page-next,
+.kuma-page-jump-prev,
+.kuma-page-jump-next {
+  cursor: pointer;
+  color: #666;
+  font-size: 10px;
+  list-style: none;
+  min-width: 28px;
+  height: 28px;
+  line-height: 26px;
+  float: left;
+  text-align: center;
+}
+.kuma-page-prev a {
+  text-decoration: none;
+}
+.kuma-page-next a {
+  text-decoration: none;
+}
+.kuma-page-prev,
+.kuma-page-next {
+  border: 1px solid #d9d9d9;
+  font-size: 18px;
+}
+.kuma-page-prev a,
+.kuma-page-next a {
+  color: #666;
+}
+.kuma-page-prev a:after,
+.kuma-page-next a:after {
+  display: inline-block;
+  vertical-align: top;
+}
+.kuma-page-disabled {
+  cursor: not-allowed;
+}
+.kuma-page-disabled a {
+  color: #333;
+}
+.kuma-page-options {
+  float: left;
+  margin-left: 15px;
+}
+.kuma-page-options-size-changer {
+  float: left;
+  width: 80px;
+}
+.kuma-page-options-quick-jumper {
+  margin-left: 0px;
+  height: 28px;
+  line-height: 28px;
+  float: left;
+}
+.kuma-page-options-quick-jumper input {
+  display: inline-block;
+  margin: 0 8px;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  outline: none;
+  width: 50px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  vertical-align: top;
+}
+.kuma-page-options-quick-jumper input:hover {
+  border-color: #2599f2;
+}
+.kuma-page-simple .kuma-page-prev,
+.kuma-page-simple .kuma-page-next {
+  font-size: 10px;
+  min-width: 18px;
+  height: 18px;
+  line-height: 16px;
+}
+.kuma-page-simple .kuma-page-current {
+  color: #2599f2;
+}
+.kuma-page-simple .kuma-page-simple-pager {
+  float: left;
+  margin-right: 8px;
+  line-height: 18px;
+  font-weight: bold;
+}
+.kuma-page-simple .kuma-page-simple-pager input {
+  margin: 0 8px;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  outline: none;
+  width: 30px;
+  min-height: 20px;
+  text-align: center;
+}
+.kuma-page-simple .kuma-page-simple-pager input:hover {
+  border-color: #2599f2;
+}
+.kuma-page.mini .kuma-page-prev,
+.kuma-page.mini .kuma-page-next,
+.kuma-page.mini .kuma-page-jump-prev,
+.kuma-page.mini .kuma-page-jump-next {
+  font-size: 10px;
+  min-width: 18px;
+  height: 18px;
+  line-height: 16px;
+}
+.kuma-page.mini .kuma-page-item {
+  margin-right: 6px;
+  min-width: 18px;
+  height: 18px;
+  line-height: 16px;
+}
+.kuma-page.mini .kuma-page-total {
+  height: 18px;
+  line-height: 18px;
+  min-height: 18px;
+}
+.kuma-page.mini .kuma-page-options .kuma-page-options-quick-jumper {
+  margin-left: 8px;
+  height: 18px;
+  line-height: 18px;
+}
+.kuma-page.mini .kuma-page-options .kuma-page-options-quick-jumper input {
+  width: 36px;
+  height: 18px;
+  line-height: 18px;
+}
+.kuma-page.mini .kuma-page-options .kuma-page-options-quick-jumper input:hover {
+  border-color: #2599f2;
+}
+.kuma-page.mini .kuma-page-options .kuma-page-options-size-changer .kuma-select2-selection {
+  height: 18px;
+}
+.kuma-page.mini .kuma-page-options .kuma-page-options-size-changer .kuma-select2-selection .kuma-select2-selection__rendered {
+  line-height: 18px;
+}
+.kuma-page.mini .kuma-page-options .kuma-page-options-size-changer .kuma-select2-selection .kuma-select2-arrow {
+  height: 18px;
+  margin-top: -5px;
+}
+.kuma-page .kuma-page-options-size-changer {
+  font-size: 12px;
+}
+.kuma-page-options-size-changer-dropdown {
+  font-size: 12px;
+}
+.kuma-page-options-size-changer-dropdown .kuma-select2-dropdown-menu-item {
+  padding: 7px 16px 7px 11px;
+}
+.kuma-select2 {
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  vertical-align: middle;
+  font-size: 12px;
+}
+.kuma-select2 ul,
+.kuma-select2 li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.kuma-select2 > ul > li > a {
+  padding: 0;
+}
+.kuma-select2-arrow {
+  position: absolute;
+  top: 0;
+  right: 8px;
+  line-height: 34px;
+  font-family: 'kuma';
+  color: #999;
+}
+.kuma-select2-arrow * {
+  display: none;
+}
+.kuma-select2-arrow:before {
+  content: '\e614';
+}
+.kuma-select2-selection {
+  outline: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  display: block;
+  border-radius: 0px;
+  border: 1px solid #dbdbdb;
+}
+.kuma-select2-selection:hover {
+  border-color: #ccc;
+}
+.kuma-select2-selection:active {
+  border-color: #ccc;
+}
+.kuma-select2-disabled {
+  color: #ccc;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.kuma-select2-disabled .kuma-select2-selection {
+  background-color: #f7f7f7;
+}
+.kuma-select2-disabled .kuma-select2-selection:hover,
+.kuma-select2-disabled .kuma-select2-selection:active {
+  border-color: #e8e8e8;
+}
+.kuma-select2-selection--single {
+  height: 34px;
+  cursor: pointer;
+}
+.kuma-select2-selection--single .kuma-select2-selection__rendered {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-left: 10px;
+  padding-right: 20px;
+  line-height: 32px;
+}
+.kuma-select2-selection--single .kuma-select2-selection__clear {
+  font-weight: bold;
+  position: absolute;
+  top: 6px;
+  right: 20px;
+}
+.kuma-select2-selection--single .kuma-select2-selection__clear:after {
+  content: '×';
+}
+.kuma-select2-selection--single .kuma-select2-selection__placeholder {
+  color: #ccc;
+}
+.kuma-select2-disabled .kuma-select2-selection__choice__remove {
+  color: #ccc;
+  cursor: default;
+}
+.kuma-select2-disabled .kuma-select2-selection__choice__remove:hover {
+  color: #ccc;
+}
+.kuma-select2-search__field__wrap {
+  display: inline-block;
+  position: relative;
+}
+.kuma-select2-search__field__placeholder {
+  position: absolute;
+  top: 0;
+  left: 3px;
+  color: #ccc;
+}
+.kuma-select2-search--inline {
+  float: left;
+  width: 100%;
+}
+.kuma-select2-search--inline .kuma-select2-search__field__wrap {
+  width: 100%;
+}
+.kuma-select2-search--inline .kuma-select2-search__field {
+  border: none;
+  font-size: 100%;
+  background: transparent;
+  outline: 0;
+  width: 100%;
+}
+.kuma-select2-search--inline > i {
+  float: right;
+}
+.kuma-select2-selection--multiple {
+  min-height: 34px;
+  cursor: text;
+}
+.kuma-select2-selection--multiple .kuma-select2-search--inline {
+  width: auto;
+}
+.kuma-select2-selection--multiple .kuma-select2-search--inline .kuma-select2-search__field {
+  width: 0.75em;
+}
+.kuma-select2-selection--multiple .kuma-select2-search__field__placeholder {
+  top: 8px;
+  left: 10px;
+}
+.kuma-select2-selection--multiple .kuma-select2-selection__rendered {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 6px;
+}
+.kuma-select2-selection--multiple .kuma-select2-selection__clear {
+  cursor: pointer;
+  float: right;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.kuma-select2-selection--multiple > ul > li {
+  margin-top: 5px;
+  height: 22px;
+  line-height: 22px;
+}
+.kuma-select2-selection--multiple .kuma-select2-selection__choice {
+  background-color: #f3f3f3;
+  cursor: default;
+  float: left;
+  padding: 0 8px 0 8px;
+  margin-right: 4px;
+  max-width: 99%;
+  position: relative;
+}
+.kuma-select2-selection--multiple .kuma-select2-selection__choice__remove {
+  color: #919191;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0 0 0 4px;
+  right: 4px;
+}
+.kuma-select2-selection--multiple .kuma-select2-selection__choice__remove:hover {
+  color: #333;
+}
+.kuma-select2-selection--multiple .kuma-select2-selection__choice__remove:before {
+  font-family: 'kuma';
+  content: '\e610';
+}
+.kuma-select2-dropdown {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  z-index: 1070;
+  left: -9999px;
+  top: -9999px;
+  position: absolute;
+  outline: none;
+  overflow: hidden;
+  font-size: 12px;
+}
+.kuma-select2-dropdown-hidden {
+  display: none;
+}
+.kuma-select2-dropdown-menu {
+  outline: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 9999;
+  max-height: 250px;
+  overflow: auto;
+}
+.kuma-select2-dropdown-menu-item-group-list {
+  margin: 0;
+  padding: 0;
+}
+.kuma-select2-dropdown-menu-item-group-list > li.kuma-select2-dropdown-menu-item {
+  padding-left: 24px;
+}
+.kuma-select2-dropdown-menu-item-group-title {
+  color: #999;
+  line-height: 1.5;
+  padding: 8px 16px;
+}
+.kuma-select2-dropdown-menu-item {
+  position: relative;
+  display: block;
+  padding: 7px 33px 7px 16px;
+  font-weight: normal;
+  color: #666;
+  white-space: nowrap;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.kuma-select2-dropdown-menu-item:hover,
+.kuma-select2-dropdown-menu-item-active {
+  background-color: #eee;
+}
+.kuma-select2-dropdown-menu-item-selected {
+  background-color: #f5f5f5;
+}
+.kuma-select2-dropdown-menu-item-disabled {
+  color: #ccc;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.kuma-select2-dropdown-menu-item-disabled:hover {
+  color: #ccc;
+  background-color: #fff;
+  cursor: not-allowed;
+}
+.kuma-select2-dropdown-menu-item-divider {
+  height: 1px;
+  margin: 1px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+  line-height: 0;
+}
+.kuma-select2-dropdown-search {
+  display: block;
+  padding: 4px;
+}
+.kuma-select2-dropdown-search .kuma-select2-search__field__wrap {
+  width: 100%;
+}
+.kuma-select2-dropdown-search .kuma-select2-search__field__placeholder {
+  top: 4px;
+}
+.kuma-select2-dropdown-search .kuma-select2-search__field {
+  padding: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d9d9d9;
+  border-radius: 0px;
+  outline: none;
+}
+.kuma-select2-dropdown-search.kuma-select2-search--hide {
+  display: none;
+}
+.kuma-select2-open .kuma-select2-arrow:before {
+  content: '\e613';
+}
+.kuma-select2-open .kuma-select2-selection {
+  border-color: #ccc;
+}
+/**
+ * Grid Component Style for uxcore
+ * @author zhouquan.yezq
+ *
+ * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.kuma-uxmask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  min-height: 40px;
+  line-height: 40px;
+  background-color: #000;
+  z-index: 100;
+  left: 0px;
+  top: 0px;
+  opacity: .2;
+  filter: "alpha(opacity=20)";
+  display: block;
+}
+.kuma-uxmask-hide {
+  display: none;
+}
+.kuma-uxmask-centerblk {
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.kuma-uxmask-centerblk:after {
+  content: '';
+  height: 50%;
+  display: inline-block;
+}
+.kuma-uxtable-actionbar {
+  width: 100%;
+  padding: 6px 0px 4px;
+}
+.kuma-uxtable-actionbar-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+.kuma-uxtable-actionbar-item.kuma-button {
+  padding: 0 30px;
+}
+.g-fr {
+  float: right;
+}
+a.kuma-button-swhite {
+  line-height: 26px;
+  height: 28px;
+}
+.kuma-uxtable-searchbar {
+  float: right;
+  position: relative;
+}
+.kuma-uxtable-searchbar .kuma-icon-search {
+  position: absolute;
+  right: 8px;
+  color: #ccc;
+  top: 4px;
+  cursor: pointer;
+}
+.kuma-uxtable {
+  border-collapse: collapse;
+  position: relative;
+  color: #666;
+  table-layout: fixed;
+}
+.kuma-uxtable-content {
+  overflow-x: auto;
+  position: static;
+}
+.kuma-uxtable-content-scroller {
+  display: inline-block;
+}
+.kuma-uxtable-header-wrapper {
+  overflow: hidden;
+  border: 1px solid #ebebeb;
+}
+.kuma-uxtable-body-wrapper {
+  border: 1px solid #ebebeb;
+  border-top: none;
+  min-height: 40px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.kuma-uxtable-header {
+  background-color: #f5f5f5;
+  font-weight: 600;
+  min-width: 100%;
+  white-space: nowrap;
+  display: inline-block;
+}
+.kuma-uxtable-header .kuma-uxtable-cell.show-border {
+  border-right: 1px solid #ebebeb;
+}
+.kuma-uxtable-body {
+  position: relative;
+  display: inline-block;
+  min-width: 100%;
+  min-height: 40px;
+  white-space: normal;
+  background-color: #fff;
+}
+.kuma-uxtable-body-emptyword {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+}
+.kuma-uxtable-row {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  border-top: 1px solid #ebebeb;
+  border-bottom: none;
+  line-height: 40px;
+}
+.kuma-uxtable-row:first-child {
+  border-top: none;
+}
+.kuma-uxtable-tree-row .kuma-uxtable-row {
+  border-bottom: 0px solid #ebebeb;
+  border-top: 1px solid #ebebeb;
+}
+.kuma-uxtable-cell {
+  display: inline-block;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 100%;
+  padding: 0 0 0 20px;
+  vertical-align: top;
+  position: relative;
+  word-break: break-all;
+  line-height: 40px;
+  height: 40px;
+}
+.kuma-uxtable-cell > div {
+  line-height: 40px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  height: 40px;
+  width: 100%;
+  white-space: nowrap;
+}
+.kuma-uxtable-cell input.kuma-input {
+  vertical-align: top;
+  height: 30px;
+  min-height: 28px;
+  padding: 0 10px;
+  margin-top: 5px;
+  line-height: 28px;
+}
+.kuma-uxtable-cell .kuma-column-picker {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+.kuma-uxtable-cell .kuma-select2 {
+  width: 100%;
+  vertical-align: top;
+  margin-top: 5px;
+}
+.kuma-uxtable-cell .kuma-select2-selection {
+  height: 30px;
+}
+.kuma-uxtable-cell-field.hasError .kuma-input {
+  border-color: red;
+}
+.kuma-uxtable-header .kuma-uxtable-cell > div {
+  overflow: visible;
+}
+.kuma-uxtable-colmnpicker {
+  max-width: 400px;
+  max-height: 300px;
+  overflow-y: auto;
+  position: absolute;
+  background-color: #f5f5f5;
+  z-index: 2;
+  right: 0;
+  top: 32px;
+  padding: 5px 20px 10px 10px;
+  display: none;
+}
+.kuma-uxtable-colmnpicker .kuma-tree {
+  padding: 0px;
+}
+.kuma-uxtable-colmnpicker .kuma-tree li a {
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.kuma-column-picker-container {
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  cursor: pointer;
+  padding-right: 20px;
+  font-weight: normal;
+  background: #f5f5f5;
+}
+.kuma-column-picker-container.hasGroup {
+  line-height: 80px;
+}
+.kuma-column-picker-container.hasGroup .kuma-uxtable-colmnpicker {
+  top: 50px;
+}
+.kuma-uxtable-tree-icon {
+  cursor: pointer;
+}
+.kuma-uxtable-tree-icon > .kuma-icon {
+  font-size: 14px;
+  color: #999999;
+}
+.kuma-uxtable-emptyicon {
+  width: 20px;
+  display: inline-block;
+}
+.kuma-subgrid-mode .kuma-uxtable-body-wrapper {
+  border: none;
+}
+.kuma-uxtable-page {
+  text-align: right;
+  padding: 10px 0px;
+}
+.kuma-uxtable-page .kuma-select2-selection__rendered {
+  text-align: left;
+}
+.kuma-uxtable .kuma-page {
+  display: inline-block;
+}
+.kuma-uxtable-h-sort {
+  position: relative;
+  top: -2px;
+  margin-left: 4px;
+}
+.kuma-uxtable-h-sort i {
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-width: 6px 5px;
+  border-style: solid;
+  position: absolute;
+}
+.kuma-uxtable-h-sort i.sort-up {
+  border-color: transparent transparent #aab2be;
+  bottom: 6px;
+  left: 2px;
+}
+.kuma-uxtable-h-sort i.sort-up-active {
+  border-color: transparent transparent #2599f2;
+  bottom: 6px;
+  left: 2px;
+}
+.kuma-uxtable-h-sort i.sort-down {
+  border-color: #aab2be transparent transparent;
+  bottom: -9px;
+  left: 2px;
+}
+.kuma-uxtable-h-sort i.sort-down-active {
+  border-color: #2599f2 transparent transparent;
+  bottom: -9px;
+  left: 2px;
+}
+.action-container .action {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+.action-container .action + .action {
+  margin-left: 8px;
+}
+.action-container .split {
+  color: #ccc;
+}
+.kuma-uxtable span.indent {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.kuma-uxtable-body-fixed {
+  float: left;
+  overflow: hidden;
+  z-index: 1;
+  height: 100%;
+}
+.kuma-uxtable-body-no {
+  height: 100%;
+  overflow-y: auto;
+}
+.kuma-uxtable-body-scroll {
+  position: relative;
+  border-left: 1px solid #ebebeb;
+  float: left;
+  overflow: auto;
+  z-index: 1;
+  height: 100%;
+}
+.kuma-uxtable-header-fixed {
+  float: left;
+  overflow: hidden;
+  z-index: 1;
+  height: 100%;
+}
+.kuma-uxtable-header-no {
+  overflow: hidden;
+}
+.kuma-uxtable-header-scroll {
+  position: static;
+  border-left: 1px solid #ebebeb;
+  float: left;
+  overflow-x: hidden;
+  z-index: 1;
+  height: 100%;
+}
+.kuma-uxtable-header-scroll .kuma-uxtable-header {
+  background-color: #f5f5f5;
+}
+.kuma-uxtable-header-column-group {
+  display: inline-block;
+}
+.kuma-uxtable-header-group-name {
+  line-height: 40px;
+  text-align: center;
+  border-bottom: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
+}
+/**
+ * Dropdown Component Style for uxcore
+ * @author
+ *
+ * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.kuma-dropdown {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  z-index: 1070;
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.5;
+  padding-top: 3px;
+}
+.kuma-dropdown-hidden {
+  display: none;
+}
+.kuma-dropdown-menu {
+  outline: none;
+  position: relative;
+  list-style-type: none;
+  padding: 0;
+  margin: 2px 0 0 0;
+  text-align: left;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 1px 5px #ccc;
+  border: 1px solid #ccc;
+}
+.kuma-dropdown-menu > li {
+  margin: 0;
+  padding: 0;
+}
+.kuma-dropdown-menu:before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #ffffff;
+  background: rgba(255, 255, 255, 0.01);
+}
+.kuma-dropdown-menu > .kuma-dropdown-menu-item {
+  position: relative;
+  display: block;
+  padding: 7px 10px;
+  clear: both;
+  font-size: 12px;
+  font-weight: normal;
+  color: #666666;
+  white-space: nowrap;
+}
+.kuma-dropdown-menu > .kuma-dropdown-menu-item > a {
+  color: #333;
+}
+.kuma-dropdown-menu > .kuma-dropdown-menu-item > a:hover,
+.kuma-dropdown-menu > .kuma-dropdown-menu-item > a:active {
+  text-decoration: none;
+}
+.kuma-dropdown-menu > .kuma-dropdown-menu-item:hover,
+.kuma-dropdown-menu > .kuma-dropdown-menu-item-active,
+.kuma-dropdown-menu > .kuma-dropdown-menu-item-selected {
+  background-color: #f0f0f0;
+}
+.kuma-dropdown-menu > .kuma-dropdown-menu-item-disabled {
+  color: #ccc;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.kuma-dropdown-menu > .kuma-dropdown-menu-item-disabled:hover {
+  color: #ccc;
+  background-color: #fff;
+  cursor: not-allowed;
+}
+.kuma-dropdown-menu > .kuma-dropdown-menu-item:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.kuma-dropdown-menu > .kuma-dropdown-menu-item:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.kuma-dropdown-menu > .kuma-dropdown-menu-item-divider {
+  height: 1px;
+  margin: 1px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+  line-height: 0;
+}
+/**
+ * Tree Component Style for uxcore
+ * @author
+ *
+ * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.kuma-tree {
+  margin: 0;
+  padding: 5px;
+}
+.kuma-tree li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  white-space: nowrap;
+  outline: 0;
+  line-height: 18px;
+}
+.kuma-tree li ul {
+  margin: 0;
+  padding: 0 0 0 18px;
+}
+.kuma-tree li ul.kuma-tree-line {
+  background: url("https://t.alipayobjects.com/images/T13BtfXl0mXXXXXXXX.gif") 0 0 repeat-y;
+}
+.kuma-tree li a {
+  display: inline-block;
+  margin: 0;
+  cursor: pointer;
+  height: 18px;
+  text-decoration: none;
+  line-height: 18px;
+  vertical-align: middle;
+  color: #666;
+}
+.kuma-tree li span.kuma-tree-switcher-noop,
+.kuma-tree li span.kuma-tree-switcher,
+.kuma-tree li span.kuma-tree-checkbox,
+.kuma-tree li span.kuma-tree-iconEle {
+  margin-right: 2px;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  border: 0 none;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-image: url('https://aliwork.alicdn.com/tps/i2/TB15Y7sJFXXXXbYXpXXxPKU.FXX-130-87.png');
+}
+.kuma-tree li span.kuma-tree-switcher-noop {
+  background-image: none;
+}
+.kuma-tree li span.kuma-tree-switcher-disabled {
+  background: #fff;
+  position: relative;
+}
+.kuma-tree li span.kuma-tree-switcher-disabled:after {
+  content: '-';
+  position: absolute;
+  top: 8px;
+  left: 6px;
+  color: gray;
+}
+.kuma-tree li span.kuma-tree-switcher.kuma-tree-roots_open {
+  background-position: -112px 0px;
+}
+.kuma-tree li span.kuma-tree-switcher.kuma-tree-roots_close {
+  background-position: -94px 0px;
+}
+.kuma-tree li span.kuma-tree-switcher.kuma-tree-center_open {
+  background-position: -112px -18px;
+}
+.kuma-tree li span.kuma-tree-switcher.kuma-tree-center_close {
+  background-position: -94px -18px;
+}
+.kuma-tree li span.kuma-tree-switcher.kuma-tree-bottom_open {
+  background-position: -112px -36px;
+}
+.kuma-tree li span.kuma-tree-switcher.kuma-tree-bottom_close {
+  background-position: -94px -36px;
+}
+.kuma-tree li span.kuma-tree-switcher.kuma-tree-noline_open {
+  background-position: -115px -72px;
+}
+.kuma-tree li span.kuma-tree-switcher.kuma-tree-noline_close {
+  background-position: -97px -72px;
+}
+.kuma-tree li span.kuma-tree-checkbox {
+  width: 14px;
+  height: 14px;
+  margin: 0 3px;
+  background-position: 0 0;
+}
+.kuma-tree li span.kuma-tree-checkbox.kuma-tree-checkbox-checked {
+  background-position: -15px 0;
+}
+.kuma-tree li span.kuma-tree-checkbox.kuma-tree-checkbox-indeterminate {
+  background-position: -15px -28px;
+}
+.kuma-tree li span.kuma-tree-checkbox-disabled {
+  background-position: 0 -28px !important;
+}
+.kuma-tree-child-tree {
+  display: none;
+}
+.kuma-tree-child-tree-open {
+  display: block;
+}
+.kuma-tree-treenode-disabled > span,
+.kuma-tree-treenode-disabled > a {
+  color: gray;
+}
+.kuma-tree-node-selected {
+  background-color: #f2f2f2;
+}
+/**
+ * Mention Component Style for uxcore
+ * @author
+ *
+ * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.kuma-mention-editor {
+  padding: 7px 10px;
+  border: 1px solid #333;
+  border-radius: 0;
+  color: #666;
+}
+.kuma-mention-editor:focus {
+  border-color: #288df0;
+  outline: 0 none;
+}
+.kuma-mention-node {
+  padding: 0 2px;
+  background: none;
+  border: 0 none;
+  color: #2691F7;
+}
+.kuma-mention-panel {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  border: 1px solid #d6d6d6;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+.kuma-mention-panel-visible {
+  display: block;
+}
+.kuma-mention-panel-item {
+  display: block;
+  padding: 2px 5px;
+  height: 30px;
+  line-height: 26px;
+  border-top: 1px dotted #e0e0e0;
+  cursor: pointer;
+}
+.kuma-mention-panel-item:first-child {
+  border-top: 0 none;
+}
+.kuma-mention-panel-item:hover {
+  background-color: #f0f0f0;
+}
+.kuma-mention-panel-item-current {
+  background-color: #f0f0f0;
+}
+/**
+ * Popover Component Style for uxcore
+ * @author eternalsky
+ *
+ * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.kuma-popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1080;
+  cursor: auto;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
+  white-space: normal;
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: normal;
+  text-align: left;
+}
+.kuma-popover-button-group {
+  text-align: right;
+}
+.kuma-popover-button-group .kuma-button {
+  margin-right: 10px;
+}
+.kuma-popover-hidden {
+  display: none;
+}
+.kuma-popover-placement-top,
+.kuma-popover-placement-topLeft,
+.kuma-popover-placement-topRight {
+  margin-top: -4px;
+  padding-bottom: 8px;
+}
+.kuma-popover-placement-right,
+.kuma-popover-placement-rightTop,
+.kuma-popover-placement-rightBottom {
+  margin-left: 4px;
+  padding-left: 8px;
+}
+.kuma-popover-placement-bottom,
+.kuma-popover-placement-bottomLeft,
+.kuma-popover-placement-bottomRight {
+  margin-top: 4px;
+  padding-top: 8px;
+}
+.kuma-popover-placement-left,
+.kuma-popover-placement-leftTop,
+.kuma-popover-placement-leftBottom {
+  margin-left: -4px;
+  padding-right: 8px;
+}
+.kuma-popover-inner {
+  min-width: 177px;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #d9d9d9;
+}
+.kuma-popover-title {
+  margin: 0;
+  padding: 0 16px;
+  line-height: 32px;
+  height: 32px;
+  border-bottom: 1px solid #e9e9e9;
+  color: #666;
+}
+.kuma-popover-content {
+  padding: 8px 16px;
+}
+.kuma-popover-message {
+  padding: 8px 0 16px;
+  font-size: 12px;
+}
+.kuma-popover-message .anticon {
+  margin-right: 8px;
+}
+.kuma-popover-arrow,
+.kuma-popover-arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.kuma-popover-arrow {
+  border-width: 5px;
+}
+.kuma-popover-arrow:after {
+  border-width: 4px;
+  content: "";
+}
+.kuma-popover-placement-top > .kuma-popover-arrow,
+.kuma-popover-placement-topLeft > .kuma-popover-arrow,
+.kuma-popover-placement-topRight > .kuma-popover-arrow {
+  left: 50%;
+  margin-left: -5px;
+  border-bottom-width: 0;
+  border-top-color: #d9d9d9;
+  bottom: 4px;
+}
+.kuma-popover-placement-top > .kuma-popover-arrow:after,
+.kuma-popover-placement-topLeft > .kuma-popover-arrow:after,
+.kuma-popover-placement-topRight > .kuma-popover-arrow:after {
+  content: " ";
+  bottom: 1px;
+  margin-left: -4px;
+  border-bottom-width: 0;
+  border-top-color: #fff;
+}
+.kuma-popover-placement-topLeft > .kuma-popover-arrow {
+  left: 15%;
+}
+.kuma-popover-placement-topRight > .kuma-popover-arrow {
+  left: 85%;
+}
+.kuma-popover-placement-right > .kuma-popover-arrow,
+.kuma-popover-placement-rightTop > .kuma-popover-arrow,
+.kuma-popover-placement-rightBottom > .kuma-popover-arrow {
+  top: 50%;
+  left: 4px;
+  margin-top: -5px;
+  border-left-width: 0;
+  border-right-color: #d9d9d9;
+}
+.kuma-popover-placement-right > .kuma-popover-arrow:after,
+.kuma-popover-placement-rightTop > .kuma-popover-arrow:after,
+.kuma-popover-placement-rightBottom > .kuma-popover-arrow:after {
+  content: " ";
+  left: 1px;
+  bottom: -4px;
+  border-left-width: 0;
+  border-right-color: #fff;
+}
+.kuma-popover-placement-rightTop > .kuma-popover-arrow {
+  top: 15%;
+}
+.kuma-popover-placement-rightBottom > .kuma-popover-arrow {
+  top: 85%;
+}
+.kuma-popover-placement-bottom > .kuma-popover-arrow,
+.kuma-popover-placement-bottomLeft > .kuma-popover-arrow,
+.kuma-popover-placement-bottomRight > .kuma-popover-arrow {
+  left: 50%;
+  margin-left: -5px;
+  border-top-width: 0;
+  border-bottom-color: #d9d9d9;
+  top: 4px;
+}
+.kuma-popover-placement-bottom > .kuma-popover-arrow:after,
+.kuma-popover-placement-bottomLeft > .kuma-popover-arrow:after,
+.kuma-popover-placement-bottomRight > .kuma-popover-arrow:after {
+  content: " ";
+  top: 1px;
+  margin-left: -4px;
+  border-top-width: 0;
+  border-bottom-color: #fff;
+}
+.kuma-popover-placement-bottomLeft > .kuma-popover-arrow {
+  left: 15%;
+}
+.kuma-popover-placement-bottomRight > .kuma-popover-arrow {
+  left: 85%;
+}
+.kuma-popover-placement-left > .kuma-popover-arrow,
+.kuma-popover-placement-leftTop > .kuma-popover-arrow,
+.kuma-popover-placement-leftBottom > .kuma-popover-arrow {
+  top: 50%;
+  right: 4px;
+  margin-top: -5px;
+  border-right-width: 0;
+  border-left-color: #d9d9d9;
+}
+.kuma-popover-placement-left > .kuma-popover-arrow:after,
+.kuma-popover-placement-leftTop > .kuma-popover-arrow:after,
+.kuma-popover-placement-leftBottom > .kuma-popover-arrow:after {
+  content: " ";
+  right: 1px;
+  border-right-width: 0;
+  border-left-color: #fff;
+  bottom: -4px;
+}
+.kuma-popover-placement-leftTop > .kuma-popover-arrow {
+  top: 15%;
+}
+.kuma-popover-placement-leftBottom > .kuma-popover-arrow {
+  top: 85%;
+}
+@font-face {
+  font-family: 'fileicon';
+  src: url('//at.alicdn.com/t/font_1442816980_3990257.eot');
+  /* IE9*/
+  src: url('//at.alicdn.com/t/font_1442816980_3990257.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('//at.alicdn.com/t/font_1442816980_3990257.woff') format('woff'), /* chrome、firefox */ url('//at.alicdn.com/t/font_1442816980_3990257.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('//at.alicdn.com/t/font_1442816980_3990257.svg#iconfont') format('svg');
+  /* iOS 4.1- */
+}
+.kuma-upload-fileicon {
+  font-family: "fileicon" !important;
+  font-size: 18px;
+  font-style: normal;
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.kuma-upload-fileicon:before {
+  content: "\e700";
+  color: #666;
+}
+.kuma-upload-fileicon:after {
+  display: inline-block;
+  content: attr(data-ext);
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: normal;
+  white-space: nowrap;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+  color: white;
+  padding: 0 4px;
+  background: #666;
+  border-radius: 6px;
+}
+.kuma-upload-fileicon[data-type^=video]:before {
+  content: "\e704";
+}
+.kuma-upload-fileicon[data-type^=video]:after {
+  display: none;
+}
+.kuma-upload-fileicon[data-type^=audio]:before {
+  content: "\e703";
+}
+.kuma-upload-fileicon[data-type^=audio]:after {
+  display: none;
+}
+.kuma-upload-fileicon[data-type^=text]:before {
+  content: "\e702";
+}
+.kuma-upload-fileicon[data-type^=text]:after {
+  display: none;
+}
+.kuma-upload-fileicon[data-type^=image]:before {
+  content: "\e701";
+}
+.kuma-upload-fileicon[data-type^=image]:after {
+  display: none;
+}
+.kuma-upload-fileicon[data-ext^=doc]:before {
+  content: "\e705";
+}
+.kuma-upload-fileicon[data-ext^=doc]:after {
+  display: none;
+}
+.kuma-upload-fileicon[data-ext^=xls]:before {
+  content: "\e706";
+}
+.kuma-upload-fileicon[data-ext^=xls]:after {
+  display: none;
+}
+.kuma-upload-fileicon[data-ext^=ppt]:before {
+  content: "\e707";
+}
+.kuma-upload-fileicon[data-ext^=ppt]:after {
+  display: none;
+}
+.kuma-upload-fileicon[data-ext=pdf]:before {
+  content: "\e708";
+}
+.kuma-upload-fileicon[data-ext=pdf]:after {
+  display: none;
+}
+.kuma-upload-fileicon[data-ext=zip]:before,
+.kuma-upload-fileicon[data-ext=rar]:before {
+  content: "\e709";
+}
+.kuma-upload-fileicon[data-ext=zip]:after,
+.kuma-upload-fileicon[data-ext=rar]:after {
+  display: none;
+}
+.kuma-upload-fileicon[data-ext=js]:before,
+.kuma-upload-fileicon[data-ext=css]:before,
+.kuma-upload-fileicon[data-ext=java]:before,
+.kuma-upload-fileicon[data-ext=php]:before,
+.kuma-upload-fileicon[data-ext=html]:before,
+.kuma-upload-fileicon[data-ext=xml]:before,
+.kuma-upload-fileicon[data-ext=json]:before {
+  content: "\e70c";
+}
+.kuma-upload-fileicon[data-ext=js]:after,
+.kuma-upload-fileicon[data-ext=css]:after,
+.kuma-upload-fileicon[data-ext=java]:after,
+.kuma-upload-fileicon[data-ext=php]:after,
+.kuma-upload-fileicon[data-ext=html]:after,
+.kuma-upload-fileicon[data-ext=xml]:after,
+.kuma-upload-fileicon[data-ext=json]:after {
+  display: none;
+}
+.kuma-upload-progresspin {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.kuma-upload-progresspin .spin {
+  position: absolute;
+  border-radius: 0 10px 10px 0;
+  height: 20px;
+  width: 10px;
+  overflow: hidden;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+  top: 0;
+  right: 0;
+}
+.kuma-upload-progresspin .spin.spin2-2 {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.kuma-upload-progresspin .spin > .inner {
+  position: absolute;
+  width: 150%;
+  height: 100%;
+  top: 0;
+  left: -150%;
+  background: #42a1eb;
+  -webkit-transform-origin: right center;
+  transform-origin: right center;
+}
+.kuma-upload-progresspin.escape .spin > .inner {
+  left: 0;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+.kuma-upload-progressbar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  background: #42a1eb;
+  width: 0;
+  transition: width 0.2s ease-out;
+}
+@-webkit-keyframes kuxglow {
+  0% {
+    background: rgba(225, 229, 232, 0.2);
+  }
+  50% {
+    background: rgba(252, 110, 81, 0.2);
+  }
+  100% {
+    background: rgba(225, 229, 232, 0.2);
+  }
+}
+.kuma-uploader {
+  min-width: 200px;
+}
+.kuma-upload-filelist {
+  width: 100%;
+  max-height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.kuma-upload-filelist > .inner {
+  overflow: hidden;
+}
+.kuma-upload-picker {
+  display: inline-block;
+  position: relative;
+  line-height: normal;
+}
+.kuma-upload-picker .kuma-upload-button {
+  display: inline-block;
+  background: #f2f2f2;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 0 5px;
+  font-size: 12px;
+  box-sizing: border-box;
+  line-height: 22px;
+  height: 24px;
+  transition: border-color 0.1s, color 0.1s;
+}
+.kuma-upload-picker .kuma-upload-button .kuma-icon-uploading {
+  margin-right: 3px;
+  font-size: 12px;
+}
+.kuma-upload-picker .kuma-upload-button > * {
+  vertical-align: middle;
+}
+.kuma-upload-picker:hover .kuma-upload-button,
+.kuma-upload-picker.over .kuma-upload-button {
+  border-color: #f60;
+  color: #f60;
+}
+.kuma-upload-dropzoom {
+  min-height: 200px;
+  min-width: 200px;
+  position: relative;
+  border-radius: 5px;
+}
+.kuma-upload-dropzoom .kuma-upload-responser {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border: 1px dashed #D9D9D9;
+  z-index: -1;
+}
+.kuma-upload-dropzoom.blink .kuma-upload-responser {
+  border: 3px dashed #fc6e51;
+  background: #e1e5e8;
+  -webkit-animation: kuxglow .7s infinite;
+  animation: kuxglow .7s infinite;
+}
+.kuma-upload-dropzoom.enter .kuma-upload-responser {
+  display: block;
+  border: 3px solid #fc6e51;
+  background: none;
+  -webkit-animation: none;
+  animation: none;
+}
+.kuma-upload-dropzoom .kuma-upload-picker {
+  display: block;
+  text-align: center;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+.kuma-upload-dropzoom .kuma-upload-picker .kuma-icon-add {
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  top: 50%;
+  margin-top: -40px;
+  margin-left: -40px;
+  width: 80px;
+  height: 80px;
+  font-size: 80px;
+  color: #D9D9D9;
+}
+.kuma-upload-dropzoom .kuma-upload-picker:hover,
+.kuma-upload-dropzoom .kuma-upload-picker.over {
+  opacity: 1;
+}
+.kuma-upload-dropzoom > .kuma-upload-picker {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.kuma-upload-dropzoom .kuma-upload-filelist .kuma-upload-picker {
+  float: left;
+  margin: 5px;
+  width: 80px;
+  height: 80px;
+  background: #ebeff2;
+}
+.kuma-upload-dropzoom .kuma-upload-filelist .kuma-upload-picker .kuma-icon-add {
+  margin-top: -20px;
+  margin-left: -20px;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+}
+.kuma-upload-dropzoom .kuma-upload-filelist {
+  height: 100%;
+}
+.kuma-upload-fileitem {
+  position: relative;
+  overflow: hidden;
+  font-family: monospace;
+  line-height: normal;
+  display: block;
+  float: left;
+}
+.kuma-upload-fileitem .filename {
+  color: #707070;
+  font-size: 14px;
+}
+.kuma-upload-fileitem .kuma-upload-status,
+.kuma-upload-fileitem .kuma-upload-action {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #ccc;
+  vertical-align: middle;
+}
+.kuma-upload-fileitem .kuma-upload-status .kuma-icon,
+.kuma-upload-fileitem .kuma-upload-action .kuma-icon {
+  font-size: 18px;
+}
+.kuma-upload-fileitem .kuma-upload-status.status-success {
+  color: #8ad256;
+}
+.kuma-upload-fileitem .kuma-upload-status.status-error {
+  color: #fcac79;
+}
+.kuma-upload-fileitem .kuma-upload-status.status-error:hover {
+  color: #fc482d;
+}
+.kuma-upload-fileitem .kuma-upload-action.action-remove {
+  cursor: pointer;
+}
+.kuma-upload-fileitem .kuma-upload-action.action-remove:hover {
+  color: #fc6e51;
+}
+.kuma-upload-fileitem .kuma-upload-action.action-retry {
+  cursor: pointer;
+  color: #444;
+}
+.kuma-upload-fileitem .kuma-upload-action.action-retry:hover {
+  color: #288df0;
+}
+.kuma-upload-fileitem .kuma-upload-action.action-upload {
+  cursor: pointer;
+  color: #444;
+}
+.kuma-upload-fileitem .kuma-upload-action.action-upload:hover {
+  color: #288df0;
+}
+.kuma-upload-filelist.minimode .kuma-upload-fileitem {
+  border: 1px solid #d9d9d9;
+  padding: 5px 6px;
+}
+.kuma-upload-filelist.minimode .kuma-upload-fileitem .field-info .kuma-upload-fileicon {
+  margin: 0 5px;
+}
+.kuma-upload-filelist.minimode .kuma-upload-fileitem .field-info .filename {
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.kuma-upload-filelist.minimode .kuma-upload-fileitem .field-info .filesize {
+  color: #adadad;
+  font-size: 14px;
+  vertical-align: middle;
+  margin: 0 2px;
+}
+.kuma-upload-filelist.minimode .kuma-upload-fileitem .field-status .kuma-upload-status,
+.kuma-upload-filelist.minimode .kuma-upload-fileitem .field-status .kuma-upload-action {
+  margin: 0 1px;
+}
+.kuma-upload-filelist.minimode .kuma-upload-fileitem .kuma-upload-progressbar {
+  opacity: 0.3;
+  z-index: -1;
+}
+.kuma-upload-filelist.minimode .kuma-upload-fileitem.status-error .kuma-upload-progressbar {
+  display: none;
+}
+.kuma-upload-filelist.iconmode .kuma-upload-fileitem {
+  margin: 5px;
+  width: 80px;
+  height: 112px;
+  box-sizing: border-box;
+}
+.kuma-upload-filelist.iconmode .kuma-upload-fileitem .action-remove {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.kuma-upload-filelist.iconmode .kuma-upload-fileitem .status-error,
+.kuma-upload-filelist.iconmode .kuma-upload-fileitem .status-success {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.kuma-upload-filelist.iconmode .kuma-upload-fileitem .filepreview {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  background: #ebeff2;
+  text-align: center;
+}
+.kuma-upload-filelist.iconmode .kuma-upload-fileitem .filepreview .previewer {
+  height: 80px;
+  width: 80px;
+}
+.kuma-upload-filelist.iconmode .kuma-upload-fileitem .filepreview .previewer img {
+  max-height: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.kuma-upload-filelist.iconmode .kuma-upload-fileitem .filepreview .previewer:before {
+  display: inline-block;
+  content: '';
+  height: 100%;
+  width: 0;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.kuma-upload-filelist.iconmode .kuma-upload-fileitem .filepreview .previewer .kuma-upload-fileicon {
+  font-size: 60px;
+}
+.kuma-upload-filelist.iconmode .kuma-upload-fileitem .filepreview .kuma-upload-action {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 30px;
+  width: 30px;
+  margin-left: -15px;
+  margin-top: -15px;
+  opacity: 0.6;
+}
+.kuma-upload-filelist.iconmode .kuma-upload-fileitem .filepreview .kuma-upload-action .kuma-icon {
+  line-height: 30px;
+  font-size: 28px;
+  color: #288df0;
+}
+.kuma-upload-filelist.iconmode .kuma-upload-fileitem .filepreview .kuma-upload-action:hover {
+  opacity: 1;
+}
+.kuma-upload-filelist.iconmode .kuma-upload-fileitem .filepreview .kuma-upload-progressbar,
+.kuma-upload-filelist.iconmode .kuma-upload-fileitem .filepreview .kuma-upload-progresspin {
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.kuma-upload-filelist.iconmode .kuma-upload-fileitem .filepreview .kuma-upload-progresspin {
+  margin-left: -10px;
+  margin-top: -10px;
+}
+.kuma-upload-filelist.iconmode .kuma-upload-fileitem .filepreview .kuma-upload-progressbar {
+  left: 0;
+  height: 20px;
+  bottom: auto;
+  margin-top: -10px;
+}
+.kuma-upload-filelist.iconmode .kuma-upload-fileitem .filename {
+  margin-top: 2px;
+  font-size: 12px;
+  word-wrap: break-word;
+  text-align: center;
+  line-height: 1.2em;
+  height: 2.4em;
+  overflow: hidden;
+  padding: 0 1px;
+}
+.kuma-upload-filelist.nwmode {
+  margin-top: 24px;
+}
+.kuma-upload-filelist.nwmode .kuma-upload-fileitem {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  clear: both;
+  margin-bottom: 10px;
+}
+.kuma-upload-filelist.nwmode .kuma-upload-fileitem .field-info .kuma-upload-fileicon {
+  margin: 0 5px;
+  font-size: 16px;
+}
+.kuma-upload-filelist.nwmode .kuma-upload-fileitem .field-info .kuma-icon-caution {
+  vertical-align: middle;
+  margin: 0 5px;
+  color: #ff6330;
+  font-size: 14px;
+}
+.kuma-upload-filelist.nwmode .kuma-upload-fileitem .field-info .kuma-loading {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  background: url(data:image/gif;base64,R0lGODlhDAAMAPfIAOnp6f7+/vz8/P39/efn5+jo6Ovr6+zs7O3t7e/v7/j4+OTk5OH6///+/ezr6/T4+/Hy8uz6//3+/vLw8OH////9/O///+bl5f/49PT09fX3+vT5/Pz+//rTu/nRuPymbvX3+P3///+tdv+JRvH09+fz+/Xi1f+odujr7+f6/+Xo6/Ls5vSkduXq7//VvvLx7+rr6+jp6eXk5OzHruTt9f/v5+js7/O5kvvDnub8///y6/KiaP6bZ/5mBv9yKPnu5v+WbeTn6/L//+rp6fx1I/bs5OXl5P92SPT6/e/v8POiaf/+/v7+//Df1PvXwOnr6+Ly+/bZxvW4jv9dAv9WAPG0kO/w8v9vJfP4/OP2+/9pHOn0/ej1+e/3/fHi2P9FAPmxgPi3jvjv6fHz8/X5/PP//+Px+u3r6vH1+PX7/v339PLw8fX5+/1eCf2OR+f///rHpfT///Lx8Of4/+X6/uvr7OL6//fdy/Xg0fvYwfbp3u/s6+3EqOv7/+ft8O3r7OTt9P+caPaXWPqUTv9pO/Xz8P+QW/eRSP2RRvf///D9//1iDP9eDvf4+Onz/OL4/v/Ttvb5/P1mC/Lx8ffXwef+//T6/vb19f9EAPb3+OL///307vH2+efg2v5xEv9NAP/dzefm5vb6/Ons7vyWVfjFo/a+l+nl4vancfv7/On7/+rx9fPs5vD19+zy9faqd/94P+T+/+vSufX///+JU/D3/P/Yyufl5P/8+vb5+ub1+v7///9YFfLy8fp6K/D8/+bm5vf39+rq6vT09PHx8fLy8vX19eXl5f///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh/wtYTVAgRGF0YVhNUDw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo0MDIxQkZGNUVFMjYxMUUzQkYzN0ZGQzRENzlGRDZEMyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo0MDIxQkZGNkVFMjYxMUUzQkYzN0ZGQzRENzlGRDZEMyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQwMjFCRkYzRUUyNjExRTNCRjM3RkZDNEQ3OUZENkQzIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjQwMjFCRkY0RUUyNjExRTNCRjM3RkZDNEQ3OUZENkQzIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkECQAAyAAsAAAAAAwADAAACGEAkQkcSJDgMGAAECAQdmHWwGDAjBFEQiEPsgDHhhVE5uGLi2IENiLDwAIPgGIikVmYIwylSAjCiAFIWYDYgGPBNgY7NgDZsGMSBxrLOLAYMAMJEhggEHSgAGIHDhATMDAgACH5BAUAAMgALAAAAAAMAAwAAAhgAJEJHEiQ4DBgABAgEAYs2MBgwIwRNHZMAbIAx4YVRKYhCJNiBDYK1GUCQDGRyBBpEXZSJKlBxACgdDRmwDGHBXOpkIBs2DGJAylqFFgMmIEECQwQADpQALEDB4gJGBgQACH5BAkAAMgALAgAAwAEAAgAAAgjAJEZWxAAGbICxAySgGHwxRtkNYhQQnZnESgyDAohC7XBYEAAIfkEBQAAyAAsAAAAAAwADAAACDMAkQkcSLCgwYMIExpbECAhsgLEHBYT5nACxYR+IiL8wUACQhFtihxMwoVPIIQOWnEYGBAAIfkECQAAyAAsBAAGAAgABgAACCQAkQkcWGygwQIGBUY6NmBgAxAthiGrEwHMlE4PBqqSAkvNwIAAIfkEBQAAyAAsAAAAAAwADAAACDUAkQkcSLCgwYMIEypcyJBgMWEKCxBLGOzYAIFG4hA0dmwYQTuoRuxZRcBYwVRuPJ1BI2BgQAAh+QQFAADIACwBAAYABwAGAAAIIQAnIBtI0AZBgmYaHUQmRAmQhYYOpbCSwMBAAV0cHCAWEAAh+QQJAADIACwAAAUABgAHAAAIIgCHIBs4cIsigshYVcFFEBKmDgQrwHmUBqGFWwYSICR2ICAAIfkEBQAAyAAsAAAAAAwADAAACC8AkQkcSLCgwYMIEw78lUPhjTAKeV1RGOWUwhCARCkcdsyYwmLADCRIKIDYAYMBAQAh+QQJAADIACwAAAEABAAIAAAIIwCRIXtwAZkYCmxsSdKDrFQPDMgqrRA4ipNAYgAEDjgWDFlAACH5BAkAAMgALAAAAAAMAAwAAAgzAJEJHEhwYIMTsmL9KSjQCRUeDAXu0oQjosBedCwKBLBGIzJhkzwSA+BxwLFgHlOqVBkQACH5BAkAAMgALAAAAAAMAAwAAAhjAJEJ3HTEVAQIAQQqtDTj06s+T4AFUxiMxiUdCo0dU4AswDEsCjMuCFCMQMiQBYgBKHZSYTFhwli2RPZS5UxkKQccm3gy2LEByIYdMxZS4zCXwAwkSGCAANGQAogdOEBMgMKAACH5BAkAAMgALAAAAAAMAAwAAAhjAJEJHFDLi48PAQQqHAasRBNGgrJkUhgMmDGFFcrIUIAswLFhChUaWxCgGIGQIQsQA1AMpcJiwoS1dIkM5kqayFQOOBbMZbBjA5ANO3ZR5MeXwAwkSGCAQFGFAogdOEBMgMKAACH5BAUAAMgALAAAAAAMAAwAAAhgAJEJHEiQ4DBgABC4iuGL1sBgwIwNXEJoRyJkAY4NK4gsA5QAxQhwFIiCGIBiI5HJESYM5chiwkymLEBswLFgHIMdG4Bs2DGJA41pHFgMmIEECQwQADpQALEDB4gJGBgQADs=) no-repeat center;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+.kuma-upload-filelist.nwmode .kuma-upload-fileitem .field-info .filename {
+  font-size: 12px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.kuma-upload-filelist.nwmode .kuma-upload-fileitem .field-status {
+  margin-left: 10px;
+}
+.kuma-upload-filelist.nwmode .kuma-upload-fileitem .field-status .kuma-upload-status {
+  font-size: 12px;
+}
+.kuma-upload-filelist.nwmode .kuma-upload-fileitem .field-status .kuma-upload-status.status-progress {
+  color: #f60;
+}
+.kuma-upload-filelist.nwmode .kuma-upload-fileitem .field-status .kuma-upload-status.status-error {
+  color: #ff6330;
+}
+.kuma-upload-filelist.nwmode .kuma-upload-fileitem .field-status .kuma-upload-action {
+  font-size: 12px;
+  margin: 0 5px;
+  color: #288df0;
+  cursor: pointer;
+}
+.kuma-upload-filelist.nwmode .kuma-upload-fileitem .field-status .kuma-upload-action:hover {
+  color: #fc6e51;
+}
+/* alinw.transfer style module */
+.kuma-uxtransfer-container {
+  font-size: 12px;
+}
+.kuma-uxtransfer-container th {
+  padding: 15px 0;
+  line-height: 30px;
+}
+.kuma-uxtransfer-container th > .title {
+  float: left;
+  padding: 0 10px;
+  background-color: #ffa200;
+  border-radius: 0 3px 3px 0;
+  color: #fff;
+}
+.kuma-uxtransfer-container th > .searchBar {
+  float: right;
+  position: relative;
+}
+.kuma-uxtransfer-container th > .searchBar .kuma-icon {
+  position: absolute;
+  right: 28px;
+  color: #ccc;
+  top: 2px;
+  cursor: pointer;
+}
+.kuma-uxtransfer-container th > .searchBar .kuma-input {
+  margin-right: 20px;
+  width: 160px;
+  border-radius: 0;
+}
+.kuma-uxtransfer-container th.left-head,
+.kuma-uxtransfer-container th.right-head {
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+}
+.kuma-uxtransfer-container td {
+  padding: 0;
+  vertical-align: top;
+}
+.kuma-uxtransfer-container td.left-block,
+.kuma-uxtransfer-container td.right-block {
+  background-color: #fff;
+  border-width: 0 1px 1px;
+  border-style: solid;
+  border-color: #ebebeb;
+}
+.kuma-uxtransfer-container td .kuma-uxtransfer-block {
+  width: 300px;
+  height: 300px;
+  padding: 5px 10px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.kuma-uxtransfer-container td .kuma-uxtransfer-block a {
+  display: block;
+  margin-bottom: 2px;
+  width: 280px;
+  height: 30px;
+  padding: 0 10px;
+  overflow: hidden;
+  line-height: 30px;
+  color: #999;
+}
+.kuma-uxtransfer-container td .kuma-uxtransfer-block a:hover,
+.kuma-uxtransfer-container td .kuma-uxtransfer-block a:focus {
+  outline: none;
+  background-color: #f7f7f7;
+  text-decoration: none;
+}
+.kuma-uxtransfer-container td .kuma-uxtransfer-block a.selected {
+  position: relative;
+  background-color: #f90;
+  color: #fff;
+}
+.kuma-uxtransfer-container td .kuma-uxtransfer-block a.selected:before {
+  content: "\e601";
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 1px;
+  font-family: kuma!important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: .2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.kuma-uxtransfer-container td .kuma-uxtransfer-block a.justMoved {
+  background-color: #f7f7f7;
+}
+.kuma-uxtransfer-container td.kuma-uxtransfer-buttons {
+  width: 90px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 0;
+}
+.kuma-uxtransfer-container td.kuma-uxtransfer-buttons > a {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 29px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #ccc;
+}
+.kuma-uxtransfer-container td.kuma-uxtransfer-buttons > a:hover,
+.kuma-uxtransfer-container td.kuma-uxtransfer-buttons > a:focus {
+  text-decoration: none;
+}
+.kuma-uxtransfer-container td.kuma-uxtransfer-buttons > a.enable:active,
+.kuma-uxtransfer-container td.kuma-uxtransfer-buttons > a:active {
+  border-color: #303233;
+  color: #303233;
+}
+.kuma-uxtransfer-container td.kuma-uxtransfer-buttons > a.enable {
+  border-color: #2599f2;
+  color: #2599f2;
+}
+.kuma-uxtransfer-container td.kuma-uxtransfer-buttons > a:before {
+  content: '\e615';
+  font-family: kuma!important;
+  font-size: 24px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: .2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.kuma-uxtransfer-container td.kuma-uxtransfer-buttons > a:first-child:before {
+  content: '\e616';
+}
+.uxTransfer.disabled .kuma-uxtransfer-buttons > a {
+  background: #ccc;
+  color: #fff;
+}
+.uxTransfer.disabled .kuma-uxtransfer-block a.selected {
+  background: #ccc;
+}
+/**
+* Collapse Component Style for uxcore
+* @author vicent.bian
+*
+* Copyright 2014-2015, Uxcore Team, Alinw.
+* All rights reserved.
+*/
+.kuma-collapse {
+  background-color: #f4f4f4;
+  border: 1px solid #e8e8e8;
+}
+.kuma-collapse > .kuma-collapse-item {
+  border-top: 1px solid #e8e8e8;
+}
+.kuma-collapse > .kuma-collapse-item:first-child {
+  border-top: none;
+}
+.kuma-collapse > .kuma-collapse-item > .kuma-collapse-header {
+  height: 38px;
+  line-height: 38px;
+  padding-left: 32px;
+  color: #333;
+  cursor: pointer;
+  position: relative;
+}
+.kuma-collapse > .kuma-collapse-item > .kuma-collapse-header .arrow {
+  position: absolute;
+  top: -1px;
+  left: 16px;
+  display: inline-block;
+  margin-right: 8px;
+  color: #333;
+  vertical-align: middle;
+  font-style: normal;
+}
+.kuma-collapse > .kuma-collapse-item > .kuma-collapse-header .arrow:before {
+  font-family: 'kuma' !important;
+  content: "\e615";
+  font-size: 16px;
+}
+.kuma-collapse-content {
+  display: none;
+  overflow: hidden;
+  color: #333;
+  padding: 0 16px;
+  background-color: #fff;
+}
+.kuma-collapse-content > .kuma-collapse-content-box {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.kuma-collapse-content-active {
+  display: block;
+}
+.kuma-collapse-collapsing {
+  transition-duration: .24s;
+  transition-timing-function: ease-out;
+}
+.kuma-collapse > .kuma-collapse-item-active > .kuma-collapse-header .arrow:before {
+  content: "\e614";
+}
+.kuma-uxform {
+  zoom: 1;
+}
+.kuma-uxform:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.kuma-uxform .kuma-mention:focus {
+  border: 1px #2599f2 solid;
+  color: #666;
+  outline: none;
+  padding: 7px 10px;
+}
+.kuma-uxform .kuma-mention-panel {
+  z-index: 1;
+}
+.kuma-uxform-row-title {
+  padding: 15px 0 20px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: bold;
+  clear: both;
+}
+.kuma-uxform-row-title > span {
+  border-left: 4px solid #ff9300;
+  display: inline-block;
+  padding-left: 12px;
+}
+.kuma-uxform-row {
+  min-width: 100%;
+  float: left;
+  clear: both;
+}
+.kuma-uxform-field {
+  display: table;
+  float: left;
+  width: 100%;
+  padding: 0 5px 12px 0px;
+  *zoom: 1;
+}
+.kuma-uxform-field .kuma-label {
+  padding-top: 9px;
+  padding-right: 20px;
+}
+.kuma-uxform-field:after {
+  clear: both;
+  content: '.';
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.kuma-uxform-field select {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAWCAYAAADwza0nAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODBFQkMyNkZDRUJFMTFFNEIzQzZGOUUwMjFDMTZDRkQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODBFQkMyNzBDRUJFMTFFNEIzQzZGOUUwMjFDMTZDRkQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4MEVCQzI2RENFQkUxMUU0QjNDNkY5RTAyMUMxNkNGRCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4MEVCQzI2RUNFQkUxMUU0QjNDNkY5RTAyMUMxNkNGRCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PkYdGT4AAADNSURBVHjaYuzp6WHAASqgdAc2SRYcmvyAuAWImYD4OhBvRFfAhEWTORAvB2JmIGYE4mVQMbwaVYB4MxBzIYlxQcVUcGkUBeLtUBodYMgx4TMVn2uYoH5Zjs0f+PwP0jgZGorEApDayaDoyIJikgATA5lgpGicBsT/ScTTQBpzgXgTCZaB1OaCNP4F4kggPkmEppNQtX9hfvwGxL5AfAePpjtQNd/QA+c1EHtCaXSAIceEz1R8rmHC449/0BCMxuZ/FjwhVw1lb8CmACDAABlpNwXghNgSAAAAAElFTkSuQmCC");
+  background-position: center right -15px;
+  background-repeat: no-repeat;
+  background-size: 7px 11px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  border-bottom-color: #c2c2c2;
+  border-top-color: #d6d6d6;
+  height: 30px;
+  width: 100%;
+}
+.kuma-uxform-field input {
+  margin-right: 2px;
+  vertical-align: middle;
+}
+.kuma-uxform-field .kuma-input {
+  height: 34px;
+  vertical-align: middle;
+  *vertical-align: -5px;
+}
+.kuma-uxform-field .kuma-input.kuma-uxform-input-has-right {
+  border-right: none;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.kuma-uxform-field .kuma-input.kuma-uxform-input-has-left {
+  padding-left: 0;
+  border-left: none;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.kuma-uxform-count {
+  display: table-cell;
+  width: 35px;
+  text-align: center;
+  border: 1px solid #333;
+  border-left: none;
+}
+.kuma-uxform-left-icon {
+  display: table-cell;
+  width: 30px;
+  border: 1px solid #333;
+  border-right: none;
+  text-align: center;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  vertical-align: top;
+  padding-top: 5px;
+}
+.kuma-uxform-left-icon-focus {
+  border-color: #2599f2;
+  outline: none;
+}
+.kuma-uxform-right-icon {
+  display: table-cell;
+  width: 30px;
+  border: 1px solid #333;
+  border-left: none;
+  text-align: center;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  vertical-align: top;
+  padding-top: 5px;
+}
+.kuma-input:focus + .kuma-uxform-right-icon,
+.kuma-input:focus + .kuma-uxform-count {
+  border: 1px #2599f2 solid;
+  border-left: none;
+  color: #666;
+  outline: none;
+}
+.kuma-uxform-field-core {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.kuma-uxform-field-content {
+  font-size: 12px;
+  color: #b2b2b2;
+  width: 100%;
+}
+.kuma-uxform-field-content .kuma-uxform-tips {
+  padding-top: 8px;
+  color: #999;
+}
+.kuma-uxform-field-content .kuma-uxform-tips .kuma-icon {
+  margin-right: 4px;
+  color: #39bffc;
+}
+.kuma-uxform-field-content .kuma-uxform-errormsg {
+  padding-top: 8px;
+  color: #ea5652;
+}
+.kuma-uxform-field-content .kuma-uxform-errormsg .kuma-icon {
+  margin-right: 4px;
+}
+.kuma-uxform-field-content .kuma-radio-group > span {
+  padding: 0px 20px 0px 4px;
+}
+.kuma-uxform-field-content.view-mode {
+  padding-top: 10px;
+}
+.kuma-uxform-field-content.has-error .kuma-input,
+.kuma-uxform-field-content.has-error .kuma-uxform-left-icon,
+.kuma-uxform-field-content.has-error .kuma-uxform-right-icon,
+.kuma-uxform-field-content.has-error .kuma-textarea,
+.kuma-uxform-field-content.has-error .kuma-select2-selection,
+.kuma-uxform-field-content.has-error .mce-panel {
+  border-color: #ea5652;
+}
+.kuma-button-group-uxform-field {
+  padding-left: 100px;
+}
+.kuma-button-group-uxform-field .kuma-button {
+  margin-right: 20px;
+}
+.kuma-checkbox-group-uxform-field .kuma-uxform-field-content,
+.kuma-radio-group-uxform-field .kuma-uxform-field-content {
+  padding-top: 10px;
+}
+.kuma-upload-uxform-field .kuma-uxform-field-content {
+  padding-top: 7px;
+}
+.kuma-upload-uxform-field .kuma-upload-filelist.nwmode {
+  margin-top: 10px;
+}
+.kuma-cascade-date-uxform-field .uxcore {
+  display: inline-block;
+}
+.kuma-cascade-date-uxform-field .kuma-calendar-picker {
+  width: 200px;
+  display: inline-block;
+}
+.kuma-cascade-date-uxform-field .kuma-calendar-picker .kuma-icon-calender {
+  top: 7px;
+}
+.kuma-uxform-split {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: middle;
+  line-height: 34px;
+}
+.kuma-select-uxform-field .kuma-select2-selection,
+.kuma-cascade-select-uxform-field .kuma-select2-selection {
+  min-height: 34px;
+}
+.kuma-select-uxform-field .kuma-select2-selection .kuma-select2-selection__rendered,
+.kuma-cascade-select-uxform-field .kuma-select2-selection .kuma-select2-selection__rendered {
+  line-height: 32px;
+}
+.kuma-select-uxform-field .kuma-select2-selection .kuma-select2-search__field,
+.kuma-cascade-select-uxform-field .kuma-select2-selection .kuma-select2-search__field {
+  vertical-align: middle;
+}
+.kuma-select-uxform-field .kuma-select2 {
+  width: 100%;
+}
+.kuma-select-uxform-field .kuma-select2-selection--multiple > ul > li {
+  margin-top: 7px;
+}
+.kuma-cascade-select-uxform-field .kuma-select2 {
+  width: 200px;
+}
+/**
+ * Progress Component Style for uxcore
+ * @author vicent.bian
+ *
+ * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.kuma-progress-line-wrap {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  font-size: 12px;
+  position: relative;
+}
+.kuma-progress-line-outer {
+  margin-right: 45px;
+  height: 22px;
+  line-height: 22px;
+}
+.kuma-progress-line-wrap-full .kuma-progress-line-outer {
+  margin-right: 0;
+}
+.kuma-progress-line-inner {
+  display: inline-block;
+  width: 100%;
+  background-color: #E9E9E9;
+  border-radius: 100px;
+  vertical-align: middle;
+}
+.kuma-progress-line-bg {
+  border-radius: 100px;
+  background-color: #2599f2;
+  transition: all 0.3s linear 0s;
+  position: relative;
+}
+.kuma-progress-line-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 35px;
+  text-align: left;
+  font-size: 1em;
+  margin-left: 10px;
+  height: 22px;
+  line-height: 22px;
+}
+.kuma-progress-line-text > i {
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: .2px;
+  font-family: 'kuma';
+}
+.kuma-progress-line-wrap.status-active .kuma-progress-line-bg:before {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-animation: progress-active 2s ease infinite;
+          animation: progress-active 2s ease infinite;
+}
+.kuma-progress-line-wrap.status-exception .kuma-progress-line-bg {
+  background-color: #F04631;
+}
+.kuma-progress-line-wrap.status-exception .kuma-progress-line-text {
+  color: #F04631;
+}
+.kuma-progress-line-wrap.status-exception .kuma-progress-line-text .icon-caution:after {
+  content: '\e605';
+}
+.kuma-progress-line-wrap.status-success .kuma-progress-line-bg {
+  background-color: #66bd5c;
+}
+.kuma-progress-line-wrap.status-success .kuma-progress-line-text {
+  color: #66bd5c;
+}
+.kuma-progress-line-wrap.status-success .kuma-progress-line-text .icon-success:after {
+  content: '\e601';
+}
+@-webkit-keyframes progress-active {
+  0% {
+    opacity: .3;
+    width: 0;
+  }
+  100% {
+    opacity: 0;
+    width: 100%;
+  }
+}
+@keyframes progress-active {
+  0% {
+    opacity: .3;
+    width: 0;
+  }
+  100% {
+    opacity: 0;
+    width: 100%;
+  }
+}
+/**
+ * Steps Component Style for uxcore
+ * @author vincent.bian
+ *
+ * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.kuma-step {
+  margin-left: 30px;
+}
+.kuma-step .kuma-step-item {
+  position: relative;
+  display: inline-block;
+  min-height: 40px;
+  vertical-align: top;
+}
+.kuma-step .kuma-step-item-last .kuma-step-title {
+  padding-right: 0;
+}
+.kuma-step .kuma-step-tail {
+  position: absolute;
+  left: 0;
+  top: 19px;
+  padding: 0 10px 0 34px;
+  width: 100%;
+}
+.kuma-step .kuma-step-tail > i {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #dbdbdb;
+}
+.kuma-step .kuma-step-head {
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+.kuma-step .kuma-step-head .kuma-step-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  border: 1px solid #66bd5c;
+  text-align: center;
+  line-height: 22px;
+  font-size: 12px;
+}
+.kuma-step .kuma-step-main {
+  color: #666;
+}
+.kuma-step .kuma-step-main .kuma-step-title {
+  white-space: nowrap;
+  color: #999;
+}
+.kuma-step .kuma-step-main .kuma-step-description {
+  color: #999;
+}
+.kuma-step.kuma-step-type-default .kuma-step-main {
+  position: absolute;
+}
+.kuma-step.kuma-step-type-default .kuma-step-main .kuma-step-title {
+  position: relative;
+  left: 12px;
+  display: inline-block;
+  margin-left: -50%;
+  margin-top: 40px;
+  text-align: center;
+}
+.kuma-step.kuma-step-type-default .kuma-step-main .kuma-step-description {
+  position: absolute;
+  left: -1em;
+  bottom: 60px;
+  padding: 5px 15px;
+  width: 146px;
+  height: 60px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  line-height: 2;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+}
+.kuma-step.kuma-step-type-title-on-top .kuma-step-main {
+  position: absolute;
+}
+.kuma-step.kuma-step-type-title-on-top .kuma-step-main .kuma-step-title {
+  position: relative;
+  left: 12px;
+  top: -18px;
+  display: inline-block;
+  margin-left: -50%;
+  text-align: center;
+}
+.kuma-step.kuma-step-type-title-on-top .kuma-step-main .kuma-step-description {
+  position: absolute;
+  left: 12px;
+  display: inline-block;
+  margin-left: -50px;
+  margin-top: 40px;
+  width: 100px;
+  text-align: center;
+}
+.kuma-step.kuma-step-type-long-desc .kuma-step-main {
+  padding: 10px 24px 0;
+}
+.kuma-step.kuma-step-type-long-desc .kuma-step-title {
+  position: relative;
+  padding: 0 8px;
+  display: inline-block;
+  background-color: #fff;
+}
+.kuma-step.kuma-step-type-long-desc .kuma-step-description {
+  padding: 8px;
+  min-width: 180px;
+}
+.kuma-step .kuma-step-status-process.kuma-step-item-last .kuma-step-icon:after {
+  font-family: 'kuma' !important;
+  content: '\e611';
+}
+.kuma-step .kuma-step-status-finish.kuma-step-item .kuma-step-tail i {
+  background-color: #66bd5c;
+}
+.kuma-step .kuma-step-status-finish .kuma-step-icon,
+.kuma-step .kuma-step-status-process .kuma-step-icon {
+  background-color: #66bd5c;
+  color: #fff;
+}
+.kuma-step .kuma-step-status-wait .kuma-step-icon {
+  background-color: #fff;
+  border-color: #ccc;
+  color: #999;
+}
+.kuma-step .kuma-step-status-process .kuma-step-title {
+  color: #333;
+}
+.kuma-step.kuma-step-vertical .kuma-step-head {
+  top: 0;
+}
+.kuma-step.kuma-step-vertical .kuma-step-item {
+  display: block;
+  min-height: 110px;
+}
+.kuma-step.kuma-step-vertical .kuma-step-item.kuma-step-status-process .kuma-step-description {
+  color: #666;
+}
+.kuma-step.kuma-step-vertical .kuma-step-tail {
+  left: 11px;
+  top: 0;
+  padding: 32px 0 9px 0;
+  width: 0;
+  height: 100%;
+}
+.kuma-step.kuma-step-vertical .kuma-step-tail i {
+  width: 2px;
+  height: 100%;
+  background-color: #dbdbdb;
+}
+.kuma-step.kuma-step-vertical .kuma-step-main {
+  padding: 2px 0 0 30px;
+}
+.kuma-step.kuma-step-vertical .kuma-step-main .kuma-step-title {
+  margin-left: 0;
+}
+.kuma-step.kuma-step-vertical .kuma-step-main .kuma-step-description {
+  margin-top: 4px;
+  text-indent: 0;
+}
+.kuma-step .kuma-step-small {
+  margin-left: 20px;
+}
+.kuma-step .kuma-step-small .kuma-step-head .kuma-step-icon {
+  font-size: 12px;
+}
+.kuma-step .kuma-step-small .kuma-step-tail {
+  top: 13px;
+  padding: 0 6px 0 16px;
+}
+.kuma-step .kuma-step-small.kuma-step-vertical .kuma-step-tail {
+  left: 5px;
+  top: 0;
+  padding: 14px 0 2px 0;
+}
+.kuma-step .kuma-step-small .kuma-step-head .kuma-step-icon {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  line-height: 10px;
+}
+.kuma-step.kuma-step-noicon .kuma-step-head {
+  top: 11px;
+  left: 6px;
+}
+.kuma-step.kuma-step-noicon .kuma-step-head .kuma-step-icon {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+}
+.kuma-step.kuma-step-noicon .kuma-step-head .kuma-step-icon:after {
+  content: '';
+}
+.kuma-step.kuma-step-noicon .kuma-step-tail {
+  padding: 0 0 0 22px;
+}
+.kuma-step.kuma-step-noicon .kuma-step-status-wait .kuma-step-icon {
+  background-color: #ccc;
+}
+.kuma-step.kuma-step-noicon.kuma-step-vertical .kuma-step-head {
+  top: 5px;
+  left: 8px;
+}
+.kuma-step.kuma-step-noicon.kuma-step-vertical .kuma-step-tail {
+  padding: 27px 0 0 1px;
+}
+/**
+ * Menu Component Style for uxcore
+ * @author vincent.bian
+ *
+ * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.kuma-menu {
+  outline: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  z-index: 1001;
+  border: 1px solid #e8e8e8;
+  color: #333;
+  background: #fff;
+}
+.kuma-menu-item-group-list {
+  margin: 0;
+  padding: 0;
+}
+.kuma-menu-item-group-title {
+  color: #333;
+  line-height: 1.5;
+  padding: 8px 10px;
+  border-bottom: 1px solid #dedede;
+}
+.kuma-menu-item {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.kuma-menu-item a:hover,
+.kuma-menu-item a:active {
+  text-decoration: none;
+}
+.kuma-menu-inline > .kuma-menu-item-active,
+.kuma-menu-submenu-inline.kuma-menu-submenu-active,
+.kuma-menu-submenu-inline.kuma-menu-submenu-active > .kuma-menu-submenu-title:hover {
+  background-color: #fff;
+}
+.kuma-menu-inline > .kuma-menu-item-active:hover,
+.kuma-menu-item-active,
+.kuma-menu-submenu-active,
+.kuma-menu-submenu-inline.kuma-menu-submenu-active > .kuma-menu-submenu-title:hover {
+  background-color: #e9f5fe;
+}
+.kuma-menu-item-selected {
+  background-color: #e9f5fe;
+  color: #2599f2;
+}
+.kuma-menu > li.kuma-menu-submenu {
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.kuma-menu-submenu-horizontal > .kuma-menu {
+  top: 100%;
+  left: 0;
+  position: absolute;
+  min-width: 100%;
+  margin-top: 7px;
+}
+.kuma-menu-submenu-vertical > .kuma-menu {
+  top: 0;
+  left: 100%;
+  position: absolute;
+  min-width: 160px;
+  margin-left: 4px;
+}
+.kuma-menu-item,
+.kuma-menu-submenu-title {
+  margin: 0;
+  position: relative;
+  display: block;
+  white-space: nowrap;
+}
+.kuma-menu-item.kuma-menu-item-disabled,
+.kuma-menu-submenu-title.kuma-menu-item-disabled,
+.kuma-menu-item.kuma-menu-submenu-disabled,
+.kuma-menu-submenu-title.kuma-menu-submenu-disabled {
+  color: #333 !important;
+}
+.kuma-menu > .kuma-menu-item-divider {
+  height: 1px;
+  margin: 1px 0;
+  overflow: hidden;
+  padding: 0;
+  line-height: 0;
+  background-color: #e5e5e5;
+}
+.kuma-menu-submenu {
+  position: relative;
+}
+.kuma-menu-submenu > .kuma-menu {
+  display: none;
+  background-color: #fff;
+}
+.kuma-menu-submenu-vertical > .kuma-menu-submenu-title:after {
+  font-family: "kuma" !important;
+  font-style: normal;
+  vertical-align: baseline;
+  text-align: center;
+  text-transform: none;
+  text-rendering: auto;
+  position: absolute;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+  content: "\e643";
+  right: 16px;
+}
+.kuma-menu-submenu-inline > .kuma-menu-submenu-title:after {
+  font-family: "kuma" !important;
+  font-style: normal;
+  vertical-align: baseline;
+  text-align: center;
+  text-transform: none;
+  text-rendering: auto;
+  position: absolute;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+  content: "\e642";
+  right: 16px;
+  top: 0;
+}
+.kuma-menu-submenu-open > .kuma-menu {
+  display: block;
+}
+.kuma-menu-submenu-open.kuma-menu-submenu-inline > .kuma-menu-submenu-title:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.kuma-menu .kuma-menu-submenu-title .kuma-icon,
+.kuma-menu .kuma-menu-item .kuma-icon {
+  width: 14px;
+  margin-right: 8px;
+  top: -1px;
+  color: #333;
+}
+.kuma-menu-horizontal {
+  background-color: #FBFBFB;
+  border: none;
+  border-bottom: 1px solid #e8e8e8;
+  padding-left: 24px;
+  z-index: 0;
+}
+.kuma-menu-horizontal > .kuma-menu-item,
+.kuma-menu-horizontal > .kuma-menu-submenu > .kuma-menu-submenu-title {
+  padding: 0 20px;
+  line-height: 50px;
+  position: relative;
+  top: 1px;
+}
+.kuma-menu-horizontal > .kuma-menu-item > a,
+.kuma-menu-horizontal > .kuma-menu-submenu > .kuma-menu-submenu-title > a {
+  display: block;
+  color: #333;
+}
+.kuma-menu-horizontal > .kuma-menu-item > a:hover,
+.kuma-menu-horizontal > .kuma-menu-submenu > .kuma-menu-submenu-title > a:hover {
+  color: #2599f2;
+}
+.kuma-menu-horizontal > .kuma-menu-item > a:before,
+.kuma-menu-horizontal > .kuma-menu-submenu > .kuma-menu-submenu-title > a:before,
+.kuma-menu-horizontal > .kuma-menu-item > a:after,
+.kuma-menu-horizontal > .kuma-menu-submenu > .kuma-menu-submenu-title > a:after {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.001);
+  width: 20px;
+  height: 50px;
+  content: '';
+}
+.kuma-menu-horizontal > .kuma-menu-item > a:before,
+.kuma-menu-horizontal > .kuma-menu-submenu > .kuma-menu-submenu-title > a:before {
+  left: 0;
+}
+.kuma-menu-horizontal > .kuma-menu-submenu,
+.kuma-menu-horizontal > .kuma-menu-item {
+  float: left;
+  border-bottom: 2px solid transparent;
+  margin-right: 24px;
+}
+.kuma-menu-horizontal > .kuma-menu-submenu-active,
+.kuma-menu-horizontal > .kuma-menu-item-active,
+.kuma-menu-horizontal > .kuma-menu-submenu-selected,
+.kuma-menu-horizontal > .kuma-menu-item-selected {
+  border-bottom: 2px solid #2599f2;
+  background-color: #FBFBFB;
+  color: #2599f2;
+}
+.kuma-menu-horizontal > .kuma-menu-submenu-active .kuma-icon,
+.kuma-menu-horizontal > .kuma-menu-item-active .kuma-icon,
+.kuma-menu-horizontal > .kuma-menu-submenu-selected .kuma-icon,
+.kuma-menu-horizontal > .kuma-menu-item-selected .kuma-icon {
+  color: #2599f2;
+}
+.kuma-menu-horizontal:after {
+  content: "\20";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.kuma-menu-vertical,
+.kuma-menu-inline {
+  padding: 12px 0;
+}
+.kuma-menu-vertical > .kuma-menu-item,
+.kuma-menu-inline > .kuma-menu-item,
+.kuma-menu-vertical > .kuma-menu-submenu > .kuma-menu-submenu-title,
+.kuma-menu-inline > .kuma-menu-submenu > .kuma-menu-submenu-title {
+  padding: 0 24px;
+  font-size: 12px;
+  line-height: 42px;
+  height: 42px;
+}
+.kuma-menu-vertical > .kuma-menu-submenu > .kuma-menu-submenu-title,
+.kuma-menu-inline > .kuma-menu-submenu > .kuma-menu-submenu-title {
+  font-size: 14px;
+}
+.kuma-menu-vertical.kuma-menu-sub {
+  padding: 0;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+.kuma-menu-vertical.kuma-menu-sub > .kuma-menu-item,
+.kuma-menu-vertical.kuma-menu-sub > .kuma-menu-submenu {
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+.kuma-menu-sub.kuma-menu-inline {
+  padding: 0;
+  border: none;
+  overflow: hidden;
+}
+.kuma-menu-sub.kuma-menu-inline > .kuma-menu-item,
+.kuma-menu-sub.kuma-menu-inline > .kuma-menu-submenu > .kuma-menu-submenu-title {
+  line-height: 34px;
+  height: 34px;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.kuma-menu-submenu-title .kuma-icon,
+.kuma-menu-item .kuma-icon {
+  width: 14px;
+  margin-right: 8px;
+  top: -1px;
+}
+/**
+ * CheckboxGroup Component Style for uxcore
+ * @author eternalsky
+ *
+ * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.kuma-checkbox-group > label {
+  display: inline-block;
+  color: #333;
+}
+.kuma-checkbox-group > label span {
+  padding: 0px 20px 0px 4px;
+}
+/**
+ * Radiogroup Component Style for uxcore
+ * @author
+ *
+ * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.kuma-radio-group > label {
+  display: inline-block;
+}
+.kuma-radio-group > label span {
+  padding: 0px 20px 0px 4px;
+}
+/**
+ * Layout Component Style for uxcore
+ * @author 
+ *
+ * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.kuma-layout-2c {
+  margin: 0 auto;
+  /* 全定宽 */
+  /* 左侧定宽，右侧自适应，需自己指定左侧宽度 lf=left fixed */
+  /* 右侧定宽，左侧自适应，需自己指定右侧宽度 rf=right fixed */
+}
+.kuma-layout-2c .kuma-layout-2c-left-fixed {
+  float: left;
+  display: inline;
+}
+.kuma-layout-2c .kuma-layout-2c-right-fixed {
+  float: right;
+  display: inline;
+}
+.kuma-layout-2c .kuma-layout-2c-left-lf {
+  float: right;
+}
+.kuma-layout-2c .kuma-layout-2c-right-lf {
+  width: 100%;
+  float: right;
+}
+.kuma-layout-2c .kuma-layout-2c-left-rf {
+  width: 100%;
+  float: left;
+}
+.kuma-layout-2c .kuma-layout-2c-right-rf {
+  float: left;
+}
+.kuma-layout-3c {
+  margin: 0 auto;
+  /* 三栏定宽 */
+  /* 两侧定宽，中间自适应，需自己指定两侧宽度 */
+}
+.kuma-layout-3c .kuma-layout-3c-fixed {
+  float: left;
+  display: inline;
+}
+.kuma-layout-3c .kuma-layout-3c-left {
+  margin: 0 0 0 -100%;
+  float: left;
+  display: inline;
+}
+.kuma-layout-3c .kuma-layout-3c-mid {
+  width: 100%;
+  float: left;
+  display: inline;
+}
+.kuma-layout-3c .kuma-layout-3c-right {
+  float: left;
+  display: inline;
+}
+/**
+ * Multiselect Component Style for uxcore
+ * @author peijie.dpj
+ *
+ * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.kuma-multi-select {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  width: 200px;
+  color: #666;
+  font-size: 14px;
+  line-height: 28px;
+  height: 28px;
+}
+.kuma-multi-select-arrow {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  line-height: 1;
+  margin-top: -7px;
+  font-family: 'kuma';
+}
+.kuma-multi-select-arrow * {
+  display: none;
+}
+.kuma-multi-select-arrow:before {
+  content: '\e614';
+}
+.kuma-multi-select-selection {
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: #fff;
+  border: 1px solid #333;
+}
+.kuma-multi-select-selection:hover {
+  border-color: #2599f2;
+}
+.kuma-multi-select .kuma-multi-select-selection__rendered {
+  margin: 0;
+  list-style: none;
+}
+.kuma-multi-select-search__field__placeholder {
+  position: absolute;
+  top: 0;
+  left: 3px;
+  color: #333;
+}
+.kuma-multi-select-selection--multiple {
+  height: 28px;
+  cursor: pointer;
+  display: inline-block;
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: 10px;
+  padding-right: 20px;
+  line-height: 26px;
+}
+.kuma-multi-select-selection--multiple--content {
+  display: inline-block;
+  overflow: hidden;
+  width: 168px;
+  vertical-align: inherit;
+}
+.kuma-multi-select-selection--multiple .kuma-multi-select-selection__rendered {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 6px;
+  padding-bottom: 4px;
+}
+.kuma-multi-select-selection--multiple .kuma-multi-select-selection__choice {
+  background-color: #f3f3f3;
+  cursor: default;
+  float: left;
+  padding: 0 20px 0 8px;
+  margin-right: 4px;
+  max-width: 99%;
+  position: relative;
+}
+.kuma-multi-select-selection--multiple .kuma-multi-select-selection__choice__content {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+.kuma-multi-select-selection--multiple .kuma-multi-select-selection__choice__content:last-child .kuma-multi-select-selection__choice__break {
+  display: none;
+}
+.kuma-multi-select-selection--multiple .kuma-multi-select-selection__placeholder {
+  color: #333;
+}
+.kuma-multi-select-disabled {
+  color: #333;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.kuma-multi-select-disabled .kuma-multi-select-selection:hover,
+.kuma-multi-select-disabled .kuma-multi-select-selection:active {
+  border-color: #333;
+}
+.kuma-multi-select-open .kuma-multi-select-arrow:before {
+  content: '\e613';
+}
+.kuma-multi-select-open .kuma-multi-select-selection {
+  border-color: #2599f2;
+}
+.kuma-multi-select-mask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+}
+.kuma-multi-select-mask-hidden {
+  display: none;
+}
+.kuma-multi-select-mask-show {
+  display: block;
+}
+.kuma-multi-select-dropdown {
+  z-index: 1070;
+  left: -9999px;
+  top: -9999px;
+  position: absolute;
+  outline: none;
+  overflow: hidden;
+  font-size: 12px;
+  padding-top: 5px;
+}
+.kuma-multi-select-dropdown .kuma-dropdown-menu {
+  margin: 0;
+  box-shadow: none;
+  border: none;
+}
+.kuma-multi-select-dropdown-border {
+  border: 1px solid #333;
+}
+.kuma-multi-select-dropdown .kuma-dropdown-menu > .kuma-dropdown-menu-item {
+  display: inline-block;
+  cursor: pointer;
+}
+.kuma-multi-select-dropdown .kuma-checkbox-group:before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #ffffff;
+  background: rgba(255, 255, 255, 0.01);
+}
+.kuma-multi-select-dropdown .kuma-checkbox-group > label {
+  padding: 3px;
+  display: inline-block;
+}
+.kuma-multi-select-content {
+  overflow-y: auto;
+  width: 280px;
+  max-height: 102px;
+  padding: 4px;
+  background-color: #fff;
+}
+.kuma-multi-select-footer {
+  text-align: center;
+  background: #f2f2f2;
+  padding: 4px;
+}
+.kuma-multi-select-footer p {
+  color: #999;
+}
+.kuma-multi-select-footer .kuma-multi-select-button {
+  margin: 3px;
+}
+.kuma-multi-select-footer .kuma-multi-select-button-hidden {
+  display: none;
+}
+/**
+ * Crumb Component Style for uxcore
+ * @author peijie.dpj
+ *
+ * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.kuma-uxcrumbs a {
+  color: #666;
+  margin-right: 5px;
+}
+.kuma-uxcrumbs a:hover {
+  text-decoration: none;
+}
+.kuma-uxcrumbs a:after {
+  padding-left: 8px;
+  content: '\e643';
+  font-family: 'kuma';
+  color: #999;
+}
+.kuma-uxcrumbs span {
+  color: #999;
+  font-weight: 400;
+}
+/**
+ * Totop Component Style for uxcore
+ * @author eternaslky
+ *
+ * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+/* totop 组件样式 */
+/* 普通尺寸，默认矩形风格 */
+.kuma-totop {
+  position: fixed;
+  width: 42px;
+  bottom: 20px;
+  right: 140px;
+  /* 普通尺寸，默认矩形风格 end */
+  /* 普通尺寸，圆形风格 */
+  /* 普通尺寸，圆形风格 end */
+  /* large 圆形风格 */
+  /* 圆形风格 end */
+}
+.kuma-totop .kuma-totop-other {
+  width: 42px;
+  float: left;
+}
+.kuma-totop .btn {
+  line-height: 20px;
+  display: block;
+  clear: both;
+  float: left;
+  overflow: hidden;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  text-align: center;
+  text-indent: -9999px;
+  background: #e0e0e0 url(https://gtms02.alicdn.com/tps/i2/TB1tsuQGXXXXXbmXXXXnHduKXXX-250-86.png) no-repeat;
+  background-position: left top;
+}
+.kuma-totop .btn:last-child {
+  margin-bottom: 0;
+}
+.kuma-totop .gotop {
+  display: none;
+  background-position: left top;
+}
+.kuma-totop .gotop:hover {
+  background-position: -52px 0;
+  background-color: #b2b2b2;
+}
+.kuma-totop .gotop.show {
+  display: inline;
+}
+.kuma-totop .feedback {
+  background-position: 0 -44px;
+}
+.kuma-totop .feedback:hover {
+  background-position: -104px -44px;
+  background-color: #b2b2b2;
+}
+.kuma-totop.mcircle .btn {
+  border-radius: 42px;
+  background: url(https://gtms04.alicdn.com/tps/i4/TB1WZGQGXXXXXbIXXXXnHduKXXX-250-86.png) no-repeat;
+  background-color: #444;
+  background-position: left top;
+}
+.kuma-totop.mcircle .gotop {
+  background-position: 0 0;
+}
+.kuma-totop.mcircle .gotop:hover {
+  background-color: #333;
+  background-position: -52px 0;
+}
+.kuma-totop.mcircle .feedback {
+  background-position: 0 -44px;
+}
+.kuma-totop.mcircle .feedback:hover {
+  background-color: #333;
+  background-position: -104px -44px;
+}
+.kuma-totop.lcircle .btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 52px;
+  background: url(https://gtms04.alicdn.com/tps/i4/TB1WZGQGXXXXXbIXXXXnHduKXXX-250-86.png) no-repeat;
+  background-color: #444;
+  background-position: left top;
+}
+.kuma-totop.lcircle .gotop {
+  background-position: 5px 5px;
+}
+.kuma-totop.lcircle .gotop:hover {
+  background-color: #333;
+  background-position: -47px 5px;
+}
+.kuma-totop.lcircle .feedback {
+  background-position: 5px -39px;
+}
+.kuma-totop.lcircle .feedback:hover {
+  background-color: #333;
+  background-position: -99px -39px;
+}
+.kuma-totop.lcircle .kuma-totop-other {
+  width: 52px;
+  float: left;
+}
+@media screen and (min-width: 992px) {
+  #kuma-totop {
+    bottom: 100px;
+  }
+}
+.kuma-totop.en .gotop:hover {
+  background-position: -156px 0;
+  background-color: #b2b2b2;
+}
+.kuma-totop.en .feedback:hover {
+  background-position: -208px -44px;
+  background-color: #b2b2b2;
+}
+.kuma-totop.en.mcircle .gotop:hover {
+  background-position: -156px 0;
+  background-color: #333;
+}
+.kuma-totop.en.mcircle .feedback:hover {
+  background-position: -208px -44px;
+  background-color: #333;
+}
+.kuma-totop.en.lcircle .gotop:hover {
+  background-position: -151px 5px;
+  background-color: #333;
+}
+.kuma-totop.en.lcircle .feedback:hover {
+  background-position: -204px -39px;
+  background-color: #333;
+}
+/* totop 组件样式 end */
+/**
+ * Grid Component Style for uxcore
+ * @author eternalky
+ *
+ * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+/**
+ * Alert Component Style for uxcore
+ * @author eternaslky
+ *
+ * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+/* tiptext 样式模块 */
+.kuma-alert {
+  position: relative;
+  *zoom: 1;
+  color: #666;
+}
+.kuma-alert-follow {
+  padding-left: 21px;
+}
+.kuma-alert .kuma-button {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  text-shadow: 0 1px 0 #fff;
+  margin-right: 2px;
+}
+.kuma-alert-icon {
+  display: inline-block;
+}
+.kuma-alert-container {
+  padding: 8px 12px 8px 12px;
+  position: relative;
+  *zoom: 1;
+}
+.kuma-alert-container-closable {
+  padding: 8px 28px 8px 12px;
+}
+.kuma-alert-message .kuma-alert-icon {
+  color: #45a8e6;
+}
+.kuma-alert-container-message {
+  border: 1px solid #9fd2f2;
+  background: #cce7f8;
+}
+.kuma-alert-container-message .kuma-alert-arrow em {
+  color: #9fd2f2;
+}
+.kuma-alert-container-message .kuma-alert-arrow span {
+  color: #cce7f8;
+}
+.kuma-alert-success .kuma-alert-icon {
+  color: #66bd5c;
+}
+.kuma-alert-container-success {
+  background: #cce9c9;
+  border: 1px solid #aadaa5;
+}
+.kuma-alert-container-success .kuma-alert-arrow em {
+  color: #aadaa5;
+}
+.kuma-alert-container-success .kuma-alert-arrow span {
+  color: #cce9c9;
+}
+.kuma-alert-error .kuma-alert-icon {
+  color: #F04631;
+}
+.kuma-alert-container-error {
+  background: #fac6c0;
+  border: 1px solid #f79b90;
+}
+.kuma-alert-container-error .kuma-alert-arrow em {
+  color: #f79b90;
+}
+.kuma-alert-container-error .kuma-alert-arrow span {
+  color: #fac6c0;
+}
+.kuma-alert-warning .kuma-alert-icon {
+  color: #f5a12a;
+}
+.kuma-alert-container-warning {
+  background: #fefea4;
+  border: 1px solid #e6e098;
+}
+.kuma-alert-container-warning .kuma-alert-arrow em {
+  color: #e6e098;
+}
+.kuma-alert-container-warning .kuma-alert-arrow span {
+  color: #fefea4;
+}
+.kuma-alert-question .kuma-alert-icon {
+  color: #f5a12a;
+}
+.kuma-alert-container-question {
+  border: 1px solid #facc8b;
+  background: #fce1bc;
+}
+.kuma-alert-container-question .kuma-alert-arrow em {
+  color: #facc8b;
+}
+.kuma-alert-container-question .kuma-alert-arrow span {
+  color: #fce1bc;
+}
+.kuma-alert-stop .kuma-alert-icon {
+  color: #F04631;
+}
+.kuma-alert-container-stop {
+  background: #fac6c0;
+  border: 1px solid #f79b90;
+}
+.kuma-alert-container-stop .kuma-alert-arrow em {
+  color: #f79b90;
+}
+.kuma-alert-container-stop .kuma-alert-arrow span {
+  color: #fac6c0;
+}
+.kuma-alert-wait .kuma-alert-icon {
+  color: #45a8e6;
+}
+.kuma-alert-container-wait {
+  border: 1px solid #9fd2f2;
+  background: #cce7f8;
+}
+.kuma-alert-container-wait .kuma-alert-arrow em {
+  color: #9fd2f2;
+}
+.kuma-alert-container-wait .kuma-alert-arrow span {
+  color: #cce7f8;
+}
+.kuma-alert-arrowup,
+.kuma-alert-arrowleft,
+.kuma-alert-arrowright,
+.kuma-alert-arrowdown {
+  height: 10px;
+  width: 16px;
+}
+.kuma-alert-arrowup,
+.kuma-alert-arrowleft,
+.kuma-alert-arrowright,
+.kuma-alert-arrowdown,
+.kuma-alert-arrowup em,
+.kuma-alert-arrowleft em,
+.kuma-alert-arrowright em,
+.kuma-alert-arrowdown em,
+.kuma-alert-arrowup span,
+.kuma-alert-arrowleft span,
+.kuma-alert-arrowright span,
+.kuma-alert-arrowdown span {
+  position: absolute;
+  font: normal 14px/1 SimSun;
+}
+.kuma-alert-arrowup {
+  left: 32px;
+  top: -7px;
+}
+.kuma-alert-arrowup em {
+  top: -1px;
+}
+.kuma-alert-arrowleft {
+  left: -6px;
+  top: 10px;
+}
+.kuma-alert-arrowleft em {
+  left: -1px;
+}
+.kuma-alert-arrowright {
+  right: -10px;
+  top: 10px;
+}
+.kuma-alert-arrowright em {
+  right: 1px;
+}
+.kuma-alert-arrowdown {
+  left: 32px;
+  bottom: -3px;
+}
+.kuma-alert-arrowdown em {
+  top: 1px;
+}
+.kuma-alert-close {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  color: #60a2c5;
+  cursor: pointer;
+  line-height: 22px;
+}
+/**
+ * Message Component Style for uxcore
+ * @author eternaslky
+ *
+ * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.kuma-message {
+  top: 16px;
+  position: fixed;
+  z-index: 1000;
+  max-width: 300px;
+}
+.kuma-message-content {
+  padding-left: 34px;
+  font-size: 14px;
+}
+.kuma-message-notice {
+  padding: 10px 20px 10px 10px;
+  border-radius: 3px 3px;
+  border: 1px solid #999;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 0px solid rgba(0, 0, 0, 0);
+  background: #fff;
+  display: block;
+  width: auto;
+  line-height: 1.5;
+  vertical-align: middle;
+  position: relative;
+  margin: 10px 0;
+}
+.kuma-message-notice-closable {
+  padding-right: 20px;
+}
+.kuma-message-notice-close {
+  position: absolute;
+  right: 5px;
+  top: 3px;
+  color: #000;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  opacity: .2;
+  text-decoration: none;
+}
+.kuma-message-notice-close-x:after {
+  content: '×';
+}
+.kuma-message-notice-close:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  text-decoration: none;
+}
+.kuma-message .kuma-icon {
+  font-size: 24px;
+  margin-right: 10px;
+  line-height: 1;
+  float: left;
+  vertical-align: middle;
+}
+.kuma-message .kuma-icon.kuma-icon-caution {
+  color: #f5a12a;
+}
+.kuma-message .kuma-icon.kuma-icon-information {
+  color: #2599f2;
+}
+.kuma-message .kuma-icon.kuma-icon-success {
+  color: #66bd5c;
+}
+.kuma-message .kuma-icon.kuma-icon-error {
+  color: #F04631;
+}
+.kuma-message .kuma-loading {
+  float: left;
+}
+.kuma-message-fade-enter {
+  opacity: 0;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+          animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.kuma-message-fade-leave {
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+          animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.kuma-message-fade-enter.kuma-message-fade-enter-active {
+  -webkit-animation-name: rcNotificationFadeIn;
+          animation-name: rcNotificationFadeIn;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+.kuma-message-fade-leave.kuma-message-fade-leave-active {
+  -webkit-animation-name: rcDialogFadeOut;
+          animation-name: rcDialogFadeOut;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+@-webkit-keyframes rcNotificationFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes rcNotificationFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes rcDialogFadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes rcDialogFadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/**
+ * Pickable Component Style for uxcore
+ * @author onbing
+ *
+ * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.kuma-pickable {
+  font-size: 12px;
+  overflow: hidden;
+}
+.kuma-pickable .kuma-pickable-item {
+  float: left;
+  white-space: nowrap;
+  text-align: center;
+  position: relative;
+  color: #333;
+  border: 1px solid #e8e8e8;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 0 5px 5px 0;
+}
+.kuma-pickable .kuma-pickable-item .kuma-pickable-text {
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.kuma-pickable .kuma-pickable-item .kuma-icon {
+  vertical-align: middle;
+}
+.kuma-pickable .kuma-pickable-item .kuma-icon.badge {
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: -15px;
+  border: 15px solid transparent;
+  border-bottom-color: #3B8FD9;
+  color: #fff;
+}
+.kuma-pickable .kuma-pickable-item .kuma-icon.badge:before {
+  position: absolute;
+  bottom: -20px;
+  left: -10px;
+  font-size: 12px;
+}
+.kuma-pickable .kuma-pickable-item .kuma-icon.remover {
+  margin-left: 7px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  color: #999;
+}
+.kuma-pickable .kuma-pickable-item .kuma-icon.remover:hover {
+  color: #666;
+}
+.kuma-pickable .kuma-pickable-item:hover {
+  border-color: #1A78B8;
+}
+.kuma-pickable .kuma-pickable-item.checked {
+  border-color: #3B8FD9;
+}
+.kuma-pickable .kuma-pickable-clear {
+  cursor: pointer;
+  float: left;
+  padding: 5px;
+  margin-left: 10px;
+  color: #3B8FD9;
+}
+.kuma-pickable .kuma-pickable-clear:hover {
+  color: #1A78B8;
+}
+.kuma-pickable.kuma-pickable-removeable .kuma-pickable-item {
+  background-color: #f2f2f2;
+  border: none;
+  cursor: default;
+}
+/**
+ * Carousel Component Style for uxcore, customed from slick-carousel
+ * @author eternaslky
+ *
+ * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.kuma-carousel {
+  /* Slider */
+  /* Arrows */
+  /* Dots */
+}
+.kuma-carousel .slick-loading .slick-list {
+  background: #fff url('https://gtms02.alicdn.com/tps/i2/TB1ZOqiLpXXXXcMXpXXBStGGXXX-32-32.gif') center center no-repeat;
+}
+.kuma-carousel .slick-prev,
+.kuma-carousel .slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.1);
+  color: transparent;
+  top: 50%;
+  margin-top: -10px \9;
+  /*lte IE 8*/
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none;
+}
+.kuma-carousel .slick-prev:hover,
+.kuma-carousel .slick-next:hover,
+.kuma-carousel .slick-prev:focus,
+.kuma-carousel .slick-next:focus {
+  outline: none;
+  background: rgba(0, 0, 0, 0.5);
+  color: transparent;
+}
+.kuma-carousel .slick-prev:hover:before,
+.kuma-carousel .slick-next:hover:before,
+.kuma-carousel .slick-prev:focus:before,
+.kuma-carousel .slick-next:focus:before {
+  opacity: 1;
+}
+.kuma-carousel .slick-prev.slick-disabled:before,
+.kuma-carousel .slick-next.slick-disabled:before {
+  opacity: 0.75;
+}
+.kuma-carousel .slick-prev:before,
+.kuma-carousel .slick-next:before {
+  font-family: "kuma";
+  font-size: 20px;
+  line-height: 1;
+  color: white;
+  opacity: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.kuma-carousel .slick-prev {
+  left: 20px;
+}
+.kuma-carousel .slick-prev[dir="rtl"] {
+  left: auto;
+  right: 20px;
+}
+.kuma-carousel .slick-prev:before {
+  content: "\e644";
+}
+.kuma-carousel .slick-prev:before[dir="rtl"] {
+  content: "\e643";
+}
+.kuma-carousel .slick-next {
+  right: 20px;
+}
+.kuma-carousel .slick-next[dir="rtl"] {
+  left: 20px;
+  right: auto;
+}
+.kuma-carousel .slick-next:before {
+  content: "\e643";
+}
+.kuma-carousel .slick-next:before[dir="rtl"] {
+  content: "\e644";
+}
+.kuma-carousel .slick-slider {
+  margin-bottom: 30px;
+}
+.kuma-carousel .slick-dots {
+  position: absolute;
+  bottom: 20px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  width: 100%;
+}
+.kuma-carousel .slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.kuma-carousel .slick-dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+.kuma-carousel .slick-dots li button:hover,
+.kuma-carousel .slick-dots li button:focus {
+  outline: none;
+}
+.kuma-carousel .slick-dots li button:hover:before,
+.kuma-carousel .slick-dots li button:focus:before {
+  opacity: 1;
+}
+.kuma-carousel .slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "\e660";
+  width: 20px;
+  height: 20px;
+  font-family: "kuma";
+  font-size: 6px;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.kuma-carousel .slick-dots li.slick-active button:before {
+  color: white;
+  opacity: 1;
+}
+.kuma-carousel .slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+.kuma-carousel .slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.kuma-carousel .slick-list:focus {
+  outline: none;
+}
+.kuma-carousel .slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+.kuma-carousel .slick-slider .slick-track,
+.kuma-carousel .slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.kuma-carousel .slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+}
+.kuma-carousel .slick-track:before,
+.kuma-carousel .slick-track:after {
+  content: "";
+  display: table;
+}
+.kuma-carousel .slick-track:after {
+  clear: both;
+}
+.slick-loading .kuma-carousel .slick-track {
+  visibility: hidden;
+}
+.kuma-carousel .slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+[dir="rtl"] .kuma-carousel .slick-slide {
+  float: right;
+}
+.kuma-carousel .slick-slide img {
+  display: block;
+}
+.kuma-carousel .slick-slide.slick-loading img {
+  display: none;
+}
+.kuma-carousel .slick-slide.dragging img {
+  pointer-events: none;
+}
+.kuma-carousel .slick-arrow.slick-hidden {
+  display: none;
+}
+.kuma-carousel .slick-initialized .slick-slide {
+  display: block;
+}
+.kuma-carousel .slick-loading .slick-slide {
+  visibility: hidden;
+}
+.kuma-carousel .slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+/**
+ * Tabs Component Style for uxcore
+ * @author
+ *
+ * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.kuma-tab {
+  border: 1px solid #e8e8e8;
+}
+.kuma-tab .kuma-tab {
+  border: none;
+}
+.kuma-tab-bar .kuma-tab-tab {
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  color: #666;
+}
+.kuma-tab-bar .kuma-tab-tab-active {
+  color: #333;
+}
+.kuma-tab-bar .kuma-tab-tab-inner {
+  display: block;
+}
+.kuma-tab-bar .kuma-tab-tab-disabled {
+  color: #ccc;
+}
+.kuma-tab-content .kuma-tab-tabpane-hidden {
+  display: none;
+}
+.kuma-tab.kuma-tab-lg > .kuma-tab-bar {
+  background-color: #f7f7f7;
+}
+.kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-nav-container {
+  height: 49px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab {
+  margin-left: -1px;
+  height: 49px;
+  line-height: 49px;
+  font-size: 16px;
+}
+.kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab-inner {
+  padding: 0 45px;
+}
+.kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab-active {
+  position: relative;
+  background-color: #fff;
+}
+.kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab-active:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -1px;
+  width: 100%;
+  height: 3px;
+  background-color: #2599f2;
+}
+.kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-tab-active .kuma-tab-tab-inner {
+  height: 49px;
+  background-color: #fff;
+  border-width: 0 1px;
+  border-color: transparent #e8e8e8;
+  border-style: solid;
+}
+.kuma-tab.kuma-tab-sm > .kuma-tab-bar {
+  background-color: #f7f7f7;
+}
+.kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-nav-container {
+  height: 39px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab {
+  margin-left: -1px;
+  height: 39px;
+  line-height: 39px;
+  font-size: 14px;
+}
+.kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-inner {
+  padding: 0 45px;
+}
+.kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-active {
+  position: relative;
+  background-color: #fff;
+}
+.kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-active:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -1px;
+  width: 100%;
+  height: 3px;
+  background-color: #2599f2;
+}
+.kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab-active .kuma-tab-tab-inner {
+  height: 39px;
+  background-color: #fff;
+  border-width: 0 1px;
+  border-color: transparent #e8e8e8;
+  border-style: solid;
+}
+.kuma-tab.kuma-tab-filter > .kuma-tab-bar .kuma-tab-nav-container {
+  padding: 20px 30px;
+}
+.kuma-tab.kuma-tab-filter > .kuma-tab-bar .kuma-tab-tab {
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+}
+.kuma-tab.kuma-tab-filter > .kuma-tab-bar .kuma-tab-tab-inner {
+  padding: 0 25px;
+}
+.kuma-tab.kuma-tab-filter > .kuma-tab-bar .kuma-tab-tab-active {
+  background: #eff8fe;
+  border-radius: 2px;
+  color: #2599f2;
+}
+.kuma-tab.kuma-tab-brick > .kuma-tab-bar .kuma-tab-nav-container {
+  padding: 20px 30px;
+}
+.kuma-tab.kuma-tab-brick > .kuma-tab-bar .kuma-tab-nav {
+  border-left: 1px solid #e8e8e8;
+}
+.kuma-tab.kuma-tab-brick > .kuma-tab-bar .kuma-tab-tab {
+  height: 30px;
+  line-height: 28px;
+  border: 1px solid #e8e8e8;
+  border-left: 0 none;
+  font-size: 14px;
+}
+.kuma-tab.kuma-tab-brick > .kuma-tab-bar .kuma-tab-tab-inner {
+  padding: 0 25px;
+}
+.kuma-tab.kuma-tab-brick > .kuma-tab-bar .kuma-tab-tab-active {
+  color: #2599f2;
+}

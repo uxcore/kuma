@@ -10,9 +10,12 @@ if (DEVMODE) {
 }
 
 module.exports = {
-	entry: './index',
+	entry: {
+        index: './index',
+        style: './demo/style'
+    },
 	output: {
-		filename: 'main.js',
+		filename: '[name].bundle.js',
 		publicPath: '/demo/'
 	},
 	module: {

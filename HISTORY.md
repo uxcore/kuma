@@ -1,7 +1,13 @@
 History
 =======
 
----
+2.0.1
+-----
+`CHANGED` add select
+
+2.0.0
+-----
+`NEW` new style standard
 
 1.2.10
 -----
