@@ -122,3 +122,6 @@
 	path = src/kuma-base
 	url = git@github.com:uxcore/kuma-base.git
 	branch = master
+[submodule "src/components/uxcore-animate"]
+	path = src/components/uxcore-animate
+	url = https://github.com/uxcore/uxcore-animate.git
