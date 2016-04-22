@@ -1,6 +1,10 @@
 History
 =======
 
+2.0.11
+-----
+`CHANGED` add animation
+
 2.0.1
 -----
 `CHANGED` add select
