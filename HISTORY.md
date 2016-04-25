@@ -1,6 +1,11 @@
 History
 =======
 
+
+2.0.13
+-----
+`FIX` fix dialog mask animation bug
+
 2.0.11
 -----
 `CHANGED` add animation
