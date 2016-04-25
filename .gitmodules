@@ -1,11 +1,11 @@
 [submodule "src/components/uxcore-tabs"]
 	path = src/components/uxcore-tabs
 	url = git@github.com:uxcore/uxcore-tabs.git
-	branch = feature/style
+	branch = master
 [submodule "src/components/uxcore-crumb"]
 	path = src/components/uxcore-crumb
 	url = git@github.com:uxcore/uxcore-crumb.git
-	branch = feature/style
+	branch = master
 [submodule "src/components/uxcore-dropdown"]
 	path = src/components/uxcore-dropdown
 	url = git@github.com:uxcore/uxcore-dropdown.git
@@ -25,7 +25,7 @@
 [submodule "src/components/uxcore-form"]
 	path = src/components/uxcore-form
 	url = git@github.com:uxcore/uxcore-form.git
-	branch = feature/style
+	branch = master
 [submodule "src/components/uxcore-layout"]
 	path = src/components/uxcore-layout
 	url = git@github.com:uxcore/uxcore-layout.git
@@ -81,7 +81,7 @@
 [submodule "src/components/uxcore-button"]
 	path = src/components/uxcore-button
 	url = git@github.com:uxcore/uxcore-button.git
-	branch = feature/style
+	branch = master
 [submodule "src/components/uxcore-popover"]
 	path = src/components/uxcore-popover
 	url = git@github.com:uxcore/uxcore-popover.git
