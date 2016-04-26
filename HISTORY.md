@@ -1,6 +1,10 @@
 History
 =======
 
+2.0.15
+-----
+`FIX` select2 animation lost
+
 2.0.14
 -----
 `CHANGED` change denpendency from submodules to npm packages
