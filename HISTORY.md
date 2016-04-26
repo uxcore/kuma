@@ -1,6 +1,9 @@
 History
 =======
 
+2.0.14
+-----
+`CHANGED` change denpendency from submodules to npm packages
 
 2.0.13
 -----
