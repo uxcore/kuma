@@ -1,6 +1,10 @@
 History
 =======
 
+2.0.17
+------
+`NEW` add rate style
+
 2.0.15
 -----
 `FIX` select2 animation lost
