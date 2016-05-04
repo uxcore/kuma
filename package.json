@@ -18,10 +18,11 @@
   "bugs": {
     "url": "https://github.com/uxcore/kuma/issues"
   },
-  "main": "src/kuma.less",
+  "main": "index.js",
   "files": [
     "dist",
-    "src"
+    "src",
+    "index.js"
   ],
   "keywords": [
     "uxcore",
