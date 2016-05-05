@@ -1,6 +1,10 @@
 History
 =======
 
+2.0.19
+------
+`NEW` fix calendar input[readonly] bug
+
 2.0.17
 ------
 `NEW` add rate style
