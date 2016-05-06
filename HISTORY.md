@@ -1,6 +1,10 @@
 History
 =======
 
+2.0.20
+------
+`CHANGED` remove old table style
+
 2.0.17
 ------
 `NEW` add rate style
