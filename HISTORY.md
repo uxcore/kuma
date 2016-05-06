@@ -1,9 +1,13 @@
 History
-=======
+======
 
 2.0.20
 ------
 `CHANGED` remove old table style
+
+2.0.19
+------
+`NEW` fix calendar input[readonly] bug
 
 2.0.17
 ------
