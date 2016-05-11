@@ -4,6 +4,7 @@ History
 2.0.20
 ------
 `CHANGED` remove old table style
+`FIX` fix select2 multiple bug
 
 2.0.19
 ------

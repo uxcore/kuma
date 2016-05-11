@@ -1,6 +1,6 @@
 {
   "name": "uxcore-kuma",
-  "version": "2.0.19",
+  "version": "2.0.20",
   "description": "style for uxcore based on kuma",
   "author": "shane.wuq",
   "maintainers": [
@@ -90,7 +90,7 @@
     "uxcore-transfer": "~0.2.0",
     "uxcore-tree": "~0.1.7",
     "uxcore-uploadcore": "~2.0.2",
-    "uxcore-uploader": "~1.2.0",
+    "uxcore-uploader": "~1.4.0",
     "uxcore-validator": "~0.1.1",
     "webpack": "~1.12.2"
   },
