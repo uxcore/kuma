@@ -1,6 +1,10 @@
 History
 ======
 
+2.0.21
+------
+`CHANGED` update calendar style
+
 2.0.20
 ------
 `CHANGED` remove old table style

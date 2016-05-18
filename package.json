@@ -1,6 +1,6 @@
 {
   "name": "uxcore-kuma",
-  "version": "2.0.20",
+  "version": "2.0.21",
   "description": "style for uxcore based on kuma",
   "author": "shane.wuq",
   "maintainers": [
@@ -60,7 +60,7 @@
     "uxcore-alert": "~0.2.1",
     "uxcore-animate": "~0.1.1",
     "uxcore-button": "~0.4.0",
-    "uxcore-calendar": "~0.3.3",
+    "uxcore-calendar": "~0.4.0",
     "uxcore-carousel": "~0.1.2",
     "uxcore-checkbox-group": "~1.0.6",
     "uxcore-collapse": "~1.1.0",
