@@ -1,6 +1,14 @@
 History
 ======
 
+2.0.23
+------
+`NEW` add badge & switch
+
+2.0.22
+------
+`CHANGED` update form style
+
 2.0.21
 ------
 `CHANGED` update calendar style

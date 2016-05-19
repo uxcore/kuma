@@ -1,6 +1,6 @@
 {
   "name": "uxcore-kuma",
-  "version": "2.0.21",
+  "version": "2.0.23",
   "description": "style for uxcore based on kuma",
   "author": "shane.wuq",
   "maintainers": [
@@ -95,6 +95,8 @@
     "webpack": "~1.12.2"
   },
   "dependencies": {
-    "kuma-base": "~1.0.1"
+    "kuma-base": "~1.0.1",
+    "uxcore-badge": "~0.1.1",
+    "uxcore-switch": "~0.1.1"
   }
 }
