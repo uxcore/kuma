@@ -1,6 +1,10 @@
 History
 ======
 
+2.0.25
+------
+`CHANGED` change carousel style
+
 2.0.23
 ------
 `NEW` add badge & switch
