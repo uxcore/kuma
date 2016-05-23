@@ -1,6 +1,10 @@
 History
 ======
 
+2.0.26
+------
+`FIX` fix carousel arrow bug
+
 2.0.25
 ------
 `CHANGED` change carousel style
