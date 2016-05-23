@@ -1,6 +1,10 @@
 History
 ======
 
+2.0.27
+------
+`CHANGED` hovercard style change
+
 2.0.26
 ------
 `FIX` fix carousel arrow bug
