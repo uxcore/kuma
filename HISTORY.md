@@ -1,6 +1,10 @@
 History
 ======
 
+2.0.29
+------
+`CHANGED` update employee
+
 2.0.28
 ------
 `CHANGED` tooltip add additional 8 dirs
