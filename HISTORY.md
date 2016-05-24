@@ -1,6 +1,10 @@
 History
 ======
 
+2.0.28
+------
+`CHANGED` tooltip add additional 8 dirs
+
 2.0.27
 ------
 `CHANGED` hovercard style change
