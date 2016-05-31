@@ -1,10 +1,13 @@
 History
 ======
 
+2.1.1
+------
+`NEW` add `uxcore-tree-select` style
+
 2.1.0
 ------
 `CHANGED` remove employee & hovercard from component.less
-`NEW` add `uxcore-tree-select` style
 
 2.0.29
 ------
