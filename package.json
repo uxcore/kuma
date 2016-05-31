@@ -88,7 +88,7 @@
     "uxcore-tooltip": "~0.3.2",
     "uxcore-totop": "~0.1.0",
     "uxcore-transfer": "~0.2.0",
-    "uxcore-tree": "~0.1.7",
+    "uxcore-tree": "~0.2.0",
     "uxcore-uploadcore": "~2.0.2",
     "uxcore-uploader": "~1.4.0",
     "uxcore-validator": "~0.1.1",
@@ -97,6 +97,7 @@
     "uxcore-switch": "~0.1.1"
   },
   "dependencies": {
-    "kuma-base": "~1.0.1"
+    "kuma-base": "~1.0.1",
+    "uxcore-tree-select": "~0.1.0"
   }
 }
