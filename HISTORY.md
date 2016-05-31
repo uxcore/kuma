@@ -1,7 +1,7 @@
 History
 ======
 
-2.1.3
+2.1.4
 -----
 * `CHANGED` toTop
 * `NEW` loadMore
