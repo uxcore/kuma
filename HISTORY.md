@@ -1,6 +1,11 @@
 History
 ======
 
+2.1.3
+-----
+* `CHANGED` toTop
+* `NEW` loadMore
+
 2.1.1
 ------
 `NEW` add `uxcore-tree-select` style
