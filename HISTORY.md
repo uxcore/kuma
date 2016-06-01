@@ -1,6 +1,11 @@
 History
 ======
 
+2.1.5
+-----
+
+* `CHANGED` tree mode style change
+
 2.1.4
 -----
 * `CHANGED` toTop
