@@ -1,9 +1,13 @@
 History
 ======
 
-2.1.6
+2.1.7
 -----
 
+* `CHANGED` multiSelect
+
+2.1.6
+-----
 * `CHANGED` tree mode style change
 
 2.1.4
