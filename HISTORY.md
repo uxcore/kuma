@@ -1,6 +1,12 @@
 History
 ======
 
+2.1.10
+-----
+
+* `CHANGED` multi-select
+* `CHANGED` kuma-base link
+
 
 2.1.9
 -----
