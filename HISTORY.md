@@ -1,6 +1,12 @@
 History
 ======
 
+
+2.1.12
+----
+
+* `CHANGED` new pickable
+
 2.1.11
 -----
 
