@@ -1,6 +1,11 @@
 History
 ======
 
+2.1.11
+-----
+
+* `CHANGED` update dropdown animation
+
 2.1.10
 -----
 
