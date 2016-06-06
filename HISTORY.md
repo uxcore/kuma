@@ -1,6 +1,11 @@
 History
 ======
 
+2.1.8
+-----
+
+* `CHANGED` table tree mode 
+
 2.1.7
 -----
 
