@@ -2,6 +2,11 @@ History
 ======
 
 
+2.1.13
+----
+
+* `CHANGED` update table tree half-checked icon 
+
 2.1.12
 ----
 
