@@ -1,6 +1,11 @@
 History
 ======
 
+2.1.15
+----
+
+* `NEW` add `uxcore-tag`
+* `CHANGED` update `uxcore-rate`
 
 2.1.13
 ----
