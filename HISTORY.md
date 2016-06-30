@@ -1,6 +1,11 @@
 History
 ======
 
+2.1.17
+----
+
+* `CHANGED` add import album in component.less
+
 2.1.16
 ----
 
