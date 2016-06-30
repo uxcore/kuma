@@ -1,6 +1,11 @@
 History
 ======
 
+2.1.16
+----
+
+* `NEW` add `uxcore-album`
+
 2.1.15
 ----
 

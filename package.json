@@ -97,6 +97,7 @@
     "webpack": "~1.12.2"
   },
   "dependencies": {
-    "kuma-base": "~1.0.1"
+    "kuma-base": "~1.0.1",
+    "uxcore-album": "^0.1.1"
   }
 }
