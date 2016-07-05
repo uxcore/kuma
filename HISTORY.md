@@ -1,6 +1,11 @@
 History
 ======
 
+2.1.18
+---
+
+`FIXED` build before pub
+
 2.1.17
 ----
 
