@@ -1,6 +1,11 @@
 History
 ======
 
+2.1.19
+---
+
+`NEW` add SwitchFormField
+
 2.1.18
 ---
 
