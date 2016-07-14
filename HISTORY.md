@@ -1,6 +1,16 @@
 History
 ======
 
+2.2.0
+---
+
+* `CHANGED` collapse change
+* `CHANGED` pickable add hook style
+* `NEW` new component `CascadeSelect`
+* `CHANGED` transfer change
+* `CHANGED` rate add new style 
+
+
 2.1.19
 ---
 
