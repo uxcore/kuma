@@ -1,6 +1,6 @@
 {
   "name": "uxcore-kuma",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "style for uxcore based on kuma",
   "author": "shane.wuq",
   "maintainers": [
@@ -70,6 +70,7 @@
     "uxcore-formatter": "~0.1.2",
     "uxcore-grid": "~1.2.0",
     "uxcore-layout": "~1.0.1",
+    "uxcore-list": "~0.1.1",
     "uxcore-load-more": "^0.1.2",
     "uxcore-mention": "~0.1.4",
     "uxcore-menu": "~1.1.0",
@@ -81,7 +82,7 @@
     "uxcore-progress": "~1.1.0",
     "uxcore-radiogroup": "~1.2.0",
     "uxcore-rate": "~0.1.1",
-    "uxcore-select2": "~0.2.0",
+    "uxcore-select2": "~0.3.0",
     "uxcore-steps": "~1.1.2",
     "uxcore-switch": "~0.1.1",
     "uxcore-table": "~1.6.0",

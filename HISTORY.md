@@ -1,6 +1,21 @@
 History
 ======
 
+2.3.0
+---
+
+* `CHANGED` uxcore-select2 style change
+
+2.2.2
+---
+
+* `NEW` add new component `List`
+
+2.2.1
+---
+
+* `FIX` fix pagiantion style bug
+
 2.2.0
 ---
 
