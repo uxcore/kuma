@@ -1,6 +1,11 @@
 History
 ======
 
+2.3.1
+---
+
+* `CHANGED` uxcore-calendar style change
+
 2.3.0
 ---
 
