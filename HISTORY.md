@@ -1,6 +1,11 @@
 History
 ======
 
+2.4.0
+---
+
+* `NEW` dialog update to ~0.4.0
+
 2.3.4
 ---
 
