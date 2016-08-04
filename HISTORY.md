@@ -1,6 +1,22 @@
 History
 ======
 
+2.4.0
+---
+
+* `NEW` dialog update to ~0.4.0
+
+2.3.4
+---
+
+* `NEW` table support column group
+* `NEW` form add labelMatchInputHeight support
+
+2.3.3
+---
+
+* `FIXED` fix select input style bug
+
 2.3.1
 ---
 
