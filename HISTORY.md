@@ -1,6 +1,15 @@
 History
 ======
 
+2.4.1
+---
+
+* `CHANGED` 
+  * `uxcore-uploadcore` update to ~2.1.5
+  * `uxcore-uploader` update to ~1.5.6
+  * `uxcore-menu` update to ~1.2.0
+  * `uxcore-mention` update to ~0.3.1
+
 2.4.0
 ---
 
