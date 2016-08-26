@@ -1,6 +1,6 @@
 {
   "name": "uxcore-kuma",
-  "version": "2.4.2",
+  "version": "2.4.4",
   "description": "style for uxcore based on kuma",
   "author": "shane.wuq",
   "maintainers": [
@@ -54,6 +54,7 @@
     "spawn-sync": "~1.0.15",
     "style-loader": "~0.13.0",
     "url-loader": "~0.5.6",
+    "uxcore-album": "^0.1.1",
     "uxcore-alert": "~0.2.1",
     "uxcore-animate": "~0.1.1",
     "uxcore-badge": "~0.1.1",
@@ -100,7 +101,6 @@
     "webpack": "~1.12.2"
   },
   "dependencies": {
-    "kuma-base": "~1.0.1",
-    "uxcore-album": "^0.1.1"
+    "kuma-base": "~1.0.1"
   }
 }

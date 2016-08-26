@@ -2,6 +2,17 @@ History
 ======
 
 
+2.4.4
+---
+
+* `CHANGED` move uxcore-album from dep to devDep
+
+2.4.3
+---
+
+* `HOTFIX` select multiple placeholder style bug
+
+
 2.4.2
 ---
 
