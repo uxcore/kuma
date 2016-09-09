@@ -1,6 +1,20 @@
 History
 ======
 
+2.5.0
+---
+
+* `CHANGED` update calendar to ~0.6.0
+
+2.4.6
+---
+
+* `CHANGED` update table to ~1.9.0
+
+2.4.5
+---
+
+* `CHANGED` update calendar
 
 2.4.4
 ---
