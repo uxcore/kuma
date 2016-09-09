@@ -1,6 +1,11 @@
 History
 ======
 
+2.5.1
+---
+
+* `CHANGED` move `input.less` `table.less` `base.less` to kuma-base
+
 2.5.0
 ---
 
