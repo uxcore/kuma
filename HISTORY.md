@@ -1,6 +1,11 @@
 History
 ======
 
+2.5.2
+---
+
+* `NEW` add `PickableFormField` in `Form`
+
 2.5.1
 ---
 
