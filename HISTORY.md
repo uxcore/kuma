@@ -1,6 +1,16 @@
 History
 ======
 
+2.6.0
+---
+
+* `CHANGED` update `uxcore-table` to ~1.10.0
+
+2.5.3
+---
+
+* `CHANGED` update `kuma-base` to 1.0.13, support `svg-*-fill`
+
 2.5.2
 ---
 
