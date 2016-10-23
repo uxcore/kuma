@@ -1,6 +1,11 @@
 History
 ======
 
+2.6.3
+---
+
+* `NEW` add new component `EmptyData`
+
 2.6.0
 ---
 
