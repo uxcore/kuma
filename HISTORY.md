@@ -1,6 +1,12 @@
 History
 ======
 
+2.7.0
+---
+
+* `CHANGED` update `uxcore-table` to ~1.11.0
+* `CHANGED` update `uxcore-tabs` to ~0.5.0
+
 2.6.3
 ---
 
