@@ -1,6 +1,11 @@
 History
 ======
 
+2.7.8
+---
+
+* `CHANGED` update `uxcore-empty-data` to 0.1.2
+
 2.7.0
 ---
 
