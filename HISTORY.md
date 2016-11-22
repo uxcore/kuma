@@ -1,6 +1,11 @@
 History
 ======
 
+2.7.9
+---
+
+* `CHANGED` update `uxcore-carousel` to 0.3.1
+
 2.7.8
 ---
 
