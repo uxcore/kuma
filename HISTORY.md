@@ -1,6 +1,16 @@
 History
 ======
 
+2.8.0
+---
+
+* `CHANGED` update uxcore-album to ~0.3.0
+
+2.7.10
+---
+
+* `CHANGED` update uxcore-tabs to 0.5.3
+
 2.7.9
 ---
 
