@@ -1,6 +1,12 @@
 History
 ======
 
+
+2.8.2
+---
+
+* `CHANGED` update uxcore-tree to ~0.2.7
+
 2.8.1
 ---
 
