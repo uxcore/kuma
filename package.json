@@ -1,6 +1,6 @@
 {
   "name": "uxcore-kuma",
-  "version": "2.8.0",
+  "version": "2.8.1",
   "description": "style for uxcore based on kuma",
   "author": "shane.wuq",
   "maintainers": [
@@ -91,6 +91,7 @@
     "uxcore-table": "~1.11.0",
     "uxcore-tabs": "~0.5.0",
     "uxcore-tag": "~1.0.1",
+    "uxcore-timeline": "^0.1.3",
     "uxcore-tooltip": "~0.3.2",
     "uxcore-totop": "~0.2.0",
     "uxcore-transfer": "~0.3.0",
@@ -102,7 +103,6 @@
     "webpack": "~1.12.2"
   },
   "dependencies": {
-    "kuma-base": "~1.0.1",
-    "uxcore-empty-data": "^0.1.2"
+    "kuma-base": "~1.0.1"
   }
 }

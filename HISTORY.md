@@ -1,6 +1,11 @@
 History
 ======
 
+2.8.1
+---
+
+* `NEW` add new component `uxcore-timeline`
+
 2.8.0
 ---
 
