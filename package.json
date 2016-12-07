@@ -1,6 +1,6 @@
 {
   "name": "uxcore-kuma",
-  "version": "2.8.2",
+  "version": "2.8.3",
   "description": "style for uxcore based on kuma",
   "author": "shane.wuq",
   "maintainers": [
@@ -88,7 +88,7 @@
     "uxcore-select2": "~0.3.0",
     "uxcore-steps": "~1.1.2",
     "uxcore-switch": "~0.1.1",
-    "uxcore-table": "~1.11.0",
+    "uxcore-table": "~1.12.0",
     "uxcore-tabs": "~0.5.0",
     "uxcore-tag": "~1.0.1",
     "uxcore-timeline": "^0.1.3",
