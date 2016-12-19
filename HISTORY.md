@@ -1,6 +1,11 @@
 History
 ======
 
+2.8.4
+---
+
+* `CHANGED` update `uxcore-menu` to ~1.3.0
+
 2.8.3
 ---
 
