@@ -1,6 +1,11 @@
 History
 ======
 
+2.9.0
+---
+
+* `NEW` animation in many component
+
 2.8.4
 ---
 
