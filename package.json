@@ -1,6 +1,6 @@
 {
   "name": "uxcore-kuma",
-  "version": "2.9.0",
+  "version": "2.9.1",
   "description": "style for uxcore based on kuma",
   "author": "shane.wuq",
   "maintainers": [
@@ -65,7 +65,7 @@
     "uxcore-checkbox-group": "~1.1.0",
     "uxcore-collapse": "~1.2.0",
     "uxcore-crumb": "~0.2.0",
-    "uxcore-dialog": "~0.4.0",
+    "uxcore-dialog": "~0.5.0",
     "uxcore-dropdown": "~0.4.0",
     "uxcore-empty-data": "^0.1.1",
     "uxcore-form": "~1.8.0",
