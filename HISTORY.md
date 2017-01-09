@@ -1,7 +1,7 @@
 History
 ======
 
-2.9.3
+2.9.4
 ---
 
 *  `NEW` add new component `Splitter`
