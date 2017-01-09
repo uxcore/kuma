@@ -86,6 +86,7 @@
     "uxcore-radiogroup": "~1.2.0",
     "uxcore-rate": "~0.2.0",
     "uxcore-select2": "~0.4.0",
+    "uxcore-splitter": "~0.1.0",
     "uxcore-steps": "~1.1.2",
     "uxcore-switch": "~0.1.1",
     "uxcore-table": "~1.12.0",

@@ -1,6 +1,12 @@
 History
 ======
 
+2.9.3
+---
+
+*  `NEW` add new component `Splitter`
+
+
 2.9.0
 ---
 
