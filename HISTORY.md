@@ -1,6 +1,11 @@
 History
 ======
 
+2.9.5
+---
+
+* `CHANGED` improve animation
+
 2.9.4
 ---
 
