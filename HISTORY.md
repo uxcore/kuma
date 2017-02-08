@@ -1,6 +1,11 @@
 History
 ======
 
+2.9.6
+---
+
+* `CHANGED` update `kuma-base` to `~1.0.16`, new font config.
+
 2.9.5
 ---
 
