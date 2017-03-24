@@ -1,13 +1,14 @@
 {
   "name": "uxcore-kuma",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "style for uxcore based on kuma",
   "author": "shane.wuq",
   "maintainers": [
     "macisi",
     "eternalsky"
   ],
-  "scripts": {},
+  "scripts": {
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/uxcore/kuma"
@@ -29,6 +30,6 @@
   "licenses": "MIT",
   "devDependencies": {
     "gulp": "~3.9.0",
-    "uxcore": "0.8.5"
+    "uxcore": "0.8.8"
   }
 }
