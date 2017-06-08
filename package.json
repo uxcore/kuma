@@ -1,6 +1,6 @@
 {
   "name": "uxcore-kuma",
-  "version": "6.0.1",
+  "version": "6.1.0",
   "description": "style for uxcore based on kuma",
   "author": "shane.wuq",
   "maintainers": [
@@ -30,6 +30,6 @@
   "licenses": "MIT",
   "devDependencies": {
     "gulp": "~3.9.0",
-    "uxcore": "0.12.2"
+    "uxcore": "0.13.1"
   }
 }
