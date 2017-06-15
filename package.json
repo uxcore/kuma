@@ -30,6 +30,6 @@
   "licenses": "MIT",
   "devDependencies": {
     "gulp": "~3.9.0",
-    "uxcore": "0.13.1"
+    "uxcore": "0.13.2"
   }
 }
