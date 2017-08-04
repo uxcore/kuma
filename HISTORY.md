@@ -21,6 +21,11 @@ History
 
 * `CHANGED` track uxcore `0.14.1`
 
+6.2.1
+---
+
+* `CHANGED` trak uxcore `0.13.4`
+
 6.2.0
 ---
 
