@@ -1,6 +1,6 @@
 {
   "name": "uxcore-kuma",
-  "version": "14.2.0",
+  "version": "14.3.0",
   "description": "style for uxcore based on kuma",
   "author": "eternalsky",
   "maintainers": [
@@ -8,6 +8,7 @@
     "eternalsky"
   ],
   "scripts": {
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,6 @@
   "licenses": "MIT",
   "devDependencies": {
     "gulp": "~3.9.0",
-    "uxcore": "0.21.17"
+    "uxcore": "0.21.51"
   }
 }

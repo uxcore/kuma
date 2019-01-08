@@ -1,5 +1,8 @@
 History
-======
+=======
+
+14.3.0
+* `CHANGED` track uxcore `0.21.51`
 
 14.2.0
 ---
@@ -330,7 +333,7 @@ History
 2.4.1
 ---
 
-* `CHANGED` 
+* `CHANGED`
   * `uxcore-uploadcore` update to ~2.1.5
   * `uxcore-uploader` update to ~1.5.6
   * `uxcore-menu` update to ~1.2.0
@@ -379,7 +382,7 @@ History
 * `CHANGED` pickable add hook style
 * `NEW` new component `CascadeSelect`
 * `CHANGED` transfer change
-* `CHANGED` rate add new style 
+* `CHANGED` rate add new style
 
 
 2.1.19
@@ -411,7 +414,7 @@ History
 2.1.13
 ----
 
-* `CHANGED` update table tree half-checked icon 
+* `CHANGED` update table tree half-checked icon
 
 2.1.12
 ----
@@ -433,12 +436,12 @@ History
 2.1.9
 -----
 
-* `CHANGED` switch 
+* `CHANGED` switch
 
 2.1.8
 -----
 
-* `CHANGED` table tree mode 
+* `CHANGED` table tree mode
 
 2.1.7
 -----
