@@ -8999,7 +8999,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   position: fixed;
   right: 20px;
   z-index: 1;
-  top: 200px;
+  top: 50%;
   transition: ease .3s;
 }
 .uxcore .uxcore-float-nav-spot-wrap .uxcore-float-nav-control {
@@ -9257,6 +9257,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-number-input-uxform-field .kuma-uxform-input {
   display: table;
   width: 100%;
+  word-break: break-all;
 }
 .uxcore .kuma-button-group-uxform-field {
   padding-left: 100px;
@@ -9456,7 +9457,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 @font-face {
   font-family: 'uxcore';
-  src: url('//at.alicdn.com/t/font_207195_8eaexql2ap.woff') format('woff');
+  src: url('//at.alicdn.com/t/font_207195_taqqzxp2f7.woff') format('woff');
 }
 .uxcore .uxcore-icon {
   font-family: "uxcore" !important;
@@ -9966,6 +9967,15 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .uxicon-menu:before {
   content: "\e6cd";
 }
+.uxcore .uxicon-chouti:before {
+  content: "\e662";
+}
+.uxcore .uxicon-youxuanzhuan:before {
+  content: "\e6ce";
+}
+.uxcore .uxicon-zuoxuanzhuan:before {
+  content: "\e6cf";
+}
 .uxcore .kuma-layout-2c {
   margin: 0 auto;
   /* 全定宽 */
@@ -10359,6 +10369,25 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-menu-submenu-open.kuma-menu-submenu-inline > .kuma-menu-submenu-title .kuma-menu-submenu-arrow:after {
   transform: rotate(180deg);
+}
+.uxcore .kuma-menu-lte-react16 .kuma-menu-vertical {
+  position: relative;
+}
+.uxcore .kuma-menu-lte-react16 .kuma-menu-vertical:before,
+.uxcore .kuma-menu-lte-react16 .kuma-menu-vertical:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 5px;
+  visibility: visible;
+}
+.uxcore .kuma-menu-lte-react16 .kuma-menu-vertical:before {
+  left: -5px;
+}
+.uxcore .kuma-menu-lte-react16 .kuma-menu-vertical:after {
+  right: -5px;
 }
 .uxcore .kuma-menu-vertical .uxcore .kuma-menu-submenu-selected,
 .uxcore .kuma-menu-vertical-left .uxcore .kuma-menu-submenu-selected,
@@ -12381,7 +12410,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-select2-selection__placeholder {
   position: absolute;
   top: 0;
-  color: #a5afbc;
+  color: rgba(31, 56, 88, 0.4);
   line-height: 34px;
   max-width: 90%;
   overflow: hidden;
@@ -12418,7 +12447,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore .kuma-select2-selection--single .kuma-select2-selection__placeholder {
   position: absolute;
   top: 0;
-  color: #a5afbc;
+  color: rgba(31, 56, 88, 0.4);
 }
 .uxcore .kuma-select2-selection--single .kuma-select2-selection__rendered {
   display: block;
@@ -13629,7 +13658,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-uxtable-actionbar {
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   padding: 6px 0px 4px;
 }
 .uxcore .kuma-uxtable-actionbar-item {
@@ -13638,7 +13667,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-uxtable-select-all {
   display: inline-block;
-  margin-right: 24px;
+  margin-right: 20px;
   cursor: pointer;
   height: 28px;
   line-height: 28px;
@@ -13737,19 +13766,29 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
 }
 .uxcore .kuma-uxtable-list-action-bar .left {
   display: inline-block;
-  padding-left: 24px;
+  height: 32px;
+  margin-right: 20px;
+  line-height: 32px;
+}
+.uxcore .kuma-uxtable-list-action-bar .custom {
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
 }
 .uxcore .kuma-uxtable-list-action-bar .right {
   display: inline-block;
   float: right;
-  height: 28px;
-  line-height: 28px;
   cursor: pointer;
 }
 .uxcore .kuma-uxtable-list-action-bar .right > div {
   float: right;
+  height: 32px;
+  line-height: 32px;
   margin-right: 20px;
   position: relative;
+}
+.uxcore .kuma-uxtable-list-action-bar .right > div:first-child {
+  margin-right: 2px;
 }
 .uxcore .kuma-uxtable-list-action-bar .right .order-title i,
 .uxcore .kuma-uxtable-list-action-bar .right .column-order-title i,
@@ -14129,6 +14168,7 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   display: inline-block;
   text-align: left;
   overflow: hidden;
+  text-overflow: ellipsis;
   height: 100%;
   padding: 0 20px 0 20px;
   vertical-align: top;
@@ -14455,6 +14495,14 @@ li.uxcore .kuma-time-picker-panel-select-option-disabled:hover {
   font-size: 16px;
   margin-left: 4px;
   vertical-align: -1px;
+}
+.uxcore .kuma-uxtable-cell-resize-icon {
+  display: inline-block;
+  height: 50px;
+  background: rgba(0, 0, 0, 0);
+  cursor: ew-resize;
+  position: absolute;
+  z-index: 99;
 }
 .uxcore .kuma-uxtable-header-item-filter-dropdown {
   box-shadow: 0 1px 4px 0 rgba(31, 56, 88, 0.15);

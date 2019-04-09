@@ -8757,7 +8757,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   position: fixed;
   right: 20px;
   z-index: 1;
-  top: 200px;
+  top: 50%;
   transition: ease .3s;
 }
 .uxcore-float-nav-spot-wrap .uxcore-float-nav-control {
@@ -9015,6 +9015,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 .kuma-number-input-uxform-field .kuma-uxform-input {
   display: table;
   width: 100%;
+  word-break: break-all;
 }
 .kuma-button-group-uxform-field {
   padding-left: 100px;
@@ -9235,7 +9236,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
  */
 @font-face {
   font-family: 'uxcore';
-  src: url('//at.alicdn.com/t/font_207195_8eaexql2ap.woff') format('woff');
+  src: url('//at.alicdn.com/t/font_207195_taqqzxp2f7.woff') format('woff');
 }
 .uxcore-icon {
   font-family: "uxcore" !important;
@@ -9745,6 +9746,15 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 .uxicon-menu:before {
   content: "\e6cd";
 }
+.uxicon-chouti:before {
+  content: "\e662";
+}
+.uxicon-youxuanzhuan:before {
+  content: "\e6ce";
+}
+.uxicon-zuoxuanzhuan:before {
+  content: "\e6cf";
+}
 /**
  * Image Component Style for uxcore
  * @author eternalsky
@@ -10180,6 +10190,25 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 }
 .kuma-menu-submenu-open.kuma-menu-submenu-inline > .kuma-menu-submenu-title .kuma-menu-submenu-arrow:after {
   transform: rotate(180deg);
+}
+.kuma-menu-lte-react16 .kuma-menu-vertical {
+  position: relative;
+}
+.kuma-menu-lte-react16 .kuma-menu-vertical:before,
+.kuma-menu-lte-react16 .kuma-menu-vertical:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 5px;
+  visibility: visible;
+}
+.kuma-menu-lte-react16 .kuma-menu-vertical:before {
+  left: -5px;
+}
+.kuma-menu-lte-react16 .kuma-menu-vertical:after {
+  right: -5px;
 }
 .kuma-menu-vertical .kuma-menu-submenu-selected,
 .kuma-menu-vertical-left .kuma-menu-submenu-selected,
@@ -12272,7 +12301,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 .kuma-select2-selection__placeholder {
   position: absolute;
   top: 0;
-  color: #a5afbc;
+  color: rgba(31, 56, 88, 0.4);
   line-height: 34px;
   max-width: 90%;
   overflow: hidden;
@@ -12309,7 +12338,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 .kuma-select2-selection--single .kuma-select2-selection__placeholder {
   position: absolute;
   top: 0;
-  color: #a5afbc;
+  color: rgba(31, 56, 88, 0.4);
 }
 .kuma-select2-selection--single .kuma-select2-selection__rendered {
   display: block;
@@ -13548,7 +13577,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
  */
 .kuma-uxtable-actionbar {
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   padding: 6px 0px 4px;
 }
 .kuma-uxtable-actionbar-item {
@@ -13557,7 +13586,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 }
 .kuma-uxtable-select-all {
   display: inline-block;
-  margin-right: 24px;
+  margin-right: 20px;
   cursor: pointer;
   height: 28px;
   line-height: 28px;
@@ -13656,19 +13685,29 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 }
 .kuma-uxtable-list-action-bar .left {
   display: inline-block;
-  padding-left: 24px;
+  height: 32px;
+  margin-right: 20px;
+  line-height: 32px;
+}
+.kuma-uxtable-list-action-bar .custom {
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
 }
 .kuma-uxtable-list-action-bar .right {
   display: inline-block;
   float: right;
-  height: 28px;
-  line-height: 28px;
   cursor: pointer;
 }
 .kuma-uxtable-list-action-bar .right > div {
   float: right;
+  height: 32px;
+  line-height: 32px;
   margin-right: 20px;
   position: relative;
+}
+.kuma-uxtable-list-action-bar .right > div:first-child {
+  margin-right: 2px;
 }
 .kuma-uxtable-list-action-bar .right .order-title i,
 .kuma-uxtable-list-action-bar .right .column-order-title i,
@@ -14048,6 +14087,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   display: inline-block;
   text-align: left;
   overflow: hidden;
+  text-overflow: ellipsis;
   height: 100%;
   padding: 0 20px 0 20px;
   vertical-align: top;
@@ -14374,6 +14414,14 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   font-size: 16px;
   margin-left: 4px;
   vertical-align: -1px;
+}
+.kuma-uxtable-cell-resize-icon {
+  display: inline-block;
+  height: 50px;
+  background: rgba(0, 0, 0, 0);
+  cursor: ew-resize;
+  position: absolute;
+  z-index: 99;
 }
 .kuma-uxtable-header-item-filter-dropdown {
   box-shadow: 0 1px 4px 0 rgba(31, 56, 88, 0.15);
