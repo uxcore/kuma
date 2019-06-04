@@ -1,5 +1,7 @@
 History
 =======
+15.0.0
+* 'CHANGED' track uxcore to `^0.22.0`
 
 14.4.0
 * `CHANGED` track uxcore `0.21.68`

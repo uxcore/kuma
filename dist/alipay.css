@@ -3151,6 +3151,7 @@ a.kuma-button.kuma-button-disabled:visited {
   background: rgba(0, 0, 0, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 80px;
+  overflow: hidden;
 }
 .kuma-uxcore-album .album-overlay .album-stage .album-func-button-item {
   display: inline-block;
@@ -3179,6 +3180,10 @@ a.kuma-button.kuma-button-disabled:visited {
   display: block;
   height: 26px;
   line-height: 26px;
+}
+.kuma-uxcore-album .album-overlay .album-stage .album-func-button-item > .uxcore-icon:hover {
+  background-color: #000;
+  opacity: .8;
 }
 .kuma-uxcore-album .album-overlay .album-stage .album-func-button-item.disabled > .uxcore-icon {
   color: rgba(255, 255, 255, 0.2);
@@ -4954,6 +4959,15 @@ a.kuma-button-group-separated-item-first {
 .kuma-calendar-small .kuma-calendar-time-picker-panel .kuma-time-picker-panel-select {
   height: 272px;
 }
+.date-picker-dropdown-offset-small {
+  padding-top: 27px;
+}
+.date-picker-dropdown-offset-middle {
+  padding-top: 31px;
+}
+.date-picker-dropdown-offset-large {
+  padding-top: 35px;
+}
 .kuma-calendar-picker {
   position: absolute;
   left: -9999px;
@@ -5000,6 +5014,22 @@ a.kuma-button-group-separated-item-first {
   left: 61px;
   width: calc(100% - 61px);
   height: calc(100% - 32px);
+}
+.kuma-calendar-full .events-wrapper.events-day-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail,
+.kuma-calendar-full .events-wrapper.events-week-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail {
+  overflow: auto;
+  text-overflow: inherit;
+  white-space: pre-wrap;
+}
+.kuma-calendar-full .events-wrapper.events-day-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail div,
+.kuma-calendar-full .events-wrapper.events-week-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail div,
+.kuma-calendar-full .events-wrapper.events-day-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail p,
+.kuma-calendar-full .events-wrapper.events-week-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail p,
+.kuma-calendar-full .events-wrapper.events-day-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail ul,
+.kuma-calendar-full .events-wrapper.events-week-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail ul,
+.kuma-calendar-full .events-wrapper.events-day-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail li,
+.kuma-calendar-full .events-wrapper.events-week-wrapper .kuma-calendar-content-box .kuma-calendar-content-detail li {
+  white-space: pre-wrap;
 }
 .kuma-calendar-full-date {
   position: absolute;
@@ -5129,7 +5159,13 @@ a.kuma-button-group-separated-item-first {
   border-radius: 3px;
   overflow: hidden;
 }
-.kuma-calendar-full .kuma-calendar-content-box .kuma-calendar-content-wraper div {
+.kuma-calendar-full .kuma-calendar-content-box .kuma-calendar-content-wraper.hover,
+.kuma-calendar-full .kuma-calendar-content-box .kuma-calendar-content-wraper:hover {
+  cursor: pointer;
+  background-color: rgba(0, 160, 232, 0.3);
+  opacity: 0.8;
+}
+.kuma-calendar-full .kuma-calendar-content-box .kuma-calendar-content-wraper .kuma-calendar-content-detail {
   padding-left: 3px;
   white-space: nowrap;
   overflow: hidden;
@@ -5137,7 +5173,11 @@ a.kuma-button-group-separated-item-first {
   height: 100%;
   border-left: 3px solid #00a0e8;
 }
-.kuma-calendar-full .kuma-calendar-content-box.red-important .kuma-calendar-content-wraper div {
+.kuma-calendar-full .kuma-calendar-content-box .kuma-calendar-content-wraper .kuma-calendar-content-detail div {
+  display: inline-block;
+  border: none;
+}
+.kuma-calendar-full .kuma-calendar-content-box.red-important .kuma-calendar-content-wraper .kuma-calendar-content-detail {
   border-left: 3px solid #F04631;
 }
 .kuma-calendar-full-date-select {
@@ -5310,7 +5350,12 @@ a.kuma-button-group-separated-item-first {
   font-size: 12px;
   color: #ffffff;
   letter-spacing: 0;
-  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 .kuma-calendar-full-month-panel-table {
   table-layout: fixed;
@@ -5350,6 +5395,7 @@ a.kuma-button-group-separated-item-first {
   display: inline-block;
   color: #F04631;
   font-size: 12px;
+  vertical-align: top;
 }
 .kuma-calendar-range {
   overflow: hidden;
@@ -5679,7 +5725,7 @@ a.kuma-button-group-separated-item-first {
   height: 28px;
 }
 .kuma-calendar-year-select {
-  width: 60px;
+  width: 75px;
 }
 .kuma-calendar-year-select.kuma-calendar-cn-select {
   width: 75px;
@@ -5688,10 +5734,10 @@ a.kuma-button-group-separated-item-first {
   left: 7px;
 }
 .kuma-calendar-month-select {
-  width: 60px;
+  width: 70px;
 }
 .kuma-calendar-month-select.kuma-calendar-cn-select {
-  width: 60px;
+  width: 70px;
 }
 .kuma-calendar-month-select .kuma-select2-selection-selected-value {
   left: 12px;
@@ -6394,6 +6440,19 @@ a.kuma-button-group-separated-item-first {
   content: '\e645';
   font-family: 'kuma' !important;
 }
+.kuma-calendar-month-calendar-content .kuma-calendar-year-panel-last-decade-cell .kuma-calendar-year-panel-year,
+.kuma-calendar-month-calendar-content .kuma-calendar-year-panel-next-decade-cell .kuma-calendar-year-panel-year {
+  position: relative;
+}
+.kuma-calendar-month-calendar-content .kuma-calendar-year-panel-last-decade-cell .kuma-calendar-year-panel-year:before,
+.kuma-calendar-month-calendar-content .kuma-calendar-year-panel-next-decade-cell .kuma-calendar-year-panel-year:before {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  content: '\e645';
+  font-family: 'kuma' !important;
+}
 .kuma-calendar-small .kuma-calendar-year-panel-header {
   height: 28px;
   line-height: 27px;
@@ -6537,9 +6596,17 @@ a.kuma-button-group-separated-item-first {
        user-select: none;
   -webkit-user-select: none;
 }
+.kuma-calendar-decade-panel-last-century-cell .kuma-calendar-decade-panel-decade,
+.kuma-calendar-decade-panel-next-century-cell .kuma-calendar-decade-panel-decade {
+  position: relative;
+}
 .kuma-calendar-decade-panel-last-century-cell .kuma-calendar-decade-panel-decade:before,
 .kuma-calendar-decade-panel-next-century-cell .kuma-calendar-decade-panel-decade:before {
   content: '\e645';
+  background: #fff;
+  width: 100%;
+  position: absolute;
+  left: 0;
   font-family: 'kuma' !important;
 }
 .kuma-calendar-full-week-panel-column-header {
@@ -6926,6 +6993,7 @@ li.kuma-time-picker-panel-select-option-disabled:hover {
 .uxcore-card-content {
   padding: 24px;
   overflow: hidden;
+  overflow-y: auto;
   transition: all 0.3s ease-out;
 }
 .uxcore-card-content-none-padding {
@@ -8162,7 +8230,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
  * Copyright 2017-2018, Uxcore Team, Alinw.
  * All rights reserved.
  */
-.kuma-drawer {
+.kuma-dlg-wrap .kuma-drawer {
   position: fixed;
   height: 100%;
   min-width: 263px;
@@ -8171,17 +8239,17 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   box-shadow: 0px 2px 12px 0px rgba(31, 56, 88, 0.15);
   z-index: 1000;
 }
-.kuma-drawer .kuma-dlg-close {
+.kuma-dlg-wrap .kuma-drawer .kuma-dlg-close {
   top: 12px;
   z-index: 999;
 }
-.kuma-drawer.kuma-drawer-normal .kuma-dlg-close-x {
+.kuma-dlg-wrap .kuma-drawer.kuma-drawer-normal .kuma-dlg-close-x {
   font-size: 14px;
 }
-.kuma-drawer.kuma-dlg {
+.kuma-dlg-wrap .kuma-drawer.kuma-dlg {
   position: fixed;
 }
-.kuma-drawer .kuma-dlg-content {
+.kuma-dlg-wrap .kuma-drawer .kuma-dlg-content {
   position: initial;
   height: 100%;
   box-shadow: none;
@@ -8190,12 +8258,12 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   -ms-flex-direction: column;
       flex-direction: column;
 }
-.kuma-drawer .kuma-dlg-title {
+.kuma-dlg-wrap .kuma-drawer .kuma-dlg-title {
   padding: 14px 20px;
   text-indent: 0;
   box-sizing: border-box;
 }
-.kuma-drawer .kuma-dlg-body {
+.kuma-dlg-wrap .kuma-drawer .kuma-dlg-body {
   width: 100%;
   -ms-flex: 1;
       flex: 1;
@@ -8203,80 +8271,80 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   overflow-y: auto;
   overflow-x: hidden;
 }
-.kuma-drawer-right {
+.kuma-dlg-wrap .kuma-drawer-right {
   right: 0;
   top: 0;
   bottom: 0;
 }
-.kuma-drawer-left {
+.kuma-dlg-wrap .kuma-drawer-left {
   left: 0;
   top: 0;
   bottom: 0;
 }
-.kuma-drawer .kuma-dlg-header {
+.kuma-dlg-wrap .kuma-drawer .kuma-dlg-header {
   -ms-flex: 0;
       flex: 0;
   border-bottom: 1px solid rgba(31, 56, 88, 0.1);
 }
-.kuma-drawer .kuma-dlg-footer {
+.kuma-dlg-wrap .kuma-drawer .kuma-dlg-footer {
   -ms-flex: 0;
       flex: 0;
 }
-.kuma-drawer.dialogFade-enter,
-.kuma-drawer.dialogFade-appear {
+.kuma-dlg-wrap .kuma-drawer.dialogFade-enter,
+.kuma-dlg-wrap .kuma-drawer.dialogFade-appear {
   opacity: 0;
   animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
   animation-duration: .5s;
 }
-.kuma-drawer.dialogFade-enter-active,
-.kuma-drawer.dialogFade-appear-active {
+.kuma-dlg-wrap .kuma-drawer.dialogFade-enter-active,
+.kuma-dlg-wrap .kuma-drawer.dialogFade-appear-active {
   animation-name: drawerFadeIn;
 }
-.kuma-drawer.dialogFade-leave {
+.kuma-dlg-wrap .kuma-drawer.dialogFade-leave {
   opacity: 1;
   animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
   animation-duration: .5s;
 }
-.kuma-drawer.dialogFade-leave-active {
+.kuma-dlg-wrap .kuma-drawer.dialogFade-leave-active {
   animation-name: drawerFadeOut;
 }
-.kuma-drawer.dialogSlideRight-enter,
-.kuma-drawer.dialogSlideRight-appear {
+.kuma-dlg-wrap .kuma-drawer.dialogSlideRight-enter,
+.kuma-dlg-wrap .kuma-drawer.dialogSlideRight-appear {
   opacity: 0;
   transform: translateX(100px);
   animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
   animation-duration: .5s;
 }
-.kuma-drawer.dialogSlideRight-enter-active,
-.kuma-drawer.dialogSlideRight-appear-active {
+.kuma-dlg-wrap .kuma-drawer.dialogSlideRight-enter-active,
+.kuma-dlg-wrap .kuma-drawer.dialogSlideRight-appear-active {
   animation-name: drawerSlideInRight;
 }
-.kuma-drawer.dialogSlideRight-leave {
+.kuma-dlg-wrap .kuma-drawer.dialogSlideRight-leave {
   opacity: 1;
   animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
   animation-duration: .5s;
 }
-.kuma-drawer.dialogSlideRight-leave-active {
+.kuma-dlg-wrap .kuma-drawer.dialogSlideRight-leave-active {
   animation-name: drawerSlideOutRight;
   animation-duration: .5s;
 }
-.kuma-drawer.dialogSlideLeft-enter,
-.kuma-drawer.dialogSlideLeft-appear {
+.kuma-dlg-wrap .kuma-drawer.dialogSlideLeft-enter,
+.kuma-dlg-wrap .kuma-drawer.dialogSlideLeft-appear {
   opacity: 0;
   transform: translateX(-100px);
   animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
   animation-duration: .5s;
 }
-.kuma-drawer.dialogSlideLeft-enter-active,
-.kuma-drawer.dialogSlideLeft-appear-active {
+.kuma-dlg-wrap .kuma-drawer.dialogSlideLeft-enter-active,
+.kuma-dlg-wrap .kuma-drawer.dialogSlideLeft-appear-active {
   animation-name: drawerSlideInLeft;
 }
-.kuma-drawer.dialogSlideLeft-leave {
+.kuma-dlg-wrap .kuma-drawer.dialogSlideLeft-leave {
   opacity: 1;
   animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
   animation-duration: .5s;
 }
-.kuma-drawer.dialogSlideLeft-leave-active {
+.kuma-dlg-wrap .kuma-drawer.dialogSlideLeft-leave-active {
   animation-name: drawerSlideOutLeft;
   animation-duration: .5s;
 }
@@ -8796,6 +8864,18 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   clear: both;
   height: 0;
 }
+.kuma-uxform .uxcore-card {
+  margin-bottom: 16px;
+  width: 100%;
+}
+.kuma-uxform .uxcore-card .uxcore-card-content {
+  overflow-y: auto;
+}
+.kuma-uxform .uxcore-card .kuma-uxform-row-title .kuma-title-secondary,
+.kuma-uxform .uxcore-card .kuma-uxform-row-title .kuma-title-primary,
+.kuma-uxform .uxcore-card .kuma-uxform-row-title .kuma-title-thirdary {
+  margin-top: 0;
+}
 .kuma-uxform-row-title {
   clear: both;
   overflow: hidden;
@@ -8804,6 +8884,9 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   min-width: 100%;
   float: left;
   clear: both;
+}
+.kuma-uxform-row .kuma-uxform-field:last-child {
+  padding-right: 0;
 }
 .kuma-uxform-field {
   display: table;
@@ -8891,6 +8974,9 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
   border-left: none;
+  white-space: nowrap;
+  padding: 0 2px;
+  background: #fff;
 }
 .kuma-uxform-left-icon {
   display: table-cell;
@@ -9236,7 +9322,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
  */
 @font-face {
   font-family: 'uxcore';
-  src: url('//at.alicdn.com/t/font_207195_taqqzxp2f7.woff') format('woff');
+  src: url('//at.alicdn.com/t/font_207195_dq82duqxr1.woff') format('woff');
 }
 .uxcore-icon {
   font-family: "uxcore" !important;
@@ -9754,6 +9840,15 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 }
 .uxicon-zuoxuanzhuan:before {
   content: "\e6cf";
+}
+.uxicon-minus:before {
+  content: "\e6d0";
+}
+.uxicon-zhedie:before {
+  content: "\e663";
+}
+.uxicon-zhankai1:before {
+  content: "\e664";
 }
 /**
  * Image Component Style for uxcore
@@ -11248,27 +11343,6 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 .kuma-page-item-active:hover a {
   color: white;
 }
-.kuma-page-jump-prev,
-.kuma-page-jump-next {
-  margin-right: 8px;
-}
-.kuma-page-jump-prev:after,
-.kuma-page-jump-next:after {
-  content: "•••";
-  display: block;
-  letter-spacing: 2px;
-  color: rgba(31, 56, 88, 0.4);
-  font-size: 12px;
-  margin-top: 1px;
-}
-.kuma-page-jump-prev:hover:after {
-  font-family: "uxcore";
-  content: "\e65e";
-}
-.kuma-page-jump-next:hover:after {
-  font-family: "uxcore";
-  content: "\e65f";
-}
 .kuma-page-prev,
 .kuma-page-next,
 .kuma-page-jump-prev,
@@ -11278,7 +11352,6 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   color: rgba(31, 56, 88, 0.4);
   font-size: 10px;
   list-style: none;
-  min-width: 28px;
   height: 28px;
   line-height: 26px;
   float: left;
@@ -11295,6 +11368,7 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 }
 .kuma-page-prev,
 .kuma-page-next {
+  min-width: 28px;
   border: 1px solid #bcc3cd;
   border-radius: 3px;
   font-size: 18px;
@@ -11315,6 +11389,35 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 .kuma-page-prev:hover a,
 .kuma-page-next:hover a {
   color: #00a0e8;
+}
+.kuma-page-jump-prev,
+.kuma-page-jump-next {
+  width: 16px;
+  margin-right: 8px;
+}
+.kuma-page-jump-prev .uxicon-more-dot,
+.kuma-page-jump-next .uxicon-more-dot {
+  display: block;
+}
+.kuma-page-jump-prev .uxicon-left_double,
+.kuma-page-jump-next .uxicon-left_double {
+  display: none;
+}
+.kuma-page-jump-prev .uxicon-right_double,
+.kuma-page-jump-next .uxicon-right_double {
+  display: none;
+}
+.kuma-page-jump-prev:hover .uxicon-more-dot {
+  display: none;
+}
+.kuma-page-jump-prev:hover .uxicon-left_double {
+  display: block;
+}
+.kuma-page-jump-next:hover .uxicon-more-dot {
+  display: none;
+}
+.kuma-page-jump-next:hover .uxicon-right_double {
+  display: block;
 }
 .kuma-page-disabled {
   cursor: not-allowed;
@@ -11378,6 +11481,10 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 .kuma-page-options-quick-jumper-button {
   margin-left: 8px;
 }
+.kuma-page-simple .uxcore-icon {
+  font-size: 12px;
+  line-height: 18px;
+}
 .kuma-page-simple .kuma-page-prev,
 .kuma-page-simple .kuma-page-next {
   font-size: 10px;
@@ -11412,6 +11519,10 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 }
 .kuma-page-simple .kuma-page-simple-pager input:hover {
   border-color: #a5afbc;
+}
+.kuma-page.mini .uxcore-icon {
+  font-size: 12px;
+  line-height: 18px;
 }
 .kuma-page.mini .kuma-page-prev,
 .kuma-page.mini .kuma-page-next,
@@ -12156,8 +12267,20 @@ div.kuma-cascader-disabled:hover .kuma-icon {
 .kuma-progress-circle-wrap.status-exception .kuma-progress-circle-path {
   stroke: #F04631;
 }
+.kuma-progress-circle-wrap.status-exception .kuma-progress-circle-text {
+  color: #F04631;
+}
+.kuma-progress-circle-wrap.status-exception .kuma-progress-circle-text .icon-caution:after {
+  content: '\e605';
+}
 .kuma-progress-circle-wrap.status-success .kuma-progress-circle-path {
   stroke: #66bc5c;
+}
+.kuma-progress-circle-wrap.status-success .kuma-progress-circle-text {
+  color: #66bc5c;
+}
+.kuma-progress-circle-wrap.status-success .kuma-progress-circle-text .icon-success:after {
+  content: '\e601';
 }
 .kuma-progress-circle-wrap {
   position: relative;
@@ -12167,7 +12290,16 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   left: 0;
   top: 0;
   width: 100%;
+  height: 22px;
+  line-height: 22px;
   text-align: center;
+}
+.kuma-progress-circle-wrap .kuma-progress-circle-text > i {
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: .2px;
+  font-family: kuma;
 }
 @keyframes progress-active {
   0% {
@@ -14435,6 +14567,9 @@ div.kuma-cascader-disabled:hover .kuma-icon {
   border-radius: 0;
   min-width: 104px;
   max-width: 232px;
+}
+.kuma-uxtable-header-item-filter-dropdown .kuma-dropdown-menu .kuma-checkbox-group-item {
+  margin-bottom: 0;
 }
 .kuma-uxtable-header-item-filter-dropdown .kuma-dropdown-menu-sub {
   border: 1px solid #bcc3cd;
@@ -17241,6 +17376,17 @@ li.uxcore-time-picker-panel-select-option-disabled:hover {
   overflow-y: auto;
   height: 100%;
 }
+.uxcore-tree-select-dropdown-all {
+  background-color: white;
+  border: 1px solid #dcdcdc;
+  border-radius: 3px 0 0 3px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  overflow-y: auto;
+  height: 100%;
+}
 .uxcore-tree-select-dropdown-right {
   border-left-color: transparent;
   overflow-y: hidden;
@@ -18589,10 +18735,14 @@ li.uxcore-time-picker-panel-select-option-disabled:hover {
   position: absolute;
   left: 0;
   top: 0;
+  z-index: 100;
+  height: 0;
+  width: 0;
+}
+.kuma-user-guide-stage.isBlocking {
   height: 100%;
   width: 100%;
-  z-index: 100;
-  background: rgba(31, 56, 88, 0.04);
+  background: rgba(0, 0, 0, 0.4);
 }
 .kuma-user-guide-breathing-point {
   position: absolute;
@@ -18635,6 +18785,10 @@ li.uxcore-time-picker-panel-select-option-disabled:hover {
   right: 5px;
   left: auto;
 }
+.kuma-user-guide-step-hint-wrp {
+  display: -ms-flexbox;
+  display: flex;
+}
 .kuma-user-guide-step-hint-title {
   font-size: 16px;
   color: rgba(0, 0, 0, 0.8);
@@ -18664,4 +18818,48 @@ li.uxcore-time-picker-panel-select-option-disabled:hover {
   font-size: 12px;
   color: rgba(31, 56, 88, 0.4);
   cursor: pointer;
+}
+.kuma-user-guide-skip-checkbox {
+  font-size: 12px;
+  color: rgba(31, 56, 88, 0.4);
+  display: inline-block;
+}
+.kuma-user-guide-skip-checkbox .kuma-checkbox-group-item {
+  margin-bottom: 0;
+}
+.kuma-user-guide--step-hint-wrp {
+  display: -ms-flexbox;
+  display: flex;
+}
+.kuma-user-guide-step-hint-icon {
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid;
+  line-height: 38px;
+  text-align: center;
+  margin-right: 24px;
+  font-size: 20px;
+  display: block;
+  -ms-flex: 38px 0 0px;
+      flex: 38px 0 0;
+}
+/**
+ * Sticky Component Style for uxcore
+ * @author taoqili
+ *
+ * Copyright 2017-2018, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+.uxcore-sticky .uxcore-sticky-placeholder {
+  display: none;
+}
+.uxcore-sticky .uxcore-sticky-placeholder.sticky {
+  display: block;
+}
+.uxcore-sticky .uxcore-sticky-content {
+  background: #fff;
+  z-index: 900;
+}
+.uxcore-sticky .uxcore-sticky-content.sticky {
+  position: fixed;
 }
